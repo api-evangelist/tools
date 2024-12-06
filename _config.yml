@@ -1,0 +1,119 @@
+title: API Evangelist Experiences
+description: Mapping the technical details of API operations to the human experience.
+lang: en
+
+baseurl: ""
+
+# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+permalink: /:categories/:year/:month/:day/:title/
+
+url: "https://contracts.apievangelist.com"
+
+logo: https://kinlane-productions2.s3.amazonaws.com/api-evangelist-logos/api-evangelist-logo-butterfly.png
+
+navbar:
+    sticky:         true
+    search:         true
+  
+author:
+    name:           Kin Lane
+    title:          API Evangelist
+    avatar:         https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png
+
+authors:
+    kin:
+      name:         Kin Lane
+      title:        API Evangelist
+      avatar:       https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png
+      email:       'kinlane@postman.com'
+      affiliation: 'API Evangelist'
+      github:      'kinlane'
+      linkedin:    'in/kinlane'       
+
+social:
+    email:
+    website:
+    facebook:       
+    flickr:
+    dribbble:
+    github:         https://github.com/api-evangelist
+    googleplus:
+    instagram:     
+    linkedin:       https://www.linkedin.com/in/kinlane/
+    pinterest:
+    twitter:        
+    vimeo:          
+    youtube:        https://www.youtube.com/c/KinLane
+    mastodon:       
+
+# Share button
+share:
+    post:           true # Display share buttons on a post page
+    doc:            true # Display share buttons on a doc page
+    twitter:        username # Enable by adding Twitter handle 
+    facebook:       true # Enable by setting true (Facebook handle not required)
+
+# Default footer image settings
+footer:
+    copyright:      API Evangelist
+
+# Path to post content assets directory i.e post images, pdfs etc
+uploads:            /uploads/
+
+# Build settings
+markdown:           kramdown
+highlighter:        rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-avatar
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  
+sass:
+  style: compressed
+
+apisApiBaseUrl: 'http://44.203.59.126:3000'
+basesApiBaseUrl: 'http://44.203.59.126:3100'
+blueprintsApiBaseUrl: 'http://44.203.59.126:3200'
+contractsApiBaseUrl: 'http://44.203.59.126:3300'
+conversationsApiBaseUrl: 'http://44.203.59.126:4400'
+customersApiBaseUrl: 'http://44.203.59.126:3500'
+discoveryApiBaseUrl: 'http://44.203.59.126:5600'
+evidenceApiBaseUrl: 'http://44.203.59.126:5700'
+extensionsApiBaseUrl: 'http://44.203.59.126:3600'
+guidancesApiBaseUrl: 'http://44.203.59.126:3700'
+headersApiBaseUrl: 'http://44.203.59.126:3800'
+lifecycleApiBaseUrl: 'http://44.203.59.126:3900'
+organizationsApiBaseUrl: 'http://44.203.59.126:4000'
+overlaysApiBaseUrl: 'http://44.203.59.126:4100'
+parametersApiBaseUrl: 'http://44.203.59.126:4200'
+partnersApiBaseUrl: 'http://44.203.59.126:4300'
+policiesApiBaseUrl: 'http://44.203.59.126:4400'
+postsApiBaseUrl: 'http://44.203.59.126:5800'
+propertiesApiBaseUrl: 'http://44.203.59.126:4500'
+responsesApiBaseUrl: 'http://44.203.59.126:4600'
+rulesApiBaseUrl: 'http://44.203.59.126:4700'
+schemaApiBaseUrl: 'http://44.203.59.126:4800'
+servicesApiBaseUrl: 'http://44.203.59.126:4900'
+experiencesApiBaseUrl: 'https://experiences-api.apievangelist.com'
+standardsApiBaseUrl: 'http://44.203.59.126:5100'
+storiesApiBaseUrl: 'http://44.203.59.126:5200'
+strategiesApiBaseUrl: 'http://44.203.59.126:5300'
+utilitiesApiBaseUrl: 'http://44.203.59.126:5400'
+vocabulariesApiBaseUrl: 'http://44.203.59.126:5500'
+
+collections:
+  store:
+    output:         true
+
+defaults:
+  - scope:
+      path:         ""
+      type:         store
+    values:
+      layout:       store
