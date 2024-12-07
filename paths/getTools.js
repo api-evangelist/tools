@@ -48,21 +48,21 @@ router.get('/', (req, resp)=>{
     page = 0;
   }
 
-  var count_sql = "SELECT count(name) as experienceCount FROM experiences WHERE name IS NOT NULL";
+  var count_sql = "SELECT count(name) as toolCount FROM tools WHERE name IS NOT NULL";
   if(search){
     count_sql += " AND (name LIKE '%" + search + "%' OR description LIKE '%" + search + "%' OR tags LIKE '%" + search + "%')";
   }
   connection.query(count_sql, function (error, total, fields) { 
 
-    var experiences_sql = "SELECT * FROM experiences WHERE name IS NOT NULL";
+    var tools_sql = "SELECT * FROM tools WHERE name IS NOT NULL";
     if(search){
-      experiences_sql += " AND (name LIKE '%" + search + "%' OR description LIKE '%" + search + "%' OR tags LIKE '%" + search + "%')";
+      tools_sql += " AND (name LIKE '%" + search + "%' OR description LIKE '%" + search + "%' OR tags LIKE '%" + search + "%')";
     }    
-    experiences_sql += " LIMIT " + page + "," + limit;
+    tools_sql += " LIMIT " + page + "," + limit;
 
-    connection.query(experiences_sql, function (error, experiences, fields) { 
+    connection.query(tools_sql, function (error, tools, fields) { 
 
-      var totalRecords = total[0].experienceCount;
+      var totalRecords = total[0].toolCount;
       var totalPages = Math.round(totalRecords/limit);
 
       var meta = {};
@@ -73,11 +73,11 @@ router.get('/', (req, resp)=>{
       meta.page = page;
       meta.totalPages = totalPages;
       meta.count_sql = count_sql;
-      meta.experiences_sql = experiences_sql;
+      meta.tools_sql = tools_sql;
 
       var response = {};
       response.meta = meta;
-      response.data = experiences;
+      response.data = tools;
       
       resp.send(response);    
       
@@ -95,35 +95,35 @@ router.post('/', jsonParser, (req, resp)=>{
 
   var bucket = 'api-evangelist';  
   var organization = req.query.organization;
-  var experience = req.body;   
+  var tool = req.body;   
 
-  var check_experience_sql = "SELECT * FROM experiences WHERE name = " +  connection.escape(experience.name);
-  connection.query(check_experience_sql, function (error, exists, fields) {                   
+  var check_tool_sql = "SELECT * FROM tools WHERE name = " +  connection.escape(tool.name);
+  connection.query(check_tool_sql, function (error, exists, fields) {                   
 
     if(exists.length > 0){
       //Already Exists
-      experience.message = 'Already Exists!';
-      resp.send(experience);
+      tool.message = 'Already Exists!';
+      resp.send(tool);
     }
     else{
 
-      experience.name = experience.name.trim();
-      experience.description = experience.description.trim();
-      experience.slug = common.slugify(experience.name);
-      experience.image = 'https://example.com/images.jpg';
-      experience.properties = [];
-      experience.tags = ['New'];
-      experience.experience = {};
+      tool.name = tool.name.trim();
+      tool.description = tool.description.trim();
+      tool.slug = common.slugify(tool.name);
+      tool.image = 'https://example.com/images.jpg';
+      tool.properties = [];
+      tool.tags = ['New'];
+      tool.tool = {};
 
-      var markdown_experience = '---\r\n' + yaml.dump(experience) + '---\r\n';
+      var markdown_tool = '---\r\n' + yaml.dump(tool) + '---\r\n';
 
-      var insert_experience_sql = "INSERT INTO experiences(name,description,experience) VALUES";
-      insert_experience_sql += "(" + connection.escape(experience.name) + "," + connection.escape(experience.description) + "," + connection.escape(JSON.stringify(experience)) + ")";
-      connection.query(insert_experience_sql, function (error, insert_results, fields) {     
+      var insert_tool_sql = "INSERT INTO tools(name,description,tool) VALUES";
+      insert_tool_sql += "(" + connection.escape(tool.name) + "," + connection.escape(tool.description) + "," + connection.escape(JSON.stringify(tool)) + ")";
+      connection.query(insert_tool_sql, function (error, insert_results, fields) {     
               
-        experience.id = insert_results.insertId;
+        tool.id = insert_results.insertId;
 
-        var github_url = 'https://api.github.com/repos/' + organization + '/experiences/contents/_experiences/' + common.slugify(experience.name) + '.md';     
+        var github_url = 'https://api.github.com/repos/' + organization + '/tools/contents/_tools/' + common.slugify(tool.name) + '.md';     
 
         var c = {};
         c.name = "Kin Lane";
@@ -132,7 +132,7 @@ router.post('/', jsonParser, (req, resp)=>{
         var m = {};
         m.message = 'Writing New Rule';
         m.committer = c;
-        m.content = btoa(markdown_experience);
+        m.content = btoa(markdown_tool);
 
         const options = {
           method: 'put',
@@ -148,11 +148,11 @@ router.post('/', jsonParser, (req, resp)=>{
           .then(function(response) {
               if (!response.ok) {      
                 
-                var key = 'experiences/experiences/' + common.slugify(experience.name) + '.md';
+                var key = 'tools/tools/' + common.slugify(tool.name) + '.md';
                 var params = {
                   Bucket : bucket,
                   Key : key,
-                  Body : markdown_experience
+                  Body : markdown_tool
                 };
 
                 const put_command = new PutObjectCommand(params);
@@ -165,8 +165,8 @@ router.post('/', jsonParser, (req, resp)=>{
                     m.status = status;
                     //m.github_url = github_url;                         
                     //m.options = options;    
-                    //m.insert_experience_sql = insert_experience_sql;
-                    m.experience = experience;    
+                    //m.insert_tool_sql = insert_tool_sql;
+                    m.tool = tool;    
                     resp.send(m);                      
                     
                 },
@@ -178,11 +178,11 @@ router.post('/', jsonParser, (req, resp)=>{
               }
               response.json().then(function(data) { 
 
-                var key = 'experiences/experiences/' + common.slugify(experience.name) + '.md';
+                var key = 'tools/tools/' + common.slugify(tool.name) + '.md';
                 var params = {
                   Bucket : bucket,
                   Key : key,
-                  Body : markdown_experience
+                  Body : markdown_tool
                 };
           
                 const put_command = new PutObjectCommand(params);
@@ -193,8 +193,8 @@ router.post('/', jsonParser, (req, resp)=>{
                     var m = {};
                     //m.github_url = github_url;                         
                     //m.options = options;    
-                    //m.insert_experience_sql = insert_experience_sql;
-                    m.experience = experience;    
+                    //m.insert_tool_sql = insert_tool_sql;
+                    m.tool = tool;    
                     //m.data = data; 
                     //m.insert_results = insert_results;
                     resp.send(m);                      

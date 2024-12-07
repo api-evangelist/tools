@@ -28,27 +28,27 @@ var jsonParser = bodyParser.json()
 
 router.put('/', (req, resp)=>{ 
 
-  var repo = 'experiences';
-  var experienceId = req.params.experienceId;
+  var repo = 'tools';
+  var toolId = req.params.toolId;
 
-  var experience_sql = "SELECT * FROM experiences WHERE slug = " + connection.escape(experienceId);  
-  connection.query(experience_sql, function (error, results, fields) {  
+  var tool_sql = "SELECT * FROM tools WHERE slug = " + connection.escape(toolId);  
+  connection.query(tool_sql, function (error, results, fields) {  
      
-    var experience = JSON.parse(results[0].experience);
+    var tool = JSON.parse(results[0].tool);
     
     // BEGIN PULL FILE
-    var changes_sql = "SELECT DISTINCT file FROM experience_changes WHERE experienceId = '" + experienceId + "' AND committed = 0";    
+    var changes_sql = "SELECT DISTINCT file FROM tool_changes WHERE toolId = '" + toolId + "' AND committed = 0";    
     connection.query(changes_sql, function (error, changes, fields) { 
            
     var file = changes[0].file;
-    var key = 'experiences/' + file;
+    var key = 'tools/' + file;
     var organization = req.query.organization;
     var bucket = 'api-evangelist';
 
     var params = {
       Bucket : bucket,
       Key : key,
-      Body : JSON.stringify(experience)
+      Body : JSON.stringify(tool)
     };
     
     const streamToString = (stream) =>
@@ -77,7 +77,7 @@ router.put('/', (req, resp)=>{
                 }
             }; 
 
-          var path = '/repos/' + organization + '/experiences/contents/_' + file;
+          var path = '/repos/' + organization + '/tools/contents/_' + file;
           var github_url = 'https://api.github.com' + path;            
           
           fetch(github_url,options)
@@ -117,11 +117,11 @@ router.put('/', (req, resp)=>{
                           response.json().then(function(data) {   
 
                             // BEGIN UPDATE changes
-                            var update_changes = "UPDATE experience_changes SET committed = 1 WHERE experienceId = '" + experienceId + "' AND file = '" + file + "'";
+                            var update_changes = "UPDATE tool_changes SET committed = 1 WHERE toolId = '" + toolId + "' AND file = '" + file + "'";
                             connection.query(update_changes, function (error, changes_results, fields) { 
 
                               // BEGIN PULL FILE
-                              var changes_sql = "SELECT DISTINCT file FROM experience_changes WHERE experienceId = '" + experienceId + "' AND committed = 0";
+                              var changes_sql = "SELECT DISTINCT file FROM tool_changes WHERE toolId = '" + toolId + "' AND committed = 0";
                               connection.query(changes_sql, function (error, changes, fields) { 
 
                                 if(changes[0]){
@@ -144,7 +144,7 @@ router.put('/', (req, resp)=>{
                               else{
 
                                 // BEGIN PULL FILE
-                                var changes_sql = "SELECT * FROM experience_changes WHERE experienceId = '" + experienceId + "' AND committed = 1";
+                                var changes_sql = "SELECT * FROM tool_changes WHERE toolId = '" + toolId + "' AND committed = 1";
                                 connection.query(changes_sql, function (error, changes, fields) { 
 
                                   var issue_body = '';
@@ -184,11 +184,11 @@ router.put('/', (req, resp)=>{
                                         response.json().then(function(data) {                                      
 
                                           // BEGIN UPDATE CONTRACTS
-                                          var update_changes = "UPDATE experiences SET changes = 0 WHERE slug = " + connection.escape(experienceId);  
+                                          var update_changes = "UPDATE tools SET changes = 0 WHERE slug = " + connection.escape(toolId);  
                                           connection.query(update_changes, function (error, changes_results, fields) { 
 
                                             // BEGIN UPDATE CONTRACTS
-                                            var update_changes = "DELETE FROM experience_changes WHERE experienceId = '" + experienceId + "'";
+                                            var update_changes = "DELETE FROM tool_changes WHERE toolId = '" + toolId + "'";
                                             connection.query(update_changes, function (error, changes_results, fields) { 
 
                                               var totalPages = 1;
@@ -287,11 +287,11 @@ router.put('/', (req, resp)=>{
                           response.json().then(function(data) {   
 
                             // BEGIN UPDATE changes
-                            var update_changes = "UPDATE experience_changes SET committed = 1 WHERE experienceId = '" + experienceId + "' AND file = '" + file + "'";
+                            var update_changes = "UPDATE tool_changes SET committed = 1 WHERE toolId = '" + toolId + "' AND file = '" + file + "'";
                             connection.query(update_changes, function (error, changes_results, fields) { 
 
                               // BEGIN PULL FILE
-                              var changes_sql = "SELECT DISTINCT file FROM experience_changes WHERE experienceId = '" + experienceId + "' AND committed = 0";
+                              var changes_sql = "SELECT DISTINCT file FROM tool_changes WHERE toolId = '" + toolId + "' AND committed = 0";
                               connection.query(changes_sql, function (error, changes, fields) { 
 
                                 if(changes[0]){
@@ -314,7 +314,7 @@ router.put('/', (req, resp)=>{
                               else{
 
                                 // BEGIN PULL FILE
-                                var changes_sql = "SELECT * FROM experience_changes WHERE experienceId = '" + experienceId + "' AND committed = 1";
+                                var changes_sql = "SELECT * FROM tool_changes WHERE toolId = '" + toolId + "' AND committed = 1";
                                 connection.query(changes_sql, function (error, changes, fields) { 
 
                                   var issue_body = '';
@@ -354,11 +354,11 @@ router.put('/', (req, resp)=>{
                                         response.json().then(function(data) {                                      
 
                                           // BEGIN UPDATE CONTRACTS
-                                          var update_changes = "UPDATE experiences SET changes = 0 WHERE slug = " + connection.escape(experienceId);  
+                                          var update_changes = "UPDATE tools SET changes = 0 WHERE slug = " + connection.escape(toolId);  
                                           connection.query(update_changes, function (error, changes_results, fields) { 
 
                                             // BEGIN UPDATE CONTRACTS
-                                            var update_changes = "DELETE FROM experience_changes WHERE experienceId = '" + experienceId + "'";
+                                            var update_changes = "DELETE FROM tool_changes WHERE toolId = '" + toolId + "'";
                                             connection.query(update_changes, function (error, changes_results, fields) { 
 
                                               var totalPages = 1;

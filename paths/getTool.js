@@ -26,11 +26,11 @@ const client = new S3Client({
 
 router.get('/', (req, resp)=>{ 
 
-  var experienceId = req.params.experienceId;
+  var toolId = req.params.toolId;
   var organization = req.query.organization;
 
-  var experiences_sql = "SELECT * FROM experiences WHERE id = " + connection.escape(experienceId) + " OR slug = " + connection.escape(experienceId);
-  connection.query(experiences_sql, function (error, experiences, fields) { 
+  var tools_sql = "SELECT * FROM tools WHERE id = " + connection.escape(toolId) + " OR slug = " + connection.escape(toolId);
+  connection.query(tools_sql, function (error, tools, fields) { 
 
     var totalPages = 1;
 
@@ -41,8 +41,8 @@ router.get('/', (req, resp)=>{
 
     var response = {};
     response.meta = meta;
-    response.data = experiences[0];
-    response.experiences_sql = experiences_sql;
+    response.data = tools[0];
+    response.tools_sql = tools_sql;
     response.params = req.params;
     response.error = error;
     
@@ -56,7 +56,7 @@ router.get('/', (req, resp)=>{
 
 router.put('/', jsonParser, (req, resp)=>{ 
 
-  var experienceId = req.params.experienceId;
+  var toolId = req.params.toolId;
   var organization = req.query.organization;  
 
   var change_name = req.params.name;
@@ -64,13 +64,13 @@ router.put('/', jsonParser, (req, resp)=>{
 
   var bucket =  'api-evangelist';
 
-  var experience = req.body;   
-  var file = 'store/' + experience.name.toLowerCase() + '.md';
-  var key = 'experiences/' + file;
+  var tool = req.body;   
+  var file = 'store/' + tool.name.toLowerCase() + '.md';
+  var key = 'tools/' + file;
   const params = {
     Bucket: bucket,
     Key: key,
-    Body : yaml.dump(experience)
+    Body : yaml.dump(tool)
   };
 
   const put_command = new PutObjectCommand(params);
@@ -78,38 +78,38 @@ router.put('/', jsonParser, (req, resp)=>{
   client.send(put_command).then(
     (put) => {        
       
-      if(experience.tags){
-        var experiences_tags = experience.tags.join(',');
+      if(tool.tags){
+        var tools_tags = tool.tags.join(',');
       }
       else{
-        var experiences_tags = '';
+        var tools_tags = '';
       }    
       
-      if(experience.properties && experience.properties.length > 1){
-        var experiences_properties = experience.properties.join(',');
+      if(tool.properties && tool.properties.length > 1){
+        var tools_properties = tool.properties.join(',');
       }
       else{
-        var experiences_properties = '';
+        var tools_properties = '';
       }         
 
-      var update_experience_sql = "UPDATE experiences SET ";
-      update_experience_sql += "name = " + connection.escape(experience.name) + ", ";
-      update_experience_sql += "description = " + connection.escape(experience.description) + ", ";
-      update_experience_sql += "slug = " + connection.escape(experience.slug) + ", ";
-      update_experience_sql += "properties = " + connection.escape(experiences_properties) + ", ";
-      update_experience_sql += "image = " + connection.escape(experience.image) + ", ";
-      update_experience_sql += "tags = " + connection.escape(experiences_tags) + ", ";
-      update_experience_sql += "experience = " + connection.escape(JSON.stringify(experience)) + " ";
-      update_experience_sql += "  WHERE slug = " + connection.escape(experienceId);
+      var update_tool_sql = "UPDATE tools SET ";
+      update_tool_sql += "name = " + connection.escape(tool.name) + ", ";
+      update_tool_sql += "description = " + connection.escape(tool.description) + ", ";
+      update_tool_sql += "slug = " + connection.escape(tool.slug) + ", ";
+      update_tool_sql += "properties = " + connection.escape(tools_properties) + ", ";
+      update_tool_sql += "image = " + connection.escape(tool.image) + ", ";
+      update_tool_sql += "tags = " + connection.escape(tools_tags) + ", ";
+      update_tool_sql += "tool = " + connection.escape(JSON.stringify(tool)) + " ";
+      update_tool_sql += "  WHERE slug = " + connection.escape(toolId);
       
-      connection.query(update_experience_sql, function (error, changes, fields) {                   
+      connection.query(update_tool_sql, function (error, changes, fields) {                   
 
         // insert change    
-        var insert_changes = "INSERT INTO experience_changes(experienceId,name,description,file) VALUES (" + connection.escape(experienceId) + "," + connection.escape(change_name) + "," + connection.escape(change_description) + "," + connection.escape(file) + ")";
+        var insert_changes = "INSERT INTO tool_changes(toolId,name,description,file) VALUES (" + connection.escape(toolId) + "," + connection.escape(change_name) + "," + connection.escape(change_description) + "," + connection.escape(file) + ")";
         connection.query(insert_changes, function (error, changes, fields) {                                                   
 
           var response = {};
-          response.update_experience_sql = update_experience_sql;
+          response.update_tool_sql = update_tool_sql;
           response.insert_changes = insert_changes;
           resp.send(response);                       
 

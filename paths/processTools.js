@@ -8,13 +8,13 @@ const common = require('../../libraries/common');
 
 router.get('/', (req, resp)=>{ 
 
-  var experiences_url = "https://experiences.apievangelist.com/store.json";
+  var tools_url = "https://tools.apievangelist.com/store.json";
 
   const options = {
     method: 'get'
   };  
 
-  fetch(experiences_url,options)
+  fetch(tools_url,options)
     .then(function(response) {
         if (!response.ok) {
             resp.send(response.status);
@@ -26,9 +26,9 @@ router.get('/', (req, resp)=>{
             data[i].path = data[i].path.replace("/","");
           }
 
-          var experiences_path = '/laneworks/api-evangelist/config/experiences-processing.json';
+          var tools_path = '/laneworks/api-evangelist/config/tools-processing.json';
           var this_config = JSON.stringify(data);
-          fs.writeFileSync(experiences_path, this_config, (err) => {}); 
+          fs.writeFileSync(tools_path, this_config, (err) => {}); 
 
           resp.send(this_config); 
 

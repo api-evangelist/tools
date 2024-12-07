@@ -40,11 +40,11 @@ router.put('/', jsonParser, async (req, res, next) => {
 
   try {
 
-    var experienceId = req.params.experienceId;
+    var toolId = req.params.toolId;
     var organization = req.query.organization;    
 
-    var experience = req.body; 
-    var experience_yaml = yaml.dump(experience)
+    var tool = req.body; 
+    var tool_yaml = yaml.dump(tool)
 
     var bucket = organization;
     if(organization == 'api-evangelist'){
@@ -54,19 +54,19 @@ router.put('/', jsonParser, async (req, res, next) => {
       bucket = 'apis-io';
     }         
   
-    var rules_path = '/laneworks/api-evangelist/rules/experience-rules.yml';
+    var rules_path = '/laneworks/api-evangelist/rules/tool-rules.yml';
     var ruleset = await bundleAndLoadRuleset(rules_path, { fs, fetch });
 
     spectral.setRuleset(ruleset);
 
-    return spectral.run(experience_yaml).then(results => {
+    return spectral.run(tool_yaml).then(results => {
 
       const event = new Date();
       var review = {};
       review.executed = event.toISOString();
       review.results = results;                 
       
-      var key ='experiences/' + experience.slug + '-review.yml';
+      var key ='tools/' + tool.slug + '-review.yml';
       var params = {
         Bucket : bucket,
         Key : key,
@@ -79,11 +79,11 @@ router.put('/', jsonParser, async (req, res, next) => {
         (put) => {                           
     
           // update database
-          var update_experiences = "UPDATE experiences SET changes = 1,review = " + connection.escape(JSON.stringify(review)) + " WHERE id = '" + experienceId + "'";
-          connection.query(update_experiences, function (error, changes, fields) {                   
+          var update_tools = "UPDATE tools SET changes = 1,review = " + connection.escape(JSON.stringify(review)) + " WHERE id = '" + toolId + "'";
+          connection.query(update_tools, function (error, changes, fields) {                   
 
             // insert change    
-            var insert_changes = "INSERT INTO experience_changes(experienceId,name,description,file) VALUES (" + connection.escape(experienceId) + ",'API Review','This was an automated review of the API using relevant experienceset'," + connection.escape(key) + ")";
+            var insert_changes = "INSERT INTO tool_changes(toolId,name,description,file) VALUES (" + connection.escape(toolId) + ",'API Review','This was an automated review of the API using relevant toolset'," + connection.escape(key) + ")";
             connection.query(insert_changes, function (error, changes, fields) {                                                   
               
               res.send(review);                       
