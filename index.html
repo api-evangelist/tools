@@ -29,7 +29,7 @@ sub: All Tools
         <h1 class="fs-4 mb-0">{{ page.title }}</h1>
     </div>
     <div class="col-12 col-sm-auto mt-4 mt-sm-0">
-        <a class="btn btn-secondary d-block" data-bs-toggle="modal" data-bs-target="#add-tool"> <span class="material-symbols-outlined me-1">add</span> New Tool</a>
+        <a class="btn btn-secondary d-block" data-bs-toggle="modal" data-bs-target="#add-tool"> <span class="material-symbols-outlined me-1">add</span> New Response</a>
     </div>
 </div>
 
@@ -244,37 +244,37 @@ sub: All Tools
         }
     
         fetch(github_url,options)
-            .then(function(response) {
+            .then(function(tool) {
                 if (!response.ok) {
                     console.log('Error with Status Code: ' + response.status);
                 }
-                response.json().then(function(response) {   
+                response.json().then(function(tool) {   
                 
-                console.log(response);
+                console.log(tool);
     
                 var html = '';
     
-                for (let i = 0; i < response.data.length; i++) {
+                for (let i = 0; i < tool.data.length; i++) {
     
-                    var toolId = response.data[i].id;
-                    var tool = JSON.parse(response.data[i].tool);
+                    var toolId = tool.data[i].id;
+                    var tool = JSON.parse(tool.data[i].tool);
     
                     html += '<tr>';
                     html += '<td width="35%">';
                     html += '<div class="d-flex align-items-center">';
                     //html += '<div class="avatar">';
-                    //html += '<img class="avatar-img" src="https://apievangelist.com' + response.data[i].image + '" alt="' + response.data[i].name + '" />';
+                    //html += '<img class="avatar-img" src="https://apievangelist.com' + tool.data[i].image + '" alt="' + tool.data[i].name + '" />';
                     //html += '</div>';
                     html += '<span class="material-symbols-outlined fs-1 text-primary">person_play</span>';
                     html += '<div class="ms-4">';
-                    html += '<div><a href="/store/' + toolId + '">' + response.data[i].name + '</a></div>';
+                    html += '<div><a href="/store/' + toolId + '">' + tool.data[i].name + '</a></div>';
                     html += '<div class="fs-sm text-body-secondary">Updated on Apr 10, 2024</div>';
                     html += '</div>';
                     html += '</div>';
                     html += '</td>';
                     html += '<td width="50%">';
                     html += '<div class="ms-4">';    
-                    html += response.data[i].description;
+                    html += tool.data[i].description;
                     html += '</div>';
                     html += '</td>';
                     html += '<td width="15%">';
@@ -306,7 +306,7 @@ sub: All Tools
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Add Tool</h5>
+          <h5 class="modal-title">Add Response</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -331,7 +331,7 @@ sub: All Tools
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="addTool();" data-bs-dismiss="modal">Add Tool</button>
+          <button type="button" class="btn btn-primary" onclick="addResponse();" data-bs-dismiss="modal">Add Response</button>
         </div>
       </div>
     </div>
@@ -340,7 +340,7 @@ sub: All Tools
 
 <script>
 
-function addTool(){    
+function addResponse(){    
 
     var organization = "api-evangelist";
 
@@ -362,13 +362,13 @@ function addTool(){
     var github_url = '{{ site.toolsApiBaseUrl }}/tools?organization=' + organization;
     //console.log(github_url);
     fetch(github_url, options)
-    .then(function (response) {
+    .then(function (tool) {
         if (!response.ok) {
         console.log('Error with Status Code: ' + response.status);
         }
-        response.json().then(function (response) {
+        response.json().then(function (tool) {
 
-        console.log(response);
+        console.log(tool);
 
         });
     })

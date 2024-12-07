@@ -102,6 +102,7 @@ servicesApiBaseUrl: 'https://services-api.apievangelist.com'
 standardsApiBaseUrl: 'https://standards-api.apievangelist.com'
 storiesApiBaseUrl: 'https://stories-api.apievangelist.com'
 strategiesApiBaseUrl: 'https://strategies-api.apievangelist.com'
+toolsApiBaseUrl: 'https://tools-api.apievangelist.com'
 utilitiesApiBaseUrl: 'https://utilitiesapi.apievangelist.com'
 vocabulariesApiBaseUrl: 'https://vocabularies-api.apievangelist.com'
 
