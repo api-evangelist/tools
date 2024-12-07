@@ -46,13 +46,7 @@ router.put('/', jsonParser, async (req, res, next) => {
     var tool = req.body; 
     var tool_yaml = yaml.dump(tool)
 
-    var bucket = organization;
-    if(organization == 'api-evangelist'){
-      bucket = organization;
-    }
-    else{
-      bucket = 'apis-io';
-    }         
+    var bucket = 'api-evangelist';        
   
     var rules_path = '/laneworks/api-evangelist/rules/tool-rules.yml';
     var ruleset = await bundleAndLoadRuleset(rules_path, { fs, fetch });
