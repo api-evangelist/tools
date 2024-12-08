@@ -128,6 +128,7 @@
     <link rel="stylesheet" href="/assets/css/theme.bundle.css" />
   
     <script src="/assets/js/customize.js"></script>
+    <script src="/assets/js/showdown.min.js"></script>
 
     <script>
       function getQueryVariable(variable) {
@@ -207,8 +208,8 @@
   <nav class="navbar navbar-expand-xl navbar-vertical">
     <div class="container-fluid">
       <!-- Brand -->
-      <a class="navbar-brand fs-5 fw-bold px-xl-3 mb-xl-4" href="/">
-        <i class="fs-4 text-secondary me-1" data-duoicon="box-2"></i> API Evangelist
+      <a class="navbar-brand fs-5 fw-bold px-xl-3 mb-xl-4" href="https://posts.apievangelist.com">
+        <img src="https://kinlane-productions2.s3.us-east-1.amazonaws.com/api-evangelist-logos/api-evangelist-butterfly-vertical-transparent.png" width="50"> API Evangelist
       </a>
 
       <!-- User -->
@@ -252,7 +253,7 @@
         
 
           <!-- Heading -->
-          <h3 class="fs-base px-3 mb-4">APIs</h3>
+          <h3 class="fs-base px-3 mb-4">Contracts</h3>
 
           <!-- Nav -->
           <nav class="navbar-nav nav-pills mb-xl-7">
@@ -265,9 +266,9 @@
                 <div class="collapse" id="Contracts">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/contracts/new/">New Contract</a>
+                    <a class="nav-link" href="https://contracts.apievangelist.com/new/">New Contract</a>
                      
-                    <a class="nav-link" href="/contracts/">All Contracts</a>
+                    <a class="nav-link" href="https://contracts.apievangelist.com">All Contracts</a>
                      
                   </nav>
                 </div>              
@@ -281,11 +282,11 @@
                 <div class="collapse" id="Producing">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/producing/internal/">Internal</a>
+                    <a class="nav-link" href="https://contracts.apievangelist.com/producing/internal/">Internal</a>
                      
-                    <a class="nav-link" href="/producing/1st-party/">1st-Party</a>
+                    <a class="nav-link" href="https://contracts.apievangelist.com/producing/1st-party/">1st-Party</a>
                      
-                    <a class="nav-link" href="/producing/3rd-party/">3rd-Party</a>
+                    <a class="nav-link" href="https://contracts.apievangelist.com/producing/3rd-party/">3rd-Party</a>
                      
                   </nav>
                 </div>              
@@ -299,15 +300,90 @@
                 <div class="collapse" id="Consuming">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/consuming/internal/">Internal</a>
+                    <a class="nav-link" href="https://contracts.apievangelist.com/consuming/internal/">Internal</a>
                      
-                    <a class="nav-link" href="/consuming/1st-party/">1st-Party</a>
+                    <a class="nav-link" href="https://contracts.apievangelist.com/consuming/1st-party/">1st-Party</a>
                      
-                    <a class="nav-link" href="/consuming/3rd-party/">3rd-Party</a>
+                    <a class="nav-link" href="https://contracts.apievangelist.com/consuming/3rd-party/">3rd-Party</a>
                      
                   </nav>
                 </div>              
               </div>               
+             
+          </nav>     
+          <!-- Divider -->
+          <hr class="my-4 d-xl-none" />
+        
+
+          <!-- Heading -->
+          <h3 class="fs-base px-3 mb-4">APIs</h3>
+
+          <!-- Nav -->
+          <nav class="navbar-nav nav-pills mb-xl-7">
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#APIs" rol="button"
+                aria-expanded="false" aria-controls="APIs">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> APIs
+                </a>
+                <div class="collapse" id="APIs">
+                  <nav class="nav nav-pills">
+                     
+                    <a class="nav-link" href="https://apis.apievangelist.com">All APIs</a>
+                     
+                  </nav>
+                </div>              
+              </div>               
+             
+          </nav>     
+          <!-- Divider -->
+          <hr class="my-4 d-xl-none" />
+        
+
+          <!-- Heading -->
+          <h3 class="fs-base px-3 mb-4">Solutions</h3>
+
+          <!-- Nav -->
+          <nav class="navbar-nav nav-pills mb-xl-7">
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Services" rol="button"
+                aria-expanded="false" aria-controls="Services">
+                  <span class="material-symbols-outlined me-3">group</span> Services
+                </a>
+                <div class="collapse" id="Services">
+                  <nav class="nav nav-pills">
+                     
+                    <a class="nav-link" href="https://services.apievangelist.com">All Services</a>
+                     
+                  </nav>
+                </div>              
+              </div>               
+           
+              <div class="nav-item">
+                <a class="nav-link active" href="#" data-bs-toggle="collapse" data-bs-target="#Tools" rol="button"
+                aria-expanded="true" aria-controls="Tools">
+                  <span class="material-symbols-outlined me-3">group</span> Tools
+                </a>
+                <div class="collapse show" id="Tools">
+                  <nav class="nav nav-pills">
+                     
+                    <a class="nav-link active" href="https://tools.apievangelist.com">All Tools</a>
+                     
+                  </nav>
+                </div>              
+              </div>               
+             
+          </nav>     
+          <!-- Divider -->
+          <hr class="my-4 d-xl-none" />
+        
+
+          <!-- Heading -->
+          <h3 class="fs-base px-3 mb-4">Discovery</h3>
+
+          <!-- Nav -->
+          <nav class="navbar-nav nav-pills mb-xl-7">
            
               <div class="nav-item">
                 <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Discovery" rol="button"
@@ -317,13 +393,13 @@
                 <div class="collapse" id="Discovery">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/discovery/inbox/">Inbox</a>
+                    <a class="nav-link" href="https://discovery.apievangelist.com/inbox/">Inbox</a>
                      
-                    <a class="nav-link" href="/discovery/bing/">Bing</a>
+                    <a class="nav-link" href="https://discovery.apievangelist.com/bing/">Bing</a>
                      
-                    <a class="nav-link" href="/discovery/google/">Google</a>
+                    <a class="nav-link" href="https://discovery.apievangelist.com/google/">Google</a>
                      
-                    <a class="nav-link" href="/discovery/github/">GitHub</a>
+                    <a class="nav-link" href="https://discovery.apievangelist.com/github/">GitHub</a>
                      
                   </nav>
                 </div>              
@@ -337,146 +413,9 @@
                 <div class="collapse" id="Evidence">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/evidence/inbox/">Inbox</a>
+                    <a class="nav-link" href="https://evidence.apievangelist.com/inbox/">Inbox</a>
                      
-                    <a class="nav-link" href="/evidence/bookmarks/">Bookmarks</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Supply Chain" rol="button"
-                aria-expanded="false" aria-controls="Supply Chain">
-                  <span class="material-symbols-outlined me-3">group</span> Supply Chain
-                </a>
-                <div class="collapse" id="Supply Chain">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/resources/">Resources</a>
-                     
-                    <a class="nav-link" href="/capabilities/">Capabilities</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-             
-          </nav>     
-          <!-- Divider -->
-          <hr class="my-4 d-xl-none" />
-        
-
-          <!-- Heading -->
-          <h3 class="fs-base px-3 mb-4">Governance</h3>
-
-          <!-- Nav -->
-          <nav class="navbar-nav nav-pills mb-xl-7">
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Standards" rol="button"
-                aria-expanded="false" aria-controls="Standards">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Standards
-                </a>
-                <div class="collapse" id="Standards">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/standards/">All Standards</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Strategies" rol="button"
-                aria-expanded="false" aria-controls="Strategies">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Strategies
-                </a>
-                <div class="collapse" id="Strategies">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/strategies/">All Strategies</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Experiences" rol="button"
-                aria-expanded="false" aria-controls="Experiences">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Experiences
-                </a>
-                <div class="collapse" id="Experiences">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/experiences/">All Experiences</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Policies" rol="button"
-                aria-expanded="false" aria-controls="Policies">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Policies
-                </a>
-                <div class="collapse" id="Policies">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/policies/">All Policies</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Rules" rol="button"
-                aria-expanded="false" aria-controls="Rules">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Rules
-                </a>
-                <div class="collapse" id="Rules">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/rules/all/">All Rules</a>
-                     
-                    <a class="nav-link" href="/rules/apis-json/">APIs.json Rules</a>
-                     
-                    <a class="nav-link" href="/rules/openapi/">OpenAPI Rules</a>
-                     
-                    <a class="nav-link" href="/rules/json-schema/">JSON Schema Rules</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Lifecycle" rol="button"
-                aria-expanded="false" aria-controls="Lifecycle">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Lifecycle
-                </a>
-                <div class="collapse" id="Lifecycle">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/lifecycle/">All Rules</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Vocabularies" rol="button"
-                aria-expanded="false" aria-controls="Vocabularies">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Vocabularies
-                </a>
-                <div class="collapse" id="Vocabularies">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/vocabularies/words/">Words</a>
-                     
-                    <a class="nav-link" href="/vocabularies/node/">Node</a>
-                     
-                    <a class="nav-link" href="/vocabularies/translate/">Translate</a>
-                     
-                    <a class="nav-link" href="/vocabularies/remove/">Remove</a>
+                    <a class="nav-link" href="https://evidence.apievangelist.com/bookmarks/">Bookmarks</a>
                      
                   </nav>
                 </div>              
@@ -501,11 +440,11 @@
                 <div class="collapse" id="Posts">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/posts/categories.html">Categories</a>
+                    <a class="nav-link" href="https://posts.apievangelist.com/categories">Categories</a>
                      
-                    <a class="nav-link" href="/posts/all/">Posts</a>
+                    <a class="nav-link" href="https://posts.apievangelist.com">Posts</a>
                      
-                    <a class="nav-link" href="/posts/post-new.html">New Post</a>
+                    <a class="nav-link" href="https://posts.apievangelist.com/new">New Post</a>
                      
                   </nav>
                 </div>              
@@ -519,7 +458,31 @@
                 <div class="collapse" id="Guidance">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/guidance/all/">All Guidance</a>
+                    <a class="nav-link" href="https://guidance.apievangelist.com">All Guidance</a>
+                     
+                  </nav>
+                </div>              
+              </div>               
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Videos" rol="button"
+                aria-expanded="false" aria-controls="Videos">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> Videos
+                </a>
+                <div class="collapse" id="Videos">
+                  <nav class="nav nav-pills">
+                     
+                  </nav>
+                </div>              
+              </div>               
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Timeline" rol="button"
+                aria-expanded="false" aria-controls="Timeline">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> Timeline
+                </a>
+                <div class="collapse" id="Timeline">
+                  <nav class="nav nav-pills">
                      
                   </nav>
                 </div>              
@@ -531,48 +494,102 @@
         
 
           <!-- Heading -->
-          <h3 class="fs-base px-3 mb-4">Feedback Loops</h3>
+          <h3 class="fs-base px-3 mb-4">Governance</h3>
 
           <!-- Nav -->
           <nav class="navbar-nav nav-pills mb-xl-7">
            
               <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Issues" rol="button"
-                aria-expanded="false" aria-controls="Issues">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Issues
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Standards" rol="button"
+                aria-expanded="false" aria-controls="Standards">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> Standards
                 </a>
-                <div class="collapse" id="Issues">
+                <div class="collapse" id="Standards">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/issues/">All Issues</a>
+                    <a class="nav-link" href="https://standards.apievangelist.com">All Standards</a>
                      
                   </nav>
                 </div>              
               </div>               
            
               <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Feedback" rol="button"
-                aria-expanded="false" aria-controls="Feedback">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Feedback
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Strategies" rol="button"
+                aria-expanded="false" aria-controls="Strategies">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> Strategies
                 </a>
-                <div class="collapse" id="Feedback">
+                <div class="collapse" id="Strategies">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/feedback/">All Feedback</a>
+                    <a class="nav-link" href="https://strategies.apievangelist.com">All Strategies</a>
                      
                   </nav>
                 </div>              
               </div>               
            
               <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Questions" rol="button"
-                aria-expanded="false" aria-controls="Questions">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Questions
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Experiences" rol="button"
+                aria-expanded="false" aria-controls="Experiences">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> Experiences
                 </a>
-                <div class="collapse" id="Questions">
+                <div class="collapse" id="Experiences">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/question/">All Questions</a>
+                    <a class="nav-link" href="https://experiences.apievangelist.com">All Experiences</a>
+                     
+                  </nav>
+                </div>              
+              </div>               
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Policies" rol="button"
+                aria-expanded="false" aria-controls="Policies">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> Policies
+                </a>
+                <div class="collapse" id="Policies">
+                  <nav class="nav nav-pills">
+                     
+                    <a class="nav-link" href="https://policies.apievangelist.com">All Policies</a>
+                     
+                  </nav>
+                </div>              
+              </div>               
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Rules" rol="button"
+                aria-expanded="false" aria-controls="Rules">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> Rules
+                </a>
+                <div class="collapse" id="Rules">
+                  <nav class="nav nav-pills">
+                     
+                    <a class="nav-link" href="https://rules.apievangelist.com">All Rules</a>
+                     
+                    <a class="nav-link" href="https://rules.apievangelist.com/apis-json/">APIs.json Rules</a>
+                     
+                    <a class="nav-link" href="https://rules.apievangelist.com/openapi/">OpenAPI Rules</a>
+                     
+                    <a class="nav-link" href="https://rules.apievangelist.com/json-schema/">JSON Schema Rules</a>
+                     
+                  </nav>
+                </div>              
+              </div>               
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Vocabularies" rol="button"
+                aria-expanded="false" aria-controls="Vocabularies">
+                  <span class="material-symbols-outlined me-3">space_dashboard</span> Vocabularies
+                </a>
+                <div class="collapse" id="Vocabularies">
+                  <nav class="nav nav-pills">
+                     
+                    <a class="nav-link" href="https://vocabularies.apievangelist.com/words/">Words</a>
+                     
+                    <a class="nav-link" href="https://vocabularies.apievangelist.com/node/">Node</a>
+                     
+                    <a class="nav-link" href="https://vocabularies.apievangelist.com/translate/">Translate</a>
+                     
+                    <a class="nav-link" href="https://vocabularies.apievangelist.com/remove/">Remove</a>
                      
                   </nav>
                 </div>              
@@ -590,34 +607,6 @@
           <nav class="navbar-nav nav-pills mb-xl-7">
            
               <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Platform" rol="button"
-                aria-expanded="false" aria-controls="Platform">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Platform
-                </a>
-                <div class="collapse" id="Platform">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/platform">All Platform</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Governance" rol="button"
-                aria-expanded="false" aria-controls="Governance">
-                  <span class="material-symbols-outlined me-3">space_dashboard</span> Governance
-                </a>
-                <div class="collapse" id="Governance">
-                  <nav class="nav nav-pills">
-                     
-                    <a class="nav-link" href="/governance">All Governance</a>
-                     
-                  </nav>
-                </div>              
-              </div>               
-           
-              <div class="nav-item">
                 <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Components" rol="button"
                 aria-expanded="false" aria-controls="Components">
                   <span class="material-symbols-outlined me-3">space_dashboard</span> Components
@@ -625,21 +614,21 @@
                 <div class="collapse" id="Components">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/components/properties/">Properties</a>
+                    <a class="nav-link" href="https://properties.apievangelist.com">Properties</a>
                      
-                    <a class="nav-link" href="/components/parameters/">Parameters</a>
+                    <a class="nav-link" href="https://parameters.apievangelist.com">Parameters</a>
                      
-                    <a class="nav-link" href="/components/headers/">Headers</a>
+                    <a class="nav-link" href="https://headers.apievangelist.com">Headers</a>
                      
-                    <a class="nav-link" href="/components/responses/">Responses</a>
+                    <a class="nav-link" href="https://responses.apievangelist.com">Responses</a>
                      
-                    <a class="nav-link" href="/components/schema/">Schema</a>
+                    <a class="nav-link" href="https://schema.apievangelist.com">Schema</a>
                      
-                    <a class="nav-link" href="/components/blueprints/">Blueprints</a>
+                    <a class="nav-link" href="https://blueprints.apievangelist.com">Blueprints</a>
                      
-                    <a class="nav-link" href="/components/bases/">Bases</a>
+                    <a class="nav-link" href="https://bases.apievangelist.com">Bases</a>
                      
-                    <a class="nav-link" href="/components/overlays/">Overlays</a>
+                    <a class="nav-link" href="https://overlays.apievangelist.com">Overlays</a>
                      
                   </nav>
                 </div>              
@@ -653,21 +642,56 @@
                 <div class="collapse" id="Utilities">
                   <nav class="nav nav-pills">
                      
-                    <a class="nav-link" href="/utilities/pull-repositories/">Pull Repositories</a>
+                    <a class="nav-link" href="https://utilities.apievangelist.com/pull-repositories/">Pull Repositories</a>
                      
-                    <a class="nav-link" href="/utilities/yaml-to-json/">YAML to JSON</a>
+                    <a class="nav-link" href="https://utilities.apievangelist.com/yaml-to-json/">YAML to JSON</a>
                      
-                    <a class="nav-link" href="/utilities/json-to-yaml/">JSON to YAML</a>
+                    <a class="nav-link" href="https://utilities.apievangelist.com/json-to-yaml/">JSON to YAML</a>
                      
-                    <a class="nav-link" href="/utilities/merge-openapis/">Merge OpenAPIs</a>
+                    <a class="nav-link" href="https://utilities.apievangelist.com/merge-openapis/">Merge OpenAPIs</a>
                      
-                    <a class="nav-link" href="/utilities/split-openapis/">Split OpenAPIs</a>
+                    <a class="nav-link" href="https://utilities.apievangelist.com/split-openapis/">Split OpenAPIs</a>
                      
-                    <a class="nav-link" href="/utilities/postman-to-openapi/">Postman to OpenAPI</a>
+                    <a class="nav-link" href="https://utilities.apievangelist.com/postman-to-openapi/">Postman to OpenAPI</a>
                      
-                    <a class="nav-link" href="/utilities/json-schema-yaml-validator/">JSON Schema YAML Validator</a>
+                    <a class="nav-link" href="https://utilities.apievangelist.com/json-schema-yaml-validator/">JSON Schema YAML Validator</a>
                      
-                    <a class="nav-link" href="/utilities/json-schema-basics/">JSON Schema Basics (Rules)</a>
+                    <a class="nav-link" href="https://utilities.apievangelist.com/json-schema-basics/">JSON Schema Basics (Rules)</a>
+                     
+                  </nav>
+                </div>              
+              </div>               
+             
+          </nav>     
+          <!-- Divider -->
+          <hr class="my-4 d-xl-none" />
+        
+
+          <!-- Heading -->
+          <h3 class="fs-base px-3 mb-4">Company</h3>
+
+          <!-- Nav -->
+          <nav class="navbar-nav nav-pills mb-xl-7">
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#About API Evangelist" rol="button"
+                aria-expanded="false" aria-controls="About API Evangelist">
+                  <span class="material-symbols-outlined me-3">group</span> About API Evangelist
+                </a>
+                <div class="collapse" id="About API Evangelist">
+                  <nav class="nav nav-pills">
+                     
+                  </nav>
+                </div>              
+              </div>               
+           
+              <div class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#Contact API Evangelist" rol="button"
+                aria-expanded="false" aria-controls="Contact API Evangelist">
+                  <span class="material-symbols-outlined me-3">group</span> Contact API Evangelist
+                </a>
+                <div class="collapse" id="Contact API Evangelist">
+                  <nav class="nav nav-pills">
                      
                   </nav>
                 </div>              
@@ -725,13 +749,12 @@
 <nav class="navbar d-none d-xl-flex px-xl-6">
   <div class="container flex-column align-items-stretch">
     <div class="row">
-      <div class="col">
+      <div class="col-auto">
         <!-- Search -->
-        <div class="input-group" style="max-width: 400px">
+        <div class="input-group" style="max-width: 300px">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search" aria-describedby="navbarSearch" id="topsearch" />
           <span class="input-group-text" id="navbarSearch">
             <kbd class="badge bg-body-secondary text-body">⌘</kbd>
-            <kbd class="badge bg-body-secondary text-body ms-1">K</kbd>
           </span>
           <script>
             const searchbox = document.getElementById('topsearch');
@@ -743,6 +766,78 @@
             });               
           </script>          
         </div>
+      </div>
+      <div class="col">
+        <div id="ticker-box" style="width: 100%; border: 0px solid #000; padding-top: 15px;">
+          <ul>
+            <li style="font-weight: bold; color: #bd2e24;">Do you need help governing your APIs?</li>
+            <li style="font-weight: bold; color: #bd2e24;">Do you know where all of your APIs are?</li>
+            <li style="font-weight: bold; color: #bd2e24;">API operations is the modern factory floor.</li>
+            <li style="font-weight: bold; color: #bd2e24;">Do you need help defining <a href="">API rules</a> for teams?</li>
+          </ul>
+        </div>        
+        <script>
+          function applyStyles(obj, styles) {
+            var property;
+            var styleLength = Object.keys(styles).length;
+            for (var i = 0; i < styleLength; i++) {
+              property = Object.keys(styles)[i];
+              obj.style[property] = styles[property];
+            }
+          }
+
+          function extend(object1, object2) {
+            for (var attrname in object2) {
+              object1[attrname] = object2[attrname];
+            }
+            return object1;
+          }
+
+          function startTicker(id, param) {
+            var tickerBox = document.getElementById(id);
+            var defaultParam = { speed: 5, delay: 500, rotate: true };
+            var extendedParam = extend(defaultParam, param);
+            applyStyles(tickerBox, { overflow: "hidden", 'min-height': '40px' });
+            var ul = tickerBox.getElementsByTagName("ul");
+            var li = ul[0].getElementsByTagName("li");
+            applyStyles(ul[0], { padding: 0, margin: 0, position: 'relative', 'list-style-type': 'none' });
+            for (i = 0; i < li.length; i++) {
+              applyStyles(li[i], { position: 'absolute', 'white-space': 'nowrap', display: 'none' });
+            }
+
+            var li_index = 0;
+            var trans_width = tickerBox.offsetWidth;
+            var chunk_width = 1;
+
+            var iterateTickerElement = function(trans_width) {
+              li[li_index].style.left = trans_width + "px";
+              li[li_index].style.display = '';
+              var t = setInterval(function() {
+                if (parseInt(li[li_index].style.left) > -li[li_index].offsetWidth) {
+                  li[li_index].style.left = parseInt(li[li_index].style.left) - chunk_width + "px";
+                } else {
+                  clearInterval(t);
+                  trans_width = tickerBox.offsetWidth;
+                  li_index++;
+                  if (li_index == li.length && extendedParam.rotate == true) {
+                    li_index = 0;
+                    iterateTickerElement(trans_width);
+                  } else if (li_index < li.length) {
+                    setTimeout(function() { iterateTickerElement(trans_width); }, extendedParam.delay);
+                  }
+                }
+              }, extendedParam.speed);
+              tickerBox.onmouseover = function() {
+                clearInterval(t);
+              }
+              tickerBox.onmouseout = function() {
+                iterateTickerElement(parseInt(li[li_index].style.left));
+              }
+            }
+            iterateTickerElement(trans_width);
+          }          
+        </script>  
+        <script>startTicker('ticker-box', {speed:7, delay:1000});</script>      
       </div>
       <div class="col-auto">
         <!-- User -->
@@ -961,302 +1056,16 @@
                         <div class="d-flex align-items-center">
                             <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
                             <div class="ms-4">
-                                <div><a href="/store/access">Access</a></div>
+                                <div><a href="/store/bruno">Bruno</a></div>
                             </div>
                         </div>
                     </td>
                     <td width="60%">
-                        <div class="ms-4">APIs are difficult to get the proper access to when consumers are applying them as part of their work.</div>
+                        <div class="ms-4">Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia, and similar tools out there.</div>
                     </td>
                     <td width="15%">
                         <div class="ms-4">    
-                            <a href="/store/access"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/access/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/alignment">Alignment</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">There is no alignment between product and engineering when it comes to delivering APIs.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/alignment"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/alignment/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/change">Change</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">Managing and effectively communicating change for each API, maintaining alignment across teams producing, but also with consumers.
-</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/change"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/change/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/communication">Communication</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">Trouble with communication across teams producing APIs, but also with the consumers.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/communication"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/communication/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/consistency">Consistency</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">The consistency of APIs and operations around them is all over the place.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/consistency"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/consistency/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/discovery">Discovery</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">Difficulty finding APIs when producing new APIs, and integrating into applications.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/discovery"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/discovery/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/legal">Legal</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">There are legal challenges that arise regularly around the usage of APIs.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/legal"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/legal/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/money">Money</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">You are having trouble generating new revenue streams with your digital resources.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/money"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/money/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/onboarding">Onboarding</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">Friction when it comes to onboarding new consumers to using and integrating with APIs.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/onboarding"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/onboarding/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/products">Products</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">Utilizing products define the deliverables between API producer and API consumers.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/products"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/products/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/provenance">Provenance</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">There are struggles with understanding the source and history of resource evolution.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/provenance"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/provenance/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/quality">Quality</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">The quality of APIs is low and doesn't deliver as expected when using over time.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/quality"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/quality/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/reliability">Reliability</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">The reliability of APIs, but also delivery of new versions of APIs across lifecycle.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/reliability"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/reliability/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/security">Security</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">The security of APIs isn't as tight as it could be across teams producing APIs.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/security"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/security/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/simplicity">Simplicity</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">APIs are often complex and are not intuitive and easy for consumers to use.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/simplicity"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/simplicity/"></a>
-                        </div>
-                    </td>                    
-                </tr>   
-                  
-                <tr>
-                    <td width="25%">
-                        <div class="d-flex align-items-center">
-                            <span class="material-symbols-outlined fs-1 text-primary">person_play</span>
-                            <div class="ms-4">
-                                <div><a href="/store/workspaces">Workspaces</a></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td width="60%">
-                        <div class="ms-4">Dedicated places to work on and collaborate around the production and consumption of APIs.</div>
-                    </td>
-                    <td width="15%">
-                        <div class="ms-4">    
-                            <a href="/store/workspaces"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/workspaces/"></a>
+                            <a href="/store/bruno"><button type="button" class="btn btn-success">View Details</button></a><a href="/store/bruno/"></a>
                         </div>
                     </td>                    
                 </tr>   
