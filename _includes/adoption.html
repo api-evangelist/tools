@@ -1,0 +1,30 @@
+{% comment %} Shared rendering for services, tools, and standards. {% endcomment %}
+<div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+  <span class="badge rounded-pill bg-success-subtle text-success-emphasis fs-6">
+    <span class="material-symbols-outlined" style="font-size:16px; vertical-align:-3px;">apartment</span>
+    {{ page.companyCount | default: 0 }} companies
+  </span>
+  {% if page.radarRing %}<span class="badge rounded-pill bg-light text-dark border">Radar: {{ page.radarRing }}</span>{% endif %}
+  {% if page.founded %}<span class="text-muted small">Founded {{ page.founded }}</span>{% endif %}
+  {% if page.yearCreated %}<span class="text-muted small">Created {{ page.yearCreated }}</span>{% endif %}
+</div>
+
+{% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+
+{% if page.tags %}
+<div class="mb-4">
+  {% for tag in page.tags %}<span class="badge bg-light text-dark border me-1 mb-1 fw-normal">{{ tag }}</span>{% endfor %}
+</div>
+{% endif %}
+
+<div class="card mb-4">
+  <div class="card-body">
+    <dl class="row mb-0 small">
+      <dt class="col-sm-3 text-muted fw-normal">Companies adopting</dt>
+      <dd class="col-sm-9 fw-semibold">{{ page.companyCount | default: 0 }}</dd>
+      {% if page.radarRing %}<dt class="col-sm-3 text-muted fw-normal">Radar ring</dt><dd class="col-sm-9">{{ page.radarRing }}</dd>{% endif %}
+      {% if page.url %}<dt class="col-sm-3 text-muted fw-normal">Website</dt><dd class="col-sm-9"><a href="{{ page.url }}" target="_blank" rel="noopener">{{ page.url }}</a></dd>{% endif %}
+      {% if page.alternativeNames %}<dt class="col-sm-3 text-muted fw-normal">Also known as</dt><dd class="col-sm-9">{{ page.alternativeNames | join: ", " }}</dd>{% endif %}
+    </dl>
+  </div>
+</div>

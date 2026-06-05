@@ -1,0 +1,36 @@
+<!-- Sidebar (desktop only) -->
+<div class="sidebar">
+
+  {% for heading in site.data.nav %}
+  <div class="nav-heading">{{ heading.name }}</div>
+  <nav class="nav flex-column">
+    {% for nav in heading.nav %}
+      {% if nav.sub.size > 0 %}
+        <a class="nav-link d-flex align-items-center{% if nav.name == page.nav %} active{% endif %}" data-bs-toggle="collapse" href="#sidebar-{{ nav.name | slugify }}" role="button" aria-expanded="{% if nav.name == page.nav %}true{% else %}false{% endif %}">
+          <span class="material-symbols-outlined">{{ nav.symbol }}</span>{{ nav.name }}
+        </a>
+        <div class="collapse{% if nav.name == page.nav %} show{% endif %}" id="sidebar-{{ nav.name | slugify }}">
+          <nav class="nav flex-column ms-4">
+            {% for sub in nav.sub %}
+            <a class="nav-link py-1{% if sub.name == page.sub %} active{% endif %}" href="{{ sub.href }}">{{ sub.name }}</a>
+            {% endfor %}
+          </nav>
+        </div>
+      {% else %}
+        <a class="nav-link d-flex align-items-center{% if nav.name == page.nav %} active{% endif %}" href="{{ nav.href }}">
+          <span class="material-symbols-outlined">{{ nav.symbol }}</span>{{ nav.name }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+  {% endfor %}
+
+  <!-- Contact / Help -->
+  <div class="mt-4 pt-3 border-top">
+    <div class="px-2">
+      <p class="text-muted small mb-1">Need help?</p>
+      <a href="https://apievangelist.com/contact/" class="text-decoration-none small" style="color: var(--ae-green);">Contact us</a>
+    </div>
+  </div>
+
+</div>

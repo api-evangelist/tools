@@ -1,0 +1,33 @@
+---
+layout: default
+title: API Tools
+nav: All Tools
+---
+<div class="content-area" style="max-width:none;">
+  <h1 class="mb-1">API Tools</h1>
+  <p class="text-muted mb-4">{{ site.store | size }} tools ranked by company adoption across the API Evangelist network.</p>
+
+  {% assign ranked = site.store | sort: "companyCount" | reverse %}
+  <div class="table-responsive">
+    <table class="table table-hover align-middle">
+      <thead>
+        <tr>
+          <th class="text-muted" style="width:3rem;">#</th>
+          <th>Tool</th>
+          <th class="text-end" style="width:8rem;">Companies</th>
+          <th class="d-none d-md-table-cell">Tags</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for item in ranked %}
+        <tr>
+          <td class="text-muted small">{{ forloop.index }}</td>
+          <td class="fw-semibold"><a href="{{ item.url | default: item.slug | prepend: '/store/' }}" class="text-decoration-none" style="color: #212529;">{{ item.title }}</a></td>
+          <td class="text-end text-muted small">{{ item.companyCount | default: 0 }}</td>
+          <td class="d-none d-md-table-cell text-muted small">{% if item.tags %}{{ item.tags | join: ", " | truncate: 60 }}{% endif %}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

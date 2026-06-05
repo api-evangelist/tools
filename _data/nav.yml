@@ -1,0 +1,26 @@
+- name: Tools
+  nav:
+    - name: All Tools
+      symbol: build
+      href: /
+
+- name: API Evangelist
+  nav:
+    - name: Stories
+      symbol: auto_stories
+      href: https://apievangelist.com/2026/
+    - name: Conversations
+      symbol: forum
+      href: https://conversations.apievangelist.com
+    - name: Developer
+      symbol: code
+      href: https://developer.apievangelist.com
+    - name: Services
+      symbol: cloud
+      href: https://services.apievangelist.com
+    - name: Standards
+      symbol: verified
+      href: https://standards.apievangelist.com
+    - name: Companies
+      symbol: apartment
+      href: https://companies.apievangelist.com

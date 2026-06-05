@@ -1,0 +1,38 @@
+title: API Evangelist Tools
+theme: null
+description: API tools ranked by adoption across companies in the API Evangelist network.
+lang: en
+baseurl: ""
+permalink: /:collection/:path/
+url: "https://tools.apievangelist.com"
+logo: https://kinlane-productions2.s3.amazonaws.com/api-evangelist-logos/api-evangelist-logo-butterfly.png
+navbar:
+    sticky: true
+    search: true
+author:
+    name: Kin Lane
+    title: API Evangelist
+    avatar: https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png
+footer:
+    copyright: API Evangelist
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+sass:
+  style: compressed
+collections:
+  store:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: store
+    values:
+      layout: store

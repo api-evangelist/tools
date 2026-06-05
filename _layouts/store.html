@@ -1,0 +1,21 @@
+---
+layout: default
+nav: Tools
+---
+<div class="content-area">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb small">
+      <li class="breadcrumb-item"><a href="{{ '/tools/' | relative_url }}" class="text-decoration-none">Tools</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+    </ol>
+  </nav>
+
+  <h1 class="mb-3">{{ page.title }}</h1>
+
+  {% include adoption.html %}
+
+  <a href="{{ '/tools/' | relative_url }}" class="btn btn-sm btn-outline-success">
+    <span class="material-symbols-outlined" style="font-size:16px; vertical-align:-3px;">arrow_back</span>
+    All tools by adoption
+  </a>
+</div>
