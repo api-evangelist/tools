@@ -8,7 +8,7 @@ tags:
 - BDD
 - Automation
 - Quality Assurance
-url: https://cucumber.io/
+website: https://cucumber.io/
 founded: 2008
 radarRing: Established
 alternativeNames:

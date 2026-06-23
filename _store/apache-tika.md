@@ -9,7 +9,7 @@ tags:
 - Text Extraction
 - File Parsing
 - NLP
-url: https://tika.apache.org
+website: https://tika.apache.org
 radarRing: Established
 alternativeNames:
 - Tika

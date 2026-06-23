@@ -8,7 +8,7 @@ tags:
 - Big Data
 - Distributed Computing
 - Real-Time Analytics
-url: https://flink.apache.org/
+website: https://flink.apache.org/
 founded: 2014
 radarRing: Established
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - JSON Processing
 - JSON Binding
 - Serialization
-url: https://johnzon.apache.org
+website: https://johnzon.apache.org
 radarRing: Initial
 alternativeNames:
 - Johnzon

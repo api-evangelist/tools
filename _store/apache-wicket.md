@@ -9,7 +9,7 @@ tags:
 - Component Based
 - Markup Separation
 - Stateful
-url: https://wicket.apache.org
+website: https://wicket.apache.org
 radarRing: Initial
 alternativeNames:
 - Wicket

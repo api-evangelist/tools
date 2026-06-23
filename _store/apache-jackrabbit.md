@@ -9,7 +9,7 @@ tags:
 - Content Management
 - Java
 - Storage
-url: https://jackrabbit.apache.org
+website: https://jackrabbit.apache.org
 radarRing: Developing
 alternativeNames:
 - Jackrabbit

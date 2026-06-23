@@ -9,7 +9,7 @@ tags:
 - Java
 - Build Tool
 - Transitive Dependencies
-url: https://ant.apache.org/ivy/
+website: https://ant.apache.org/ivy/
 radarRing: Developing
 alternativeNames:
 - Ivy

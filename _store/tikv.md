@@ -9,7 +9,7 @@ tags:
 - Key-Value Store
 - ACID
 - Open Source
-url: https://tikv.org/
+website: https://tikv.org/
 radarRing: Developing
 alternativeNames:
 - tikv

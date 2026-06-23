@@ -9,7 +9,7 @@ tags:
 - Development Tools
 - PHP
 - HTML5
-url: https://netbeans.apache.org
+website: https://netbeans.apache.org
 radarRing: Initial
 alternativeNames:
 - NetBeans

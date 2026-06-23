@@ -9,7 +9,7 @@ tags:
 - OLAP
 - Column Store
 - Big Data
-url: https://clickhouse.com/
+website: https://clickhouse.com/
 founded: 2016
 radarRing: Optimizing
 alternativeNames:

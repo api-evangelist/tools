@@ -9,7 +9,7 @@ tags:
 - Dependency Management
 - Project Management
 - Automation
-url: https://maven.apache.org
+website: https://maven.apache.org
 radarRing: Established
 alternativeNames:
 - Maven

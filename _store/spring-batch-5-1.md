@@ -8,7 +8,7 @@ tags:
 - Spring Framework
 - Java
 - Enterprise
-url: https://spring.io/projects/spring-batch
+website: https://spring.io/projects/spring-batch
 founded: 2023
 radarRing: Developing
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - Kubernetes
 - MLOps
 - AI
-url: https://submarine.apache.org
+website: https://submarine.apache.org
 radarRing: Developing
 alternativeNames:
 - Submarine

@@ -8,7 +8,7 @@ tags:
 - Marketing Tools
 - Quality Assurance
 - Developer Tools
-url: https://www.litmus.com/
+website: https://www.litmus.com/
 radarRing: Developing
 alternativeNames:
 - litmus

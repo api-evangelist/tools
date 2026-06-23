@@ -9,7 +9,7 @@ tags:
 - Testing
 - Hadoop
 - Deployment
-url: https://bigtop.apache.org
+website: https://bigtop.apache.org
 radarRing: Initial
 alternativeNames:
 - Bigtop

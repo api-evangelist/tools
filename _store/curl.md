@@ -8,7 +8,7 @@ tags:
 - HTTP Client
 - API Testing
 - Data Transfer
-url: https://curl.se/
+website: https://curl.se/
 founded: 1997
 radarRing: Optimizing
 alternativeNames:

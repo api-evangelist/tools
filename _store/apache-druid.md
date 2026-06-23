@@ -9,7 +9,7 @@ tags:
 - Time Series
 - Columnar Database
 - Low Latency
-url: https://druid.apache.org
+website: https://druid.apache.org
 radarRing: Developing
 alternativeNames:
 - Druid

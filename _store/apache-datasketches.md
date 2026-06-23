@@ -9,7 +9,7 @@ tags:
 - Big Data
 - Sketches
 - Analytics
-url: https://datasketches.apache.org
+website: https://datasketches.apache.org
 radarRing: Initial
 alternativeNames:
 - DataSketches

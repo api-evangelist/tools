@@ -9,7 +9,7 @@ tags:
 - ETL
 - Visual Programming
 - Orchestration
-url: https://hop.apache.org
+website: https://hop.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Hop

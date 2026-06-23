@@ -9,7 +9,7 @@ tags:
 - In Database Analytics
 - Big Data
 - Statistics
-url: https://madlib.apache.org
+website: https://madlib.apache.org
 radarRing: Initial
 alternativeNames:
 - MADlib

@@ -9,7 +9,7 @@ tags:
 - OSGi
 - Java
 - SOA
-url: https://servicemix.apache.org
+website: https://servicemix.apache.org
 radarRing: Initial
 alternativeNames:
 - ServiceMix

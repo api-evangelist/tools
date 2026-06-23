@@ -9,7 +9,7 @@ tags:
 - Enterprise
 - Deployment
 - Jakarta EE
-url: https://geronimo.apache.org
+website: https://geronimo.apache.org
 radarRing: Initial
 alternativeNames:
 - Geronimo

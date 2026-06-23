@@ -9,7 +9,7 @@ tags:
 - Security
 - DevOps
 - CI/CD
-url: https://www.sonarsource.com/
+website: https://www.sonarsource.com/
 founded: 2008
 radarRing: Established
 alternativeNames:

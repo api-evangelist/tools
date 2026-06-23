@@ -8,7 +8,7 @@ tags:
 - Configuration Management
 - Infrastructure As Code
 - DevOps
-url: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks.html
+website: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks.html
 founded: 2012
 radarRing: Established
 alternativeNames:

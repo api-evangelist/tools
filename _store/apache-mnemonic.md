@@ -9,7 +9,7 @@ tags:
 - C
 - Persistent Memory
 - Storage
-url: https://mnemonic.apache.org
+website: https://mnemonic.apache.org
 radarRing: Initial
 alternativeNames:
 - Mnemonic

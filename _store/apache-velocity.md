@@ -9,7 +9,7 @@ tags:
 - Code Generation
 - Web Development
 - Text Processing
-url: https://velocity.apache.org
+website: https://velocity.apache.org
 radarRing: Established
 alternativeNames:
 - Velocity

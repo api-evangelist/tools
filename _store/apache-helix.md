@@ -9,7 +9,7 @@ tags:
 - Replication
 - Distributed Systems
 - Task Management
-url: https://helix.apache.org
+website: https://helix.apache.org
 radarRing: Developing
 alternativeNames:
 - Helix

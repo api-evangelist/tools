@@ -9,7 +9,7 @@ tags:
 - Networking
 - Load Balancing
 - Service Discovery
-url: https://kubernetes.io/docs/areas/services-networking/service/
+website: https://kubernetes.io/docs/areas/services-networking/service/
 founded: 2014
 radarRing: Established
 alternativeNames:

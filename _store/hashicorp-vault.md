@@ -8,7 +8,7 @@ tags:
 - Secrets Management
 - Encryption
 - DevOps
-url: https://www.vaultproject.io/
+website: https://www.vaultproject.io/
 founded: 2015
 radarRing: Optimizing
 alternativeNames:

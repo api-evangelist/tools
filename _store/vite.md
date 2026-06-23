@@ -7,7 +7,7 @@ tags:
 - Build Tool
 - Frontend
 - Development Server
-url: https://vitejs.dev
+website: https://vitejs.dev
 founded: 2020
 radarRing: Optimizing
 alternativeNames:

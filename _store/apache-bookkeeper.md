@@ -9,7 +9,7 @@ tags:
 - Fault Tolerant
 - Low Latency
 - Ledger
-url: https://bookkeeper.apache.org
+website: https://bookkeeper.apache.org
 radarRing: Optimizing
 alternativeNames:
 - BookKeeper

@@ -9,7 +9,7 @@ tags:
 - Kubernetes
 - eBPF
 - Service Mesh
-url: https://cilium.io/
+website: https://cilium.io/
 radarRing: Developing
 alternativeNames:
 - cilium

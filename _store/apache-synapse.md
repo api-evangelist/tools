@@ -9,7 +9,7 @@ tags:
 - Web Services
 - Integration
 - SOA
-url: https://synapse.apache.org
+website: https://synapse.apache.org
 radarRing: Developing
 alternativeNames:
 - Synapse

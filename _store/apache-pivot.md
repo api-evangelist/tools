@@ -9,7 +9,7 @@ tags:
 - Ui Components
 - Data Binding
 - Desktop Applications
-url: https://pivot.apache.org
+website: https://pivot.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Pivot

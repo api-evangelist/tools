@@ -9,7 +9,7 @@ tags:
 - Compliance
 - Enterprise
 - Security
-url: https://syncope.apache.org
+website: https://syncope.apache.org
 radarRing: Initial
 alternativeNames:
 - Syncope

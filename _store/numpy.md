@@ -10,7 +10,7 @@ tags:
 - Machine Learning
 - Mathematics
 - Arrays
-url: https://numpy.org/
+website: https://numpy.org/
 founded: 2005
 radarRing: Optimizing
 alternativeNames:

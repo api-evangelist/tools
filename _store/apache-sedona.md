@@ -9,7 +9,7 @@ tags:
 - Flink
 - Spatial Analytics
 - Big Data
-url: https://sedona.apache.org
+website: https://sedona.apache.org
 radarRing: Developing
 alternativeNames:
 - Sedona

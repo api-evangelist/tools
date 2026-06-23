@@ -8,7 +8,7 @@ tags:
 - Configuration Management
 - Infrastructure as Code
 - GitOps
-url: https://kpt.dev/
+website: https://kpt.dev/
 radarRing: Developing
 alternativeNames:
 - KPT

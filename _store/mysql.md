@@ -8,7 +8,7 @@ tags:
 - SQL
 - Open Source
 - Relational Database
-url: https://www.mysql.com/
+website: https://www.mysql.com/
 founded: 1995
 radarRing: Optimizing
 alternativeNames:

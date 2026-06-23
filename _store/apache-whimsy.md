@@ -9,7 +9,7 @@ tags:
 - Tools
 - Community
 - Administration
-url: https://whimsy.apache.org
+website: https://whimsy.apache.org
 radarRing: Initial
 alternativeNames:
 - Whimsy

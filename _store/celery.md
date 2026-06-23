@@ -9,7 +9,7 @@ tags:
 - Distributed Systems
 - Background Jobs
 - Asynchronous
-url: https://docs.celeryq.dev/
+website: https://docs.celeryq.dev/
 founded: 2009
 radarRing: Established
 alternativeNames:

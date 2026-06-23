@@ -9,7 +9,7 @@ tags:
 - Microservices
 - Cloud Native
 - IoT
-url: https://nats.io
+website: https://nats.io
 radarRing: Developing
 alternativeNames:
 - nats

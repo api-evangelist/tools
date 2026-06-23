@@ -8,7 +8,7 @@ tags:
 - Coordination Service
 - Distributed Systems
 - Strong Consistency
-url: https://github.com/streamnative/oxia
+website: https://github.com/streamnative/oxia
 radarRing: Initial
 alternativeNames:
 - oxia

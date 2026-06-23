@@ -9,7 +9,7 @@ tags:
 - Cloud Abstraction
 - IaaS
 - API
-url: https://libcloud.apache.org
+website: https://libcloud.apache.org
 radarRing: Initial
 alternativeNames:
 - Libcloud

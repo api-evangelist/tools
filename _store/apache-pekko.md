@@ -9,7 +9,7 @@ tags:
 - Distributed Systems
 - JVM
 - Reactive
-url: https://pekko.apache.org
+website: https://pekko.apache.org
 radarRing: Initial
 alternativeNames:
 - Pekko

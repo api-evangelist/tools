@@ -8,7 +8,7 @@ tags:
 - Social Networking
 - Federation
 - Privacy
-url: https://zotlabs.org
+website: https://zotlabs.org
 radarRing: Developing
 alternativeNames:
 - zot

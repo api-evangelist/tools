@@ -8,7 +8,7 @@ tags:
 - Networking
 - Open Source
 - Traffic Management
-url: https://www.bfe-networks.net/
+website: https://www.bfe-networks.net/
 radarRing: Established
 alternativeNames:
 - bfe

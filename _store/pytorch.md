@@ -10,7 +10,7 @@ tags:
 - Artificial Intelligence
 - Neural Networks
 - AI
-url: https://pytorch.org/
+website: https://pytorch.org/
 founded: 2016
 radarRing: Optimizing
 alternativeNames:

@@ -11,7 +11,7 @@ tags:
 - Continuous Delivery
 - Build Tool
 - Pipeline As Code
-url: https://www.jenkins.io/doc/book/pipeline/
+website: https://www.jenkins.io/doc/book/pipeline/
 founded: 2011
 radarRing: Optimizing
 alternativeNames:

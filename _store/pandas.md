@@ -8,7 +8,7 @@ tags:
 - Data Analysis
 - Data Manipulation
 - Data Science
-url: https://pandas.pydata.org/
+website: https://pandas.pydata.org/
 founded: 2008
 radarRing: Optimizing
 alternativeNames:

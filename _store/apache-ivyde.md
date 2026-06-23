@@ -9,7 +9,7 @@ tags:
 - Dependency Management
 - Ivy
 - Java
-url: https://ant.apache.org/ivy/ivyde/
+website: https://ant.apache.org/ivy/ivyde/
 radarRing: Initial
 alternativeNames:
 - IvyDE

@@ -9,7 +9,7 @@ tags:
 - Instrumentation
 - UX
 - Behavioral Analysis
-url: https://flagon.apache.org
+website: https://flagon.apache.org
 radarRing: Initial
 alternativeNames:
 - Flagon

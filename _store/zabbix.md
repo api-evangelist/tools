@@ -9,7 +9,7 @@ tags:
 - Open Source
 - Network Management
 - Alerting
-url: https://www.zabbix.com/
+website: https://www.zabbix.com/
 founded: 2001
 radarRing: Established
 alternativeNames:

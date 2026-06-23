@@ -9,7 +9,7 @@ tags:
 - Enterprise
 - Cross Platform
 - Message Broker
-url: https://qpid.apache.org
+website: https://qpid.apache.org
 radarRing: Developing
 alternativeNames:
 - Qpid

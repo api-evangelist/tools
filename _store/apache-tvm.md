@@ -9,7 +9,7 @@ tags:
 - Hardware Optimization
 - AI
 - Inference
-url: https://tvm.apache.org
+website: https://tvm.apache.org
 radarRing: Developing
 alternativeNames:
 - TVM

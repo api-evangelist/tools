@@ -9,7 +9,7 @@ tags:
 - MapReduce
 - Job Orchestration
 - Batch Processing
-url: https://oozie.apache.org
+website: https://oozie.apache.org
 radarRing: Developing
 alternativeNames:
 - Oozie

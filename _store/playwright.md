@@ -8,7 +8,7 @@ tags:
 - Automation
 - Web Development
 - Browser Testing
-url: https://playwright.dev
+website: https://playwright.dev
 founded: 2020
 radarRing: Established
 alternativeNames:

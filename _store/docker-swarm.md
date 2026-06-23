@@ -8,7 +8,7 @@ tags:
 - Clustering
 - Docker
 - DevOps
-url: https://docs.docker.com/engine/swarm/
+website: https://docs.docker.com/engine/swarm/
 founded: 2015
 radarRing: Established
 alternativeNames:

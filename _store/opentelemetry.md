@@ -11,7 +11,7 @@ tags:
 - Logging
 - Cloud Native
 - Open Source
-url: https://opentelemetry.io
+website: https://opentelemetry.io
 radarRing: Optimizing
 alternativeNames:
 - OTel

@@ -9,7 +9,7 @@ tags:
 - Python
 - Scheduling
 - ETL
-url: https://airflow.apache.org/
+website: https://airflow.apache.org/
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

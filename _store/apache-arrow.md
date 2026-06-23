@@ -9,7 +9,7 @@ tags:
 - Cross Language
 - Data Interchange
 - Analytics
-url: https://arrow.apache.org
+website: https://arrow.apache.org
 radarRing: Established
 alternativeNames:
 - Arrow

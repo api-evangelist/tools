@@ -9,7 +9,7 @@ tags:
 - Protocol Adapter
 - OT
 - Manufacturing
-url: https://plc4x.apache.org
+website: https://plc4x.apache.org
 radarRing: Initial
 alternativeNames:
 - PLC4X

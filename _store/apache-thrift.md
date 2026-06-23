@@ -9,7 +9,7 @@ tags:
 - Code Generation
 - Serialization
 - Microservices
-url: https://thrift.apache.org
+website: https://thrift.apache.org
 radarRing: Developing
 alternativeNames:
 - Thrift

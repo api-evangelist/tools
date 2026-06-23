@@ -9,7 +9,7 @@ tags:
 - Java
 - Persistence
 - Database
-url: https://openjpa.apache.org
+website: https://openjpa.apache.org
 radarRing: Established
 alternativeNames:
 - OpenJPA

@@ -9,7 +9,7 @@ tags:
 - Deep Learning
 - Python
 - Open Source
-url: https://huggingface.co/docs/transformers
+website: https://huggingface.co/docs/transformers
 founded: 2018
 radarRing: Established
 alternativeNames:

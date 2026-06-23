@@ -9,7 +9,7 @@ tags:
 - Spreadsheet
 - Presentations
 - Productivity
-url: https://openoffice.apache.org
+website: https://openoffice.apache.org
 radarRing: Developing
 alternativeNames:
 - OpenOffice

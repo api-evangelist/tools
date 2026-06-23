@@ -9,7 +9,7 @@ tags:
 - Content Delivery
 - Caching
 - Networking
-url: https://trafficcontrol.apache.org
+website: https://trafficcontrol.apache.org
 radarRing: Optimizing
 alternativeNames:
 - ATC

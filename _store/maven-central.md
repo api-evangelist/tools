@@ -8,7 +8,7 @@ tags:
 - Package Manager
 - Build Tools
 - Dependency Management
-url: https://central.sonatype.com/
+website: https://central.sonatype.com/
 founded: 2004
 radarRing: Established
 alternativeNames:

@@ -8,7 +8,7 @@ tags:
 - Infrastructure As Code
 - DevOps
 - Automation
-url: https://www.chef.io/
+website: https://www.chef.io/
 founded: 2009
 radarRing: Optimizing
 alternativeNames:

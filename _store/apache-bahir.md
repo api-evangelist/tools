@@ -9,7 +9,7 @@ tags:
 - Flink
 - Extensions
 - Streaming
-url: https://bahir.apache.org
+website: https://bahir.apache.org
 radarRing: Initial
 alternativeNames:
 - Bahir

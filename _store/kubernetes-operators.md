@@ -9,7 +9,7 @@ tags:
 - Infrastructure
 - DevOps
 - Cloud Native
-url: https://kubernetes.io/docs/areas/extend-kubernetes/operator/
+website: https://kubernetes.io/docs/areas/extend-kubernetes/operator/
 founded: 2016
 radarRing: Optimizing
 alternativeNames:

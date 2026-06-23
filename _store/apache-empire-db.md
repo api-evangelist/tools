@@ -9,7 +9,7 @@ tags:
 - SQL
 - Persistence
 - Type Safe
-url: https://empire-db.apache.org
+website: https://empire-db.apache.org
 radarRing: Initial
 alternativeNames:
 - Empire-db

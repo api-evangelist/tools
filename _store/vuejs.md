@@ -10,7 +10,7 @@ tags:
 - Web Development
 - SPA
 - UI
-url: https://vuejs.org/
+website: https://vuejs.org/
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

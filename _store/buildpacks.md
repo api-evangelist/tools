@@ -8,7 +8,7 @@ tags:
 - Build Tools
 - CI/CD
 - Cloud Native
-url: https://buildpacks.io
+website: https://buildpacks.io
 radarRing: Optimizing
 alternativeNames:
 - buildpacks

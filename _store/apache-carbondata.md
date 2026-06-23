@@ -9,7 +9,7 @@ tags:
 - Analytics
 - Indexing
 - Hadoop
-url: https://carbondata.apache.org
+website: https://carbondata.apache.org
 radarRing: Initial
 alternativeNames:
 - CarbonData

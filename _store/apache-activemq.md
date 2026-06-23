@@ -9,7 +9,7 @@ tags:
 - JMS
 - Pub Sub
 - Queue
-url: https://activemq.apache.org
+website: https://activemq.apache.org
 radarRing: Developing
 alternativeNames:
 - ActiveMQ

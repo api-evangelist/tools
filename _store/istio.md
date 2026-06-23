@@ -8,7 +8,7 @@ tags:
 - Microservices
 - Kubernetes
 - Cloud Native
-url: https://istio.io
+website: https://istio.io
 radarRing: Developing
 alternativeNames:
 - istio

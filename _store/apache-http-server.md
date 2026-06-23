@@ -9,7 +9,7 @@ tags:
 - Reverse Proxy
 - Load Balancing
 - Security
-url: https://httpd.apache.org
+website: https://httpd.apache.org
 radarRing: Developing
 alternativeNames:
 - httpd

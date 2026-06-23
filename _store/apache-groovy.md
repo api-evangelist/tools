@@ -9,7 +9,7 @@ tags:
 - Scripting
 - Dynamic Language
 - DSL
-url: https://groovy-lang.apache.org
+website: https://groovy-lang.apache.org
 radarRing: Developing
 alternativeNames:
 - Groovy

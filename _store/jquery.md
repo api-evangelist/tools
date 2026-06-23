@@ -9,7 +9,7 @@ tags:
 - DOM Manipulation
 - Ajax
 - Web Development
-url: https://jquery.com/
+website: https://jquery.com/
 founded: 2006
 radarRing: Optimizing
 alternativeNames:

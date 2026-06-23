@@ -8,7 +8,7 @@ tags:
 - Animation
 - Rendering
 - Open Source
-url: https://www.blender.org/
+website: https://www.blender.org/
 founded: 1994
 radarRing: Optimizing
 alternativeNames:

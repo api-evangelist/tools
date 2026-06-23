@@ -9,7 +9,7 @@ tags:
 - Networking
 - APR
 - High Performance
-url: https://serf.apache.org
+website: https://serf.apache.org
 radarRing: Established
 alternativeNames:
 - Serf

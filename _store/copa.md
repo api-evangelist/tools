@@ -7,7 +7,7 @@ tags:
 - Benchmarks
 - Causal Reasoning
 - Common Sense
-url: https://people.ict.usc.edu/~gordon/copa.html
+website: https://people.ict.usc.edu/~gordon/copa.html
 radarRing: Established
 alternativeNames:
 - copa

@@ -7,7 +7,7 @@ tags:
 - CSS Framework
 - Responsive Design
 - Front-End
-url: https://www.getfluidkit.com/
+website: https://www.getfluidkit.com/
 radarRing: Established
 alternativeNames:
 - fluid

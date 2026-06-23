@@ -10,7 +10,7 @@ tags:
 - Web Framework
 - Non-Blocking I/O
 - Spring
-url: https://docs.spring.io/spring-framework/reference/web/webflux.html
+website: https://docs.spring.io/spring-framework/reference/web/webflux.html
 founded: 2017
 radarRing: Developing
 alternativeNames:

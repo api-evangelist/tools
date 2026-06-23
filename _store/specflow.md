@@ -9,7 +9,7 @@ tags:
 - .NET
 - Automation
 - Gherkin
-url: https://specflow.org/
+website: https://specflow.org/
 founded: 2009
 radarRing: Established
 alternativeNames:

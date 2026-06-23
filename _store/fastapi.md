@@ -8,7 +8,7 @@ tags:
 - Web Framework
 - API
 - Asynchronous
-url: https://fastapi.tiangolo.com/
+website: https://fastapi.tiangolo.com/
 founded: 2018
 radarRing: Established
 alternativeNames:

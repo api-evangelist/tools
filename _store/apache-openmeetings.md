@@ -9,7 +9,7 @@ tags:
 - Whiteboard
 - Instant Messaging
 - Web Conferencing
-url: https://openmeetings.apache.org
+website: https://openmeetings.apache.org
 radarRing: Initial
 alternativeNames:
 - OpenMeetings

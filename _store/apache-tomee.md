@@ -9,7 +9,7 @@ tags:
 - Tomcat
 - Enterprise
 - Java
-url: https://tomee.apache.org
+website: https://tomee.apache.org
 radarRing: Initial
 alternativeNames:
 - TomEE

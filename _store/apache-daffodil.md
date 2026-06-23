@@ -9,7 +9,7 @@ tags:
 - Fixed Format
 - XML
 - Data Transformation
-url: https://daffodil.apache.org
+website: https://daffodil.apache.org
 radarRing: Initial
 alternativeNames:
 - Daffodil

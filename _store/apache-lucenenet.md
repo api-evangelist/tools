@@ -9,7 +9,7 @@ tags:
 - Full Text Search
 - Indexing
 - C#
-url: https://lucenenet.apache.org
+website: https://lucenenet.apache.org
 radarRing: Initial
 alternativeNames:
 - Lucene.NET

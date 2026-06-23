@@ -9,7 +9,7 @@ tags:
 - Cross Platform
 - Ui Framework
 - Flash
-url: https://flex.apache.org
+website: https://flex.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Flex

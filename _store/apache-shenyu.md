@@ -9,7 +9,7 @@ tags:
 - High Performance
 - Plugins
 - Protocol Support
-url: https://shenyu.apache.org
+website: https://shenyu.apache.org
 radarRing: Established
 alternativeNames:
 - ShenYu

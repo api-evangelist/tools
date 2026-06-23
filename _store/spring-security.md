@@ -9,7 +9,7 @@ tags:
 - Spring
 - Authentication
 - Authorization
-url: https://spring.io/projects/spring-security
+website: https://spring.io/projects/spring-security
 founded: 2003
 radarRing: Established
 alternativeNames:

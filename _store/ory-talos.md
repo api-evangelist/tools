@@ -9,7 +9,7 @@ tags:
 - API Tokens
 - Authorization
 - Go
-url: https://github.com/ory/talos
+website: https://github.com/ory/talos
 founded: 2026
 radarRing: Initial
 alternativeNames:

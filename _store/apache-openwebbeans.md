@@ -9,7 +9,7 @@ tags:
 - Dependency Injection
 - Jakarta EE
 - Lifecycle Management
-url: https://openwebbeans.apache.org
+website: https://openwebbeans.apache.org
 radarRing: Established
 alternativeNames:
 - OpenWebBeans

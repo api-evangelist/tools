@@ -9,7 +9,7 @@ tags:
 - Redis Compatible
 - RocksDB
 - Distributed Database
-url: https://kvrocks.apache.org
+website: https://kvrocks.apache.org
 radarRing: Initial
 alternativeNames:
 - Kvrocks

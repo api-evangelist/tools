@@ -9,7 +9,7 @@ tags:
 - ActionScript
 - MXML
 - Web Framework
-url: https://royale.apache.org
+website: https://royale.apache.org
 radarRing: Developing
 alternativeNames:
 - Royale

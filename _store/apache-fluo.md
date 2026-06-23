@@ -9,7 +9,7 @@ tags:
 - Distributed Computing
 - Low Latency
 - Big Data
-url: https://fluo.apache.org
+website: https://fluo.apache.org
 radarRing: Developing
 alternativeNames:
 - Fluo

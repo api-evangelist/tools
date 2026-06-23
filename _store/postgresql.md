@@ -8,7 +8,7 @@ tags:
 - SQL
 - Open Source
 - Relational Database
-url: https://www.postgresql.org/
+website: https://www.postgresql.org/
 founded: 1996
 radarRing: Optimizing
 alternativeNames:

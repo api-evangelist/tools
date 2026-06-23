@@ -9,7 +9,7 @@ tags:
 - Cost Optimization
 - Policy as Code
 - Multi-Cloud
-url: https://cloudcustodian.io/
+website: https://cloudcustodian.io/
 yearCreated: 2016
 radarRing: Established
 alternativeNames:

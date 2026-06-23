@@ -7,7 +7,7 @@ tags:
 - Java
 - Testing
 - Mocking
-url: http://www.jmock.org/
+website: http://www.jmock.org/
 founded: 2003
 radarRing: Established
 alternativeNames:

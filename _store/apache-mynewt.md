@@ -9,7 +9,7 @@ tags:
 - IoT
 - BLE
 - Microcontrollers
-url: https://mynewt.apache.org
+website: https://mynewt.apache.org
 radarRing: Initial
 alternativeNames:
 - Mynewt

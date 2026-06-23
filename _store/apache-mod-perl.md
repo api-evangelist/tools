@@ -9,7 +9,7 @@ tags:
 - Web Development
 - mod_perl
 - Dynamic Content
-url: https://perl.apache.org
+website: https://perl.apache.org
 radarRing: Initial
 alternativeNames:
 - Mod_perl

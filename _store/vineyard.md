@@ -9,7 +9,7 @@ tags:
 - Metadata Management
 - Big Data
 - In-Memory Storage
-url: https://v6d.io/
+website: https://v6d.io/
 radarRing: Developing
 alternativeNames:
 - vineyard

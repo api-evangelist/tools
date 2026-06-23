@@ -9,7 +9,7 @@ tags:
 - Spark
 - UDFs
 - Data Processing
-url: https://datafu.apache.org
+website: https://datafu.apache.org
 radarRing: Initial
 alternativeNames:
 - DataFu

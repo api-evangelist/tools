@@ -9,7 +9,7 @@ tags:
 - Observability
 - Java
 - Cross Language
-url: https://logging.apache.org
+website: https://logging.apache.org
 radarRing: Developing
 alternativeNames:
 - Log4j

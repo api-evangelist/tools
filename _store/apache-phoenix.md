@@ -9,7 +9,7 @@ tags:
 - OLTP
 - Analytics
 - Low Latency
-url: https://phoenix.apache.org
+website: https://phoenix.apache.org
 radarRing: Established
 alternativeNames:
 - Phoenix

@@ -9,7 +9,7 @@ tags:
 - Scripting
 - Web Development
 - mod_tcl
-url: https://tcl.apache.org
+website: https://tcl.apache.org
 radarRing: Established
 alternativeNames:
 - Rivet

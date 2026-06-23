@@ -9,7 +9,7 @@ tags:
 - Service Catalog
 - Documentation
 - Microservices
-url: https://backstage.io
+website: https://backstage.io
 radarRing: Developing
 alternativeNames:
 - backstage

@@ -11,7 +11,7 @@ tags:
 - Real-Time
 - Distributed Systems
 - Database
-url: https://www.elastic.co/elasticsearch/
+website: https://www.elastic.co/elasticsearch/
 founded: 2010
 radarRing: Optimizing
 alternativeNames:

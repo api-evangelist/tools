@@ -9,7 +9,7 @@ tags:
 - Distributed Systems
 - Java
 - Replication
-url: https://ratis.apache.org
+website: https://ratis.apache.org
 radarRing: Established
 alternativeNames:
 - Ratis

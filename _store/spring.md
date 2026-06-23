@@ -9,7 +9,7 @@ tags:
 - Backend
 - Enterprise
 - Dependency Injection
-url: https://spring.io/
+website: https://spring.io/
 founded: 2002
 radarRing: Optimizing
 alternativeNames:

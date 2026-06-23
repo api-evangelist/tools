@@ -9,7 +9,7 @@ tags:
 - Clinical Text
 - Medical Records
 - Text Mining
-url: https://ctakes.apache.org
+website: https://ctakes.apache.org
 radarRing: Initial
 alternativeNames:
 - cTAKES

@@ -9,7 +9,7 @@ tags:
 - Distributed
 - Low Latency
 - High Throughput
-url: https://rocketmq.apache.org
+website: https://rocketmq.apache.org
 radarRing: Initial
 alternativeNames:
 - RocketMQ

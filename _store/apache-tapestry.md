@@ -9,7 +9,7 @@ tags:
 - Component Oriented
 - Productivity
 - Convention Over Configuration
-url: https://tapestry.apache.org
+website: https://tapestry.apache.org
 radarRing: Developing
 alternativeNames:
 - Tapestry

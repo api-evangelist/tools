@@ -9,7 +9,7 @@ tags:
 - Pipeline
 - Content Management
 - Java
-url: https://cocoon.apache.org
+website: https://cocoon.apache.org
 radarRing: Initial
 alternativeNames:
 - Cocoon

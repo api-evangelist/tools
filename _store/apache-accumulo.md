@@ -9,7 +9,7 @@ tags:
 - Hadoop
 - Security
 - Distributed Database
-url: https://accumulo.apache.org
+website: https://accumulo.apache.org
 radarRing: Initial
 alternativeNames:
 - Accumulo

@@ -8,7 +8,7 @@ tags:
 - JavaScript
 - React
 - Frontend
-url: https://redux.js.org/
+website: https://redux.js.org/
 founded: 2015
 radarRing: Established
 alternativeNames:

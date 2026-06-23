@@ -9,7 +9,7 @@ tags:
 - Reproducible Builds
 - Integration
 - Automation
-url: https://buildstream.build
+website: https://buildstream.build
 radarRing: Initial
 alternativeNames:
 - BuildStream

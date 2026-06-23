@@ -9,7 +9,7 @@ tags:
 - Model Serving
 - Inference
 - MLOps
-url: https://kserve.github.io/website/
+website: https://kserve.github.io/website/
 radarRing: Developing
 alternativeNames:
 - kserve

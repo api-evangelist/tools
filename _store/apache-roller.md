@@ -9,7 +9,7 @@ tags:
 - Java
 - Multi User
 - Web Application
-url: https://roller.apache.org
+website: https://roller.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Roller

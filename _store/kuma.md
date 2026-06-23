@@ -8,7 +8,7 @@ tags:
 - Envoy
 - Kubernetes
 - Multi Cloud
-url: https://kuma.io
+website: https://kuma.io
 radarRing: Developing
 alternativeNames:
 - kuma

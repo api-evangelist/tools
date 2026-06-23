@@ -9,7 +9,7 @@ tags:
 - iOS
 - Android
 - Cross-Platform
-url: https://appium.io
+website: https://appium.io
 founded: 2012
 radarRing: Established
 alternativeNames:

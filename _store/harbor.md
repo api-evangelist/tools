@@ -8,7 +8,7 @@ tags:
 - Security
 - Cloud Native
 - Artifact Management
-url: https://goharbor.io/
+website: https://goharbor.io/
 radarRing: Established
 alternativeNames:
 - harbor

@@ -9,7 +9,7 @@ tags:
 - Marshalling
 - Microservices
 - Serialization
-url: https://juneau.apache.org
+website: https://juneau.apache.org
 radarRing: Developing
 alternativeNames:
 - Juneau

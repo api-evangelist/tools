@@ -9,7 +9,7 @@ tags:
 - Onboarding
 - Open Source
 - Governance
-url: https://community.apache.org
+website: https://community.apache.org
 radarRing: Initial
 alternativeNames:
 - Apache ComDev

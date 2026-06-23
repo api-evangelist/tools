@@ -9,7 +9,7 @@ tags:
 - SAX
 - Validation
 - Java
-url: https://xerces.apache.org
+website: https://xerces.apache.org
 radarRing: Developing
 alternativeNames:
 - Xerces

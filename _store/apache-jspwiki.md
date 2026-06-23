@@ -9,7 +9,7 @@ tags:
 - Content Management
 - Collaboration
 - Web Application
-url: https://jspwiki.apache.org
+website: https://jspwiki.apache.org
 radarRing: Initial
 alternativeNames:
 - JSPWiki

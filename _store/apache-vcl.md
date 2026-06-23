@@ -9,7 +9,7 @@ tags:
 - On Demand
 - Provisioning
 - Education
-url: https://vcl.apache.org
+website: https://vcl.apache.org
 radarRing: Developing
 alternativeNames:
 - VCL

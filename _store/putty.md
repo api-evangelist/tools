@@ -8,7 +8,7 @@ tags:
 - Terminal Emulator
 - Remote Access
 - Network Tools
-url: https://www.putty.org/
+website: https://www.putty.org/
 founded: 1999
 radarRing: Established
 alternativeNames:

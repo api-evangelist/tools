@@ -9,7 +9,7 @@ tags:
 - IMAP
 - Mail
 - Java
-url: https://james.apache.org
+website: https://james.apache.org
 radarRing: Established
 alternativeNames:
 - James

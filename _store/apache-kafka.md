@@ -9,7 +9,7 @@ tags:
 - Event Driven
 - Real Time
 - Pub Sub
-url: https://kafka.apache.org
+website: https://kafka.apache.org
 radarRing: Established
 alternativeNames:
 - Kafka

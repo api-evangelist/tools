@@ -8,7 +8,7 @@ tags:
 - Reverse Proxy
 - Load Balancer
 - HTTP Server
-url: https://nginx.org
+website: https://nginx.org
 founded: 2004
 radarRing: Established
 alternativeNames:

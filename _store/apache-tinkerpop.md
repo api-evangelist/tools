@@ -9,7 +9,7 @@ tags:
 - Gremlin
 - Traversal
 - Analytics
-url: https://tinkerpop.apache.org
+website: https://tinkerpop.apache.org
 radarRing: Developing
 alternativeNames:
 - TinkerPop

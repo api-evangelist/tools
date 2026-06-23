@@ -9,7 +9,7 @@ tags:
 - Data Lineage
 - Classification
 - Hadoop
-url: https://atlas.apache.org
+website: https://atlas.apache.org
 radarRing: Established
 alternativeNames:
 - Atlas

@@ -9,7 +9,7 @@ tags:
 - Orchestration
 - SDK
 - Agents
-url: https://github.com/microsoft/semantic-kernel
+website: https://github.com/microsoft/semantic-kernel
 yearCreated: 2023
 radarRing: Optimizing
 alternativeNames:

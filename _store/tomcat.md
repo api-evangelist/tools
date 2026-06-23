@@ -8,7 +8,7 @@ tags:
 - Web Server
 - Servlet Container
 - Application Server
-url: https://tomcat.apache.org/
+website: https://tomcat.apache.org/
 founded: 1999
 radarRing: Optimizing
 alternativeNames:

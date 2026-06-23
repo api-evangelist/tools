@@ -8,7 +8,7 @@ tags:
 - Streaming
 - ETL
 - Apache Kafka
-url: https://kafka.apache.org/documentation/#connect
+website: https://kafka.apache.org/documentation/#connect
 founded: 2016
 radarRing: Optimizing
 alternativeNames:

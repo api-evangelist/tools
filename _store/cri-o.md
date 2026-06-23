@@ -8,7 +8,7 @@ tags:
 - Kubernetes
 - OCI
 - Cloud Native
-url: https://cri-o.io/
+website: https://cri-o.io/
 radarRing: Developing
 alternativeNames:
 - crio

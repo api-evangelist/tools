@@ -9,7 +9,7 @@ tags:
 - HTML Generation
 - Text Processing
 - MVC
-url: https://freemarker.apache.org
+website: https://freemarker.apache.org
 radarRing: Established
 alternativeNames:
 - FreeMarker

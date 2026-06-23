@@ -10,7 +10,7 @@ tags:
 - eBPF
 - Threat Detection
 - CNCF
-url: https://falco.org
+website: https://falco.org
 radarRing: Developing
 alternativeNames:
 - falco

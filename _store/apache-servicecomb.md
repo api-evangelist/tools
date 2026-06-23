@@ -9,7 +9,7 @@ tags:
 - Java
 - Cloud Native
 - Service Framework
-url: https://servicecomb.apache.org
+website: https://servicecomb.apache.org
 radarRing: Initial
 alternativeNames:
 - ServiceComb

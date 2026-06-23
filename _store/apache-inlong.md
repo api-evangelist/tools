@@ -9,7 +9,7 @@ tags:
 - Streaming
 - Batch Processing
 - Data Transmission
-url: https://inlong.apache.org
+website: https://inlong.apache.org
 radarRing: Initial
 alternativeNames:
 - InLong

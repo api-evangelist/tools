@@ -9,7 +9,7 @@ tags:
 - Analytics
 - Big Data
 - ACID
-url: https://iceberg.apache.org
+website: https://iceberg.apache.org
 radarRing: Developing
 alternativeNames:
 - Iceberg

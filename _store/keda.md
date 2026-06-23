@@ -8,7 +8,7 @@ tags:
 - Autoscaling
 - Event-Driven
 - CNCF
-url: https://keda.sh/
+website: https://keda.sh/
 radarRing: Developing
 alternativeNames:
 - keda

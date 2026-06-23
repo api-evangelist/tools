@@ -9,7 +9,7 @@ tags:
 - Web Framework
 - Enterprise
 - Convention Over Configuration
-url: https://struts.apache.org
+website: https://struts.apache.org
 radarRing: Developing
 alternativeNames:
 - Struts

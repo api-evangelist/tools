@@ -7,7 +7,7 @@ tags:
 - Database
 - NoSQL
 - Document Store
-url: https://www.mongodb.com/
+website: https://www.mongodb.com/
 founded: 2009
 radarRing: Optimizing
 alternativeNames:

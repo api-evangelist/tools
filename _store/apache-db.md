@@ -9,7 +9,7 @@ tags:
 - Java
 - SQL
 - Embedded Database
-url: https://db.apache.org
+website: https://db.apache.org
 radarRing: Developing
 alternativeNames:
 - Derby

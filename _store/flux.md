@@ -9,7 +9,7 @@ tags:
 - Machine Learning
 - Text To Image
 - Open Source
-url: https://blackforestlabs.ai/
+website: https://blackforestlabs.ai/
 radarRing: Established
 alternativeNames:
 - FluxCD

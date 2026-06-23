@@ -9,7 +9,7 @@ tags:
 - Distributed Systems
 - Sharding
 - Cloud Native
-url: https://vitess.io
+website: https://vitess.io
 radarRing: Optimizing
 alternativeNames:
 - vitess

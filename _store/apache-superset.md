@@ -9,7 +9,7 @@ tags:
 - Dashboards
 - Analytics
 - SQL
-url: https://superset.apache.org
+website: https://superset.apache.org
 radarRing: Developing
 alternativeNames:
 - Superset

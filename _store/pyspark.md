@@ -9,7 +9,7 @@ tags:
 - Distributed Computing
 - Data Processing
 - Apache Spark
-url: https://spark.apache.org/docs/latest/api/python/
+website: https://spark.apache.org/docs/latest/api/python/
 founded: 2014
 radarRing: Established
 alternativeNames:

@@ -8,7 +8,7 @@ tags:
 - Observability
 - Monitoring
 - Microservices
-url: https://www.jaegertracing.io/
+website: https://www.jaegertracing.io/
 radarRing: Developing
 alternativeNames:
 - jaeger

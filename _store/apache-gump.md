@@ -9,7 +9,7 @@ tags:
 - Java
 - Build Tool
 - Compatibility
-url: https://gump.apache.org
+website: https://gump.apache.org
 radarRing: Developing
 alternativeNames:
 - Gump

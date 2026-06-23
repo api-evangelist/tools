@@ -8,7 +8,7 @@ tags:
 - Development Tools
 - Microservices
 - Debugging
-url: https://www.telepresence.io/
+website: https://www.telepresence.io/
 radarRing: Developing
 alternativeNames:
 - telepresence

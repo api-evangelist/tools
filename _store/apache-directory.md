@@ -9,7 +9,7 @@ tags:
 - Directory Service
 - Identity Management
 - Java
-url: https://directory.apache.org
+website: https://directory.apache.org
 radarRing: Initial
 alternativeNames:
 - ApacheDS

@@ -11,7 +11,7 @@ tags:
 - OAuth
 - OpenID Connect
 - Security
-url: https://www.keycloak.org/
+website: https://www.keycloak.org/
 radarRing: Optimizing
 alternativeNames:
 - keycloak

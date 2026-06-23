@@ -9,7 +9,7 @@ tags:
 - Wide Column
 - Hadoop
 - Distributed Database
-url: https://hbase.apache.org
+website: https://hbase.apache.org
 radarRing: Developing
 alternativeNames:
 - HBase

@@ -9,7 +9,7 @@ tags:
 - Legal
 - Software Distribution
 - Governance
-url: https://creadur.apache.org
+website: https://creadur.apache.org
 radarRing: Initial
 alternativeNames:
 - Creadur

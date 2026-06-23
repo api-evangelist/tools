@@ -11,7 +11,7 @@ tags:
 - Single Sign-On
 - SSO
 - Federation
-url: https://dexidp.io/
+website: https://dexidp.io/
 radarRing: Optimizing
 alternativeNames:
 - dex

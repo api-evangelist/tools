@@ -8,7 +8,7 @@ tags:
 - JavaScript
 - Cross-Platform
 - Frontend
-url: https://reactnative.dev/
+website: https://reactnative.dev/
 founded: 2015
 radarRing: Optimizing
 alternativeNames:

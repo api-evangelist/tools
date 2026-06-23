@@ -9,7 +9,7 @@ tags:
 - Machine Learning
 - Operator
 - Inference
-url: https://github.com/Azure/kaito
+website: https://github.com/Azure/kaito
 radarRing: Initial
 alternativeNames:
 - kaito

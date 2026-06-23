@@ -9,7 +9,7 @@ tags:
 - Centralized Vcs
 - Source Code Management
 - Collaboration
-url: https://subversion.apache.org
+website: https://subversion.apache.org
 radarRing: Established
 alternativeNames:
 - SVN

@@ -9,7 +9,7 @@ tags:
 - Cloud Native
 - Multi-Cloud
 - Control Plane
-url: https://www.crossplane.io/
+website: https://www.crossplane.io/
 radarRing: Developing
 alternativeNames:
 - crossplane

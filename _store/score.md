@@ -7,7 +7,7 @@ tags:
 - Evaluation
 - AI
 - Scoring
-url: https://github.com/openai/evals
+website: https://github.com/openai/evals
 radarRing: Optimizing
 alternativeNames:
 - score

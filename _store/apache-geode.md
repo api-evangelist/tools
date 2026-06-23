@@ -9,7 +9,7 @@ tags:
 - Data Management
 - Real Time
 - High Availability
-url: https://geode.apache.org
+website: https://geode.apache.org
 radarRing: Developing
 alternativeNames:
 - Geode

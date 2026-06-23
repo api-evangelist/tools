@@ -8,7 +8,7 @@ tags:
 - Artifact Management
 - DevOps
 - CI/CD
-url: https://www.sonatype.com/products/nexus-repository
+website: https://www.sonatype.com/products/nexus-repository
 founded: 2008
 radarRing: Established
 alternativeNames:

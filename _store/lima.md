@@ -8,7 +8,7 @@ tags:
 - Containers
 - macOS
 - Linux
-url: https://lima-vm.io/
+website: https://lima-vm.io/
 radarRing: Optimizing
 alternativeNames:
 - lima

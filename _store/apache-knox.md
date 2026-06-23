@@ -9,7 +9,7 @@ tags:
 - Hadoop
 - Authentication
 - Authorization
-url: https://knox.apache.org
+website: https://knox.apache.org
 radarRing: Developing
 alternativeNames:
 - Knox

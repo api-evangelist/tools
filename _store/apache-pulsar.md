@@ -9,7 +9,7 @@ tags:
 - Pub Sub
 - Multi Tenancy
 - Cloud Native
-url: https://pulsar.apache.org
+website: https://pulsar.apache.org
 radarRing: Established
 alternativeNames:
 - Pulsar

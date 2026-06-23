@@ -8,7 +8,7 @@ tags:
 - Multi-Cluster
 - Networking
 - Service Mesh
-url: https://github.com/liqotech/liqo
+website: https://github.com/liqotech/liqo
 radarRing: Developing
 alternativeNames:
 - interlink

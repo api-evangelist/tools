@@ -9,7 +9,7 @@ tags:
 - Hybrid Apps
 - JavaScript
 - HTML5
-url: https://cordova.apache.org
+website: https://cordova.apache.org
 radarRing: Developing
 alternativeNames:
 - Cordova

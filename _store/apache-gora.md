@@ -9,7 +9,7 @@ tags:
 - Hadoop
 - Data Persistence
 - Big Data
-url: https://gora.apache.org
+website: https://gora.apache.org
 radarRing: Established
 alternativeNames:
 - Gora

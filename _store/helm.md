@@ -8,7 +8,7 @@ tags:
 - Package Manager
 - DevOps
 - Container Orchestration
-url: https://helm.sh
+website: https://helm.sh
 radarRing: Established
 alternativeNames:
 - helm

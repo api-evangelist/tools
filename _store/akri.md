@@ -8,7 +8,7 @@ tags:
 - IoT
 - Edge Computing
 - Device Management
-url: https://github.com/project-akri/akri
+website: https://github.com/project-akri/akri
 radarRing: Developing
 alternativeNames:
 - akri

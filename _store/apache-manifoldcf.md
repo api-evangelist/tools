@@ -9,7 +9,7 @@ tags:
 - Search Indexing
 - Crawling
 - Content Management
-url: https://manifoldcf.apache.org
+website: https://manifoldcf.apache.org
 radarRing: Initial
 alternativeNames:
 - ManifoldCF

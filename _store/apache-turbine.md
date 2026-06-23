@@ -9,7 +9,7 @@ tags:
 - Servlet
 - Rapid Development
 - Security
-url: https://turbine.apache.org
+website: https://turbine.apache.org
 radarRing: Developing
 alternativeNames:
 - Turbine

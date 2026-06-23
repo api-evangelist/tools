@@ -12,7 +12,7 @@ tags:
 - Infrastructure
 - Operating Systems
 - Command Line
-url: https://www.kernel.org/
+website: https://www.kernel.org/
 founded: 1969
 radarRing: Optimizing
 alternativeNames:

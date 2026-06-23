@@ -9,7 +9,7 @@ tags:
 - Data Management
 - Federation
 - JDBC
-url: https://calcite.apache.org
+website: https://calcite.apache.org
 radarRing: Initial
 alternativeNames:
 - Calcite

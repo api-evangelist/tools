@@ -9,7 +9,7 @@ tags:
 - Text Processing
 - Tokenization
 - Named Entity Recognition
-url: https://opennlp.apache.org
+website: https://opennlp.apache.org
 radarRing: Initial
 alternativeNames:
 - OpenNLP

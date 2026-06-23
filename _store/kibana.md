@@ -10,7 +10,7 @@ tags:
 - Elasticsearch
 - Dashboard
 - Open Source
-url: https://www.elastic.co/kibana
+website: https://www.elastic.co/kibana
 founded: 2013
 radarRing: Established
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - Traffic Management
 - Microservices
 - Load Balancing
-url: https://apisix.apache.org
+website: https://apisix.apache.org
 radarRing: Initial
 alternativeNames:
 - APISIX

@@ -7,7 +7,7 @@ tags:
 - Testing
 - .NET
 - Unit Testing
-url: https://nunit.org/
+website: https://nunit.org/
 founded: 2002
 radarRing: Established
 alternativeNames:

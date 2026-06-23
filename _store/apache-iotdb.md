@@ -9,7 +9,7 @@ tags:
 - Database
 - Compression
 - Edge Computing
-url: https://iotdb.apache.org
+website: https://iotdb.apache.org
 radarRing: Initial
 alternativeNames:
 - IoTDB

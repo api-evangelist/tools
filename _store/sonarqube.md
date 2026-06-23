@@ -8,7 +8,7 @@ tags:
 - Static Analysis
 - Security
 - DevOps
-url: https://www.sonarqube.org/
+website: https://www.sonarqube.org/
 founded: 2007
 radarRing: Optimizing
 alternativeNames:

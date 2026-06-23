@@ -8,7 +8,7 @@ tags:
 - Kubernetes
 - Monitoring
 - eBPF
-url: https://px.dev/
+website: https://px.dev/
 radarRing: Optimizing
 alternativeNames:
 - pixie

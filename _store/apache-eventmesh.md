@@ -9,7 +9,7 @@ tags:
 - Event Mesh
 - Messaging
 - Cloud Native
-url: https://eventmesh.apache.org
+website: https://eventmesh.apache.org
 radarRing: Initial
 alternativeNames:
 - EventMesh

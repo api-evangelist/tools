@@ -9,7 +9,7 @@ tags:
 - Big Data
 - Hadoop
 - Query Engine
-url: https://drill.apache.org
+website: https://drill.apache.org
 radarRing: Established
 alternativeNames:
 - Drill

@@ -9,7 +9,7 @@ tags:
 - Routing
 - Middleware
 - Microservices
-url: https://camel.apache.org
+website: https://camel.apache.org
 radarRing: Developing
 alternativeNames:
 - Camel

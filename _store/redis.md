@@ -9,7 +9,7 @@ tags:
 - In-Memory
 - NoSQL
 - Key-Value Store
-url: https://redis.io
+website: https://redis.io
 founded: 2009
 radarRing: Optimizing
 alternativeNames:

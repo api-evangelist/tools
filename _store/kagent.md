@@ -7,7 +7,7 @@ tags:
 - AI Agents
 - Framework
 - Autonomous Systems
-url: https://github.com/deepwisdom/kagent
+website: https://github.com/deepwisdom/kagent
 radarRing: Initial
 alternativeNames:
 - kagent

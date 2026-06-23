@@ -9,7 +9,7 @@ tags:
 - Scripting
 - Pig Latin
 - Data Processing
-url: https://pig.apache.org
+website: https://pig.apache.org
 radarRing: Established
 alternativeNames:
 - Pig

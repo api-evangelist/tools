@@ -8,7 +8,7 @@ tags:
 - DevOps
 - Cloud Native
 - Infrastructure
-url: https://kubernetes.io
+website: https://kubernetes.io
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

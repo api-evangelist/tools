@@ -9,7 +9,7 @@ tags:
 - Enterprise
 - Modularity
 - Component Framework
-url: https://aries.apache.org
+website: https://aries.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Aries

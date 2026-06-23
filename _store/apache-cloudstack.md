@@ -9,7 +9,7 @@ tags:
 - Virtualization
 - Cloud Management
 - Infrastructure
-url: https://cloudstack.apache.org
+website: https://cloudstack.apache.org
 radarRing: Initial
 alternativeNames:
 - CloudStack

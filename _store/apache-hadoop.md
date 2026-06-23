@@ -9,7 +9,7 @@ tags:
 - MapReduce
 - HDFS
 - Batch Processing
-url: https://hadoop.apache.org
+website: https://hadoop.apache.org
 radarRing: Established
 alternativeNames:
 - Hadoop

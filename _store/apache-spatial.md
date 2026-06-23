@@ -9,7 +9,7 @@ tags:
 - GIS
 - Data Processing
 - Coordinates
-url: https://spatial.apache.org
+website: https://spatial.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Spatial Information System

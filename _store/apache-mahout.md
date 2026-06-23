@@ -9,7 +9,7 @@ tags:
 - Scala
 - Distributed Computing
 - Recommendation Engines
-url: https://mahout.apache.org
+website: https://mahout.apache.org
 radarRing: Initial
 alternativeNames:
 - Mahout

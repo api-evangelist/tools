@@ -9,7 +9,7 @@ tags:
 - Client Library
 - Networking
 - Web
-url: https://hc.apache.org
+website: https://hc.apache.org
 radarRing: Initial
 alternativeNames:
 - HttpClient

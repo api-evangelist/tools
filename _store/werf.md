@@ -9,7 +9,7 @@ tags:
 - Kubernetes
 - Deployment
 - GitOps
-url: https://werf.io/
+website: https://werf.io/
 radarRing: Optimizing
 alternativeNames:
 - Werf

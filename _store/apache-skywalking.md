@@ -9,7 +9,7 @@ tags:
 - Distributed Tracing
 - Monitoring
 - Microservices
-url: https://skywalking.apache.org
+website: https://skywalking.apache.org
 radarRing: Optimizing
 alternativeNames:
 - SkyWalking

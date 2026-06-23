@@ -9,7 +9,7 @@ tags:
 - Big Data
 - Hadoop
 - Analytics
-url: https://hive.apache.org
+website: https://hive.apache.org
 radarRing: Established
 alternativeNames:
 - Hive

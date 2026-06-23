@@ -9,7 +9,7 @@ tags:
 - Visualization
 - Interactive
 - Collaboration
-url: https://zeppelin.apache.org
+website: https://zeppelin.apache.org
 radarRing: Developing
 alternativeNames:
 - Zeppelin

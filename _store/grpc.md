@@ -9,7 +9,7 @@ tags:
 - Protocol Buffers
 - HTTP/2
 - Microservices
-url: https://grpc.io/
+website: https://grpc.io/
 radarRing: Developing
 alternativeNames:
 - grpc

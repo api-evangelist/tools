@@ -9,7 +9,7 @@ tags:
 - Job Scheduler
 - DevOps
 - Infrastructure
-url: https://www.rundeck.com
+website: https://www.rundeck.com
 founded: 2010
 radarRing: Established
 alternativeNames:

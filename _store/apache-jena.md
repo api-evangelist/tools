@@ -9,7 +9,7 @@ tags:
 - SPARQL
 - Linked Data
 - Knowledge Graph
-url: https://jena.apache.org
+website: https://jena.apache.org
 radarRing: Developing
 alternativeNames:
 - Jena

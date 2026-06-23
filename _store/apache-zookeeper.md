@@ -9,7 +9,7 @@ tags:
 - Consensus
 - Naming Service
 - Hadoop
-url: https://zookeeper.apache.org
+website: https://zookeeper.apache.org
 radarRing: Established
 alternativeNames:
 - ZooKeeper

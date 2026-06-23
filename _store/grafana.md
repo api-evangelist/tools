@@ -9,7 +9,7 @@ tags:
 - Monitoring
 - Visualization
 - Dashboard
-url: https://grafana.com/
+website: https://grafana.com/
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

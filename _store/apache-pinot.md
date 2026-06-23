@@ -9,7 +9,7 @@ tags:
 - Distributed Database
 - Low Latency
 - Time Series
-url: https://pinot.apache.org
+website: https://pinot.apache.org
 radarRing: Initial
 alternativeNames:
 - Pinot

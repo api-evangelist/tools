@@ -8,7 +8,7 @@ tags:
 - OCI
 - Artifact Storage
 - Cloud Native
-url: https://oras.land/
+website: https://oras.land/
 radarRing: Established
 alternativeNames:
 - oras

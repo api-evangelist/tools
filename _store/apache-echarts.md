@@ -9,7 +9,7 @@ tags:
 - JavaScript
 - Interactive
 - Dashboards
-url: https://echarts.apache.org
+website: https://echarts.apache.org
 radarRing: Initial
 alternativeNames:
 - ECharts

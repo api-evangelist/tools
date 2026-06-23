@@ -9,7 +9,7 @@ tags:
 - DevOps
 - Infrastructure
 - Platform
-url: https://www.docker.com/
+website: https://www.docker.com/
 founded: 2013
 radarRing: Optimizing
 alternativeNames:

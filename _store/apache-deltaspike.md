@@ -9,7 +9,7 @@ tags:
 - Extensions
 - Jakarta EE
 - Dependency Injection
-url: https://deltaspike.apache.org
+website: https://deltaspike.apache.org
 radarRing: Initial
 alternativeNames:
 - DeltaSpike

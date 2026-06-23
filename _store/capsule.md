@@ -8,7 +8,7 @@ tags:
 - Project Management
 - Sales
 - Contact Management
-url: https://capsulecrm.com
+website: https://capsulecrm.com
 radarRing: Developing
 alternativeNames:
 - capsule

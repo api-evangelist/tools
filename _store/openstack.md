@@ -8,7 +8,7 @@ tags:
 - Infrastructure As A Service
 - Open Source
 - Virtualization
-url: https://www.openstack.org/
+website: https://www.openstack.org/
 founded: 2010
 radarRing: Established
 alternativeNames:

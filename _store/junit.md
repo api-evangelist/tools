@@ -7,7 +7,7 @@ tags:
 - Java
 - Testing
 - Unit Testing
-url: https://junit.org/
+website: https://junit.org/
 founded: 1997
 radarRing: Optimizing
 alternativeNames:

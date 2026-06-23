@@ -9,7 +9,7 @@ tags:
 - Distributed Coordination
 - Client Library
 - Recipes
-url: https://curator.apache.org
+website: https://curator.apache.org
 radarRing: Developing
 alternativeNames:
 - Curator

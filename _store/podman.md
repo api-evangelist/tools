@@ -7,7 +7,7 @@ tags:
 - Containers
 - DevOps
 - Virtualization
-url: https://podman.io/
+website: https://podman.io/
 founded: 2018
 radarRing: Established
 alternativeNames:

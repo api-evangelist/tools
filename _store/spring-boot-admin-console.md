@@ -9,7 +9,7 @@ tags:
 - Monitoring
 - Administration
 - Dashboard
-url: https://github.com/codecentric/spring-boot-admin
+website: https://github.com/codecentric/spring-boot-admin
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

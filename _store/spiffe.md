@@ -9,7 +9,7 @@ tags:
 - Authentication
 - Zero Trust
 - Cloud Native
-url: https://spiffe.io/
+website: https://spiffe.io/
 radarRing: Initial
 alternativeNames:
 - spiffe

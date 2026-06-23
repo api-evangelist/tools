@@ -9,7 +9,7 @@ tags:
 - Bean Validation
 - JSR-303
 - Data Integrity
-url: https://bval.apache.org
+website: https://bval.apache.org
 radarRing: Initial
 alternativeNames:
 - BVal

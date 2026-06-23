@@ -9,7 +9,7 @@ tags:
 - Issue Tracker
 - Trac
 - Collaboration
-url: https://bloodhound.apache.org
+website: https://bloodhound.apache.org
 radarRing: Initial
 alternativeNames:
 - Bloodhound

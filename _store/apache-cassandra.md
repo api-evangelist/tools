@@ -9,7 +9,7 @@ tags:
 - Wide Column
 - High Availability
 - Scalability
-url: https://cassandra.apache.org
+website: https://cassandra.apache.org
 radarRing: Established
 alternativeNames:
 - Cassandra

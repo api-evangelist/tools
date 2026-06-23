@@ -8,7 +8,7 @@ tags:
 - In-Memory
 - Cache
 - Key-Value Store
-url: https://www.dragonflydb.io/
+website: https://www.dragonflydb.io/
 radarRing: Initial
 alternativeNames:
 - dragonfly

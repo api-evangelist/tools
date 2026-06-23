@@ -9,7 +9,7 @@ tags:
 - openCypher
 - Extension
 - Query Language
-url: https://age.apache.org
+website: https://age.apache.org
 radarRing: Optimizing
 alternativeNames:
 - AGE

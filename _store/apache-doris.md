@@ -9,7 +9,7 @@ tags:
 - Real Time Analytics
 - OLAP
 - SQL
-url: https://doris.apache.org
+website: https://doris.apache.org
 radarRing: Developing
 alternativeNames:
 - Doris

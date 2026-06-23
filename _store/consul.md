@@ -9,7 +9,7 @@ tags:
 - Distributed Systems
 - Infrastructure
 - Networking
-url: https://www.consul.io/
+website: https://www.consul.io/
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

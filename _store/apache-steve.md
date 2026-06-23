@@ -9,7 +9,7 @@ tags:
 - ASF
 - Community
 - Elections
-url: https://steve.apache.org
+website: https://steve.apache.org
 radarRing: Established
 alternativeNames:
 - Steve

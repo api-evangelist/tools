@@ -9,7 +9,7 @@ tags:
 - Distributed Systems
 - Containers
 - Orchestration
-url: https://mesos.apache.org
+website: https://mesos.apache.org
 radarRing: Developing
 alternativeNames:
 - Mesos

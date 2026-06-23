@@ -9,7 +9,7 @@ tags:
 - Python
 - Neural Networks
 - AI
-url: https://www.tensorflow.org/
+website: https://www.tensorflow.org/
 founded: 2015
 radarRing: Optimizing
 alternativeNames:

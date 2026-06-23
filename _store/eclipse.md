@@ -7,7 +7,7 @@ tags:
 - IDE
 - Java
 - Development Tools
-url: https://www.eclipse.org/
+website: https://www.eclipse.org/
 founded: 2001
 radarRing: Optimizing
 alternativeNames:

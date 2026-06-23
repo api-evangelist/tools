@@ -9,7 +9,7 @@ tags:
 - Linear Algebra
 - Distributed Computing
 - ML Algorithms
-url: https://systemds.apache.org
+website: https://systemds.apache.org
 radarRing: Initial
 alternativeNames:
 - SystemDS

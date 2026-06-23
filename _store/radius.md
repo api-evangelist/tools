@@ -8,7 +8,7 @@ tags:
 - Application Platform
 - Multi Cloud
 - Infrastructure
-url: https://radapp.io/
+website: https://radapp.io/
 radarRing: Established
 alternativeNames:
 - radius

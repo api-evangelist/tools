@@ -9,7 +9,7 @@ tags:
 - Modularity
 - Framework
 - Component Model
-url: https://felix.apache.org
+website: https://felix.apache.org
 radarRing: Developing
 alternativeNames:
 - Felix

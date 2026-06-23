@@ -8,7 +8,7 @@ tags:
 - DevOps
 - Automation
 - Image Building
-url: https://www.packer.io/
+website: https://www.packer.io/
 yearCreated: 2013
 radarRing: Established
 alternativeNames:

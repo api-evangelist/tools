@@ -9,7 +9,7 @@ tags:
 - Authorization
 - Java
 - Cryptography
-url: https://shiro.apache.org
+website: https://shiro.apache.org
 radarRing: Developing
 alternativeNames:
 - Shiro

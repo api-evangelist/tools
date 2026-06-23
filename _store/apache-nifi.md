@@ -9,7 +9,7 @@ tags:
 - Data Integration
 - Automation
 - Visual Programming
-url: https://nifi.apache.org
+website: https://nifi.apache.org
 radarRing: Optimizing
 alternativeNames:
 - NiFi

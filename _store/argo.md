@@ -8,7 +8,7 @@ tags:
 - Workflows
 - CI/CD
 - GitOps
-url: https://argoproj.github.io/
+website: https://argoproj.github.io/
 radarRing: Optimizing
 alternativeNames:
 - ArgoCD

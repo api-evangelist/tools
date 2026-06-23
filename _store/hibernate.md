@@ -9,7 +9,7 @@ tags:
 - Database
 - Persistence
 - JPA
-url: https://hibernate.org/
+website: https://hibernate.org/
 founded: 2001
 radarRing: Optimizing
 alternativeNames:

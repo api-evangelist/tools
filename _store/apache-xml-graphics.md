@@ -9,7 +9,7 @@ tags:
 - Graphics
 - FOP
 - PostScript
-url: https://xmlgraphics.apache.org
+website: https://xmlgraphics.apache.org
 radarRing: Developing
 alternativeNames:
 - Batik

@@ -9,7 +9,7 @@ tags:
 - Microservices
 - Event-Driven
 - Spring
-url: https://spring.io/projects/spring-cloud-stream
+website: https://spring.io/projects/spring-cloud-stream
 founded: 2016
 radarRing: Established
 alternativeNames:

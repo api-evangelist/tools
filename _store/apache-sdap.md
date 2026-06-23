@@ -9,7 +9,7 @@ tags:
 - Analytics
 - Scientific Computing
 - Climate
-url: https://sdap.apache.org
+website: https://sdap.apache.org
 radarRing: Developing
 alternativeNames:
 - SDAP

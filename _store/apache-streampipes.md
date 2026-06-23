@@ -9,7 +9,7 @@ tags:
 - Self Service
 - Industrial IoT
 - No Code
-url: https://streampipes.apache.org
+website: https://streampipes.apache.org
 radarRing: Initial
 alternativeNames:
 - StreamPipes

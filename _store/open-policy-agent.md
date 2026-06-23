@@ -9,7 +9,7 @@ tags:
 - Authorization
 - Cloud Native
 - Governance
-url: https://www.openpolicyagent.org/
+website: https://www.openpolicyagent.org/
 yearCreated: 2016
 radarRing: Optimizing
 alternativeNames:

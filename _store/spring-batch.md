@@ -8,7 +8,7 @@ tags:
 - Batch Processing
 - Spring Framework
 - Enterprise
-url: https://spring.io/projects/spring-batch
+website: https://spring.io/projects/spring-batch
 founded: 2007
 radarRing: Established
 alternativeNames:

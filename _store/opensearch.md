@@ -8,7 +8,7 @@ tags:
 - Analytics
 - Distributed Systems
 - Open Source
-url: https://opensearch.org/
+website: https://opensearch.org/
 yearCreated: 2021
 radarRing: Established
 alternativeNames:

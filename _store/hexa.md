@@ -7,7 +7,7 @@ tags:
 - Data Analytics
 - Collaboration
 - Data Workspace
-url: https://hexa.app
+website: https://hexa.app
 radarRing: Developing
 alternativeNames:
 - hexa

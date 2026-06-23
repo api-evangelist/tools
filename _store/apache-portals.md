@@ -9,7 +9,7 @@ tags:
 - Portlet
 - Enterprise
 - Web Framework
-url: https://portals.apache.org
+website: https://portals.apache.org
 radarRing: Established
 alternativeNames:
 - Portals

@@ -7,7 +7,7 @@ tags:
 - Java
 - Template Engine
 - Server-Side Rendering
-url: https://www.thymeleaf.org/
+website: https://www.thymeleaf.org/
 founded: 2011
 radarRing: Established
 alternativeNames:

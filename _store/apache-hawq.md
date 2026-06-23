@@ -9,7 +9,7 @@ tags:
 - Analytics
 - Hadoop
 - Enterprise
-url: https://hawq.apache.org
+website: https://hawq.apache.org
 radarRing: Initial
 alternativeNames:
 - HAWQ

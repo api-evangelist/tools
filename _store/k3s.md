@@ -9,7 +9,7 @@ tags:
 - Edge Computing
 - DevOps
 - Cloud Native
-url: https://k3s.io/
+website: https://k3s.io/
 radarRing: Developing
 alternativeNames:
 - k3s

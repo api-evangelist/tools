@@ -9,7 +9,7 @@ tags:
 - Secrets Management
 - DevOps
 - Configuration Management
-url: https://github.com/mozilla/sops
+website: https://github.com/mozilla/sops
 radarRing: Developing
 alternativeNames:
 - sops

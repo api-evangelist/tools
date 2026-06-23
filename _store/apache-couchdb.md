@@ -9,7 +9,7 @@ tags:
 - JSON
 - HTTP API
 - Replication
-url: https://couchdb.apache.org
+website: https://couchdb.apache.org
 radarRing: Developing
 alternativeNames:
 - CouchDB

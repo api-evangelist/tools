@@ -9,7 +9,7 @@ tags:
 - Cloud Abstraction
 - Portable
 - IaaS
-url: https://jclouds.apache.org
+website: https://jclouds.apache.org
 radarRing: Initial
 alternativeNames:
 - jclouds

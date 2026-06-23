@@ -8,7 +8,7 @@ tags:
 - Formal Verification
 - Dependent Types
 - Programming Language
-url: https://lean-lang.org/
+website: https://lean-lang.org/
 yearCreated: 2013
 radarRing: Optimizing
 alternativeNames:

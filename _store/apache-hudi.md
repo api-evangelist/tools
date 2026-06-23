@@ -9,7 +9,7 @@ tags:
 - Upserts
 - Streaming
 - Table Format
-url: https://hudi.apache.org
+website: https://hudi.apache.org
 radarRing: Developing
 alternativeNames:
 - Hudi

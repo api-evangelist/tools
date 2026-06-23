@@ -9,7 +9,7 @@ tags:
 - NIO
 - High Performance
 - Protocol Framework
-url: https://mina.apache.org
+website: https://mina.apache.org
 radarRing: Optimizing
 alternativeNames:
 - MINA

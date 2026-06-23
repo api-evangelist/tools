@@ -7,7 +7,7 @@ tags:
 - Logging
 - Data Collection
 - Open Source
-url: https://www.fluentd.org/
+website: https://www.fluentd.org/
 radarRing: Initial
 alternativeNames:
 - fluentd

@@ -9,7 +9,7 @@ tags:
 - Web Ui
 - Component Based
 - Jakarta EE
-url: https://myfaces.apache.org
+website: https://myfaces.apache.org
 radarRing: Initial
 alternativeNames:
 - MyFaces

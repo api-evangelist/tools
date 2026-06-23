@@ -9,7 +9,7 @@ tags:
 - Observability
 - Security
 - Microservices
-url: https://linkerd.io
+website: https://linkerd.io
 radarRing: Developing
 alternativeNames:
 - linkerd

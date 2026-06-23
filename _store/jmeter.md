@@ -8,7 +8,7 @@ tags:
 - Load Testing
 - Testing
 - Java
-url: https://jmeter.apache.org/
+website: https://jmeter.apache.org/
 founded: 1998
 radarRing: Optimizing
 alternativeNames:

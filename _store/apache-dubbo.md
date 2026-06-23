@@ -9,7 +9,7 @@ tags:
 - Java
 - Service Discovery
 - Service Governance
-url: https://dubbo.apache.org
+website: https://dubbo.apache.org
 radarRing: Initial
 alternativeNames:
 - Dubbo

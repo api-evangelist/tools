@@ -9,7 +9,7 @@ tags:
 - Hadoop
 - Compression
 - Analytics
-url: https://orc.apache.org
+website: https://orc.apache.org
 radarRing: Optimizing
 alternativeNames:
 - ORC

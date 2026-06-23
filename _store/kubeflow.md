@@ -10,7 +10,7 @@ tags:
 - Data Science
 - Model Training
 - Pipeline Orchestration
-url: https://www.kubeflow.org/
+website: https://www.kubeflow.org/
 founded: 2017
 radarRing: Optimizing
 alternativeNames:

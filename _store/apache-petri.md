@@ -9,7 +9,7 @@ tags:
 - Governance
 - Onboarding
 - ASF
-url: https://petri.apache.org
+website: https://petri.apache.org
 radarRing: Developing
 alternativeNames:
 - Petri

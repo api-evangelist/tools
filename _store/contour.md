@@ -9,7 +9,7 @@ tags:
 - Envoy
 - Proxy
 - Networking
-url: https://projectcontour.io/
+website: https://projectcontour.io/
 radarRing: Developing
 alternativeNames:
 - contour

@@ -8,7 +8,7 @@ tags:
 - Operating Systems
 - System Updates
 - Infrastructure
-url: https://containers.github.io/bootc/
+website: https://containers.github.io/bootc/
 radarRing: Developing
 alternativeNames:
 - BootC

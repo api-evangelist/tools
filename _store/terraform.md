@@ -8,7 +8,7 @@ tags:
 - DevOps
 - Cloud
 - Automation
-url: https://www.terraform.io/
+website: https://www.terraform.io/
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - NLP
 - Content Analytics
 - Java
-url: https://uima.apache.org
+website: https://uima.apache.org
 radarRing: Initial
 alternativeNames:
 - UIMA

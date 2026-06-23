@@ -9,7 +9,7 @@ tags:
 - Backend
 - MVC
 - ORM
-url: https://www.djangoproject.com/
+website: https://www.djangoproject.com/
 founded: 2005
 radarRing: Optimizing
 alternativeNames:

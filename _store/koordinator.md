@@ -9,7 +9,7 @@ tags:
 - Resource Management
 - QoS
 - Workload Orchestration
-url: https://koordinator.sh
+website: https://koordinator.sh
 radarRing: Developing
 alternativeNames:
 - koordinator

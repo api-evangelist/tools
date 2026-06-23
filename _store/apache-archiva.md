@@ -9,7 +9,7 @@ tags:
 - Artifact Repository
 - Java
 - Governance
-url: https://archiva.apache.org
+website: https://archiva.apache.org
 radarRing: Established
 alternativeNames:
 - Archiva

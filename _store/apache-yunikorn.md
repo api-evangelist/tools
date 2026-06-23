@@ -9,7 +9,7 @@ tags:
 - YARN
 - Batch Processing
 - Multi Tenancy
-url: https://yunikorn.apache.org
+website: https://yunikorn.apache.org
 radarRing: Initial
 alternativeNames:
 - YuniKorn

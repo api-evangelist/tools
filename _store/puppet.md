@@ -8,7 +8,7 @@ tags:
 - Infrastructure As Code
 - DevOps
 - Automation
-url: https://puppet.com
+website: https://puppet.com
 founded: 2005
 radarRing: Established
 alternativeNames:

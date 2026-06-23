@@ -9,7 +9,7 @@ tags:
 - Database
 - ORM
 - Data Access
-url: https://spring.io/projects/spring-data
+website: https://spring.io/projects/spring-data
 founded: 2010
 radarRing: Established
 alternativeNames:

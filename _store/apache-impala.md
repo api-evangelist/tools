@@ -9,7 +9,7 @@ tags:
 - Hadoop
 - Analytics
 - Query Engine
-url: https://impala.apache.org
+website: https://impala.apache.org
 radarRing: Developing
 alternativeNames:
 - Impala

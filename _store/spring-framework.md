@@ -9,7 +9,7 @@ tags:
 - Enterprise
 - Dependency Injection
 - Backend
-url: https://spring.io/projects/spring-framework
+website: https://spring.io/projects/spring-framework
 founded: 2002
 radarRing: Optimizing
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - Semantic Web
 - Graph Database
 - SPARQL
-url: https://rdf4j.org/
+website: https://rdf4j.org/
 founded: 2014
 radarRing: Established
 alternativeNames:

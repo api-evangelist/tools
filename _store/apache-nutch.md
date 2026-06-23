@@ -9,7 +9,7 @@ tags:
 - Crawling
 - Indexing
 - Big Data
-url: https://nutch.apache.org
+website: https://nutch.apache.org
 radarRing: Initial
 alternativeNames:
 - Nutch

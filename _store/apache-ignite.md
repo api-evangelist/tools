@@ -9,7 +9,7 @@ tags:
 - Caching
 - Compute Grid
 - SQL
-url: https://ignite.apache.org
+website: https://ignite.apache.org
 radarRing: Established
 alternativeNames:
 - Ignite

@@ -9,7 +9,7 @@ tags:
 - Data Integration
 - Batch Processing
 - Streaming
-url: https://gobblin.apache.org
+website: https://gobblin.apache.org
 radarRing: Initial
 alternativeNames:
 - Gobblin

@@ -9,7 +9,7 @@ tags:
 - IoT
 - POSIX
 - Microcontrollers
-url: https://nuttx.apache.org
+website: https://nuttx.apache.org
 radarRing: Initial
 alternativeNames:
 - NuttX

@@ -9,7 +9,7 @@ tags:
 - Salesforce
 - Frontend
 - Framework
-url: https://developer.salesforce.com/docs/component-library/documentation/en/lwc
+website: https://developer.salesforce.com/docs/component-library/documentation/en/lwc
 founded: 2019
 radarRing: Established
 alternativeNames:

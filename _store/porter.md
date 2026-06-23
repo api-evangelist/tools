@@ -9,7 +9,7 @@ tags:
 - CNAB
 - DevOps
 - Cloud Native
-url: https://porter.sh/
+website: https://porter.sh/
 radarRing: Established
 alternativeNames:
 - porter

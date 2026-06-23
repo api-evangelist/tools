@@ -7,7 +7,7 @@ tags:
 - Testing
 - Automation
 - Web Development
-url: https://www.selenium.dev/
+website: https://www.selenium.dev/
 founded: 2004
 radarRing: Optimizing
 alternativeNames:

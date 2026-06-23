@@ -9,7 +9,7 @@ tags:
 - Operator
 - Messaging
 - Streaming
-url: https://strimzi.io/
+website: https://strimzi.io/
 radarRing: Initial
 alternativeNames:
 - strimzi

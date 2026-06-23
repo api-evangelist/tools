@@ -9,7 +9,7 @@ tags:
 - Distributed Database
 - Encryption
 - Scaling
-url: https://shardingsphere.apache.org
+website: https://shardingsphere.apache.org
 radarRing: Initial
 alternativeNames:
 - ShardingSphere

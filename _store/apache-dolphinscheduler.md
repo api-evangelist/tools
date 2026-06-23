@@ -9,7 +9,7 @@ tags:
 - Distributed
 - Visual Programming
 - Data Pipelines
-url: https://dolphinscheduler.apache.org
+website: https://dolphinscheduler.apache.org
 radarRing: Optimizing
 alternativeNames:
 - DolphinScheduler

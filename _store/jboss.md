@@ -8,7 +8,7 @@ tags:
 - Java
 - Enterprise
 - Middleware
-url: https://www.jboss.org/
+website: https://www.jboss.org/
 founded: 1999
 radarRing: Established
 alternativeNames:

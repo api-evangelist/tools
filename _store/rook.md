@@ -8,7 +8,7 @@ tags:
 - Storage
 - Cloud Native
 - Orchestration
-url: https://rook.io
+website: https://rook.io
 radarRing: Established
 alternativeNames:
 - rook

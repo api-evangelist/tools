@@ -9,7 +9,7 @@ tags:
 - Distributed Storage
 - Cloud Native
 - Scalability
-url: https://ozone.apache.org
+website: https://ozone.apache.org
 radarRing: Developing
 alternativeNames:
 - Ozone

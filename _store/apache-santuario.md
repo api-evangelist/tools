@@ -9,7 +9,7 @@ tags:
 - Encryption
 - Java
 - Standards
-url: https://santuario.apache.org
+website: https://santuario.apache.org
 radarRing: Initial
 alternativeNames:
 - Santuario

@@ -9,7 +9,7 @@ tags:
 - Batch Processing
 - Real Time
 - Data Synchronization
-url: https://seatunnel.apache.org
+website: https://seatunnel.apache.org
 radarRing: Initial
 alternativeNames:
 - SeaTunnel

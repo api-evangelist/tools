@@ -9,7 +9,7 @@ tags:
 - NoSQL
 - Query Processing
 - Scalability
-url: https://asterixdb.apache.org
+website: https://asterixdb.apache.org
 radarRing: Initial
 alternativeNames:
 - AsterixDB

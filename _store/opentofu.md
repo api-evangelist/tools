@@ -8,7 +8,7 @@ tags:
 - DevOps
 - Cloud
 - Open Source
-url: https://opentofu.org/
+website: https://opentofu.org/
 radarRing: Developing
 alternativeNames:
 - opentofu

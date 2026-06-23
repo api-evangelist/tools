@@ -8,7 +8,7 @@ tags:
 - Linux
 - Open Source
 - Debian
-url: https://ubuntu.com
+website: https://ubuntu.com
 founded: 2004
 radarRing: Established
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - Plotting
 - Charts
 - Graphing
-url: https://matplotlib.org/
+website: https://matplotlib.org/
 founded: 2003
 radarRing: Optimizing
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - Analytics
 - Search
 - Visualization
-url: https://www.elastic.co/elastic-stack
+website: https://www.elastic.co/elastic-stack
 founded: 2015
 radarRing: Optimizing
 alternativeNames:

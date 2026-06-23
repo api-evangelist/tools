@@ -10,7 +10,7 @@ tags:
 - Command Line
 - Microsoft
 - System Administration
-url: https://docs.microsoft.com/en-us/powershell/
+website: https://docs.microsoft.com/en-us/powershell/
 founded: 2006
 radarRing: Optimizing
 alternativeNames:

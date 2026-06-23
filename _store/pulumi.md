@@ -8,7 +8,7 @@ tags:
 - Cloud
 - DevOps
 - Automation
-url: https://www.pulumi.com/
+website: https://www.pulumi.com/
 founded: 2017
 radarRing: Established
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - Security
 - Governance
 - Cloud Native
-url: https://kyverno.io/
+website: https://kyverno.io/
 radarRing: Initial
 alternativeNames:
 - kyverno

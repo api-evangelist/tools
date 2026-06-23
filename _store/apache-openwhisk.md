@@ -9,7 +9,7 @@ tags:
 - Cloud Native
 - Event Driven
 - Functions
-url: https://openwhisk.apache.org
+website: https://openwhisk.apache.org
 radarRing: Initial
 alternativeNames:
 - OpenWhisk

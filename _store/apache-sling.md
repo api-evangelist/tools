@@ -9,7 +9,7 @@ tags:
 - JCR
 - REST
 - Java
-url: https://sling.apache.org
+website: https://sling.apache.org
 radarRing: Developing
 alternativeNames:
 - Sling

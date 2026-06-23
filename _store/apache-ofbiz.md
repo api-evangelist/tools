@@ -9,7 +9,7 @@ tags:
 - E Commerce
 - Enterprise
 - Business Automation
-url: https://ofbiz.apache.org
+website: https://ofbiz.apache.org
 radarRing: Initial
 alternativeNames:
 - OFBiz

@@ -9,7 +9,7 @@ tags:
 - Hadoop
 - Authorization
 - Data Governance
-url: https://ranger.apache.org
+website: https://ranger.apache.org
 radarRing: Established
 alternativeNames:
 - Ranger

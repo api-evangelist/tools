@@ -9,7 +9,7 @@ tags:
 - Workflow
 - Gateway
 - HPC
-url: https://airavata.apache.org
+website: https://airavata.apache.org
 radarRing: Initial
 alternativeNames:
 - Airavata

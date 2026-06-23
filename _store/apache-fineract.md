@@ -9,7 +9,7 @@ tags:
 - Financial Inclusion
 - Microfinance
 - Lending
-url: https://fineract.apache.org
+website: https://fineract.apache.org
 radarRing: Initial
 alternativeNames:
 - Fineract

@@ -9,7 +9,7 @@ tags:
 - Rapid Development
 - REST
 - Framework
-url: https://causeway.apache.org
+website: https://causeway.apache.org
 radarRing: Developing
 alternativeNames:
 - Causeway

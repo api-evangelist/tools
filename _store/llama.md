@@ -9,7 +9,7 @@ tags:
 - Machine Learning
 - Artificial Intelligence
 - Open Source
-url: https://llama.meta.com/
+website: https://llama.meta.com/
 founded: 2023
 radarRing: Established
 alternativeNames:

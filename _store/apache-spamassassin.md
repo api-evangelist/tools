@@ -9,7 +9,7 @@ tags:
 - Anti Spam
 - Perl
 - Email Security
-url: https://spamassassin.apache.org
+website: https://spamassassin.apache.org
 radarRing: Optimizing
 alternativeNames:
 - SpamAssassin

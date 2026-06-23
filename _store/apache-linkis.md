@@ -9,7 +9,7 @@ tags:
 - Data Engines
 - Task Management
 - Gateway
-url: https://linkis.apache.org
+website: https://linkis.apache.org
 radarRing: Initial
 alternativeNames:
 - Linkis

@@ -9,7 +9,7 @@ tags:
 - WSDL
 - Java
 - XML
-url: https://axis.apache.org
+website: https://axis.apache.org
 radarRing: Established
 alternativeNames:
 - Axis

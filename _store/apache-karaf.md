@@ -9,7 +9,7 @@ tags:
 - Java
 - Enterprise
 - Modularity
-url: https://karaf.apache.org
+website: https://karaf.apache.org
 radarRing: Initial
 alternativeNames:
 - Karaf

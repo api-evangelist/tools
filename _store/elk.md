@@ -9,7 +9,7 @@ tags:
 - Fediverse
 - Vue
 - Nuxt
-url: https://elk.zone
+website: https://elk.zone
 founded: 2015
 radarRing: Optimizing
 alternativeNames:

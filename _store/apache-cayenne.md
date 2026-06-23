@@ -9,7 +9,7 @@ tags:
 - Database
 - Object Relational Mapping
 - Persistence
-url: https://cayenne.apache.org
+website: https://cayenne.apache.org
 radarRing: Initial
 alternativeNames:
 - Cayenne

@@ -9,7 +9,7 @@ tags:
 - WSDL
 - XML
 - Java
-url: https://ws.apache.org
+website: https://ws.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Axis

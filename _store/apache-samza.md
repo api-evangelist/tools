@@ -9,7 +9,7 @@ tags:
 - Hadoop
 - YARN
 - Distributed Computing
-url: https://samza.apache.org
+website: https://samza.apache.org
 radarRing: Initial
 alternativeNames:
 - Samza

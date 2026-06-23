@@ -9,7 +9,7 @@ tags:
 - Orchestration
 - Kubernetes
 - Workflows
-url: https://www.kubeflow.org/docs/components/pipelines/
+website: https://www.kubeflow.org/docs/components/pipelines/
 founded: 2018
 radarRing: Established
 alternativeNames:

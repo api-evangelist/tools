@@ -9,7 +9,7 @@ tags:
 - Enterprise Search
 - Faceted Search
 - Lucene
-url: https://solr.apache.org
+website: https://solr.apache.org
 radarRing: Developing
 alternativeNames:
 - Solr

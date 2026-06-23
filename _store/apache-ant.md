@@ -9,7 +9,7 @@ tags:
 - Automation
 - XML
 - Compilation
-url: https://ant.apache.org
+website: https://ant.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Ant

@@ -9,7 +9,7 @@ tags:
 - CI
 - Contribution Management
 - Tools
-url: https://yetus.apache.org
+website: https://yetus.apache.org
 radarRing: Initial
 alternativeNames:
 - Yetus

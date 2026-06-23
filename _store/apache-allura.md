@@ -9,7 +9,7 @@ tags:
 - Source Code
 - Collaboration
 - Wiki
-url: https://allura.apache.org
+website: https://allura.apache.org
 radarRing: Initial
 alternativeNames:
 - Allura

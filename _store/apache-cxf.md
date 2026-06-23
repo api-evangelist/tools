@@ -9,7 +9,7 @@ tags:
 - SOAP
 - Java
 - JAX-WS
-url: https://cxf.apache.org
+website: https://cxf.apache.org
 radarRing: Developing
 alternativeNames:
 - CXF

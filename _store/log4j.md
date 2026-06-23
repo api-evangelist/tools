@@ -8,7 +8,7 @@ tags:
 - Logging
 - Framework
 - Apache
-url: https://logging.apache.org/log4j/
+website: https://logging.apache.org/log4j/
 founded: 2001
 radarRing: Established
 alternativeNames:

@@ -9,7 +9,7 @@ tags:
 - API
 - MLOps
 - Open Source
-url: https://www.cortexlabs.com/
+website: https://www.cortexlabs.com/
 radarRing: Developing
 alternativeNames:
 - cortex

@@ -9,7 +9,7 @@ tags:
 - Analytics
 - Spark
 - Data Management
-url: https://kyuubi.apache.org
+website: https://kyuubi.apache.org
 radarRing: Initial
 alternativeNames:
 - Kyuubi

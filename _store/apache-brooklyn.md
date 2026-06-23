@@ -9,7 +9,7 @@ tags:
 - Deployment
 - Orchestration
 - Autonomic Computing
-url: https://brooklyn.apache.org
+website: https://brooklyn.apache.org
 radarRing: Established
 alternativeNames:
 - Brooklyn

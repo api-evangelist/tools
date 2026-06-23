@@ -8,7 +8,7 @@ tags:
 - Packet Capture
 - Security
 - Monitoring
-url: https://www.wireshark.org/
+website: https://www.wireshark.org/
 founded: 1998
 radarRing: Optimizing
 alternativeNames:

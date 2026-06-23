@@ -9,7 +9,7 @@ tags:
 - Java
 - API
 - Data Services
-url: https://olingo.apache.org
+website: https://olingo.apache.org
 radarRing: Developing
 alternativeNames:
 - Olingo

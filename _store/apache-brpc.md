@@ -9,7 +9,7 @@ tags:
 - High Performance
 - Microservices
 - Networking
-url: https://brpc.apache.org
+website: https://brpc.apache.org
 radarRing: Initial
 alternativeNames:
 - BRPC

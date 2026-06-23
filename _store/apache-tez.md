@@ -9,7 +9,7 @@ tags:
 - YARN
 - Data Processing
 - Batch Processing
-url: https://tez.apache.org
+website: https://tez.apache.org
 radarRing: Established
 alternativeNames:
 - Tez

@@ -9,7 +9,7 @@ tags:
 - Data Governance
 - Monitoring
 - Data Profiling
-url: https://griffin.apache.org
+website: https://griffin.apache.org
 radarRing: Developing
 alternativeNames:
 - Griffin

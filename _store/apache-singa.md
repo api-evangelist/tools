@@ -9,7 +9,7 @@ tags:
 - Machine Learning
 - Neural Networks
 - AI
-url: https://singa.apache.org
+website: https://singa.apache.org
 radarRing: Established
 alternativeNames:
 - SINGA

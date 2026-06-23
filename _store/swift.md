@@ -9,7 +9,7 @@ tags:
 - macOS
 - Apple
 - Mobile Development
-url: https://swift.org
+website: https://swift.org
 yearCreated: 1973
 radarRing: Optimizing
 alternativeNames:

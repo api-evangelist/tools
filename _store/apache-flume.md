@@ -9,7 +9,7 @@ tags:
 - HDFS
 - Hadoop
 - Streaming
-url: https://flume.apache.org
+website: https://flume.apache.org
 radarRing: Developing
 alternativeNames:
 - Flume

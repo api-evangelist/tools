@@ -9,7 +9,7 @@ tags:
 - Prometheus
 - Time Series Database
 - Metrics
-url: https://thanos.io/
+website: https://thanos.io/
 radarRing: Developing
 alternativeNames:
 - thanos

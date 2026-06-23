@@ -9,7 +9,7 @@ tags:
 - Big Data
 - Compression
 - Analytics
-url: https://parquet.apache.org
+website: https://parquet.apache.org
 radarRing: Developing
 alternativeNames:
 - Parquet

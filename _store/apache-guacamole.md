@@ -9,7 +9,7 @@ tags:
 - RDP
 - SSH
 - Web Based
-url: https://guacamole.apache.org
+website: https://guacamole.apache.org
 radarRing: Initial
 alternativeNames:
 - Guacamole

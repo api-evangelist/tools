@@ -9,7 +9,7 @@ tags:
 - Monitoring
 - Provisioning
 - Administration
-url: https://ambari.apache.org
+website: https://ambari.apache.org
 radarRing: Initial
 alternativeNames:
 - Ambari

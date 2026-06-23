@@ -9,7 +9,7 @@ tags:
 - Testing
 - Resilience
 - Cloud Native
-url: https://chaos-mesh.org/
+website: https://chaos-mesh.org/
 radarRing: Initial
 alternativeNames:
 - chaos-mesh

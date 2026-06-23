@@ -9,7 +9,7 @@ tags:
 - Transformation
 - Java
 - Text Processing
-url: https://xalan.apache.org
+website: https://xalan.apache.org
 radarRing: Initial
 alternativeNames:
 - Xalan

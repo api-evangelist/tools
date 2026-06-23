@@ -7,7 +7,7 @@ tags:
 - Version Control
 - Source Control
 - Apache
-url: https://subversion.apache.org/
+website: https://subversion.apache.org/
 founded: 2000
 radarRing: Optimizing
 alternativeNames:

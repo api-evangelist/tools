@@ -9,7 +9,7 @@ tags:
 - Software Projects
 - Activity Tracking
 - Metrics
-url: https://kibble.apache.org
+website: https://kibble.apache.org
 radarRing: Initial
 alternativeNames:
 - Kibble

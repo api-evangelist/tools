@@ -9,7 +9,7 @@ tags:
 - Indexing
 - Information Retrieval
 - Java
-url: https://lucene.apache.org
+website: https://lucene.apache.org
 radarRing: Developing
 alternativeNames:
 - Lucene

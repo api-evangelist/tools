@@ -9,7 +9,7 @@ tags:
 - HTTP
 - Reverse Proxy
 - Edge Computing
-url: https://trafficserver.apache.org
+website: https://trafficserver.apache.org
 radarRing: Optimizing
 alternativeNames:
 - ATS

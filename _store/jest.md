@@ -8,7 +8,7 @@ tags:
 - JavaScript
 - Unit Testing
 - Snapshot Testing
-url: https://jestjs.io/
+website: https://jestjs.io/
 founded: 2014
 radarRing: Established
 alternativeNames:

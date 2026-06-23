@@ -9,7 +9,7 @@ tags:
 - AMQP
 - Distributed Systems
 - Asynchronous Processing
-url: https://www.rabbitmq.com/
+website: https://www.rabbitmq.com/
 founded: 2007
 radarRing: Optimizing
 alternativeNames:

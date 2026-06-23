@@ -8,7 +8,7 @@ tags:
 - Data Processing
 - Analytics
 - Distributed Computing
-url: https://spark.apache.org/
+website: https://spark.apache.org/
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

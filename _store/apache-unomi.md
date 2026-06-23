@@ -9,7 +9,7 @@ tags:
 - Customer Data
 - Context Server
 - Privacy
-url: https://unomi.apache.org
+website: https://unomi.apache.org
 radarRing: Initial
 alternativeNames:
 - Unomi

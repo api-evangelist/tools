@@ -9,7 +9,7 @@ tags:
 - Analytics
 - Fast Data
 - Storage Engine
-url: https://kudu.apache.org
+website: https://kudu.apache.org
 radarRing: Developing
 alternativeNames:
 - Kudu

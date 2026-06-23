@@ -9,7 +9,7 @@ tags:
 - Document Processing
 - Text Extraction
 - Content Creation
-url: https://pdfbox.apache.org
+website: https://pdfbox.apache.org
 radarRing: Initial
 alternativeNames:
 - PDFBox

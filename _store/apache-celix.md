@@ -9,7 +9,7 @@ tags:
 - C++
 - Modularity
 - Embedded Systems
-url: https://celix.apache.org
+website: https://celix.apache.org
 radarRing: Initial
 alternativeNames:
 - Celix

@@ -9,7 +9,7 @@ tags:
 - Integration
 - Analytics
 - Data Processing
-url: https://streams.apache.org
+website: https://streams.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Streams

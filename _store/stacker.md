@@ -9,7 +9,7 @@ tags:
 - Application Development
 - Workflow Automation
 - Database
-url: https://www.stackerhq.com/
+website: https://www.stackerhq.com/
 radarRing: Developing
 alternativeNames:
 - stacker

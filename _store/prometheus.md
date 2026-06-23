@@ -9,7 +9,7 @@ tags:
 - Time Series
 - Alerting
 - Metrics
-url: https://prometheus.io/
+website: https://prometheus.io/
 founded: 2012
 radarRing: Optimizing
 alternativeNames:

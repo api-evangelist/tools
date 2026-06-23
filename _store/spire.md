@@ -9,7 +9,7 @@ tags:
 - Authentication
 - Zero Trust
 - Cloud Native
-url: https://spiffe.io/docs/latest/spire-about/
+website: https://spiffe.io/docs/latest/spire-about/
 radarRing: Optimizing
 alternativeNames:
 - spire

@@ -9,7 +9,7 @@ tags:
 - Semantic Web
 - Accumulo
 - SPARQL
-url: https://rya.apache.org
+website: https://rya.apache.org
 radarRing: Established
 alternativeNames:
 - Rya

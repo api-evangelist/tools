@@ -9,7 +9,7 @@ tags:
 - Visualization
 - Time Series
 - Open Source
-url: https://perses.dev
+website: https://perses.dev
 radarRing: Initial
 alternativeNames:
 - perses

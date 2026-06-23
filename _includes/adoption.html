@@ -23,7 +23,7 @@
       <dt class="col-sm-3 text-muted fw-normal">Companies adopting</dt>
       <dd class="col-sm-9 fw-semibold">{{ page.companyCount | default: 0 }}</dd>
       {% if page.radarRing %}<dt class="col-sm-3 text-muted fw-normal">Radar ring</dt><dd class="col-sm-9">{{ page.radarRing }}</dd>{% endif %}
-      {% if page.url %}<dt class="col-sm-3 text-muted fw-normal">Website</dt><dd class="col-sm-9"><a href="{{ page.url }}" target="_blank" rel="noopener">{{ page.url }}</a></dd>{% endif %}
+      {% if page.website %}<dt class="col-sm-3 text-muted fw-normal">Website</dt><dd class="col-sm-9"><a href="{{ page.website }}" target="_blank" rel="noopener">{{ page.website }}</a></dd>{% endif %}
       {% if page.alternativeNames %}<dt class="col-sm-3 text-muted fw-normal">Also known as</dt><dd class="col-sm-9">{{ page.alternativeNames | join: ", " }}</dd>{% endif %}
     </dl>
   </div>

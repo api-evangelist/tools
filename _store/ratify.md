@@ -9,7 +9,7 @@ tags:
 - Supply Chain
 - Policy Enforcement
 - Artifact Verification
-url: https://ratify.dev/
+website: https://ratify.dev/
 radarRing: Developing
 alternativeNames:
 - ratify

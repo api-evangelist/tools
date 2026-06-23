@@ -8,7 +8,7 @@ tags:
 - Binary Format
 - Schema Evolution
 - Big Data
-url: https://avro.apache.org/
+website: https://avro.apache.org/
 yearCreated: 2009
 radarRing: Established
 alternativeNames:

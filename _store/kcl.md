@@ -8,7 +8,7 @@ tags:
 - Policy As Code
 - Cloud Native
 - Infrastructure As Code
-url: https://kcl-lang.io/
+website: https://kcl-lang.io/
 radarRing: Developing
 alternativeNames:
 - kcl

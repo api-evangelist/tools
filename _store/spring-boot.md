@@ -9,7 +9,7 @@ tags:
 - Web Development
 - Microservices
 - Backend
-url: https://spring.io/projects/spring-boot
+website: https://spring.io/projects/spring-boot
 founded: 2014
 radarRing: Optimizing
 alternativeNames:

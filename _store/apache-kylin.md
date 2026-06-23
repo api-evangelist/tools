@@ -9,7 +9,7 @@ tags:
 - Hadoop
 - Spark
 - Sub Second Queries
-url: https://kylin.apache.org
+website: https://kylin.apache.org
 radarRing: Developing
 alternativeNames:
 - Kylin
