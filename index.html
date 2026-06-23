@@ -22,7 +22,7 @@ nav: All Tools
       {% for item in ranked %}
         <tr>
           <td class="text-muted small">{{ forloop.index }}</td>
-          <td class="fw-semibold"><a href="{{ item.url | default: item.slug | prepend: '/store/' }}" class="text-decoration-none" style="color: #212529;">{{ item.title }}</a></td>
+          <td class="fw-semibold"><a href="{{ item.url }}" class="text-decoration-none" style="color: #212529;">{{ item.title }}</a></td>
           <td class="text-end text-muted small">{{ item.companyCount | default: 0 }}</td>
           <td class="d-none d-md-table-cell text-muted small">{% if item.tags %}{{ item.tags | join: ", " | truncate: 60 }}{% endif %}</td>
         </tr>
