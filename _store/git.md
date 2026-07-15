@@ -1,7 +1,7 @@
 ---
 title: Git
 slug: git
-companyCount: 339
+companyCount: 338
 description: Distributed version control system for tracking changes in source code during software development
 tags:
 - Version Control

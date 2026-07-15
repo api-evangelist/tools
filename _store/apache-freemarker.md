@@ -1,7 +1,7 @@
 ---
 title: Apache FreeMarker
 slug: apache-freemarker
-companyCount: 18
+companyCount: 19
 description: Java-based template engine for generating text output such as HTML, emails, configuration files, and source code.
 tags:
 - Template Engine
@@ -10,7 +10,7 @@ tags:
 - Text Processing
 - MVC
 website: https://freemarker.apache.org
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - FreeMarker
 - FTL

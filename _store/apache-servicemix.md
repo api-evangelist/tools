@@ -1,7 +1,7 @@
 ---
 title: Apache ServiceMix
 slug: apache-servicemix
-companyCount: 0
+companyCount: 1
 description: Flexible, open-source integration container combining ESB functionality with OSGi modularity.
 tags:
 - ESB

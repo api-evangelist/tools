@@ -1,7 +1,7 @@
 ---
 title: JMock
 slug: jmock
-companyCount: 2
+companyCount: 1
 description: A Java library for mock objects supporting test-driven development with expectations that are defined as part of the test code
 tags:
 - Java
@@ -9,7 +9,7 @@ tags:
 - Mocking
 website: http://www.jmock.org/
 founded: 2003
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - jmock
 ---

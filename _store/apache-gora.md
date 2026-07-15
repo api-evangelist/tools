@@ -1,7 +1,7 @@
 ---
 title: Apache Gora
 slug: apache-gora
-companyCount: 2
+companyCount: 3
 description: ORM framework for column stores, key-value stores, and document stores with Hadoop MapReduce support.
 tags:
 - ORM
@@ -10,7 +10,7 @@ tags:
 - Data Persistence
 - Big Data
 website: https://gora.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - Gora
 ---

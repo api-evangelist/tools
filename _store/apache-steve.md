@@ -1,7 +1,7 @@
 ---
 title: Apache Steve
 slug: apache-steve
-companyCount: 4
+companyCount: 0
 description: Voting system used by the Apache Software Foundation for conducting project and organizational votes.
 tags:
 - Voting
@@ -10,7 +10,7 @@ tags:
 - Community
 - Elections
 website: https://steve.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - Steve
 ---

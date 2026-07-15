@@ -1,7 +1,7 @@
 ---
 title: Apache Pivot
 slug: apache-pivot
-companyCount: 367
+companyCount: 0
 description: Platform for building rich internet applications in Java with a focus on UI components and data binding.
 tags:
 - RIA
@@ -10,7 +10,7 @@ tags:
 - Data Binding
 - Desktop Applications
 website: https://pivot.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - Pivot
 ---

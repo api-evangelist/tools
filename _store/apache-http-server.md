@@ -1,7 +1,7 @@
 ---
 title: Apache HTTP Server
 slug: apache-http-server
-companyCount: 11
+companyCount: 7
 description: The world's most widely used web server software, providing a secure, efficient, and extensible HTTP server.
 tags:
 - Web Server
@@ -10,7 +10,7 @@ tags:
 - Load Balancing
 - Security
 website: https://httpd.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - httpd
 - Apache HTTPD

@@ -1,7 +1,7 @@
 ---
 title: Puppet
 slug: puppet
-companyCount: 79
+companyCount: 77
 description: Configuration management tool that automates the provisioning, configuration, and management of infrastructure using declarative language and model-driven approach.
 tags:
 - Configuration Management

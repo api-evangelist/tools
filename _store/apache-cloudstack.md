@@ -1,7 +1,7 @@
 ---
 title: Apache CloudStack
 slug: apache-cloudstack
-companyCount: 1
+companyCount: 2
 description: Open-source cloud computing platform for deploying and managing IaaS cloud infrastructure.
 tags:
 - Cloud Computing

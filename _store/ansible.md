@@ -1,7 +1,7 @@
 ---
 title: Ansible
 slug: ansible
-companyCount: 235
+companyCount: 228
 description: Open-source automation tool for configuration management, application deployment, and task automation using simple YAML playbooks
 tags:
 - Automation

@@ -1,7 +1,7 @@
 ---
 title: Apache Spatial
 slug: apache-spatial
-companyCount: 40
+companyCount: 74
 description: Libraries for spatial and geospatial data processing within the Apache ecosystem.
 tags:
 - Geospatial
@@ -10,7 +10,7 @@ tags:
 - Data Processing
 - Coordinates
 website: https://spatial.apache.org
-radarRing: Optimizing
+radarRing: Established
 alternativeNames:
 - Spatial Information System
 - SIS

@@ -1,7 +1,7 @@
 ---
 title: Nginx
 slug: nginx
-companyCount: 41
+companyCount: 37
 description: High-performance HTTP server and reverse proxy known for its stability, rich feature set, simple configuration, and low resource consumption.
 tags:
 - Web Server

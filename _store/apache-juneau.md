@@ -1,7 +1,7 @@
 ---
 title: Apache Juneau
 slug: apache-juneau
-companyCount: 9
+companyCount: 0
 description: Toolkit for marshalling POJOs to various content types and building REST microservices in Java.
 tags:
 - REST
@@ -10,7 +10,7 @@ tags:
 - Microservices
 - Serialization
 website: https://juneau.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Juneau
 ---

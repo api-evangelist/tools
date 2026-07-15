@@ -1,7 +1,7 @@
 ---
 title: Apache BookKeeper
 slug: apache-bookkeeper
-companyCount: 5
+companyCount: 8
 description: Scalable, fault-tolerant, low-latency storage service for real-time write-ahead logging and distributed systems.
 tags:
 - Distributed Storage
@@ -10,7 +10,7 @@ tags:
 - Low Latency
 - Ledger
 website: https://bookkeeper.apache.org
-radarRing: Optimizing
+radarRing: Developing
 alternativeNames:
 - BookKeeper
 ---

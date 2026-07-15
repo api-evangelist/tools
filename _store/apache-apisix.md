@@ -1,7 +1,7 @@
 ---
 title: Apache APISIX
 slug: apache-apisix
-companyCount: 1
+companyCount: 0
 description: Dynamic, real-time, high-performance cloud-native API gateway with rich traffic management features.
 tags:
 - API Gateway

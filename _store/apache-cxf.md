@@ -10,7 +10,7 @@ tags:
 - Java
 - JAX-WS
 website: https://cxf.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - CXF
 ---

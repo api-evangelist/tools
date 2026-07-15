@@ -1,7 +1,7 @@
 ---
 title: ORAS
 slug: oras
-companyCount: 2
+companyCount: 1
 description: OCI Registry As Storage - A way to push and pull OCI artifacts to and from OCI registries
 tags:
 - Container Registry
@@ -9,7 +9,7 @@ tags:
 - Artifact Storage
 - Cloud Native
 website: https://oras.land/
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - oras
 - OCI Registry As Storage

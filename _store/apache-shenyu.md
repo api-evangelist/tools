@@ -1,7 +1,7 @@
 ---
 title: Apache ShenYu
 slug: apache-shenyu
-companyCount: 38
+companyCount: 36
 description: High-performance API gateway for microservices supporting multiple protocols and plugin extensions.
 tags:
 - API Gateway

@@ -9,7 +9,7 @@ tags:
 - Federation
 - Privacy
 website: https://zotlabs.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - zot
 ---

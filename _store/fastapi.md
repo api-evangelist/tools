@@ -1,7 +1,7 @@
 ---
 title: FastAPI
 slug: fastapi
-companyCount: 111
+companyCount: 109
 description: Modern, fast (high-performance) web framework for building APIs with Python based on standard Python type hints
 tags:
 - Python
@@ -10,7 +10,7 @@ tags:
 - Asynchronous
 website: https://fastapi.tiangolo.com/
 founded: 2018
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - fastapi
 - Fast API

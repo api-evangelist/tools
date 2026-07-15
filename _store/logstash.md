@@ -1,7 +1,7 @@
 ---
 title: Logstash
 slug: logstash
-companyCount: 27
+companyCount: 21
 description: Open source server-side data processing pipeline that ingests data from multiple sources, transforms it, and sends it to a specified destination
 tags:
 - Data Processing
@@ -10,7 +10,7 @@ tags:
 - Pipeline
 website: https://www.elastic.co/logstash
 founded: 2009
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - logstash
 ---

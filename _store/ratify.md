@@ -1,7 +1,7 @@
 ---
 title: Ratify
 slug: ratify
-companyCount: 6
+companyCount: 5
 description: A framework to verify artifacts and enforce policies in Kubernetes and other cloud-native environments, supporting supply chain security through signature and attestation verification.
 tags:
 - Security
@@ -10,7 +10,7 @@ tags:
 - Policy Enforcement
 - Artifact Verification
 website: https://ratify.dev/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - ratify
 ---

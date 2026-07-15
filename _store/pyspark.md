@@ -1,7 +1,7 @@
 ---
 title: PySpark
 slug: pyspark
-companyCount: 139
+companyCount: 141
 description: Python API for Apache Spark, enabling scalable data processing and analytics using Python programming language with distributed computing capabilities.
 tags:
 - Big Data
@@ -11,7 +11,7 @@ tags:
 - Apache Spark
 website: https://spark.apache.org/docs/latest/api/python/
 founded: 2014
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - pyspark
 ---

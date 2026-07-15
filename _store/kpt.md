@@ -9,7 +9,7 @@ tags:
 - Infrastructure as Code
 - GitOps
 website: https://kpt.dev/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - KPT
 ---

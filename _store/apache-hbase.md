@@ -1,7 +1,7 @@
 ---
 title: Apache HBase
 slug: apache-hbase
-companyCount: 41
+companyCount: 31
 description: Distributed, scalable, big data store modeled after Google's Bigtable, running on top of HDFS.
 tags:
 - NoSQL
@@ -10,7 +10,7 @@ tags:
 - Hadoop
 - Distributed Database
 website: https://hbase.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - HBase
 - hbase

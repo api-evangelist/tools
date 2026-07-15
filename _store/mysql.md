@@ -1,7 +1,7 @@
 ---
 title: MySQL
 slug: mysql
-companyCount: 184
+companyCount: 176
 description: An open-source relational database management system that uses SQL (Structured Query Language) for data management and queries.
 tags:
 - Database

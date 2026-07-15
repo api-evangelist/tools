@@ -1,7 +1,7 @@
 ---
 title: Apache Ant
 slug: apache-ant
-companyCount: 131
+companyCount: 0
 description: Java-based build tool for automating software build processes using XML configuration files.
 tags:
 - Build Tool
@@ -10,7 +10,7 @@ tags:
 - XML
 - Compilation
 website: https://ant.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - Ant
 - ant

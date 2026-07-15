@@ -1,7 +1,7 @@
 ---
 title: Apache Doris
 slug: apache-doris
-companyCount: 6
+companyCount: 4
 description: High-performance real-time analytical database based on MPP architecture for large-scale data analysis.
 tags:
 - Analytical Database
@@ -10,7 +10,7 @@ tags:
 - OLAP
 - SQL
 website: https://doris.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Doris
 ---

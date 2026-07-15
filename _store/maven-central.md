@@ -1,7 +1,7 @@
 ---
 title: Maven Central
 slug: maven-central
-companyCount: 20
+companyCount: 16
 description: The central repository for Maven artifacts, hosting Java libraries and dependencies for build automation and dependency management.
 tags:
 - Java
@@ -10,7 +10,7 @@ tags:
 - Dependency Management
 website: https://central.sonatype.com/
 founded: 2004
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - Central Repository
 - Maven Repo

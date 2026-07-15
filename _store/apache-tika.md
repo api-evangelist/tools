@@ -10,7 +10,7 @@ tags:
 - File Parsing
 - NLP
 website: https://tika.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - Tika
 ---

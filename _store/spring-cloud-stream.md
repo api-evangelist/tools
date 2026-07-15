@@ -1,7 +1,7 @@
 ---
 title: Spring Cloud Stream
 slug: spring-cloud-stream
-companyCount: 32
+companyCount: 34
 description: A framework for building highly scalable event-driven microservices connected with shared messaging systems
 tags:
 - Java

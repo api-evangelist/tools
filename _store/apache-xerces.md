@@ -10,7 +10,7 @@ tags:
 - Validation
 - Java
 website: https://xerces.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Xerces
 - XML Parser

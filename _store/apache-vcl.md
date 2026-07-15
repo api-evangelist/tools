@@ -10,7 +10,7 @@ tags:
 - Provisioning
 - Education
 website: https://vcl.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - VCL
 ---

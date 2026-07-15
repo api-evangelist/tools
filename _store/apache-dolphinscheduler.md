@@ -10,7 +10,7 @@ tags:
 - Visual Programming
 - Data Pipelines
 website: https://dolphinscheduler.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - DolphinScheduler
 ---

@@ -10,7 +10,7 @@ tags:
 - Deployment
 - GitOps
 website: https://werf.io/
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - Werf
 ---

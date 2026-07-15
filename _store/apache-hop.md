@@ -1,7 +1,7 @@
 ---
 title: Apache Hop
 slug: apache-hop
-companyCount: 34
+companyCount: 32
 description: Data orchestration and data engineering platform for visual design of data pipelines and workflows.
 tags:
 - Data Engineering
@@ -10,7 +10,7 @@ tags:
 - Visual Programming
 - Orchestration
 website: https://hop.apache.org
-radarRing: Optimizing
+radarRing: Established
 alternativeNames:
 - Hop
 - Project Hop

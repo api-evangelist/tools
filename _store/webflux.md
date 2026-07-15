@@ -12,7 +12,7 @@ tags:
 - Spring
 website: https://docs.spring.io/spring-framework/reference/web/webflux.html
 founded: 2017
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Spring WebFlux
 - webflux

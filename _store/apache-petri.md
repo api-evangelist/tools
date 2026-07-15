@@ -1,7 +1,7 @@
 ---
 title: Apache Petri
 slug: apache-petri
-companyCount: 2
+companyCount: 1
 description: Entry path for new projects and communities wishing to join the Apache Software Foundation.
 tags:
 - Incubation
@@ -10,7 +10,7 @@ tags:
 - Onboarding
 - ASF
 website: https://petri.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Petri
 ---

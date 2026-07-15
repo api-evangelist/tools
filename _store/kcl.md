@@ -9,7 +9,7 @@ tags:
 - Cloud Native
 - Infrastructure As Code
 website: https://kcl-lang.io/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - kcl
 - Kusion Configuration Language

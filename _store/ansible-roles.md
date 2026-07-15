@@ -10,7 +10,7 @@ tags:
 - DevOps
 website: https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
 founded: 2012
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - ansible-roles
 ---

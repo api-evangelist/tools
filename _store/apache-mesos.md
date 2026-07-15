@@ -1,7 +1,7 @@
 ---
 title: Apache Mesos
 slug: apache-mesos
-companyCount: 14
+companyCount: 11
 description: Cluster manager providing efficient resource isolation and sharing across distributed applications or frameworks.
 tags:
 - Cluster Management

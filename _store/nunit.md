@@ -1,7 +1,7 @@
 ---
 title: NUnit
 slug: nunit
-companyCount: 27
+companyCount: 23
 description: A unit-testing framework for all .NET languages with a focus on extensibility and parallel test execution
 tags:
 - Testing
@@ -9,7 +9,7 @@ tags:
 - Unit Testing
 website: https://nunit.org/
 founded: 2002
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - nunit
 ---

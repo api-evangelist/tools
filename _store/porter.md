@@ -1,7 +1,7 @@
 ---
 title: Porter
 slug: porter
-companyCount: 59
+companyCount: 57
 description: A package manager for Kubernetes that uses Cloud Native Application Bundles (CNAB) to package and deploy applications along with their dependencies and configuration.
 tags:
 - Kubernetes

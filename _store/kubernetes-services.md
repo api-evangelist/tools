@@ -11,7 +11,7 @@ tags:
 - Service Discovery
 website: https://kubernetes.io/docs/areas/services-networking/service/
 founded: 2014
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - K8s Services
 - Kube Services

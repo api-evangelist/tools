@@ -9,7 +9,7 @@ tags:
 - Cloud Native
 - Orchestration
 website: https://rook.io
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - rook
 - Rook Ceph

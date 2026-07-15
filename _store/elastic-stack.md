@@ -1,7 +1,7 @@
 ---
 title: Elastic Stack
 slug: elastic-stack
-companyCount: 128
+companyCount: 168
 description: A collection of open-source products (Elasticsearch, Logstash, Kibana, and Beats) for searching, analyzing, and visualizing data in real time from any source.
 tags:
 - Search

@@ -1,7 +1,7 @@
 ---
 title: Prometheus
 slug: prometheus
-companyCount: 184
+companyCount: 175
 description: Open-source monitoring and alerting toolkit designed for reliability and scalability, featuring a multi-dimensional data model, flexible query language (PromQL), and time series database.
 tags:
 - Monitoring

@@ -1,7 +1,7 @@
 ---
 title: Apache Logging Services
 slug: apache-logging-services
-companyCount: 8
+companyCount: 6
 description: Cross-language logging services including Log4j, providing flexible and performant logging frameworks.
 tags:
 - Logging
@@ -10,7 +10,7 @@ tags:
 - Java
 - Cross Language
 website: https://logging.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Log4j
 - Log4net

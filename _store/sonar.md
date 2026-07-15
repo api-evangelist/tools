@@ -1,7 +1,7 @@
 ---
 title: Sonar
 slug: sonar
-companyCount: 43
+companyCount: 38
 description: A code quality and security analysis platform that continuously inspects code for bugs, vulnerabilities, and code smells across multiple programming languages.
 tags:
 - Code Quality

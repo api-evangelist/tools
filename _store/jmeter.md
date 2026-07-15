@@ -1,7 +1,7 @@
 ---
 title: Apache JMeter
 slug: jmeter
-companyCount: 82
+companyCount: 66
 description: Open-source Java application designed to load test functional behavior and measure performance of web applications and services
 tags:
 - Performance Testing
@@ -10,7 +10,7 @@ tags:
 - Java
 website: https://jmeter.apache.org/
 founded: 1998
-radarRing: Optimizing
+radarRing: Established
 alternativeNames:
 - JMeter
 - jmeter

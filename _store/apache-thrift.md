@@ -1,7 +1,7 @@
 ---
 title: Apache Thrift
 slug: apache-thrift
-companyCount: 4
+companyCount: 3
 description: Cross-language framework for building scalable services with code generation for efficient RPC communication.
 tags:
 - RPC
@@ -10,7 +10,7 @@ tags:
 - Serialization
 - Microservices
 website: https://thrift.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Thrift
 - thrift

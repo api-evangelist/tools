@@ -1,7 +1,7 @@
 ---
 title: Apache Royale
 slug: apache-royale
-companyCount: 9
+companyCount: 8
 description: Application framework for building cross-platform applications that compile to JavaScript from ActionScript and MXML.
 tags:
 - Cross Platform
@@ -10,7 +10,7 @@ tags:
 - MXML
 - Web Framework
 website: https://royale.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Royale
 ---

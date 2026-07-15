@@ -10,7 +10,7 @@ tags:
 - Spark
 - Sub Second Queries
 website: https://kylin.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Kylin
 ---

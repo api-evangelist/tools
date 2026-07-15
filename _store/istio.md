@@ -1,7 +1,7 @@
 ---
 title: Istio
 slug: istio
-companyCount: 60
+companyCount: 59
 description: Open source service mesh that provides traffic management, security, and observability for microservices
 tags:
 - Service Mesh
@@ -9,7 +9,7 @@ tags:
 - Kubernetes
 - Cloud Native
 website: https://istio.io
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - istio
 ---

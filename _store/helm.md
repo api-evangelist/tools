@@ -1,7 +1,7 @@
 ---
 title: Helm
 slug: helm
-companyCount: 136
+companyCount: 125
 description: Package manager for Kubernetes that helps you define, install, and upgrade complex Kubernetes applications using charts
 tags:
 - Kubernetes
@@ -9,7 +9,7 @@ tags:
 - DevOps
 - Container Orchestration
 website: https://helm.sh
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - helm
 - Helm Charts

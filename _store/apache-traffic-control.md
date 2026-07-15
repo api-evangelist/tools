@@ -1,7 +1,7 @@
 ---
 title: Apache Traffic Control
 slug: apache-traffic-control
-companyCount: 63
+companyCount: 53
 description: CDN control and management platform for building, monitoring, and configuring large-scale content delivery networks.
 tags:
 - CDN
@@ -10,7 +10,7 @@ tags:
 - Caching
 - Networking
 website: https://trafficcontrol.apache.org
-radarRing: Optimizing
+radarRing: Established
 alternativeNames:
 - ATC
 - Traffic Control

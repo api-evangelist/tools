@@ -10,7 +10,7 @@ tags:
 - Interactive
 - Collaboration
 website: https://zeppelin.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Zeppelin
 ---

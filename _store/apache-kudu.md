@@ -10,7 +10,7 @@ tags:
 - Fast Data
 - Storage Engine
 website: https://kudu.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Kudu
 ---

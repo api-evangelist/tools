@@ -11,7 +11,7 @@ tags:
 - Threat Detection
 - CNCF
 website: https://falco.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - falco
 - Sysdig Falco

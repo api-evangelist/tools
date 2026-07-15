@@ -10,7 +10,7 @@ tags:
 - Java
 - Replication
 website: https://ratis.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - Ratis
 ---

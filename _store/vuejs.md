@@ -1,7 +1,7 @@
 ---
 title: Vue.js
 slug: vuejs
-companyCount: 188
+companyCount: 191
 description: A progressive JavaScript framework for building user interfaces with a focus on declarability and component composition.
 tags:
 - JavaScript

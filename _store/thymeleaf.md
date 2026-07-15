@@ -9,7 +9,7 @@ tags:
 - Server-Side Rendering
 website: https://www.thymeleaf.org/
 founded: 2011
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - thymeleaf
 ---

@@ -10,7 +10,7 @@ tags:
 - Compression
 - Analytics
 website: https://orc.apache.org
-radarRing: Optimizing
+radarRing: Developing
 alternativeNames:
 - ORC
 - Optimized Row Columnar

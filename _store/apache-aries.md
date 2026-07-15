@@ -1,7 +1,7 @@
 ---
 title: Apache Aries
 slug: apache-aries
-companyCount: 5
+companyCount: 0
 description: Set of pluggable Java components enabling enterprise OSGi application development and deployment.
 tags:
 - OSGi
@@ -10,7 +10,7 @@ tags:
 - Modularity
 - Component Framework
 website: https://aries.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - Aries
 ---

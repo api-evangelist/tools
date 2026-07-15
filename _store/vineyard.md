@@ -1,7 +1,7 @@
 ---
 title: Vineyard
 slug: vineyard
-companyCount: 9
+companyCount: 0
 description: An in-memory metadata service for sharing, discovering, and accessing distributed objects in Python, developed for big data analytics workflows.
 tags:
 - Distributed Systems
@@ -10,7 +10,7 @@ tags:
 - Big Data
 - In-Memory Storage
 website: https://v6d.io/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - vineyard
 - v6d

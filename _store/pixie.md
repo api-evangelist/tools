@@ -9,7 +9,7 @@ tags:
 - Monitoring
 - eBPF
 website: https://px.dev/
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - pixie
 ---

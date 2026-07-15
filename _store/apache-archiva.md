@@ -10,7 +10,7 @@ tags:
 - Java
 - Governance
 website: https://archiva.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - Archiva
 ---

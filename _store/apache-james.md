@@ -1,7 +1,7 @@
 ---
 title: Apache James
 slug: apache-james
-companyCount: 49
+companyCount: 46
 description: Enterprise mail server providing a complete, portable email engine based on open protocols.
 tags:
 - Email Server

@@ -1,7 +1,7 @@
 ---
 title: Apache Brooklyn
 slug: apache-brooklyn
-companyCount: 94
+companyCount: 0
 description: Framework for modeling, deploying, and managing distributed applications across cloud and on-premise environments.
 tags:
 - Application Management
@@ -10,7 +10,7 @@ tags:
 - Orchestration
 - Autonomic Computing
 website: https://brooklyn.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - Brooklyn
 ---

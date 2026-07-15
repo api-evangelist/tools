@@ -1,7 +1,7 @@
 ---
 title: Kyverno
 slug: kyverno
-companyCount: 9
+companyCount: 10
 description: Kubernetes native policy management engine for security, automation, and governance. Kyverno uses Kubernetes admission controllers to validate, mutate, and generate configurations using policies written as Kubernetes resources.
 tags:
 - Policy Management
@@ -10,7 +10,7 @@ tags:
 - Governance
 - Cloud Native
 website: https://kyverno.io/
-radarRing: Initial
+radarRing: Developing
 alternativeNames:
 - kyverno
 ---

@@ -1,7 +1,7 @@
 ---
 title: Kubernetes
 slug: kubernetes
-companyCount: 338
+companyCount: 340
 description: Open-source container orchestration platform for automating deployment, scaling, and management of containerized applications
 tags:
 - Container Orchestration

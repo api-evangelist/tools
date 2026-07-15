@@ -1,7 +1,7 @@
 ---
 title: KAgent
 slug: kagent
-companyCount: 2
+companyCount: 1
 description: An AI agent framework for building autonomous agents with knowledge integration and task execution capabilities
 tags:
 - AI Agents

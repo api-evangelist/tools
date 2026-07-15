@@ -1,7 +1,7 @@
 ---
 title: Apache DB
 slug: apache-db
-companyCount: 24
+companyCount: 26
 description: Umbrella project for database-related efforts including Apache Derby and related database technologies.
 tags:
 - Database
@@ -10,7 +10,7 @@ tags:
 - SQL
 - Embedded Database
 website: https://db.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - Derby
 - Apache Derby

@@ -11,7 +11,7 @@ tags:
 - Workflows
 website: https://www.kubeflow.org/docs/components/pipelines/
 founded: 2018
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - KFP
 - kfp

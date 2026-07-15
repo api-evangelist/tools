@@ -1,7 +1,7 @@
 ---
 title: Apache Tapestry
 slug: apache-tapestry
-companyCount: 11
+companyCount: 10
 description: Component-oriented Java web application framework emphasizing simplicity and developer productivity.
 tags:
 - Web Framework

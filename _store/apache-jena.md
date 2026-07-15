@@ -1,7 +1,7 @@
 ---
 title: Apache Jena
 slug: apache-jena
-companyCount: 11
+companyCount: 3
 description: Java framework for building semantic web and linked data applications with RDF and SPARQL support.
 tags:
 - Semantic Web
@@ -10,7 +10,7 @@ tags:
 - Linked Data
 - Knowledge Graph
 website: https://jena.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Jena
 ---

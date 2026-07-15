@@ -1,7 +1,7 @@
 ---
 title: Telepresence
 slug: telepresence
-companyCount: 4
+companyCount: 2
 description: Fast local development for Kubernetes and OpenShift microservices. Routes traffic from your Kubernetes cluster to your local machine, allowing you to develop and debug services locally while connected to a remote cluster.
 tags:
 - Kubernetes
@@ -9,7 +9,7 @@ tags:
 - Microservices
 - Debugging
 website: https://www.telepresence.io/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - telepresence
 ---

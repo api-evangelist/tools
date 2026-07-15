@@ -10,7 +10,7 @@ tags:
 - Build Tool
 - Compatibility
 website: https://gump.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Gump
 ---

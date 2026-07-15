@@ -1,7 +1,7 @@
 ---
 title: Spring Cloud
 slug: spring-cloud
-companyCount: 31
+companyCount: 23
 description: A suite of tools for building microservices and distributed systems with Spring Boot, providing patterns like service discovery, configuration management, circuit breakers, and API gateways.
 tags:
 - Java
@@ -10,7 +10,7 @@ tags:
 - Cloud
 website: https://spring.io/projects/spring-cloud
 founded: 2015
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - spring-cloud
 ---

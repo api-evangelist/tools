@@ -9,7 +9,7 @@ tags:
 - Edge Computing
 - Device Management
 website: https://github.com/project-akri/akri
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - akri
 ---

@@ -1,7 +1,7 @@
 ---
 title: Apache Druid
 slug: apache-druid
-companyCount: 13
+companyCount: 7
 description: High-performance real-time analytics database for fast slice-and-dice analytics on large datasets.
 tags:
 - Real Time Analytics
@@ -10,7 +10,7 @@ tags:
 - Columnar Database
 - Low Latency
 website: https://druid.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Druid
 - druid

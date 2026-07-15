@@ -1,7 +1,7 @@
 ---
 title: Jenkins
 slug: jenkins-pipeline
-companyCount: 272
+companyCount: 261
 description: A suite of plugins that supports implementing and integrating continuous delivery pipelines into Jenkins. It provides an extensible set of tools for modeling simple-to-complex delivery pipelines as code via the Pipeline DSL.
 tags:
 - CI/CD

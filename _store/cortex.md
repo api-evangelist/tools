@@ -1,7 +1,7 @@
 ---
 title: Cortex
 slug: cortex
-companyCount: 66
+companyCount: 67
 description: An open-source platform for deploying, managing, and scaling machine learning models in production as APIs.
 tags:
 - Machine Learning
@@ -10,7 +10,7 @@ tags:
 - MLOps
 - Open Source
 website: https://www.cortexlabs.com/
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - cortex
 ---

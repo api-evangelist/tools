@@ -10,7 +10,7 @@ tags:
 - Enterprise
 website: https://spring.io/projects/spring-batch
 founded: 2023
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Spring Batch 5
 - spring-batch-5

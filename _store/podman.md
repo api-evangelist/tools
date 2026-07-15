@@ -1,7 +1,7 @@
 ---
 title: Podman
 slug: podman
-companyCount: 24
+companyCount: 25
 description: Daemonless container engine for developing, managing, and running OCI Containers on Linux systems
 tags:
 - Containers
@@ -9,7 +9,7 @@ tags:
 - Virtualization
 website: https://podman.io/
 founded: 2018
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - podman
 ---

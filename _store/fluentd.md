@@ -1,7 +1,7 @@
 ---
 title: Fluentd
 slug: fluentd
-companyCount: 10
+companyCount: 5
 description: Open source data collector for unified logging layer that allows you to unify data collection and consumption for better use and understanding of data.
 tags:
 - Logging

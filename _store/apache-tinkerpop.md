@@ -1,7 +1,7 @@
 ---
 title: Apache TinkerPop
 slug: apache-tinkerpop
-companyCount: 12
+companyCount: 6
 description: Graph computing framework providing a standard API for graph databases and graph analytic systems.
 tags:
 - Graph Computing
@@ -10,7 +10,7 @@ tags:
 - Traversal
 - Analytics
 website: https://tinkerpop.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - TinkerPop
 - Gremlin

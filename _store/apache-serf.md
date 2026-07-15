@@ -10,7 +10,7 @@ tags:
 - APR
 - High Performance
 website: https://serf.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - Serf
 ---

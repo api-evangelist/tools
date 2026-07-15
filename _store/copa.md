@@ -1,14 +1,14 @@
 ---
 title: Copa
 slug: copa
-companyCount: 19
+companyCount: 16
 description: A causal reasoning evaluation dataset that tests models' ability to make plausible inferences about causes and effects by selecting the more plausible alternative for a given premise.
 tags:
 - Benchmarks
 - Causal Reasoning
 - Common Sense
 website: https://people.ict.usc.edu/~gordon/copa.html
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - copa
 - Copacetic

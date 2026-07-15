@@ -1,7 +1,7 @@
 ---
 title: Rundeck
 slug: rundeck
-companyCount: 6
+companyCount: 5
 description: Open source automation service with a web console, command line tools and a WebAPI. It lets you easily run automation tasks across a set of nodes.
 tags:
 - Automation
@@ -11,7 +11,7 @@ tags:
 - Infrastructure
 website: https://www.rundeck.com
 founded: 2010
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - rundeck
 ---

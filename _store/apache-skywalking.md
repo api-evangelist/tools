@@ -10,7 +10,7 @@ tags:
 - Monitoring
 - Microservices
 website: https://skywalking.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - SkyWalking
 - skywalking

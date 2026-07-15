@@ -1,7 +1,7 @@
 ---
 title: Apache Roller
 slug: apache-roller
-companyCount: 43
+companyCount: 44
 description: Full-featured, multi-user, multi-blog server suitable for large and small blog communities.
 tags:
 - Blogging
@@ -10,7 +10,7 @@ tags:
 - Multi User
 - Web Application
 website: https://roller.apache.org
-radarRing: Optimizing
+radarRing: Established
 alternativeNames:
 - Roller
 ---

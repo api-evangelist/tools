@@ -10,7 +10,7 @@ tags:
 - Java
 - Cryptography
 website: https://shiro.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Shiro
 ---

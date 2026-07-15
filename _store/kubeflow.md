@@ -1,7 +1,7 @@
 ---
 title: Kubeflow
 slug: kubeflow
-companyCount: 61
+companyCount: 57
 description: An open-source machine learning platform designed to orchestrate complicated ML workflows on Kubernetes, providing tools for model training, deployment, and pipeline management.
 tags:
 - Machine Learning
@@ -12,7 +12,7 @@ tags:
 - Pipeline Orchestration
 website: https://www.kubeflow.org/
 founded: 2017
-radarRing: Optimizing
+radarRing: Established
 alternativeNames:
 - kubeflow
 ---

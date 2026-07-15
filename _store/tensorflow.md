@@ -1,7 +1,7 @@
 ---
 title: TensorFlow
 slug: tensorflow
-companyCount: 194
+companyCount: 186
 description: An open-source machine learning framework developed by Google for building and training neural networks and deep learning models.
 tags:
 - Machine Learning

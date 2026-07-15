@@ -1,7 +1,7 @@
 ---
 title: Apache Traffic Server
 slug: apache-traffic-server
-companyCount: 163
+companyCount: 162
 description: Fast, scalable, extensible HTTP/1.1 and HTTP/2 caching proxy server for edge and CDN deployments.
 tags:
 - Caching Proxy

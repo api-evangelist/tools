@@ -1,7 +1,7 @@
 ---
 title: Apache Cordova
 slug: apache-cordova
-companyCount: 31
+companyCount: 28
 description: Mobile development framework for building cross-platform mobile apps using HTML, CSS, and JavaScript.
 tags:
 - Mobile Development
@@ -10,7 +10,7 @@ tags:
 - JavaScript
 - HTML5
 website: https://cordova.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - Cordova
 - PhoneGap

@@ -1,7 +1,7 @@
 ---
 title: Apache Solr
 slug: apache-solr
-companyCount: 29
+companyCount: 18
 description: Enterprise search platform built on Lucene with distributed indexing, replication, and faceted search.
 tags:
 - Search Engine

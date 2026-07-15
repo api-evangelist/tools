@@ -1,7 +1,7 @@
 ---
 title: Apache APR
 slug: apache-apr
-companyCount: 30
+companyCount: 138
 description: Portable runtime library providing a predictable and consistent interface to platform-specific implementations.
 tags:
 - Portable Runtime
@@ -10,7 +10,7 @@ tags:
 - System Library
 - Apache HTTP
 website: https://apr.apache.org
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - APR
 - Apache Portable Runtime

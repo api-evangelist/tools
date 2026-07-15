@@ -1,7 +1,7 @@
 ---
 title: Apache Directory
 slug: apache-directory
-companyCount: 4
+companyCount: 3
 description: LDAP and Kerberos server and client libraries written in Java for directory-based identity management.
 tags:
 - LDAP

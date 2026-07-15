@@ -1,14 +1,14 @@
 ---
 title: Score
 slug: score
-companyCount: 201
+companyCount: 0
 description: A framework for evaluating and scoring AI model outputs and responses
 tags:
 - Evaluation
 - AI
 - Scoring
 website: https://github.com/openai/evals
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - score
 ---

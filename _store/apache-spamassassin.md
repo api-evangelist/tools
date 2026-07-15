@@ -10,7 +10,7 @@ tags:
 - Perl
 - Email Security
 website: https://spamassassin.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - SpamAssassin
 ---

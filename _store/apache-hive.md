@@ -1,7 +1,7 @@
 ---
 title: Apache Hive
 slug: apache-hive
-companyCount: 96
+companyCount: 89
 description: Data warehouse infrastructure built on Hadoop for SQL-like querying and analysis of large datasets.
 tags:
 - Data Warehouse
@@ -10,7 +10,7 @@ tags:
 - Hadoop
 - Analytics
 website: https://hive.apache.org
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - Hive
 - hive

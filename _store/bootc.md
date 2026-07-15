@@ -9,7 +9,7 @@ tags:
 - System Updates
 - Infrastructure
 website: https://containers.github.io/bootc/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - BootC
 ---

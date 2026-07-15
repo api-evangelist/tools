@@ -1,7 +1,7 @@
 ---
 title: Apache Maven
 slug: apache-maven
-companyCount: 106
+companyCount: 101
 description: Build automation and project management tool for Java projects using a project object model (POM).
 tags:
 - Build Tool
@@ -10,7 +10,7 @@ tags:
 - Project Management
 - Automation
 website: https://maven.apache.org
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - Maven
 - mvn

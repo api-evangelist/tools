@@ -10,7 +10,7 @@ tags:
 - Neural Networks
 - AI
 website: https://singa.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - SINGA
 ---

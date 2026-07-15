@@ -9,7 +9,7 @@ tags:
 - OCI
 - Cloud Native
 website: https://cri-o.io/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - crio
 - CRI-O Container Runtime

@@ -1,7 +1,7 @@
 ---
 title: Apache Rya
 slug: apache-rya
-companyCount: 2
+companyCount: 1
 description: Scalable RDF triple store built on Accumulo for storing and querying semantic web data.
 tags:
 - RDF
@@ -10,7 +10,7 @@ tags:
 - Accumulo
 - SPARQL
 website: https://rya.apache.org
-radarRing: Established
+radarRing: Initial
 alternativeNames:
 - Rya
 ---

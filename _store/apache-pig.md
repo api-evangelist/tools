@@ -1,7 +1,7 @@
 ---
 title: Apache Pig
 slug: apache-pig
-companyCount: 23
+companyCount: 18
 description: High-level platform for creating MapReduce programs using the Pig Latin scripting language on Hadoop.
 tags:
 - Hadoop
@@ -10,7 +10,7 @@ tags:
 - Pig Latin
 - Data Processing
 website: https://pig.apache.org
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - Pig
 - Pig Latin

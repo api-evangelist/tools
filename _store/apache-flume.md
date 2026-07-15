@@ -1,7 +1,7 @@
 ---
 title: Apache Flume
 slug: apache-flume
-companyCount: 7
+companyCount: 5
 description: Distributed service for collecting, aggregating, and moving large amounts of log data into HDFS.
 tags:
 - Log Collection
@@ -10,7 +10,7 @@ tags:
 - Hadoop
 - Streaming
 website: https://flume.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Flume
 - flume

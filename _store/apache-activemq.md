@@ -1,7 +1,7 @@
 ---
 title: Apache ActiveMQ
 slug: apache-activemq
-companyCount: 36
+companyCount: 26
 description: Popular open-source message broker supporting multiple protocols including AMQP, STOMP, and OpenWire.
 tags:
 - Messaging
@@ -10,7 +10,7 @@ tags:
 - Pub Sub
 - Queue
 website: https://activemq.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - ActiveMQ
 - AMQ

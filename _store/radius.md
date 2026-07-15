@@ -1,7 +1,7 @@
 ---
 title: Radius
 slug: radius
-companyCount: 121
+companyCount: 117
 description: Application platform for cloud-native applications that enables developers to define, deploy, and manage applications across multiple clouds and on-premises environments using a unified model.
 tags:
 - Cloud Native
@@ -9,7 +9,7 @@ tags:
 - Multi Cloud
 - Infrastructure
 website: https://radapp.io/
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - radius
 ---

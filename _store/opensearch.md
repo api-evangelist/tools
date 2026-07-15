@@ -1,7 +1,7 @@
 ---
 title: OpenSearch
 slug: opensearch
-companyCount: 60
+companyCount: 57
 description: Open source search and analytics suite derived from Elasticsearch, providing distributed search and analytics capabilities with visualization through OpenSearch Dashboards. Organizations use it to track key metrics, identify trends, and optimize business outcomes.
 tags:
 - Search

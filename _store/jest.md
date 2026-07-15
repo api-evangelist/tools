@@ -1,7 +1,7 @@
 ---
 title: Jest
 slug: jest
-companyCount: 119
+companyCount: 107
 description: A delightful JavaScript testing framework with a focus on simplicity, featuring zero configuration, snapshot testing, and built-in code coverage.
 tags:
 - Testing
@@ -10,7 +10,7 @@ tags:
 - Snapshot Testing
 website: https://jestjs.io/
 founded: 2014
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - jest
 - JestJS

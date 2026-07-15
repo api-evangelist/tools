@@ -11,7 +11,7 @@ tags:
 - Gherkin
 website: https://specflow.org/
 founded: 2009
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - specflow
 - SpecFlow BDD

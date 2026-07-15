@@ -8,7 +8,7 @@ tags:
 - Collaboration
 - Data Workspace
 website: https://hexa.app
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - hexa
 ---

@@ -1,7 +1,7 @@
 ---
 title: Apache Parquet
 slug: apache-parquet
-companyCount: 55
+companyCount: 50
 description: Columnar storage file format optimized for efficient data storage and retrieval in big data workloads.
 tags:
 - Columnar Storage
@@ -10,7 +10,7 @@ tags:
 - Compression
 - Analytics
 website: https://parquet.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - Parquet
 - parquet

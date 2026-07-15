@@ -1,7 +1,7 @@
 ---
 title: JUnit
 slug: junit
-companyCount: 124
+companyCount: 106
 description: JUnit is a widely used testing framework for Java applications that enables developers to write and run repeatable automated tests. It supports test-driven development with annotations, assertions, and test lifecycle management for ensuring code quality.
 tags:
 - Java

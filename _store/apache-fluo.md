@@ -10,7 +10,7 @@ tags:
 - Low Latency
 - Big Data
 website: https://fluo.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Fluo
 ---

@@ -1,7 +1,7 @@
 ---
 title: Apache Streams
 slug: apache-streams
-companyCount: 312
+companyCount: 0
 description: Lightweight framework for integrating and analyzing activity streams and social data.
 tags:
 - Activity Streams
@@ -10,7 +10,7 @@ tags:
 - Analytics
 - Data Processing
 website: https://streams.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - Streams
 ---

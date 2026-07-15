@@ -1,7 +1,7 @@
 ---
 title: Apache AGE
 slug: apache-age
-companyCount: 581
+companyCount: 0
 description: Graph database extension for PostgreSQL providing graph data storage and query capabilities using openCypher.
 tags:
 - Graph Database
@@ -10,7 +10,7 @@ tags:
 - Extension
 - Query Language
 website: https://age.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - AGE
 - age

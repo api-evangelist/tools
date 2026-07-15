@@ -10,7 +10,7 @@ tags:
 - Scientific Computing
 - Climate
 website: https://sdap.apache.org
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - SDAP
 ---

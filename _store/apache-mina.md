@@ -1,7 +1,7 @@
 ---
 title: Apache MINA
 slug: apache-mina
-companyCount: 1
+companyCount: 26
 description: Network application framework for building high-performance, scalable network applications in Java.
 tags:
 - Networking
@@ -10,7 +10,7 @@ tags:
 - High Performance
 - Protocol Framework
 website: https://mina.apache.org
-radarRing: Optimizing
+radarRing: Established
 alternativeNames:
 - MINA
 ---

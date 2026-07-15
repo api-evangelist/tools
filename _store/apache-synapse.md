@@ -1,7 +1,7 @@
 ---
 title: Apache Synapse
 slug: apache-synapse
-companyCount: 84
+companyCount: 73
 description: Lightweight, high-performance enterprise service bus and mediation engine for web services.
 tags:
 - ESB
@@ -10,7 +10,7 @@ tags:
 - Integration
 - SOA
 website: https://synapse.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - Synapse
 ---

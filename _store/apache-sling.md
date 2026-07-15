@@ -1,7 +1,7 @@
 ---
 title: Apache Sling
 slug: apache-sling
-companyCount: 21
+companyCount: 13
 description: Web framework for building content-centric applications using the JCR content repository as its data store.
 tags:
 - Web Framework

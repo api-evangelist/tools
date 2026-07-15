@@ -1,7 +1,7 @@
 ---
 title: Strimzi
 slug: strimzi
-companyCount: 2
+companyCount: 1
 description: Kubernetes-native operator for running Apache Kafka on Kubernetes and OpenShift, providing simplified deployment, management, and configuration of Kafka clusters.
 tags:
 - Kafka

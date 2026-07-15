@@ -1,7 +1,7 @@
 ---
 title: Apache Bloodhound
 slug: apache-bloodhound
-companyCount: 13
+companyCount: 11
 description: Project management and bug tracking system derived from Apache Trac with enhanced multi-project support.
 tags:
 - Bug Tracking
@@ -10,7 +10,7 @@ tags:
 - Trac
 - Collaboration
 website: https://bloodhound.apache.org
-radarRing: Initial
+radarRing: Developing
 alternativeNames:
 - Bloodhound
 ---

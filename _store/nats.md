@@ -1,7 +1,7 @@
 ---
 title: NATS
 slug: nats
-companyCount: 13
+companyCount: 19
 description: A high-performance, cloud-native messaging system for microservices, IoT, and edge computing. Provides pub-sub, request-reply, and queue-based messaging patterns with at-most-once and at-least-once delivery guarantees.
 tags:
 - Message Broker

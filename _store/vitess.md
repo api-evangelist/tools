@@ -10,7 +10,7 @@ tags:
 - Sharding
 - Cloud Native
 website: https://vitess.io
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - vitess
 ---

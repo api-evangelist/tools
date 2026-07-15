@@ -1,7 +1,7 @@
 ---
 title: Hugging Face Transformers
 slug: hugging-face-transformers
-companyCount: 192
+companyCount: 186
 description: Open-source library providing thousands of pre-trained models for natural language processing, computer vision, and audio tasks with simple APIs for PyTorch, TensorFlow, and JAX.
 tags:
 - Machine Learning
@@ -11,7 +11,7 @@ tags:
 - Open Source
 website: https://huggingface.co/docs/transformers
 founded: 2018
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - HF Transformers
 - Transformers

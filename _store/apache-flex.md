@@ -1,7 +1,7 @@
 ---
 title: Apache Flex
 slug: apache-flex
-companyCount: 278
+companyCount: 0
 description: Application framework for building expressive cross-platform rich internet applications using ActionScript.
 tags:
 - RIA
@@ -10,7 +10,7 @@ tags:
 - Ui Framework
 - Flash
 website: https://flex.apache.org
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - Flex
 - Adobe Flex

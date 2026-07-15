@@ -1,7 +1,7 @@
 ---
 title: Koordinator
 slug: koordinator
-companyCount: 12
+companyCount: 11
 description: A QoS-based scheduling system for hybrid workloads orchestration on Kubernetes, providing colocation, interference detection, and resource optimization capabilities
 tags:
 - Kubernetes

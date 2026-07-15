@@ -1,7 +1,7 @@
 ---
 title: Apache Iceberg
 slug: apache-iceberg
-companyCount: 52
+companyCount: 44
 description: Open table format for large analytic datasets, providing reliable, performant operations on petabyte-scale tables.
 tags:
 - Table Format
@@ -10,7 +10,7 @@ tags:
 - Big Data
 - ACID
 website: https://iceberg.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - Iceberg
 - iceberg

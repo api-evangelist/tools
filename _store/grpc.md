@@ -1,7 +1,7 @@
 ---
 title: gRPC
 slug: grpc
-companyCount: 100
+companyCount: 93
 description: A high-performance, open-source universal RPC framework that uses HTTP/2 for transport, Protocol Buffers as the interface description language, and provides features such as authentication, bidirectional streaming and flow control, blocking or nonblocking bindings, and cancellation and timeouts.
 tags:
 - RPC
@@ -10,7 +10,7 @@ tags:
 - HTTP/2
 - Microservices
 website: https://grpc.io/
-radarRing: Developing
+radarRing: Optimizing
 alternativeNames:
 - grpc
 - GRPC

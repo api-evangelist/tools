@@ -1,7 +1,7 @@
 ---
 title: Flux
 slug: flux
-companyCount: 163
+companyCount: 156
 description: An open-source text-to-image AI model developed by Black Forest Labs that generates high-quality images from text prompts with improved prompt following and visual quality.
 tags:
 - AI
@@ -10,7 +10,7 @@ tags:
 - Text To Image
 - Open Source
 website: https://blackforestlabs.ai/
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - FluxCD
 - Flux CD

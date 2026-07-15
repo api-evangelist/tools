@@ -10,7 +10,7 @@ tags:
 - ACID
 - Open Source
 website: https://tikv.org/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - tikv
 ---

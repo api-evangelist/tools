@@ -1,7 +1,7 @@
 ---
 title: Apache Storm
 slug: apache-storm
-companyCount: 78
+companyCount: 74
 description: Distributed real-time computation system for processing unbounded streams of data reliably.
 tags:
 - Streaming
