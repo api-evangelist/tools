@@ -13,6 +13,10 @@
       symbol: monitoring
       href: https://search.apievangelist.com/analytics/
 
+    - name: Score
+      symbol: workspace_premium
+      href: https://apievangelist.com/rating/
+
 
 - name: Learnings
   nav:
@@ -32,6 +36,10 @@
     - name: Papers
       symbol: description
       href: https://papers.apievangelist.com
+
+    - name: Newsletter
+      symbol: mail
+      href: https://newsletters.apievangelist.com
 
     - name: Videos
       symbol: video_library
@@ -93,26 +101,11 @@
         - name: Alphabetical
           href: https://providers.apievangelist.com/alphabetical/
 
-        - name: Fortune 1000
-          href: https://providers.apievangelist.com/fortune-1000/
+        - name: Industries
+          href: https://providers.apievangelist.com/industries/
 
-        - name: Federal Government
-          href: https://providers.apievangelist.com/federal-government/
-
-        - name: Exemplar
-          href: https://providers.apievangelist.com/exemplar/
-
-        - name: Strong
-          href: https://providers.apievangelist.com/strong/
-
-        - name: Developing
-          href: https://providers.apievangelist.com/developing/
-
-        - name: Thin
-          href: https://providers.apievangelist.com/thin/
-
-        - name: Minimal
-          href: https://providers.apievangelist.com/minimal/
+        - name: Countries
+          href: https://providers.apievangelist.com/countries/
 
     - name: APIs
       symbol: api
@@ -181,6 +174,10 @@
         - name: Kin Lane
           href: https://apievangelist.com/about/kin-lane
 
+    - name: Search Terms
+      symbol: query_stats
+      href: https://apievangelist.com/search-terms/
+
     - name: Contact
       symbol: contact_support
       href: https://apievangelist.com/contact
@@ -199,7 +196,7 @@
           href: https://mastodon.apievangelist.com/web/@api
 
         - name: Newsletter
-          href: https://buttondown.com/apievangelist
+          href: https://newsletters.apievangelist.com
 
         - name: Apple Podcasts
           href: https://podcasts.apple.com/us/podcast/api-evangelist-conversations/id1765157921
