@@ -1,8 +1,9 @@
 ---
 title: FastAPI
 slug: fastapi
-companyCount: 109
-description: Modern, fast (high-performance) web framework for building APIs with Python based on standard Python type hints
+companyCount: 128
+description: Modern, fast (high-performance) web framework for building APIs with Python based on standard
+  Python type hints
 tags:
 - Python
 - Web Framework
@@ -14,4 +15,6 @@ radarRing: Optimizing
 alternativeNames:
 - fastapi
 - Fast API
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

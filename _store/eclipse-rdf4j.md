@@ -1,8 +1,9 @@
 ---
 title: Eclipse RDF4J
 slug: eclipse-rdf4j
-companyCount: 0
-description: A powerful Java framework for processing and handling RDF data. This includes creating, parsing, scalable storage, reasoning and querying with RDF and Linked Data.
+companyCount: 1
+description: A powerful Java framework for processing and handling RDF data. This includes creating, parsing,
+  scalable storage, reasoning and querying with RDF and Linked Data.
 tags:
 - Java
 - RDF
@@ -16,4 +17,6 @@ alternativeNames:
 - RDF4J
 - rdf4j
 - Sesame
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

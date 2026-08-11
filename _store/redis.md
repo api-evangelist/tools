@@ -1,8 +1,10 @@
 ---
 title: Redis
 slug: redis
-companyCount: 117
-description: An open-source, in-memory data structure store used as a database, cache, and message broker, known for its high performance and support for various data structures like strings, hashes, lists, sets, and sorted sets.
+companyCount: 170
+description: An open-source, in-memory data structure store used as a database, cache, and message broker,
+  known for its high performance and support for various data structures like strings, hashes, lists,
+  sets, and sorted sets.
 tags:
 - Database
 - Cache
@@ -16,4 +18,6 @@ alternativeNames:
 - redis
 - Redis Cache
 - Redis DB
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tools.apievangelist.com/tool.schema.json",
+  "title": "API Evangelist Tool Entry",
+  "description": "One open source tool in the API Evangelist tooling reference. This schema is the contract behind /tools.json: it defines the vocabulary an AI agent, copilot or AI platform reads to decide whether a tool does the job it currently needs done, and how to actually invoke it. Prose is for humans; every field below is for a machine.",
+  "type": "object",
+  "required": ["slug", "title", "description"],
+  "additionalProperties": true,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Stable identifier and URL path segment. Never reused across tools."
+    },
+    "title": { "type": "string", "description": "The name the project calls itself." },
+    "description": {
+      "type": "string",
+      "description": "One sentence: what the tool does. The agent-facing detail lives in the structured fields, not here."
+    },
+    "alternativeNames": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Other names this tool is known by. Used to match it in unstructured text such as job postings; a name here that is also an ordinary English word will produce false positives and must be stoplisted in the matcher."
+    },
+    "website": { "type": "string", "format": "uri" },
+    "repository": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical source repository. The evidence behind licence, activity and archived status."
+    },
+
+    "license": {
+      "type": ["string", "null"],
+      "description": "SPDX identifier, read from the repository — not inferred. null means no license file was found, which is NOT the same as permissive: without a license there is no grant to use the code.",
+      "examples": ["Apache-2.0", "MIT", "BSD-3-Clause", "GPL-3.0", null]
+    },
+    "licenseSource": {
+      "type": "string",
+      "enum": ["github-api", "license-file", "declared", "unresolved"],
+      "description": "How the license was determined. `license-file` means GitHub's detector failed and the LICENSE text was read directly."
+    },
+    "openSource": {
+      "type": "boolean",
+      "description": "True only for an OSI-approved license. Source-available licenses (BUSL, Elastic, SSPL) are false — an agent recommending a tool for production needs this distinction, and directories routinely get it wrong."
+    },
+    "licenseVerified": { "type": "string", "format": "date" },
+
+    "specifications": {
+      "type": "array",
+      "description": "The standards this tool implements, linking to standards.apievangelist.com. This is what makes the reference navigable in the direction an agent actually travels: from an artifact it is holding, to a tool that can act on it.",
+      "items": {
+        "type": "object",
+        "required": ["slug", "role"],
+        "properties": {
+          "slug": { "type": "string", "description": "Slug of the standard at standards.apievangelist.com/store/{slug}/" },
+          "name": { "type": "string" },
+          "role": { "$ref": "#/$defs/role" },
+          "also": { "type": "array", "items": { "$ref": "#/$defs/role" } },
+          "produces": {
+            "type": "array",
+            "items": { "enum": ["sdk", "client", "server-stub", "types", "documentation", "sbom"] },
+            "description": "For `generates` only: what specifically comes out."
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+
+    "agent": {
+      "type": "object",
+      "description": "How an agent actually uses this tool. The install.apicommons.org lesson applied to tooling: a page that tells you a tool exists is a directory, a page that tells you how to invoke it is infrastructure.",
+      "properties": {
+        "interfaces": {
+          "type": "array",
+          "items": { "enum": ["cli", "library", "http-api", "mcp-server", "ci-action", "container", "lsp", "editor-extension", "web-ui"] },
+          "description": "The surfaces the tool exposes. `cli` and `mcp-server` are the two an agent can drive directly; `web-ui` alone means an agent can only recommend it to a human."
+        },
+        "install": {
+          "type": "object",
+          "description": "Package-manager coordinates, keyed by ecosystem. Values are the package name, not a full command, so the caller composes the command its sandbox allows.",
+          "additionalProperties": { "type": "string" },
+          "examples": [{ "npm": "@stoplight/spectral-cli", "brew": "spectral", "go": "github.com/daveshanley/vacuum" }]
+        },
+        "invoke": {
+          "type": "string",
+          "description": "A single representative command, with placeholders in <angle-brackets>. Enough to be copied and adapted; not a substitute for the tool's own docs."
+        },
+        "consumes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Artifact types the tool accepts as input, e.g. openapi, asyncapi, json-schema, proto, oci-image, sbom."
+        },
+        "emits": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Output formats. Machine-readable output (json, sarif, junit) is what lets an agent chain this tool into a pipeline; pretty-printed output only is a limitation worth stating."
+        },
+        "deterministic": {
+          "type": "boolean",
+          "description": "Does the same input reliably produce the same output? Determines whether an agent can cache or diff results across runs."
+        },
+        "offline": {
+          "type": "boolean",
+          "description": "Can it run with no network access? Decisive for agents in sandboxed or air-gapped environments, and for anything running in CI without egress."
+        },
+        "mutates": {
+          "type": "boolean",
+          "description": "Does it write to the filesystem or to a remote system? An agent should treat true as requiring confirmation before it runs unattended."
+        },
+        "credentials": {
+          "type": "boolean",
+          "description": "Does normal use require secrets? If true the agent must plan for credential handling rather than assuming it can just run the command."
+        }
+      }
+    },
+
+    "useCases": {
+      "type": "array",
+      "description": "Concrete jobs this tool does, written as the situation an agent finds itself in — not as marketing copy. Each should be recognisable as a task somebody actually asks for.",
+      "items": {
+        "type": "object",
+        "required": ["task"],
+        "properties": {
+          "task": { "type": "string" },
+          "surface": {
+            "type": "array",
+            "items": { "enum": ["coding-agent", "copilot", "ci-pipeline", "mcp-server", "ide", "ai-platform", "human"] },
+            "description": "Where this use case is exercised. `coding-agent` = an autonomous agent with shell access; `copilot` = inline assistance to a human author; `ai-platform` = a hosted product embedding the capability."
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+
+    "companyCount": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Distinct companies whose job postings name this tool, from the API Evangelist demand corpus. A DEMAND signal — evidence of hiring, not of deployment — and only comparable within a single quarter."
+    },
+    "nameCollision": {
+      "type": "boolean",
+      "description": "True when the tool's name is an ordinary English word ('Distribution', 'Witness', 'Prism'), so the job-corpus matcher blocks the bare name to avoid crediting it for unrelated prose. companyCount is therefore a floor, not a measurement — read nameCollisionNote before drawing a conclusion from a low number."
+    },
+    "nameCollisionNote": {
+      "type": "string",
+      "description": "Present when nameCollision is true: what the sampled matches actually were, and why the count understates."
+    },
+    "companyCountQuarter": {
+      "type": "string",
+      "pattern": "^q[1-4]-[0-9]{4}$",
+      "description": "The quarter companyCount was measured in. Counts from different quarters are not comparable: corpus size and method both change."
+    },
+    "companyCountBasis": {
+      "type": "string",
+      "description": "How the count was derived, including the matcher and whether the corpus was read in full."
+    },
+    "radarRing": {
+      "type": "string",
+      "enum": ["Optimizing", "Established", "Developing", "Initial"],
+      "description": "Adoption quartile within the corpus for the stated quarter. Relative, not absolute."
+    },
+
+    "stars": { "type": "integer", "description": "GitHub stars at licenseVerified. A popularity proxy, not a quality one." },
+    "lastCommit": { "type": "string", "format": "date", "description": "Last push to the default branch. The honest liveness signal." },
+    "archived": { "type": "boolean", "description": "Archived upstream. An archived tool is never recommended for new work." },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  },
+
+  "$defs": {
+    "role": {
+      "type": "string",
+      "description": "What the tool does TO the specification. The controlled vocabulary is defined in scripts/roles.yml and published at /roles.json.",
+      "enum": [
+        "authors", "parses", "validates", "tests", "scans",
+        "generates", "transforms", "converts", "encodes",
+        "serves", "mocks", "proxies", "runs", "deploys", "scrapes", "instruments",
+        "signs", "verifies", "attests", "issues", "evaluates",
+        "stores", "transfers", "documents", "manages"
+      ]
+    }
+  }
+}

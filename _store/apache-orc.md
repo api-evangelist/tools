@@ -1,7 +1,7 @@
 ---
 title: Apache ORC
 slug: apache-orc
-companyCount: 21
+companyCount: 27
 description: Columnar file format for Hadoop workloads providing high compression and fast read performance.
 tags:
 - Columnar Storage
@@ -10,8 +10,10 @@ tags:
 - Compression
 - Analytics
 website: https://orc.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - ORC
 - Optimized Row Columnar
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,8 +1,9 @@
 ---
 title: Apache Arrow
 slug: apache-arrow
-companyCount: 32
-description: Cross-language development platform for in-memory columnar data, enabling fast data interchange and analytics.
+companyCount: 43
+description: Cross-language development platform for in-memory columnar data, enabling fast data interchange
+  and analytics.
 tags:
 - Columnar Data
 - In Memory
@@ -14,4 +15,6 @@ radarRing: Established
 alternativeNames:
 - Arrow
 - arrow
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -2,7 +2,8 @@
 title: Apache Creadur
 slug: apache-creadur
 companyCount: 0
-description: Suite of tools for auditing and comprehending software distributions, focusing on license compliance.
+description: Suite of tools for auditing and comprehending software distributions, focusing on license
+  compliance.
 tags:
 - License Compliance
 - Auditing
@@ -14,4 +15,6 @@ radarRing: Initial
 alternativeNames:
 - Creadur
 - Apache RAT
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

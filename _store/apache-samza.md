@@ -2,7 +2,8 @@
 title: Apache Samza
 slug: apache-samza
 companyCount: 0
-description: Distributed stream processing framework using Kafka for messaging and Hadoop YARN for fault tolerance.
+description: Distributed stream processing framework using Kafka for messaging and Hadoop YARN for fault
+  tolerance.
 tags:
 - Stream Processing
 - Kafka
@@ -13,4 +14,6 @@ website: https://samza.apache.org
 radarRing: Initial
 alternativeNames:
 - Samza
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

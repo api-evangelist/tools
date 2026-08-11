@@ -1,8 +1,10 @@
 ---
 title: Spring Boot
 slug: spring-boot
-companyCount: 163
-description: An opinionated framework built on top of the Spring Framework that simplifies the development of production-ready applications with minimal configuration through auto-configuration and embedded servers.
+companyCount: 192
+description: An opinionated framework built on top of the Spring Framework that simplifies the development
+  of production-ready applications with minimal configuration through auto-configuration and embedded
+  servers.
 tags:
 - Java
 - Framework
@@ -15,4 +17,6 @@ radarRing: Optimizing
 alternativeNames:
 - SpringBoot
 - Spring-Boot
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

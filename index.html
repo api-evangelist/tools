@@ -5,7 +5,84 @@ nav: All Tools
 ---
 <div class="content-area" style="max-width:none;">
   <h1 class="mb-1">API Tools</h1>
-  <p class="text-muted mb-4">{{ site.store | size }} tools ranked by company adoption across the API Evangelist network.</p>
+  <p class="text-muted mb-4">
+    Open source tooling for the specifications that describe, secure and ship APIs — with the
+    license, the specification it implements, and the semantics an AI agent needs to actually use it.
+  </p>
+
+  {%- assign spec_tools = site.store | where_exp: "t", "t.specifications" -%}
+  {%- assign licensed = site.store | where_exp: "t", "t.license" -%}
+
+  <div class="row g-3 mb-4">
+    <div class="col-6 col-md-3">
+      <div class="card h-100"><div class="card-body py-3">
+        <div class="fs-4 fw-semibold">{{ site.store | size }}</div>
+        <div class="text-muted small">tools tracked</div>
+      </div></div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card h-100"><div class="card-body py-3">
+        <div class="fs-4 fw-semibold">{{ spec_tools | size }}</div>
+        <div class="text-muted small">bound to a specification</div>
+      </div></div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card h-100"><div class="card-body py-3">
+        <div class="fs-4 fw-semibold">{{ licensed | size }}</div>
+        <div class="text-muted small">with a verified license</div>
+      </div></div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card h-100"><div class="card-body py-3">
+        <div class="fs-4 fw-semibold">25</div>
+        <div class="text-muted small">roles in the vocabulary</div>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="alert alert-light border mb-4">
+    <strong>Building an agent?</strong>
+    Everything here is published as structured data — don't scrape the pages.
+    <a href="{{ '/tools.json' | relative_url }}"><code>/tools.json</code></a> is the catalog,
+    <a href="{{ '/roles.json' | relative_url }}"><code>/roles.json</code></a> is the vocabulary of what
+    a tool does <em>to</em> a specification,
+    <a href="{{ '/tool.schema.json' | relative_url }}"><code>/tool.schema.json</code></a> is the contract,
+    and <a href="{{ '/llms.txt' | relative_url }}"><code>/llms.txt</code></a> explains how to resolve
+    from an artifact you are holding to a tool that acts on it.
+    The <a href="{{ '/reference/' | relative_url }}">Agent Reference</a> covers the vocabulary in full,
+    and what the numbers on this site do and do not mean.
+  </div>
+
+  {% comment %} ---- By specification ---- {% endcomment %}
+  {% if site.data.spec_index %}
+  <h2 class="fs-5 mb-2">By specification</h2>
+  <p class="text-muted small mb-3">
+    The open source tooling behind each standard, harvested from its governing organisation. Follow a
+    standard through to <a href="https://standards.apievangelist.com">standards.apievangelist.com</a>
+    for what it actually specifies.
+  </p>
+  <div class="row g-2 mb-4">
+    {% for s in site.data.spec_index.specifications %}
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100"><div class="card-body py-3">
+        <div class="d-flex justify-content-between align-items-start">
+          <a href="https://standards.apievangelist.com/store/{{ s.slug }}/" class="fw-semibold text-decoration-none">{{ s.name }}</a>
+          <span class="badge bg-light text-dark border">{{ s.count }}</span>
+        </div>
+        <div class="text-muted small mt-1">{{ s.tools | join: ", " | truncate: 90 }}</div>
+      </div></div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% comment %} ---- The full ranked list ---- {% endcomment %}
+  <h2 class="fs-5 mb-2">All tools by hiring demand</h2>
+  <p class="text-muted small mb-3">
+    Ranked by the number of distinct companies whose job postings name the tool, from the API
+    Evangelist demand corpus. This is a <strong>demand</strong> signal — evidence of hiring, not of
+    deployment — and counts are only comparable within a single quarter.
+  </p>
 
   {% assign ranked = site.store | sort: "companyCount" | reverse %}
   <div class="table-responsive">
@@ -14,7 +91,9 @@ nav: All Tools
         <tr>
           <th class="text-muted" style="width:3rem;">#</th>
           <th>Tool</th>
-          <th class="text-end" style="width:8rem;">Companies</th>
+          <th class="text-end" style="width:7rem;">Companies</th>
+          <th class="d-none d-md-table-cell" style="width:8rem;">License</th>
+          <th class="d-none d-lg-table-cell">Implements</th>
           <th class="d-none d-md-table-cell">Tags</th>
         </tr>
       </thead>
@@ -22,12 +101,27 @@ nav: All Tools
       {% for item in ranked %}
         <tr>
           <td class="text-muted small">{{ forloop.index }}</td>
-          <td class="fw-semibold"><a href="{{ item.url }}" class="text-decoration-none" style="color: #212529;">{{ item.title }}</a></td>
+          <td class="fw-semibold">
+            <a href="{{ item.url }}" class="text-decoration-none" style="color: #212529;">{{ item.title }}</a>
+            {% if item.archived %}<span class="badge bg-danger text-white ms-1">archived</span>{% endif %}
+            {% if item.agent %}<span class="badge bg-primary-subtle text-primary-emphasis ms-1" title="Has an agent invocation profile">agent</span>{% endif %}
+          </td>
           <td class="text-end text-muted small">{{ item.companyCount | default: 0 }}</td>
-          <td class="d-none d-md-table-cell text-muted small">{% if item.tags %}{{ item.tags | join: ", " | truncate: 60 }}{% endif %}</td>
+          <td class="d-none d-md-table-cell text-muted small">
+            {% if item.license %}{{ item.license }}{% unless item.openSource %} <span class="text-warning-emphasis">*</span>{% endunless %}{% endif %}
+          </td>
+          <td class="d-none d-lg-table-cell text-muted small">
+            {%- if item.specifications -%}
+              {%- for s in item.specifications -%}{{ s.name }}{% unless forloop.last %}, {% endunless %}{%- endfor -%}
+            {%- endif -%}
+          </td>
+          <td class="d-none d-md-table-cell text-muted small">{% if item.tags %}{{ item.tags | join: ", " | truncate: 50 }}{% endif %}</td>
         </tr>
       {% endfor %}
       </tbody>
     </table>
   </div>
+  <p class="text-muted small">
+    <span class="text-warning-emphasis">*</span> source-available, not an OSI-approved open source license.
+  </p>
 </div>

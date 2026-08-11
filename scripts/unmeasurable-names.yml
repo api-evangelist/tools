@@ -1,0 +1,68 @@
+# Tools whose demand CANNOT be measured from a job-postings corpus, because their name is an
+# ordinary English word.
+#
+# WHAT HAPPENS TO THEM
+# The bare name is blocked in the matcher, so these tools count only their unambiguous matches —
+# in practice 0. They are published as 0 like any other tool, carrying `nameCollision: true` and
+# a note recording what the word actually was, so the caveat travels with the number.
+#
+# THIS IS A WORKLIST, NOT A CLOSED QUESTION. A job corpus is the wrong instrument for these
+# eight; their real references have to come from somewhere else — GitHub dependents, package
+# download counts, the provider blog corpus, or a phrase-qualified needle ("Stoplight Prism",
+# "OCI Distribution", "cosign verify"). Adding a qualified phrase to the vocabulary entry is the
+# cheapest first move and would let the existing corpus answer for some of them.
+#
+# Each entry records what the word actually was in the sampled postings.
+
+verified: 2026-08-11
+method: sampled the matched text in 5,000 randomly selected postings from the Q3 corpus
+
+unmeasurable:
+
+  Distribution:
+    matched: 713
+    actually: '"distribution center", "Distribution Centers, Corporate Offices, or Retail Stores"'
+    tool: The OCI Distribution registry implementation.
+
+  vacuum:
+    matched: 151
+    actually: '"Sweep, mop, and vacuum floors", "repairing advanced vacuum systems"'
+    tool: The Go OpenAPI linter.
+
+  Witness:
+    matched: 103
+    actually: '"you''ll witness first-hand", "Factory witness testing (FWT)"'
+    tool: The in-toto attestation wrapper.
+
+  Prism:
+    matched: 86
+    actually: '"Raytheon financial systems (i.e. IPDS, APEX, Prism)", "Workday Report Writer … Prism"'
+    tool: The Stoplight OpenAPI mock server.
+
+  Notation:
+    matched: 31
+    actually: '"JavaScript Object Notation (JSON)", "Big O notation"'
+    tool: The Notary Project signing CLI.
+
+  Scalar:
+    matched: 5
+    actually: An ordinary mathematics and computing term.
+    tool: The OpenAPI documentation and client suite.
+
+  Buf:
+    matched: 5
+    actually: Three letters, commonly an abbreviation of "buffer".
+    tool: The Protobuf toolchain.
+
+  Cosign:
+    matched: 4
+    actually: '"co-sign", which appears in lending and finance postings.'
+    tool: The Sigstore signing CLI.
+
+# Names that ARE distinctive, so their low or zero count is a real measurement and is published
+# as such: Ajv, Archivista, Fulcio, Gitsign, Grype, Microcks, Modelina, Rekor, Skopeo, Springwolf,
+# Syft, Tornjak, flagd, quicktype, runc, umoci.
+#
+# That most of them measure zero is itself the finding, and it is not a defect: the modern
+# supply-chain and specification toolchain is barely named in hiring at all, while Terraform is
+# named by 403 companies. Tools adopted by platform teams do not appear in job titles.

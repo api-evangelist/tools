@@ -1,7 +1,7 @@
 ---
 title: Apache Olingo
 slug: apache-olingo
-companyCount: 54
+companyCount: 51
 description: Java library implementing the OData protocol for building and consuming RESTful APIs.
 tags:
 - OData
@@ -14,4 +14,6 @@ radarRing: Established
 alternativeNames:
 - Olingo
 - OData
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

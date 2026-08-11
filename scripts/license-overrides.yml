@@ -1,0 +1,138 @@
+# Licenses GitHub's own detector reports as NOASSERTION / "Other", resolved by reading the
+# repository's actual LICENSE file.
+#
+# WHY THIS FILE EXISTS
+# The tools site states a license for every tool. "Unknown" is a bad answer when the license is
+# sitting in plain text in the repo, and guessing is worse. GitHub's licensee detector fails on
+# three ordinary cases, all represented below:
+#
+#   1. A license file under a non-standard name (`LICENSE.code`).
+#   2. The Apache-2.0 SHORT-FORM notice — "Licensed under the Apache License, Version 2.0" plus a
+#      copyright line, rather than the full 200-line text licensee matches against.
+#   3. A full license text with project-specific copyright headers prepended.
+#
+# Each entry below records the evidence: the file read and the phrase it was identified by. Re-run
+# `python3 scripts/resolve_licenses.py` to re-derive them from source.
+#
+# An entry here is NOT permission to assume a license. If a repo appears with no resolvable
+# license text at all, it stays unlicensed on the site and is not described as open source.
+
+verified: 2026-08-11
+method: read the repository LICENSE file via the GitHub API and matched its text
+
+overrides:
+
+  protocolbuffers/protobuf:
+    license: BSD-3-Clause
+    file: LICENSE
+    evidence: Full BSD 3-clause text, including the "nor the names of its contributors" clause.
+
+  spdx/tools-golang:
+    license: Apache-2.0
+    file: LICENSE.code
+    evidence: >-
+      Full Apache License 2.0 text. Detector missed it because the file is named LICENSE.code —
+      the repo carries a separate license for its data.
+
+  in-toto/in-toto:
+    license: Apache-2.0
+    file: LICENSE
+    evidence: 'Apache-2.0 short-form notice: "Copyright 2018 New York University / Licensed under the Apache License, Version 2.0".'
+
+  in-toto/in-toto-golang:
+    license: Apache-2.0
+    file: LICENSE
+    evidence: 'Apache-2.0 short-form notice: "Copyright 2018 New York University / Licensed under the Apache License, Version 2.0".'
+
+  in-toto/attestation:
+    license: Apache-2.0
+    file: LICENSE
+    evidence: 'Apache-2.0 short-form notice: "Copyright 2021 in-toto Developers / Licensed under the Apache License, Version 2.0".'
+
+  theupdateframework/tuf-on-ci:
+    license: MIT
+    file: LICENSE
+    evidence: MIT text — "Permission is hereby granted, free of charge".
+
+  sigstore/gitsign:
+    license: Apache-2.0
+    file: LICENSE
+    evidence: Full Apache License 2.0 text.
+
+  sigstore/policy-controller:
+    license: Apache-2.0
+    file: LICENSE
+    evidence: Full Apache License 2.0 text.
+
+  sigstore/sigstore-python:
+    license: Apache-2.0
+    file: LICENSE
+    evidence: Full Apache License 2.0 text.
+
+  # --- resolved in the same sweep, outside the specification set ---
+  encode/django-rest-framework:
+    license: BSD-3-Clause
+    file: LICENSE.md
+    evidence: BSD 3-clause text in a .md file, which the detector skips.
+
+  loopbackio/loopback-next:
+    license: MIT
+    file: LICENSE
+    evidence: MIT text.
+
+  airtasker/spot:
+    license: MIT
+    file: LICENSE
+    evidence: MIT text.
+
+  ZenWave360/karate-ide:
+    license: MIT
+    file: LICENSE
+    evidence: MIT text.
+
+  cdimascio/openapi-spring-webflux-validator:
+    license: Apache-2.0
+    file: LICENSE
+    evidence: Full Apache License 2.0 text.
+
+  hackolade/OpenAPI:
+    license: Apache-2.0
+    file: LICENSE
+    evidence: Full Apache License 2.0 text.
+
+  sourcemeta/std:
+    license: MIT
+    file: LICENSE
+    evidence: MIT text.
+
+# Source-available or restrictively licensed — NOT open source. Recorded so nobody re-adds them
+# as open source tooling. Each was found by reading the license text, not by assumption.
+not_open_source:
+  apollographql/router:
+    license: Elastic-2.0
+    note: >-
+      Source-available under the Elastic License 2.0, which restricts offering it as a managed
+      service. Excluded from the GraphQL tooling list for that reason — the site is a reference
+      for OPEN SOURCE tooling. Apollo Server (MIT) is listed instead.
+
+  pb33f/wiretap:
+    license: BUSL-1.1
+    note: >-
+      Business Source License 1.1. Widely listed on tooling directories as though it were open
+      source. It converts to an open license on a delay; until then it is not one.
+
+  irensaltali/serverlessapigateway:
+    license: Elastic-2.0
+    note: Elastic License 2.0.
+
+# Repositories with NO license file at all. Not a licensing question we can answer for them —
+# without a license, default copyright applies and there is no grant to use the code. Listed
+# because several are widely-used tools whose users assume otherwise.
+no_license_file:
+  - swagger-api/swagger-editor
+  - alufers/mitmproxy2swagger
+  - Redocly/redocly-vs-code
+  - RepreZen/KaiZen-OpenApi-Parser
+  - oazapfts/oazapfts
+  - stainless-api/stl-api
+  - mrin9/OpenAPI-Viewer

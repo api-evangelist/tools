@@ -2,7 +2,8 @@
 title: Apache RocketMQ
 slug: apache-rocketmq
 companyCount: 0
-description: Distributed messaging and streaming platform with low latency, high reliability, and trillion-level capacity.
+description: Distributed messaging and streaming platform with low latency, high reliability, and trillion-level
+  capacity.
 tags:
 - Messaging
 - Streaming
@@ -14,4 +15,6 @@ radarRing: Initial
 alternativeNames:
 - RocketMQ
 - rocketmq
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

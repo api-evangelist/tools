@@ -1,8 +1,9 @@
 ---
 title: Falco
 slug: falco
-companyCount: 3
-description: Cloud-native runtime security tool that detects unexpected application behavior and alerts on threats at runtime using eBPF
+companyCount: 6
+description: Cloud-native runtime security tool that detects unexpected application behavior and alerts
+  on threats at runtime using eBPF
 tags:
 - Security
 - Runtime Security
@@ -11,8 +12,10 @@ tags:
 - Threat Detection
 - CNCF
 website: https://falco.org
-radarRing: Initial
+radarRing: Developing
 alternativeNames:
 - falco
 - Sysdig Falco
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

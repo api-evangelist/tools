@@ -2,7 +2,8 @@
 title: Apache SINGA
 slug: apache-singa
 companyCount: 0
-description: Distributed deep learning platform for training large-scale deep learning models over distributed clusters.
+description: Distributed deep learning platform for training large-scale deep learning models over distributed
+  clusters.
 tags:
 - Deep Learning
 - Distributed Training
@@ -13,4 +14,6 @@ website: https://singa.apache.org
 radarRing: Initial
 alternativeNames:
 - SINGA
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

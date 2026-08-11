@@ -2,7 +2,9 @@
 title: Perses
 slug: perses
 companyCount: 0
-description: An open-source monitoring and dashboarding tool designed as a modern alternative to Grafana, providing a simple and intuitive interface for visualizing time-series data with a focus on performance and extensibility.
+description: An open-source monitoring and dashboarding tool designed as a modern alternative to Grafana,
+  providing a simple and intuitive interface for visualizing time-series data with a focus on performance
+  and extensibility.
 tags:
 - Monitoring
 - Dashboards
@@ -13,4 +15,6 @@ website: https://perses.dev
 radarRing: Initial
 alternativeNames:
 - perses
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

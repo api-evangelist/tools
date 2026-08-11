@@ -1,16 +1,19 @@
 ---
 title: Jaeger
 slug: jaeger
-companyCount: 17
-description: Open source, end-to-end distributed tracing system for monitoring and troubleshooting microservices-based architectures
+companyCount: 30
+description: Open source, end-to-end distributed tracing system for monitoring and troubleshooting microservices-based
+  architectures
 tags:
 - Distributed Tracing
 - Observability
 - Monitoring
 - Microservices
 website: https://www.jaegertracing.io/
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - jaeger
 - Jaeger Tracing
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

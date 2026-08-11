@@ -1,8 +1,9 @@
 ---
 title: Redux
 slug: redux
-companyCount: 78
-description: A predictable state container for JavaScript apps, commonly used with React for managing application state through a unidirectional data flow pattern.
+companyCount: 77
+description: A predictable state container for JavaScript apps, commonly used with React for managing
+  application state through a unidirectional data flow pattern.
 tags:
 - State Management
 - JavaScript
@@ -10,9 +11,11 @@ tags:
 - Frontend
 website: https://redux.js.org/
 founded: 2015
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - redux
 - Redux Toolkit
 - RTK
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

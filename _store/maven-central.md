@@ -1,8 +1,9 @@
 ---
 title: Maven Central
 slug: maven-central
-companyCount: 16
-description: The central repository for Maven artifacts, hosting Java libraries and dependencies for build automation and dependency management.
+companyCount: 14
+description: The central repository for Maven artifacts, hosting Java libraries and dependencies for build
+  automation and dependency management.
 tags:
 - Java
 - Package Manager
@@ -14,4 +15,6 @@ radarRing: Developing
 alternativeNames:
 - Central Repository
 - Maven Repo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

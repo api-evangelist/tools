@@ -1,8 +1,9 @@
 ---
 title: MySQL
 slug: mysql
-companyCount: 176
-description: An open-source relational database management system that uses SQL (Structured Query Language) for data management and queries.
+companyCount: 229
+description: An open-source relational database management system that uses SQL (Structured Query Language)
+  for data management and queries.
 tags:
 - Database
 - SQL
@@ -14,4 +15,6 @@ radarRing: Optimizing
 alternativeNames:
 - mysql
 - MariaDB alternative
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

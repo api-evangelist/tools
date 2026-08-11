@@ -1,8 +1,10 @@
 ---
 title: Cloud Custodian
 slug: cloud-custodian
-companyCount: 118
-description: Rules engine for cloud security, compliance, and cost optimization that enables users to define policies to manage cloud resources across AWS, Azure, and GCP. It helps organizations meet regulatory requirements and demonstrate accountability to stakeholders.
+companyCount: 3
+description: Rules engine for cloud security, compliance, and cost optimization that enables users to
+  define policies to manage cloud resources across AWS, Azure, and GCP. It helps organizations meet regulatory
+  requirements and demonstrate accountability to stakeholders.
 tags:
 - Cloud Security
 - Compliance
@@ -11,8 +13,10 @@ tags:
 - Multi-Cloud
 website: https://cloudcustodian.io/
 yearCreated: 2016
-radarRing: Optimizing
+radarRing: Initial
 alternativeNames:
 - c7n
 - custodian
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

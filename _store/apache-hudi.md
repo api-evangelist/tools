@@ -1,8 +1,9 @@
 ---
 title: Apache Hudi
 slug: apache-hudi
-companyCount: 8
-description: Data lake platform for incremental data processing and data pipeline management on large analytical datasets.
+companyCount: 14
+description: Data lake platform for incremental data processing and data pipeline management on large
+  analytical datasets.
 tags:
 - Data Lake
 - Incremental Processing
@@ -14,4 +15,6 @@ radarRing: Developing
 alternativeNames:
 - Hudi
 - hudi
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

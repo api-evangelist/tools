@@ -1,8 +1,9 @@
 ---
 title: Elasticsearch
 slug: elasticsearch
-companyCount: 137
-description: A distributed, RESTful search and analytics engine built on Apache Lucene, designed for horizontal scalability, real-time search, and handling large volumes of data.
+companyCount: 177
+description: A distributed, RESTful search and analytics engine built on Apache Lucene, designed for horizontal
+  scalability, real-time search, and handling large volumes of data.
 tags:
 - Search Engine
 - Analytics
@@ -18,4 +19,6 @@ alternativeNames:
 - Elastic
 - elasticsearch
 - ELK Search
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

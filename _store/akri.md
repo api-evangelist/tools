@@ -2,7 +2,8 @@
 title: Akri
 slug: akri
 companyCount: 0
-description: A Kubernetes resource interface for exposing leaf devices such as IP cameras and USB devices as resources in a Kubernetes cluster, enabling dynamic discovery and utilization of IoT edge devices.
+description: A Kubernetes resource interface for exposing leaf devices such as IP cameras and USB devices
+  as resources in a Kubernetes cluster, enabling dynamic discovery and utilization of IoT edge devices.
 tags:
 - Kubernetes
 - IoT
@@ -12,4 +13,6 @@ website: https://github.com/project-akri/akri
 radarRing: Initial
 alternativeNames:
 - akri
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

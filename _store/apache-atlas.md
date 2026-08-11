@@ -1,8 +1,9 @@
 ---
 title: Apache Atlas
 slug: apache-atlas
-companyCount: 72
-description: Data governance and metadata management framework for Hadoop ecosystems with classification and lineage tracking.
+companyCount: 79
+description: Data governance and metadata management framework for Hadoop ecosystems with classification
+  and lineage tracking.
 tags:
 - Data Governance
 - Metadata
@@ -10,7 +11,9 @@ tags:
 - Classification
 - Hadoop
 website: https://atlas.apache.org
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - Atlas
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

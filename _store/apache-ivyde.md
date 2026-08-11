@@ -13,4 +13,6 @@ website: https://ant.apache.org/ivy/ivyde/
 radarRing: Initial
 alternativeNames:
 - IvyDE
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

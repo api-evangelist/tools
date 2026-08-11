@@ -1,7 +1,7 @@
 ---
 title: Apache Struts
 slug: apache-struts
-companyCount: 15
+companyCount: 21
 description: MVC framework for creating elegant, modern Java web applications with convention-over-configuration.
 tags:
 - MVC
@@ -14,4 +14,6 @@ radarRing: Developing
 alternativeNames:
 - Struts
 - Struts 2
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

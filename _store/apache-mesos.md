@@ -2,7 +2,8 @@
 title: Apache Mesos
 slug: apache-mesos
 companyCount: 11
-description: Cluster manager providing efficient resource isolation and sharing across distributed applications or frameworks.
+description: Cluster manager providing efficient resource isolation and sharing across distributed applications
+  or frameworks.
 tags:
 - Cluster Management
 - Resource Scheduling
@@ -14,4 +15,6 @@ radarRing: Developing
 alternativeNames:
 - Mesos
 - mesos
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

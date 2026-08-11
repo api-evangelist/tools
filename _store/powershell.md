@@ -1,8 +1,9 @@
 ---
 title: PowerShell
 slug: powershell
-companyCount: 259
-description: A cross-platform task automation and configuration management framework from Microsoft, consisting of a command-line shell and scripting language built on .NET.
+companyCount: 332
+description: A cross-platform task automation and configuration management framework from Microsoft, consisting
+  of a command-line shell and scripting language built on .NET.
 tags:
 - Scripting
 - Automation
@@ -17,4 +18,6 @@ alternativeNames:
 - pwsh
 - PoSh
 - Windows PowerShell
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

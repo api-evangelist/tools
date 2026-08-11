@@ -1,8 +1,9 @@
 ---
 title: Hibernate
 slug: hibernate
-companyCount: 71
-description: Object-relational mapping framework for Java that simplifies database interactions by mapping Java objects to database tables
+companyCount: 76
+description: Object-relational mapping framework for Java that simplifies database interactions by mapping
+  Java objects to database tables
 tags:
 - Java
 - ORM
@@ -15,4 +16,6 @@ radarRing: Established
 alternativeNames:
 - hibernate
 - Hibernate ORM
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

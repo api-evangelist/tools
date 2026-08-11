@@ -1,8 +1,9 @@
 ---
 title: Elk Stack
 slug: elk-stack
-companyCount: 163
-description: A collection of three open-source products - Elasticsearch, Logstash, and Kibana - used for searching, analyzing, and visualizing log data in real time.
+companyCount: 180
+description: A collection of three open-source products - Elasticsearch, Logstash, and Kibana - used for
+  searching, analyzing, and visualizing log data in real time.
 tags:
 - Logging
 - Monitoring
@@ -16,4 +17,6 @@ alternativeNames:
 - ELK Stack
 - ELK
 - Elasticsearch Logstash Kibana
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

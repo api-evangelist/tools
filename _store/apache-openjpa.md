@@ -1,8 +1,9 @@
 ---
 title: Apache OpenJPA
 slug: apache-openjpa
-companyCount: 55
-description: Implementation of the Java Persistence API specification for object-relational mapping in Java.
+companyCount: 58
+description: Implementation of the Java Persistence API specification for object-relational mapping in
+  Java.
 tags:
 - JPA
 - ORM
@@ -14,4 +15,6 @@ radarRing: Established
 alternativeNames:
 - OpenJPA
 - JPA
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

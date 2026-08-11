@@ -1,8 +1,9 @@
 ---
 title: PyTorch
 slug: pytorch
-companyCount: 225
-description: An open source machine learning framework that accelerates the path from research prototyping to production deployment with dynamic computational graphs and intuitive Python-first development.
+companyCount: 271
+description: An open source machine learning framework that accelerates the path from research prototyping
+  to production deployment with dynamic computational graphs and intuitive Python-first development.
 tags:
 - Machine Learning
 - Deep Learning
@@ -17,4 +18,6 @@ alternativeNames:
 - pytorch
 - Torch
 - torch
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

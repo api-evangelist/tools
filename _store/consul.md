@@ -1,8 +1,9 @@
 ---
 title: Consul
 slug: consul
-companyCount: 7
-description: Service mesh and service discovery platform that provides a full-featured control plane with service discovery, configuration, and segmentation functionality
+companyCount: 8
+description: Service mesh and service discovery platform that provides a full-featured control plane with
+  service discovery, configuration, and segmentation functionality
 tags:
 - Service Mesh
 - Service Discovery
@@ -11,8 +12,10 @@ tags:
 - Networking
 website: https://www.consul.io/
 founded: 2014
-radarRing: Initial
+radarRing: Developing
 alternativeNames:
 - HashiCorp Consul
 - consul
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,8 +1,9 @@
 ---
 title: Matplotlib
 slug: matplotlib
-companyCount: 56
-description: A comprehensive library for creating static, animated, and interactive visualizations in Python
+companyCount: 62
+description: A comprehensive library for creating static, animated, and interactive visualizations in
+  Python
 tags:
 - Python
 - Data Visualization
@@ -16,4 +17,6 @@ alternativeNames:
 - matplotlib
 - mpl
 - pyplot
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

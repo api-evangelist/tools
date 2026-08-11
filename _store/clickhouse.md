@@ -1,8 +1,9 @@
 ---
 title: ClickHouse
 slug: clickhouse
-companyCount: 21
-description: Open-source column-oriented database management system designed for online analytical processing (OLAP) with exceptional query performance on large datasets.
+companyCount: 43
+description: Open-source column-oriented database management system designed for online analytical processing
+  (OLAP) with exceptional query performance on large datasets.
 tags:
 - Database
 - Analytics
@@ -11,7 +12,9 @@ tags:
 - Big Data
 website: https://clickhouse.com/
 founded: 2016
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - clickhouse
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

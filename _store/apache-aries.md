@@ -13,4 +13,6 @@ website: https://aries.apache.org
 radarRing: Initial
 alternativeNames:
 - Aries
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

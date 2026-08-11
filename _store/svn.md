@@ -1,8 +1,9 @@
 ---
 title: SVN
 slug: svn
-companyCount: 86
-description: Apache Subversion (SVN) is a centralized version control system that tracks changes to files and directories over time, allowing teams to collaborate on code and maintain a history of revisions.
+companyCount: 77
+description: Apache Subversion (SVN) is a centralized version control system that tracks changes to files
+  and directories over time, allowing teams to collaborate on code and maintain a history of revisions.
 tags:
 - Version Control
 - Source Control
@@ -14,4 +15,6 @@ alternativeNames:
 - Subversion
 - Apache Subversion
 - svn
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

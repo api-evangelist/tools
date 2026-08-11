@@ -1,8 +1,9 @@
 ---
 title: Zabbix
 slug: zabbix
-companyCount: 28
-description: Open-source enterprise-class monitoring solution for networks, servers, virtual machines, and cloud services with distributed monitoring capabilities and web-based interface.
+companyCount: 26
+description: Open-source enterprise-class monitoring solution for networks, servers, virtual machines,
+  and cloud services with distributed monitoring capabilities and web-based interface.
 tags:
 - Monitoring
 - Infrastructure
@@ -11,7 +12,9 @@ tags:
 - Alerting
 website: https://www.zabbix.com/
 founded: 2001
-radarRing: Established
+radarRing: Developing
 alternativeNames:
 - zabbix
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

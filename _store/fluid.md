@@ -11,4 +11,6 @@ website: https://www.getfluidkit.com/
 radarRing: Initial
 alternativeNames:
 - fluid
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,7 +1,7 @@
 ---
 title: Keycloak
 slug: keycloak
-companyCount: 17
+companyCount: 26
 description: Open source identity and access management solution for modern applications and services
 tags:
 - Authentication
@@ -12,7 +12,9 @@ tags:
 - OpenID Connect
 - Security
 website: https://www.keycloak.org/
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - keycloak
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -2,7 +2,8 @@
 title: Apache Fineract
 slug: apache-fineract
 companyCount: 0
-description: Open-source core banking platform for powering financial services in underserved communities worldwide.
+description: Open-source core banking platform for powering financial services in underserved communities
+  worldwide.
 tags:
 - Fintech
 - Core Banking
@@ -13,4 +14,6 @@ website: https://fineract.apache.org
 radarRing: Initial
 alternativeNames:
 - Fineract
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

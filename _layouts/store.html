@@ -14,6 +14,16 @@ nav: Tools
 
   {% include adoption.html %}
 
+  {{ content }}
+
+  <div class="alert alert-light border small">
+    <strong>Reading this as an agent?</strong> Don't scrape the page — this entry is published as
+    structured data at <a href="{{ '/tools.json' | relative_url }}"><code>/tools.json</code></a>,
+    against the <a href="{{ '/tool.schema.json' | relative_url }}"><code>tool.schema.json</code></a>
+    schema, using the <a href="{{ '/roles.json' | relative_url }}"><code>roles.json</code></a>
+    vocabulary. Start at <a href="{{ '/llms.txt' | relative_url }}"><code>/llms.txt</code></a>.
+  </div>
+
   <a href="{{ '/tools/' | relative_url }}" class="btn btn-sm btn-outline-success">
     <span class="material-symbols-outlined" style="font-size:16px; vertical-align:-3px;">arrow_back</span>
     All tools by adoption

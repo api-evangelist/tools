@@ -1,7 +1,7 @@
 ---
 title: Apache Turbine
 slug: apache-turbine
-companyCount: 55
+companyCount: 83
 description: Servlet-based web application framework for rapid development of secure Java web applications.
 tags:
 - Web Framework
@@ -10,7 +10,9 @@ tags:
 - Rapid Development
 - Security
 website: https://turbine.apache.org
-radarRing: Established
+radarRing: Optimizing
 alternativeNames:
 - Turbine
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

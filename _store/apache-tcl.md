@@ -1,7 +1,7 @@
 ---
 title: Apache Tcl
 slug: apache-tcl
-companyCount: 46
+companyCount: 57
 description: Integration of the Tcl programming language with the Apache HTTP Server via mod_tcl.
 tags:
 - Tcl
@@ -14,4 +14,6 @@ radarRing: Established
 alternativeNames:
 - Rivet
 - Tcl
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

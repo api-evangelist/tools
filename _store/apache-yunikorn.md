@@ -1,8 +1,9 @@
 ---
 title: Apache YuniKorn
 slug: apache-yunikorn
-companyCount: 0
-description: Resource scheduler for Kubernetes and Hadoop YARN supporting batch workloads and fine-grained resource sharing.
+companyCount: 1
+description: Resource scheduler for Kubernetes and Hadoop YARN supporting batch workloads and fine-grained
+  resource sharing.
 tags:
 - Resource Scheduling
 - Kubernetes
@@ -13,4 +14,6 @@ website: https://yunikorn.apache.org
 radarRing: Initial
 alternativeNames:
 - YuniKorn
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

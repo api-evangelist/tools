@@ -1,0 +1,528 @@
+# Specification -> tooling map for tools.apievangelist.com
+#
+# WHAT THIS IS
+# The open source tools that implement each specification the Linux Foundation stewards,
+# harvested from each spec's own governing GitHub organization and its canonical tooling
+# registry, then curated down to the ones that carry the ecosystem.
+#
+# THE RULES THIS FILE ENFORCES
+# 1. Every `repo` below was resolved live against the GitHub API by scripts/gh_meta.py.
+#    License, activity and archived status are READ, never recalled. A repo that 404s or
+#    is archived does not ship. This is the never-fabricate rule applied to tooling.
+# 2. `spec` is the slug of a REAL entry on standards.apievangelist.com. The link is
+#    two-way: the tool page names the standard, the standard page lists its tools.
+# 3. `role` comes from the controlled vocabulary in roles.yml. It is the word an agent
+#    reads to decide whether this tool does the job it currently needs done.
+# 4. Coverage is deliberately 5-8 per spec: the tools that actually carry adoption, not
+#    every entry on a directory page. Where an ecosystem genuinely IS thin, it is left
+#    thin — a short list is a finding, not a gap to pad.
+#
+# Sources: research/linux-foundation/standards.md (the spec inventory, captured 2026-06-30),
+# openapi.tools (348 curated OpenAPI tools), json-schema.org tooling-data.yaml (282 entries),
+# and the governing GitHub org of each specification.
+# Harvested 2026-08-11.
+
+meta:
+  harvested: 2026-08-11
+  source_inventory: research/linux-foundation/standards.md
+  standards_site: https://standards.apievangelist.com
+
+specifications:
+
+  # ---------------------------------------------------------------- API description
+
+  - spec: openapi
+    name: OpenAPI
+    governing_body: OpenAPI Initiative
+    foundation: Linux Foundation
+    specification_url: https://spec.openapis.org/oas/latest.html
+    note: >-
+      The largest tooling ecosystem of any specification here — openapi.tools curates 348
+      entries. These are the ones an agent is most likely to find already installed.
+    tools:
+      - repo: OpenAPITools/openapi-generator
+        role: generates
+        produces: [sdk, server-stub, documentation]
+      - repo: swagger-api/swagger-ui
+        role: documents
+      - repo: Redocly/redoc
+        role: documents
+      - repo: scalar/scalar
+        role: documents
+      - repo: stoplightio/spectral
+        role: validates
+        note: The de facto API style-guide linter; also the only mature Arazzo validator.
+      - repo: daveshanley/vacuum
+        role: validates
+      - repo: stoplightio/prism
+        role: mocks
+      - repo: openapi-ts/openapi-typescript
+        role: generates
+        produces: [types]
+      - repo: oapi-codegen/oapi-codegen
+        role: generates
+        produces: [server-stub, client]
+      - repo: microcks/microcks
+        role: mocks
+        also: [tests]
+
+  - spec: arazzo
+    name: Arazzo
+    governing_body: OpenAPI Initiative
+    foundation: Linux Foundation
+    specification_url: https://spec.openapis.org/arazzo/latest.html
+    note: >-
+      THE FINDING: this is the entire dedicated Arazzo tooling ecosystem, and it is tiny.
+      The most capable Arazzo validator is Spectral, a general-purpose linter. Purpose-built
+      Arazzo tools are in the single and double digits of stars. A workflow specification
+      with no workflow runners is a specification agents cannot yet execute.
+    tools:
+      - repo: stoplightio/spectral
+        role: validates
+      - repo: speakeasy-api/openapi
+        role: parses
+        also: [validates, transforms]
+      - repo: jentic/jentic-arazzo-tools
+        role: parses
+        also: [documents]
+      - repo: bump-sh/cli
+        role: documents
+      - repo: frankkilcommins/arazzo2openapi
+        role: converts
+      - repo: strefethen/arazzo-cli
+        role: tests
+
+  - spec: openapi-overlay
+    name: OpenAPI Overlay
+    governing_body: OpenAPI Initiative
+    foundation: Linux Foundation
+    specification_url: https://spec.openapis.org/overlay/latest.html
+    note: >-
+      Overlay tooling is young but real — and it is the specification most directly useful
+      to an agent, because it is the sanctioned way to CHANGE a contract without forking it.
+    tools:
+      - repo: thim81/openapi-format
+        role: transforms
+      - repo: daveshanley/vacuum
+        role: validates
+      - repo: lornajane/openapi-overlays-js
+        role: transforms
+      - repo: speakeasy-api/openapi
+        role: transforms
+      - repo: mcroissant/oas_patcher
+        role: transforms
+      - repo: IBM/oas-overlay-java
+        role: transforms
+      - repo: BinkyLabs/openapi-overlays-dotnet
+        role: transforms
+
+  - spec: asyncapi
+    name: AsyncAPI
+    governing_body: AsyncAPI Initiative
+    foundation: Linux Foundation
+    specification_url: https://www.asyncapi.com/docs/reference/specification/latest
+    note: >-
+      A first-party ecosystem: the Initiative maintains the CLI, parser, generator and studio
+      itself, all Apache-2.0. Glee, its application framework, was ARCHIVED in 2025 and is
+      deliberately not listed.
+    tools:
+      - repo: asyncapi/generator
+        role: generates
+      - repo: asyncapi/modelina
+        role: generates
+        produces: [types]
+      - repo: asyncapi/cli
+        role: validates
+        also: [generates, transforms]
+      - repo: asyncapi/parser-js
+        role: parses
+      - repo: asyncapi/studio
+        role: authors
+      - repo: asyncapi/asyncapi-react
+        role: documents
+      - repo: springwolf/springwolf-core
+        role: generates
+        note: Code-first — derives the AsyncAPI document from a running Spring application.
+      - repo: microcks/microcks
+        role: mocks
+
+  - spec: graphql
+    name: GraphQL
+    governing_body: GraphQL Foundation
+    foundation: Linux Foundation
+    specification_url: https://spec.graphql.org/
+    tools:
+      - repo: graphql/graphql-js
+        role: serves
+        note: The reference implementation.
+      - repo: graphql/graphiql
+        role: authors
+        also: [documents]
+      - repo: graphql/dataloader
+        role: serves
+      - repo: apollographql/apollo-server
+        role: serves
+      - repo: ardatan/graphql-tools
+        role: transforms
+      - repo: graphql/graphql-http
+        role: serves
+
+  - spec: json-schema
+    name: JSON Schema
+    governing_body: OpenJS Foundation
+    foundation: Linux Foundation
+    specification_url: https://json-schema.org/specification
+    note: >-
+      json-schema.org's own registry carries 282 tools, 128 of them validators. JSON Schema is
+      the connective tissue under OpenAPI, AsyncAPI, CloudEvents, OSV and SPDX, so these
+      validators are load-bearing far outside JSON Schema itself.
+    tools:
+      - repo: ajv-validator/ajv
+        role: validates
+      - repo: python-jsonschema/jsonschema
+        role: validates
+      - repo: santhosh-tekuri/jsonschema
+        role: validates
+      - repo: networknt/json-schema-validator
+        role: validates
+      - repo: glideapps/quicktype
+        role: generates
+        produces: [types]
+      - repo: json-schema-org/JSON-Schema-Test-Suite
+        role: tests
+        note: The language-agnostic conformance suite every implementation is measured against.
+
+  - spec: protocol-buffers
+    name: Protocol Buffers
+    governing_body: Google
+    foundation: null
+    specification_url: https://protobuf.dev/programming-guides/proto3/
+    note: >-
+      Not itself LF-governed, but used pervasively across CNCF and the wire format under gRPC,
+      OTLP, CloudEvents and Sigstore.
+    tools:
+      - repo: protocolbuffers/protobuf
+        role: parses
+        also: [generates]
+      - repo: bufbuild/buf
+        role: validates
+        also: [generates, transforms]
+      - repo: protocolbuffers/protobuf-go
+        role: generates
+      - repo: bufbuild/protovalidate
+        role: validates
+      - repo: connectrpc/connect-go
+        role: serves
+
+  - spec: grpc
+    name: gRPC
+    governing_body: CNCF
+    foundation: Linux Foundation
+    specification_url: https://grpc.io/docs/what-is-grpc/introduction/
+    tools:
+      - repo: grpc/grpc
+        role: serves
+      - repo: grpc/grpc-go
+        role: serves
+      - repo: grpc/grpc-java
+        role: serves
+      - repo: grpc/grpc-web
+        role: serves
+      - repo: fullstorydev/grpcurl
+        role: tests
+        note: The curl of gRPC — how an agent calls a gRPC service without generating a client.
+      - repo: bufbuild/buf
+        role: validates
+
+  # ---------------------------------------------------------------- event & telemetry
+
+  - spec: cloudevents
+    name: CloudEvents
+    governing_body: CNCF
+    foundation: Linux Foundation
+    specification_url: https://github.com/cloudevents/spec
+    note: >-
+      A graduated, finished specification. Its tooling is deliberately all SDKs — CloudEvents
+      describes an envelope, so the work is encoding and decoding it in each language.
+    tools:
+      - repo: cloudevents/sdk-go
+        role: encodes
+      - repo: cloudevents/sdk-java
+        role: encodes
+      - repo: cloudevents/sdk-javascript
+        role: encodes
+      - repo: cloudevents/sdk-python
+        role: encodes
+      - repo: cloudevents/sdk-csharp
+        role: encodes
+      - repo: cloudevents/sdk-rust
+        role: encodes
+
+  - spec: opentelemetry
+    name: OpenTelemetry / OTLP
+    governing_body: CNCF
+    foundation: Linux Foundation
+    specification_url: https://opentelemetry.io/docs/specs/otlp/
+    tools:
+      - repo: open-telemetry/opentelemetry-collector
+        role: instruments
+        also: [transforms]
+      - repo: open-telemetry/opentelemetry-collector-contrib
+        role: instruments
+      - repo: open-telemetry/opentelemetry-go
+        role: instruments
+      - repo: open-telemetry/opentelemetry-js
+        role: instruments
+      - repo: open-telemetry/opentelemetry-python
+        role: instruments
+      - repo: open-telemetry/opentelemetry-java-instrumentation
+        role: instruments
+      - repo: open-telemetry/opentelemetry-operator
+        role: deploys
+
+  - spec: openmetrics
+    name: OpenMetrics
+    governing_body: CNCF / Prometheus
+    foundation: Linux Foundation
+    specification_url: https://github.com/prometheus/OpenMetrics
+    note: >-
+      OpenMetrics standardised the Prometheus exposition format, so its tooling IS the
+      Prometheus client and exporter ecosystem.
+    tools:
+      - repo: prometheus/prometheus
+        role: scrapes
+      - repo: prometheus/client_golang
+        role: instruments
+      - repo: prometheus/client_python
+        role: instruments
+      - repo: prometheus/client_java
+        role: instruments
+      - repo: prometheus/node_exporter
+        role: instruments
+      - repo: prometheus/OpenMetrics
+        role: authors
+
+  - spec: xds
+    name: xDS
+    governing_body: CNCF / Envoy
+    foundation: Linux Foundation
+    specification_url: https://www.envoyproxy.io/docs/envoy/latest/api-docs/xds_protocol
+    tools:
+      - repo: envoyproxy/envoy
+        role: proxies
+      - repo: envoyproxy/go-control-plane
+        role: serves
+      - repo: envoyproxy/java-control-plane
+        role: serves
+      - repo: envoyproxy/gateway
+        role: proxies
+      - repo: istio/istio
+        role: serves
+        note: The largest production xDS control plane.
+
+  # ---------------------------------------------------------------- identity & policy
+
+  - spec: spiffe
+    name: SPIFFE
+    governing_body: CNCF
+    foundation: Linux Foundation
+    specification_url: https://github.com/spiffe/spiffe/blob/main/standards/SPIFFE-ID.md
+    tools:
+      - repo: spiffe/spire
+        role: issues
+        note: The reference SPIFFE runtime — what actually mints workload identities.
+      - repo: spiffe/go-spiffe
+        role: verifies
+      - repo: spiffe/java-spiffe
+        role: verifies
+      - repo: spiffe/spiffe-helper
+        role: issues
+      - repo: spiffe/spire-controller-manager
+        role: deploys
+      - repo: spiffe/tornjak
+        role: manages
+
+  - spec: openfeature
+    name: OpenFeature
+    governing_body: CNCF
+    foundation: Linux Foundation
+    specification_url: https://openfeature.dev/specification/
+    tools:
+      - repo: open-feature/flagd
+        role: serves
+      - repo: open-feature/js-sdk
+        role: evaluates
+      - repo: open-feature/go-sdk
+        role: evaluates
+      - repo: open-feature/java-sdk
+        role: evaluates
+      - repo: open-feature/python-sdk
+        role: evaluates
+      - repo: open-feature/dotnet-sdk
+        role: evaluates
+      - repo: open-feature/open-feature-operator
+        role: deploys
+
+  # ---------------------------------------------------------------- supply chain
+
+  - spec: spdx
+    name: SPDX
+    governing_body: SPDX Project
+    foundation: Linux Foundation
+    specification_url: https://spdx.dev/use/specifications/
+    note: ISO/IEC 5962. The SBOM format regulators increasingly name by name.
+    tools:
+      - repo: anchore/syft
+        role: generates
+        produces: [sbom]
+        note: The most-used SBOM generator; emits SPDX and CycloneDX.
+      - repo: spdx/tools-python
+        role: validates
+        also: [parses]
+      - repo: spdx/tools-golang
+        role: parses
+      - repo: spdx/tools-java
+        role: parses
+      - repo: spdx/Spdx-Java-Library
+        role: parses
+      - repo: spdx/ntia-conformance-checker
+        role: validates
+      - repo: anchore/grype
+        role: scans
+
+  - spec: oci
+    name: OCI Image, Runtime and Distribution
+    sibling_specs: [oci-image-spec, oci-runtime-spec, oci-distribution-spec]
+    governing_body: Open Container Initiative
+    foundation: Linux Foundation
+    specification_url: https://specs.opencontainers.org/image-spec/
+    note: >-
+      Three sibling specifications treated as one tooling surface — in practice the same tools
+      span image, runtime and registry. The Distribution spec is the one with an OpenAPI.
+    tools:
+      - repo: opencontainers/runc
+        role: runs
+      - repo: podman-container-tools/skopeo
+        role: transfers
+      - repo: google/go-containerregistry
+        role: transfers
+        note: Ships `crane` — the tool an agent reaches for to inspect a registry without a daemon.
+      - repo: oras-project/oras
+        role: transfers
+        note: Pushes and pulls arbitrary artifacts through an OCI registry, not just images.
+      - repo: distribution/distribution
+        role: stores
+      - repo: project-zot/zot
+        role: stores
+      - repo: opencontainers/umoci
+        role: transforms
+
+  - spec: in-toto
+    name: in-toto
+    governing_body: CNCF
+    foundation: Linux Foundation
+    specification_url: https://github.com/in-toto/attestation
+    tools:
+      - repo: in-toto/in-toto
+        role: attests
+      - repo: in-toto/witness
+        role: attests
+      - repo: in-toto/in-toto-golang
+        role: attests
+      - repo: in-toto/archivista
+        role: stores
+      - repo: in-toto/attestation
+        role: authors
+
+  - spec: osv-schema
+    name: OSV Schema
+    governing_body: OpenSSF
+    foundation: Linux Foundation
+    specification_url: https://ossf.github.io/osv-schema/
+    tools:
+      - repo: google/osv-scanner
+        role: scans
+      - repo: google/osv.dev
+        role: stores
+      - repo: google/osv-scalibr
+        role: scans
+      - repo: ossf/osv-schema
+        role: authors
+      - repo: anchore/grype
+        role: scans
+
+  - spec: slsa
+    name: SLSA
+    governing_body: OpenSSF
+    foundation: Linux Foundation
+    specification_url: https://slsa.dev/spec/v1.0/
+    note: >-
+      A thin dedicated ecosystem for how often SLSA is cited: two production tools, both
+      GitHub-Actions-shaped. SLSA is a levels framework, so most of it is process, not code.
+    tools:
+      - repo: slsa-framework/slsa-github-generator
+        role: attests
+      - repo: slsa-framework/slsa-verifier
+        role: verifies
+      - repo: in-toto/witness
+        role: attests
+      - repo: slsa-framework/source-tool
+        role: attests
+
+  - spec: tuf
+    name: The Update Framework
+    governing_body: CNCF
+    foundation: Linux Foundation
+    specification_url: https://theupdateframework.github.io/specification/latest/
+    tools:
+      - repo: theupdateframework/python-tuf
+        role: verifies
+        note: The reference implementation.
+      - repo: theupdateframework/go-tuf
+        role: verifies
+      - repo: theupdateframework/rust-tuf
+        role: verifies
+      - repo: theupdateframework/tuf-js
+        role: verifies
+      - repo: theupdateframework/tuf-on-ci
+        role: signs
+      - repo: theupdateframework/tuf-conformance
+        role: tests
+
+  - spec: notary-project
+    name: Notary Project
+    governing_body: CNCF
+    foundation: Linux Foundation
+    specification_url: https://github.com/notaryproject/specifications
+    note: A small ecosystem — three tools, all first-party.
+    tools:
+      - repo: notaryproject/notation
+        role: signs
+        also: [verifies]
+      - repo: notaryproject/notation-go
+        role: signs
+      - repo: notaryproject/ratify
+        role: verifies
+
+  - spec: sigstore
+    name: Sigstore
+    governing_body: OpenSSF
+    foundation: Linux Foundation
+    specification_url: https://github.com/sigstore/protobuf-specs
+    tools:
+      - repo: sigstore/cosign
+        role: signs
+        also: [verifies]
+        note: The entry point — keyless signing and verification of containers and blobs.
+      - repo: sigstore/rekor
+        role: stores
+      - repo: sigstore/fulcio
+        role: issues
+      - repo: sigstore/gitsign
+        role: signs
+      - repo: sigstore/policy-controller
+        role: verifies
+      - repo: sigstore/sigstore-python
+        role: signs
+      - repo: sigstore/sigstore-js
+        role: signs

@@ -1,8 +1,10 @@
 ---
 title: Docker
 slug: docker
-companyCount: 316
-description: Docker is a platform for developing, shipping, and running applications inside lightweight containers. It enables developers to package applications with their dependencies for consistent deployment across development, testing, and production environments.
+companyCount: 397
+description: Docker is a platform for developing, shipping, and running applications inside lightweight
+  containers. It enables developers to package applications with their dependencies for consistent deployment
+  across development, testing, and production environments.
 tags:
 - Containers
 - Containerization
@@ -17,4 +19,6 @@ alternativeNames:
 - Docker CE
 - Docker Desktop
 - docker
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

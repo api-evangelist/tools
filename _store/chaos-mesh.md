@@ -1,8 +1,9 @@
 ---
 title: Chaos Mesh
 slug: chaos-mesh
-companyCount: 0
-description: A cloud-native chaos engineering platform that orchestrates chaos experiments on Kubernetes environments to test system resilience and reliability
+companyCount: 2
+description: A cloud-native chaos engineering platform that orchestrates chaos experiments on Kubernetes
+  environments to test system resilience and reliability
 tags:
 - Chaos Engineering
 - Kubernetes
@@ -13,4 +14,6 @@ website: https://chaos-mesh.org/
 radarRing: Initial
 alternativeNames:
 - chaos-mesh
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

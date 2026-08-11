@@ -1,7 +1,7 @@
 ---
 title: Apache Tez
 slug: apache-tez
-companyCount: 12
+companyCount: 6
 description: Application framework for complex DAG-based data processing tasks built on YARN for Hadoop.
 tags:
 - DAG
@@ -14,4 +14,6 @@ radarRing: Developing
 alternativeNames:
 - Tez
 - tez
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

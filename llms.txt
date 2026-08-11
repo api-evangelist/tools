@@ -1,0 +1,47 @@
+---
+layout: none
+permalink: /llms.txt
+---
+# API Evangelist — Tools
+
+> Open source tooling for the specifications that describe, secure and ship APIs. Every entry
+> carries a verified license, the specification it implements, and the semantics needed to
+> actually invoke it — not just a link to a homepage.
+
+Part of the API Evangelist network (apievangelist.com) — 16 years of independent research on the
+technology, business, policies, and people of HTTP APIs by Kin Lane.
+
+## Read this first, agents
+
+Do not scrape these pages. Everything on this site is published as structured data:
+
+- [/tools.json](https://tools.apievangelist.com/tools.json): every tool, with license, specification bindings, invocation, and use cases
+- [/roles.json](https://tools.apievangelist.com/roles.json): the controlled vocabulary — what a tool DOES to a specification ({{ site.data.roles_count | default: 25 }} verbs)
+- [/tool.schema.json](https://tools.apievangelist.com/tool.schema.json): the JSON Schema every entry conforms to
+
+## How to use this reference
+
+You are holding an artifact and you have a goal. Resolve in this order:
+
+1. **Artifact to specification.** An `openapi.yaml` is the OpenAPI specification; a `.proto` is Protocol Buffers; an `asyncapi.yaml` is AsyncAPI; an SBOM is SPDX. The specification entry lives at standards.apievangelist.com.
+2. **Goal to role.** "Is this document correct?" is `validates`. "Give me a client" is `generates`. "Give me an endpoint that answers" is `mocks`. "Should I trust this?" is `verifies`. "Change it without forking it" is `transforms`. The full vocabulary is in /roles.json.
+3. **Specification plus role to tool.** Filter /tools.json on `specifications[].slug` and `specifications[].role`.
+4. **Check before you run.** `agent.offline` tells you whether it works without network. `agent.mutates` tells you whether it writes. `agent.credentials` tells you whether it needs secrets. `agent.emits` tells you whether the output is machine-readable or only pretty-printed.
+
+## What the numbers mean
+
+- `companyCount` is a **demand** signal: distinct companies whose job postings name the tool, from the API Evangelist job corpus. It is evidence of hiring, not of deployment, and counts are only comparable within a single quarter.
+- `stars` is a popularity proxy, not a quality measure.
+- `lastCommit` and `archived` are the honest liveness signals. An archived tool is never recommended for new work.
+- `nameCollision: true` means the tool's name is an ordinary English word, so its bare name is blocked in the matcher and `companyCount` is a floor rather than a measurement. Read `nameCollisionNote` before concluding anything from a low number.
+- `license` is read from the repository, never inferred. `openSource: false` means a source-available license (BUSL, Elastic) — not the same thing as open source. `license: null` means no license file was found, and without one there is no grant to use the code.
+
+## This site
+
+- [Home](https://tools.apievangelist.com): all tools, ranked by adoption
+- [Standards](https://standards.apievangelist.com): the specifications these tools implement
+- [API Evangelist Network](https://apievangelist.com/llms.txt): full network llms.txt with all sites and MCP server
+
+## Optional
+
+- [Sitemap](https://tools.apievangelist.com/sitemap.xml)

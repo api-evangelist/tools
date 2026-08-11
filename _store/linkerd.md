@@ -1,8 +1,9 @@
 ---
 title: Linkerd
 slug: linkerd
-companyCount: 24
-description: Ultralight, security-first service mesh for Kubernetes. Provides observability, reliability, and security to cloud native applications without requiring code changes.
+companyCount: 29
+description: Ultralight, security-first service mesh for Kubernetes. Provides observability, reliability,
+  and security to cloud native applications without requiring code changes.
 tags:
 - Service Mesh
 - Kubernetes
@@ -10,7 +11,9 @@ tags:
 - Security
 - Microservices
 website: https://linkerd.io
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - linkerd
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

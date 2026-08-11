@@ -1,8 +1,10 @@
 ---
 title: Apache Avro
 slug: avro
-companyCount: 25
-description: A data serialization system that provides rich data structures, a compact binary format, and container files for storing persistent data. Avro uses JSON for defining data types and protocols, and serializes data in a compact binary format.
+companyCount: 26
+description: A data serialization system that provides rich data structures, a compact binary format,
+  and container files for storing persistent data. Avro uses JSON for defining data types and protocols,
+  and serializes data in a compact binary format.
 tags:
 - Data Serialization
 - Binary Format
@@ -10,8 +12,10 @@ tags:
 - Big Data
 website: https://avro.apache.org/
 yearCreated: 2009
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - Avro
 - avro
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,0 +1,95 @@
+---
+layout: none
+permalink: /tools.json
+---
+{
+  "$schema": "https://tools.apievangelist.com/tool.schema.json",
+  "name": "API Evangelist Tools",
+  "description": "Open source tooling for the specifications that describe, secure and ship APIs — with the licensing, invocation semantics and use cases an AI agent needs to actually employ them.",
+  "url": "https://tools.apievangelist.com",
+  "documentation": "https://tools.apievangelist.com/reference/",
+  "vocabulary": "https://tools.apievangelist.com/roles.json",
+  "schema": "https://tools.apievangelist.com/tool.schema.json",
+  "standards": "https://standards.apievangelist.com",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "count": {{ site.store | size }},
+  "tools": [
+{%- assign items = site.store | sort: "title" -%}
+{%- for t in items %}
+    {
+      "slug": {{ t.slug | default: t.title | jsonify }},
+      "title": {{ t.title | jsonify }},
+      "url": "https://tools.apievangelist.com{{ t.url }}",
+      "description": {{ t.description | strip_newlines | jsonify }}
+      {%- if t.website %},
+      "website": {{ t.website | jsonify }}{% endif %}
+      {%- if t.repository %},
+      "repository": {{ t.repository | jsonify }}{% endif %}
+      {%- if t.license %},
+      "license": {{ t.license | jsonify }},
+      "openSource": {{ t.openSource | default: false }},
+      "licenseSource": {{ t.licenseSource | default: "unresolved" | jsonify }}{% endif %}
+      {%- if t.stars %},
+      "stars": {{ t.stars }}{% endif %}
+      {%- if t.lastCommit %},
+      "lastCommit": {{ t.lastCommit | jsonify }}{% endif %}
+      {%- if t.archived %},
+      "archived": true{% endif %}
+      {%- if t.companyCountQuarter %},
+      "companyCount": {{ t.companyCount | default: 0 }},
+      "companyCountQuarter": {{ t.companyCountQuarter | jsonify }}{% endif %}
+      {%- if t.nameCollision %},
+      "nameCollision": true,
+      "nameCollisionNote": {{ t.nameCollisionNote | strip_newlines | jsonify }}{% endif %}
+      {%- if t.radarRing %},
+      "radarRing": {{ t.radarRing | jsonify }}{% endif %}
+      {%- if t.specifications %},
+      "specifications": [
+        {%- for s in t.specifications %}
+        {
+          "slug": {{ s.slug | jsonify }},
+          "name": {{ s.name | jsonify }},
+          "role": {{ s.role | jsonify }},
+          "url": "https://standards.apievangelist.com/store/{{ s.slug }}/"
+          {%- if s.also %},
+          "also": {{ s.also | jsonify }}{% endif %}
+          {%- if s.produces %},
+          "produces": {{ s.produces | jsonify }}{% endif %}
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]{% endif %}
+      {%- if t.agent %},
+      "agent": {
+        {%- if t.agent.interfaces %}
+        "interfaces": {{ t.agent.interfaces | jsonify }},{% endif %}
+        {%- if t.agent.install %}
+        "install": {{ t.agent.install | jsonify }},{% endif %}
+        {%- if t.agent.invoke %}
+        "invoke": {{ t.agent.invoke | jsonify }},{% endif %}
+        {%- if t.agent.consumes %}
+        "consumes": {{ t.agent.consumes | jsonify }},{% endif %}
+        {%- if t.agent.emits %}
+        "emits": {{ t.agent.emits | jsonify }},{% endif %}
+        "deterministic": {{ t.agent.deterministic | default: false }},
+        "offline": {{ t.agent.offline | default: false }},
+        "mutates": {{ t.agent.mutates | default: false }},
+        "credentials": {{ t.agent.credentials | default: false }}
+      }{% endif %}
+      {%- if t.useCases %},
+      "useCases": [
+        {%- for u in t.useCases %}
+        {
+          "task": {{ u.task | strip_newlines | jsonify }}
+          {%- if u.surface %},
+          "surface": {{ u.surface | jsonify }}{% endif %}
+          {%- if u.note %},
+          "note": {{ u.note | strip_newlines | jsonify }}{% endif %}
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]{% endif %}
+      {%- if t.tags %},
+      "tags": {{ t.tags | jsonify }}{% endif %}
+    }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+  ]
+}

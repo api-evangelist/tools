@@ -2,7 +2,8 @@
 title: Apache Phoenix
 slug: apache-phoenix
 companyCount: 0
-description: OLTP and operational analytics SQL layer for Apache HBase delivering millisecond-latency queries.
+description: OLTP and operational analytics SQL layer for Apache HBase delivering millisecond-latency
+  queries.
 tags:
 - SQL
 - HBase
@@ -13,4 +14,6 @@ website: https://phoenix.apache.org
 radarRing: Initial
 alternativeNames:
 - Phoenix
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

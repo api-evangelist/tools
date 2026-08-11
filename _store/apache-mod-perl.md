@@ -2,7 +2,8 @@
 title: Apache Mod_perl
 slug: apache-mod-perl
 companyCount: 0
-description: Persistent Perl interpreter embedded in the Apache HTTP Server for high-performance dynamic web content.
+description: Persistent Perl interpreter embedded in the Apache HTTP Server for high-performance dynamic
+  web content.
 tags:
 - Perl
 - Apache HTTP
@@ -14,4 +15,6 @@ radarRing: Initial
 alternativeNames:
 - Mod_perl
 - mod_perl
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

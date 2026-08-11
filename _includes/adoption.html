@@ -1,10 +1,20 @@
 {% comment %} Shared rendering for services, tools, and standards. {% endcomment %}
 <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+  {% if page.companyCount and page.companyCount > 0 %}
   <span class="badge rounded-pill bg-success-subtle text-success-emphasis fs-6">
     <span class="material-symbols-outlined" style="font-size:16px; vertical-align:-3px;">apartment</span>
-    {{ page.companyCount | default: 0 }} companies
+    {{ page.companyCount }} companies hiring
   </span>
+  {% endif %}
   {% if page.radarRing %}<span class="badge rounded-pill bg-light text-dark border">Radar: {{ page.radarRing }}</span>{% endif %}
+  {% if page.license %}
+    <span class="badge rounded-pill {% if page.openSource %}bg-primary-subtle text-primary-emphasis{% else %}bg-warning-subtle text-warning-emphasis{% endif %}">
+      {{ page.license }}{% unless page.openSource %} · source-available{% endunless %}
+    </span>
+  {% elsif page.repository %}
+    <span class="badge rounded-pill bg-danger-subtle text-danger-emphasis">No license found</span>
+  {% endif %}
+  {% if page.archived %}<span class="badge rounded-pill bg-danger text-white">Archived upstream</span>{% endif %}
   {% if page.founded %}<span class="text-muted small">Founded {{ page.founded }}</span>{% endif %}
   {% if page.yearCreated %}<span class="text-muted small">Created {{ page.yearCreated }}</span>{% endif %}
 </div>
@@ -17,13 +27,138 @@
 </div>
 {% endif %}
 
+{% comment %} ---- What this does to which specification ---- {% endcomment %}
+{% if page.specifications %}
+<div class="mb-4">
+  <h2 class="fs-5 mb-2">Specifications it implements</h2>
+  <p class="text-muted small mb-3">
+    What this tool does <em>to</em> each specification, in the
+    <a href="{{ '/roles.json' | relative_url }}">role vocabulary</a>. Follow a standard through to
+    <a href="https://standards.apievangelist.com">standards.apievangelist.com</a> for what it actually specifies.
+  </p>
+  <div class="table-responsive">
+    <table class="table table-sm align-middle mb-0">
+      <thead><tr>
+        <th>Standard</th><th style="width:9rem;">Role</th><th>What that means</th>
+      </tr></thead>
+      <tbody>
+      {% for s in page.specifications %}
+        <tr>
+          <td class="fw-semibold">
+            <a href="https://standards.apievangelist.com/store/{{ s.slug }}/" class="text-decoration-none">{{ s.name }}</a>
+          </td>
+          <td><code>{{ s.role }}</code>{% if s.also %}<br><span class="text-muted small">also {{ s.also | join: ", " }}</span>{% endif %}</td>
+          <td class="small text-muted">
+            {% if s.note %}{{ s.note }}{% endif %}
+            {% if s.produces %}{% if s.note %}<br>{% endif %}Produces: {{ s.produces | join: ", " }}{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+{% comment %} ---- The agent block: how to actually run it ---- {% endcomment %}
+{% if page.agent %}
+<div class="card mb-4 border-primary-subtle">
+  <div class="card-header bg-primary-subtle">
+    <strong>Using this from an agent</strong>
+  </div>
+  <div class="card-body">
+    <dl class="row mb-0 small">
+      {% if page.agent.interfaces %}
+      <dt class="col-sm-3 text-muted fw-normal">Interfaces</dt>
+      <dd class="col-sm-9">{% for i in page.agent.interfaces %}<code class="me-1">{{ i }}</code>{% endfor %}</dd>
+      {% endif %}
+
+      {% if page.agent.install %}
+      <dt class="col-sm-3 text-muted fw-normal">Install</dt>
+      <dd class="col-sm-9">
+        {% for pair in page.agent.install %}
+          <div><span class="text-muted">{{ pair[0] }}</span> <code>{{ pair[1] }}</code></div>
+        {% endfor %}
+      </dd>
+      {% endif %}
+
+      {% if page.agent.invoke %}
+      <dt class="col-sm-3 text-muted fw-normal">Invoke</dt>
+      {% comment %} escape: invoke strings carry <angle-bracket> placeholders the browser would eat as tags {% endcomment %}
+      <dd class="col-sm-9"><pre class="mb-0 p-2 bg-light border rounded"><code>{{ page.agent.invoke | escape }}</code></pre></dd>
+      {% endif %}
+
+      {% if page.agent.consumes %}
+      <dt class="col-sm-3 text-muted fw-normal">Consumes</dt>
+      <dd class="col-sm-9">{{ page.agent.consumes | join: ", " }}</dd>
+      {% endif %}
+
+      {% if page.agent.emits %}
+      <dt class="col-sm-3 text-muted fw-normal">Emits</dt>
+      <dd class="col-sm-9">{{ page.agent.emits | join: ", " }}</dd>
+      {% endif %}
+
+      <dt class="col-sm-3 text-muted fw-normal">Runtime</dt>
+      <dd class="col-sm-9">
+        <span class="badge {% if page.agent.offline %}bg-success-subtle text-success-emphasis{% else %}bg-secondary-subtle text-secondary-emphasis{% endif %} me-1">
+          {% if page.agent.offline %}Runs offline{% else %}Needs network{% endif %}</span>
+        <span class="badge {% if page.agent.deterministic %}bg-success-subtle text-success-emphasis{% else %}bg-secondary-subtle text-secondary-emphasis{% endif %} me-1">
+          {% if page.agent.deterministic %}Deterministic{% else %}Non-deterministic{% endif %}</span>
+        <span class="badge {% if page.agent.mutates %}bg-warning-subtle text-warning-emphasis{% else %}bg-light text-dark border{% endif %} me-1">
+          {% if page.agent.mutates %}Writes{% else %}Read-only{% endif %}</span>
+        <span class="badge {% if page.agent.credentials %}bg-warning-subtle text-warning-emphasis{% else %}bg-light text-dark border{% endif %}">
+          {% if page.agent.credentials %}Needs credentials{% else %}No credentials{% endif %}</span>
+      </dd>
+    </dl>
+  </div>
+</div>
+{% endif %}
+
+{% comment %} ---- Where it applies ---- {% endcomment %}
+{% if page.useCases %}
+<div class="mb-4">
+  <h2 class="fs-5 mb-2">Where it applies</h2>
+  <p class="text-muted small mb-3">Jobs this tool actually does, and the surface each one is exercised on.</p>
+  {% for u in page.useCases %}
+  <div class="card mb-2">
+    <div class="card-body py-3">
+      <div class="fw-semibold">{{ u.task }}</div>
+      {% if u.surface %}
+      <div class="mt-1">
+        {% for s in u.surface %}<span class="badge bg-light text-dark border me-1 fw-normal">{{ s }}</span>{% endfor %}
+      </div>
+      {% endif %}
+      {% if u.note %}<p class="text-muted small mb-0 mt-2">{{ u.note }}</p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
 <div class="card mb-4">
   <div class="card-body">
     <dl class="row mb-0 small">
-      <dt class="col-sm-3 text-muted fw-normal">Companies adopting</dt>
-      <dd class="col-sm-9 fw-semibold">{{ page.companyCount | default: 0 }}</dd>
-      {% if page.radarRing %}<dt class="col-sm-3 text-muted fw-normal">Radar ring</dt><dd class="col-sm-9">{{ page.radarRing }}</dd>{% endif %}
       {% if page.website %}<dt class="col-sm-3 text-muted fw-normal">Website</dt><dd class="col-sm-9"><a href="{{ page.website }}" target="_blank" rel="noopener">{{ page.website }}</a></dd>{% endif %}
+      {% if page.repository %}<dt class="col-sm-3 text-muted fw-normal">Repository</dt><dd class="col-sm-9"><a href="{{ page.repository }}" target="_blank" rel="noopener">{{ page.repository }}</a></dd>{% endif %}
+      {% if page.license %}
+      <dt class="col-sm-3 text-muted fw-normal">License</dt>
+      <dd class="col-sm-9">
+        {{ page.license }}
+        <span class="text-muted">— {% if page.licenseSource == "license-file" %}read from the repository's LICENSE file{% elsif page.licenseSource == "github-api" %}reported by the GitHub API{% else %}{{ page.licenseSource }}{% endif %}{% if page.licenseVerified %}, verified {{ page.licenseVerified }}{% endif %}</span>
+        {% unless page.openSource %}<br><span class="text-warning-emphasis">Source-available, not an OSI-approved open source license.</span>{% endunless %}
+      </dd>
+      {% endif %}
+      {% if page.stars %}<dt class="col-sm-3 text-muted fw-normal">Stars</dt><dd class="col-sm-9">{{ page.stars }}{% if page.lastCommit %} · last commit {{ page.lastCommit }}{% endif %}</dd>{% endif %}
+      {% if page.companyCount and page.companyCount > 0 %}
+      <dt class="col-sm-3 text-muted fw-normal">Companies hiring</dt>
+      <dd class="col-sm-9">{{ page.companyCount }}
+        <span class="text-muted">— distinct companies whose job postings name this tool{% if page.companyCountQuarter %}, {{ page.companyCountQuarter | upcase }}{% endif %}. A demand signal, not a deployment count.</span>
+      </dd>
+      {% endif %}
+      {% if page.nameCollision %}
+      <dt class="col-sm-3 text-muted fw-normal">Matching caveat</dt>
+      <dd class="col-sm-9 text-muted">{{ page.nameCollisionNote }}</dd>
+      {% endif %}
       {% if page.alternativeNames %}<dt class="col-sm-3 text-muted fw-normal">Also known as</dt><dd class="col-sm-9">{{ page.alternativeNames | join: ", " }}</dd>{% endif %}
     </dl>
   </div>

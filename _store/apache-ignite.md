@@ -1,8 +1,9 @@
 ---
 title: Apache Ignite
 slug: apache-ignite
-companyCount: 69
-description: Distributed database for high-performance computing with in-memory speed, supporting SQL, key-value, and compute grid APIs.
+companyCount: 76
+description: Distributed database for high-performance computing with in-memory speed, supporting SQL,
+  key-value, and compute grid APIs.
 tags:
 - In Memory
 - Distributed Database
@@ -13,4 +14,6 @@ website: https://ignite.apache.org
 radarRing: Established
 alternativeNames:
 - Ignite
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

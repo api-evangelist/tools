@@ -1,8 +1,10 @@
 ---
 title: Selenium
 slug: selenium
-companyCount: 148
-description: Selenium is an open-source framework for automating web browser interactions, widely used for testing web applications. It supports multiple programming languages and browsers, enabling teams to write automated functional and regression tests.
+companyCount: 140
+description: Selenium is an open-source framework for automating web browser interactions, widely used
+  for testing web applications. It supports multiple programming languages and browsers, enabling teams
+  to write automated functional and regression tests.
 tags:
 - Testing
 - Automation
@@ -14,4 +16,6 @@ alternativeNames:
 - Selenium WebDriver
 - Selenium IDE
 - selenium
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,8 +1,9 @@
 ---
 title: Apache NetBeans
 slug: apache-netbeans
-companyCount: 5
-description: Integrated development environment for Java, PHP, HTML5, and other languages with powerful editing features.
+companyCount: 2
+description: Integrated development environment for Java, PHP, HTML5, and other languages with powerful
+  editing features.
 tags:
 - IDE
 - Java
@@ -14,4 +15,6 @@ radarRing: Initial
 alternativeNames:
 - NetBeans
 - NetBeans IDE
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,7 +1,7 @@
 ---
 title: Apache Santuario
 slug: apache-santuario
-companyCount: 0
+companyCount: 1
 description: Library implementing XML Digital Signature and XML Encryption standards for secure XML processing.
 tags:
 - XML Security
@@ -14,4 +14,6 @@ radarRing: Initial
 alternativeNames:
 - Santuario
 - XML Security
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

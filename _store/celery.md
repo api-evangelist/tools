@@ -1,8 +1,9 @@
 ---
 title: Celery
 slug: celery
-companyCount: 13
-description: Distributed task queue for Python that enables asynchronous job execution and scheduled tasks across multiple workers and brokers.
+companyCount: 22
+description: Distributed task queue for Python that enables asynchronous job execution and scheduled tasks
+  across multiple workers and brokers.
 tags:
 - Python
 - Task Queue
@@ -14,4 +15,6 @@ founded: 2009
 radarRing: Developing
 alternativeNames:
 - celery
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

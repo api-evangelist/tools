@@ -1,8 +1,9 @@
 ---
 title: Apache Pulsar
 slug: apache-pulsar
-companyCount: 13
-description: Cloud-native distributed messaging and streaming platform with multi-tenancy and geo-replication support.
+companyCount: 25
+description: Cloud-native distributed messaging and streaming platform with multi-tenancy and geo-replication
+  support.
 tags:
 - Messaging
 - Streaming
@@ -14,4 +15,6 @@ radarRing: Developing
 alternativeNames:
 - Pulsar
 - pulsar
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

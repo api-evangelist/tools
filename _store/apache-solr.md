@@ -1,8 +1,9 @@
 ---
 title: Apache Solr
 slug: apache-solr
-companyCount: 18
-description: Enterprise search platform built on Lucene with distributed indexing, replication, and faceted search.
+companyCount: 31
+description: Enterprise search platform built on Lucene with distributed indexing, replication, and faceted
+  search.
 tags:
 - Search Engine
 - Full Text Search
@@ -10,8 +11,10 @@ tags:
 - Faceted Search
 - Lucene
 website: https://solr.apache.org
-radarRing: Developing
+radarRing: Established
 alternativeNames:
 - Solr
 - solr
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

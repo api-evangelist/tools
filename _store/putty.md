@@ -1,8 +1,9 @@
 ---
 title: PuTTY
 slug: putty
-companyCount: 16
-description: A free and open-source terminal emulator, serial console and network file transfer application that supports various network protocols including SSH, Telnet, and rlogin.
+companyCount: 25
+description: A free and open-source terminal emulator, serial console and network file transfer application
+  that supports various network protocols including SSH, Telnet, and rlogin.
 tags:
 - SSH Client
 - Terminal Emulator
@@ -14,4 +15,6 @@ radarRing: Developing
 alternativeNames:
 - putty
 - PuTTy
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

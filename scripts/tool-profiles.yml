@@ -1,0 +1,2619 @@
+# Hand-authored agent profiles, keyed by GitHub repository.
+#
+# WHAT GOES IN HERE AND WHY
+# spec-tools.yml says which tools implement which specification. gh-repos.json carries the facts
+# read from the API. This file carries the judgement: the title a human recognises, a description
+# written for a machine deciding whether to reach for the tool, and the `agent` block that says
+# how to actually invoke it.
+#
+# THE RULE FOR THIS FILE
+# Every `install` coordinate was resolved against the actual registry (npm, PyPI, Go module path,
+# Homebrew formula) or read out of the repository's own package manifest. An unverified
+# coordinate is OMITTED, not guessed — an agent that runs a hallucinated install command burns a
+# turn and loses trust. Fields left absent are absent on purpose.
+#
+# `invoke` is one representative command with <placeholders>. It is a starting point an agent can
+# adapt, never a replacement for the tool's own documentation.
+
+meta:
+  authored: 2026-08-11
+  install_verified_against: [npm registry, PyPI, repository package manifests]
+
+tools:
+
+  # ============================================================ OpenAPI
+
+  stoplightio/spectral:
+    title: Spectral
+    slug: spectral
+    description: >-
+      The API style-guide linter — validates OpenAPI, AsyncAPI and Arazzo documents against
+      rulesets you write yourself, and emits machine-readable findings with source locations.
+    agent:
+      interfaces: [cli, library, ci-action]
+      install:
+        npm: "@stoplight/spectral-cli"
+      invoke: "npx @stoplight/spectral-cli lint <spec.yaml> --ruleset <.spectral.yaml> --format json"
+      consumes: [openapi, asyncapi, arazzo, json, yaml]
+      emits: [json, junit, sarif, github-actions, pretty]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Check an API description against an organisation's own design rules before it ships.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          The highest-leverage agent use of any tool here — the output is a structured list of
+          findings with paths and line numbers, so the agent can go fix them rather than
+          summarise them.
+      - task: Prove a third-party API description is fit to build against before generating a client from it.
+        surface: [coding-agent]
+      - task: Author a ruleset that encodes a governance policy, then run it across an estate.
+        surface: [coding-agent, ci-pipeline]
+      - task: Validate an Arazzo workflow document — currently the most capable option for doing so.
+        surface: [coding-agent]
+
+  daveshanley/vacuum:
+    title: vacuum
+    slug: vacuum
+    description: >-
+      An extremely fast OpenAPI linter written in Go, Spectral-ruleset compatible, built to lint
+      very large specifications and whole estates in the time a CI step can afford.
+    agent:
+      interfaces: [cli, library, container]
+      install:
+        go: github.com/daveshanley/vacuum
+        npm: "@quobix/vacuum"
+      invoke: "vacuum lint <spec.yaml> --ruleset <ruleset.yaml> --details"
+      consumes: [openapi]
+      emits: [json, sarif, junit, html, pretty]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Lint hundreds or thousands of OpenAPI documents in one pass, where Spectral would be too slow.
+        surface: [ci-pipeline, coding-agent]
+      - task: Produce an HTML governance report for a human reviewer from a machine run.
+        surface: [ci-pipeline]
+      - task: Reuse an existing Spectral ruleset without rewriting it, on a faster runtime.
+        surface: [coding-agent]
+
+  OpenAPITools/openapi-generator:
+    title: OpenAPI Generator
+    slug: openapi-generator
+    description: >-
+      Generates client SDKs, server stubs and documentation from an OpenAPI description across
+      more than fifty languages — the most widely deployed code generator in the ecosystem.
+    agent:
+      interfaces: [cli, container, ci-action, library]
+      install:
+        npm: "@openapitools/openapi-generator-cli"
+        brew: openapi-generator
+      invoke: "npx @openapitools/openapi-generator-cli generate -i <spec.yaml> -g <generator> -o <out-dir>"
+      consumes: [openapi]
+      emits: [source-code]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Produce a typed client for an API the agent is about to integrate against.
+        surface: [coding-agent]
+        note: >-
+          Writes a whole tree of files — an agent should generate into a scratch directory and
+          diff, never straight over a working source tree.
+      - task: Scaffold a server implementation from an agreed contract, so design-first actually happens.
+        surface: [coding-agent, ci-pipeline]
+      - task: Regenerate clients when a provider publishes a new version of its description.
+        surface: [ci-pipeline]
+
+  stoplightio/prism:
+    title: Prism
+    slug: prism
+    description: >-
+      Turns an OpenAPI description into a running mock server that validates requests and returns
+      example or dynamic responses — an API you can call before one exists.
+    agent:
+      interfaces: [cli, container, library]
+      install:
+        npm: "@stoplight/prism-cli"
+      invoke: "npx @stoplight/prism-cli mock <spec.yaml> --port 4010"
+      consumes: [openapi]
+      emits: [http]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Exercise an integration end to end with no credentials, no cost and no production side effects.
+        surface: [coding-agent]
+        note: >-
+          The safest way for an autonomous agent to verify its own integration code. A mock cannot
+          charge a card, send an email, or delete a record.
+      - task: Unblock frontend work while the backend is still being built.
+        surface: [coding-agent, human]
+      - task: Run contract validation in proxy mode against a real API to find where it diverges from its description.
+        surface: [ci-pipeline]
+
+  Redocly/redoc:
+    title: Redoc
+    slug: redoc
+    description: >-
+      Renders an OpenAPI description as a single-page reference documentation site, with no
+      server-side component.
+    agent:
+      interfaces: [cli, library, web-ui]
+      install:
+        npm: "@redocly/cli"
+      invoke: "npx @redocly/cli build-docs <spec.yaml> -o <index.html>"
+      consumes: [openapi]
+      emits: [html]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Publish readable reference documentation as a build artifact from the contract itself.
+        surface: [ci-pipeline, coding-agent]
+      - task: Give a human reviewer something to look at when an agent has changed an API description.
+        surface: [coding-agent]
+
+  swagger-api/swagger-ui:
+    title: Swagger UI
+    slug: swagger-ui
+    description: >-
+      The original interactive OpenAPI console — renders a description as browsable documentation
+      with a live "try it" client against the real API.
+    agent:
+      interfaces: [library, container, web-ui]
+      install:
+        npm: swagger-ui-dist
+      consumes: [openapi]
+      emits: [html]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Embed an interactive console in an existing developer portal.
+        surface: [human, coding-agent]
+      - task: Let a human verify by hand what an agent has been calling programmatically.
+        surface: [human]
+
+  scalar/scalar:
+    title: Scalar
+    slug: scalar
+    description: >-
+      A modern OpenAPI documentation and API client suite — renders a reference site from a
+      description and ships an interactive client alongside it.
+    agent:
+      interfaces: [cli, library, web-ui]
+      install:
+        npm: "@scalar/cli"
+      invoke: "npx @scalar/cli document validate <spec.yaml>"
+      consumes: [openapi]
+      emits: [html, json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Stand up documentation with an embedded client without running a portal product.
+        surface: [coding-agent, human]
+      - task: Validate and bundle a description as a build step.
+        surface: [ci-pipeline]
+
+  openapi-ts/openapi-typescript:
+    title: openapi-typescript
+    slug: openapi-typescript
+    description: >-
+      Generates TypeScript types directly from an OpenAPI description — types only, no client
+      runtime and no generated transport code.
+    agent:
+      interfaces: [cli, library]
+      install:
+        npm: openapi-typescript
+      invoke: "npx openapi-typescript <spec.yaml> -o <schema.d.ts>"
+      consumes: [openapi]
+      emits: [typescript]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Get compile-time safety against an API contract without adopting a generated SDK.
+        surface: [coding-agent]
+        note: >-
+          Often the right choice for an agent over a full SDK generator — one file, no runtime
+          dependency, and the diff is reviewable.
+      - task: Detect a breaking provider change as a type error in CI rather than at runtime.
+        surface: [ci-pipeline]
+
+  oapi-codegen/oapi-codegen:
+    title: oapi-codegen
+    slug: oapi-codegen
+    description: >-
+      Generates idiomatic Go server boilerplate and clients from an OpenAPI description, wiring
+      into the common Go HTTP routers.
+    agent:
+      interfaces: [cli, library]
+      install:
+        go: github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen
+      invoke: "oapi-codegen -generate types,client -package <pkg> <spec.yaml> > <client.gen.go>"
+      consumes: [openapi]
+      emits: [go]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Generate a Go client or server that reads like hand-written Go rather than generated code.
+        surface: [coding-agent]
+      - task: Keep generated types in sync with a contract via `go generate` in CI.
+        surface: [ci-pipeline]
+
+  microcks/microcks:
+    title: Microcks
+    slug: microcks
+    description: >-
+      A mocking and contract-testing platform that imports OpenAPI, AsyncAPI, gRPC and Postman
+      artifacts and serves mocks plus conformance tests from them.
+    agent:
+      interfaces: [container, http-api, web-ui, cli]
+      invoke: "docker run -p 8080:8080 quay.io/microcks/microcks-uber:latest"
+      consumes: [openapi, asyncapi, grpc, postman]
+      emits: [http, json]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Mock synchronous and event-driven APIs from one place, instead of two separate tools.
+        surface: [coding-agent, ci-pipeline]
+      - task: Run contract tests against a deployed service and get a conformance verdict back over an API.
+        surface: [ci-pipeline]
+        note: Microcks has its own HTTP API, so an agent can drive the whole loop without a UI.
+
+  # ============================================================ Arazzo
+
+  speakeasy-api/openapi:
+    title: Speakeasy OpenAPI
+    slug: speakeasy-openapi
+    description: >-
+      A Go library and CLI for parsing, validating and transforming OpenAPI, Arazzo and Overlay
+      documents — one of the few toolchains that treats all three OpenAPI Initiative
+      specifications as first-class.
+    agent:
+      interfaces: [cli, library]
+      install:
+        go: github.com/speakeasy-api/openapi
+      consumes: [openapi, arazzo, openapi-overlay]
+      emits: [json, yaml]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Work with Arazzo or Overlay documents from Go, where almost nothing else exists.
+        surface: [coding-agent]
+      - task: Apply an Overlay to a base description programmatically as part of a pipeline.
+        surface: [ci-pipeline, coding-agent]
+
+  jentic/jentic-arazzo-tools:
+    title: Jentic Arazzo Tools
+    slug: jentic-arazzo-tools
+    description: >-
+      A parser, resolver and renderer for Arazzo workflow documents — resolves the references an
+      Arazzo document makes into the OpenAPI descriptions it orchestrates.
+    agent:
+      interfaces: [library, cli]
+      consumes: [arazzo, openapi]
+      emits: [json]
+      deterministic: true
+      offline: false
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Resolve an Arazzo workflow into the concrete operations it calls, so an agent can execute the steps.
+        surface: [coding-agent]
+        note: >-
+          Resolution is the hard part of consuming Arazzo — a workflow document is mostly
+          pointers into other documents.
+      - task: Render a workflow as documentation a human can review before it is automated.
+        surface: [human]
+
+  bump-sh/cli:
+    title: Bump.sh CLI
+    slug: bump-sh-cli
+    description: >-
+      Deploys, diffs and previews OpenAPI, AsyncAPI and Arazzo documentation, and detects
+      breaking changes between two versions of a description.
+    agent:
+      interfaces: [cli, ci-action]
+      install:
+        npm: bump-cli
+      invoke: "npx bump-cli diff <old-spec.yaml> <new-spec.yaml>"
+      consumes: [openapi, asyncapi, arazzo]
+      emits: [json, text, html]
+      deterministic: true
+      offline: false
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Answer "is this change breaking?" before a contract change is merged.
+        surface: [ci-pipeline, coding-agent]
+        note: >-
+          The `diff` subcommand works without an account; deploying documentation needs a token.
+      - task: Preview rendered documentation for a description an agent has just modified.
+        surface: [coding-agent]
+
+  frankkilcommins/arazzo2openapi:
+    title: arazzo2openapi
+    slug: arazzo2openapi
+    description: >-
+      Converts an Arazzo workflow description into an OpenAPI description, so a multi-step
+      workflow can be exposed as a conventional API surface.
+    agent:
+      interfaces: [cli]
+      consumes: [arazzo]
+      emits: [openapi]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Expose an orchestrated workflow to consumers that only understand OpenAPI.
+        surface: [coding-agent]
+
+  strefethen/arazzo-cli:
+    title: Arazzo CLI
+    slug: arazzo-cli
+    description: >-
+      A command-line runner for Arazzo workflow documents — executes the steps a workflow
+      describes against real APIs.
+    agent:
+      interfaces: [cli]
+      consumes: [arazzo]
+      emits: [json]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Actually execute an Arazzo workflow rather than only validating it.
+        surface: [coding-agent]
+        note: >-
+          Read the maturity signals on this page before depending on it. Executing a workflow
+          makes real calls against real APIs, with whatever side effects those carry.
+
+  # ============================================================ Overlay
+
+  thim81/openapi-format:
+    title: openapi-format
+    slug: openapi-format
+    description: >-
+      Formats, filters, sorts and applies Overlays to OpenAPI documents — the most complete
+      Overlay implementation in the JavaScript ecosystem.
+    agent:
+      interfaces: [cli, library]
+      install:
+        npm: openapi-format
+      invoke: "npx openapi-format <spec.yaml> -o <out.yaml> --overlayFile <overlay.yaml>"
+      consumes: [openapi, openapi-overlay]
+      emits: [openapi]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Apply an Overlay to a provider's description instead of forking and hand-editing it.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          The pattern an agent should prefer whenever it needs to change a contract it does not
+          own: the Overlay is a small reviewable file, and the base description stays upstream
+          and updatable.
+      - task: Strip internal or unreleased operations out of a description before publishing it.
+        surface: [ci-pipeline]
+      - task: Normalise ordering and formatting so contract diffs show real changes only.
+        surface: [ci-pipeline]
+
+  lornajane/openapi-overlays-js:
+    title: openapi-overlays-js
+    slug: openapi-overlays-js
+    description: >-
+      A small, focused JavaScript implementation of the OpenAPI Overlay specification — applies
+      an overlay to a base document and nothing else.
+    agent:
+      interfaces: [cli, library]
+      install:
+        npm: openapi-overlays-js
+      invoke: "npx openapi-overlays-js <spec.yaml> <overlay.yaml>"
+      consumes: [openapi, openapi-overlay]
+      emits: [openapi]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Apply an Overlay with a single dependency and no surrounding toolchain.
+        surface: [coding-agent, ci-pipeline]
+
+  mcroissant/oas_patcher:
+    title: oas-patch
+    slug: oas-patch
+    description: >-
+      A Python CLI and library for applying OpenAPI Overlays and JSON Patch documents to
+      OpenAPI descriptions.
+    agent:
+      interfaces: [cli, library]
+      install:
+        pypi: oas-patch
+      consumes: [openapi, openapi-overlay]
+      emits: [openapi]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Apply Overlays from a Python pipeline without introducing a Node toolchain.
+        surface: [ci-pipeline, coding-agent]
+
+  IBM/oas-overlay-java:
+    title: oas-overlay-java
+    slug: oas-overlay-java
+    description: A Java implementation of the OpenAPI Overlay specification.
+    agent:
+      interfaces: [library]
+      consumes: [openapi, openapi-overlay]
+      emits: [openapi]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Apply Overlays inside an existing JVM build or service.
+        surface: [ci-pipeline]
+
+  BinkyLabs/openapi-overlays-dotnet:
+    title: openapi-overlays-dotnet
+    slug: openapi-overlays-dotnet
+    description: A .NET implementation of the OpenAPI Overlay specification, shipped with the Clio CLI.
+    agent:
+      interfaces: [cli, library]
+      consumes: [openapi, openapi-overlay]
+      emits: [openapi]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Apply Overlays inside a .NET build without leaving the ecosystem.
+        surface: [ci-pipeline]
+
+  # ============================================================ AsyncAPI
+
+  asyncapi/cli:
+    title: AsyncAPI CLI
+    slug: asyncapi-cli
+    description: >-
+      The single entry point to the AsyncAPI toolchain — validates, converts, bundles, diffs and
+      generates from AsyncAPI documents, and opens Studio locally.
+    agent:
+      interfaces: [cli, container, ci-action]
+      install:
+        npm: "@asyncapi/cli"
+      invoke: "npx @asyncapi/cli validate <asyncapi.yaml>"
+      consumes: [asyncapi]
+      emits: [json, text]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Validate an event-driven API description before anything is generated from it.
+        surface: [coding-agent, ci-pipeline]
+      - task: Convert an older AsyncAPI document up to the current version of the specification.
+        surface: [coding-agent]
+      - task: Diff two versions of an event contract to find what changed for consumers.
+        surface: [ci-pipeline]
+        note: >-
+          Event contracts break consumers as badly as HTTP ones do, and almost nobody diffs them.
+
+  asyncapi/generator:
+    title: AsyncAPI Generator
+    slug: asyncapi-generator
+    description: >-
+      Generates documentation, code and configuration from an AsyncAPI document using a template
+      system — the output is whatever template you point it at.
+    agent:
+      interfaces: [cli, library]
+      install:
+        npm: "@asyncapi/generator"
+      invoke: "npx @asyncapi/generator <asyncapi.yaml> <template> -o <out-dir>"
+      consumes: [asyncapi]
+      emits: [source-code, html, markdown]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Produce documentation for an event-driven API from its contract.
+        surface: [ci-pipeline, coding-agent]
+      - task: Scaffold a producer or consumer against an agreed event contract.
+        surface: [coding-agent]
+
+  asyncapi/modelina:
+    title: Modelina
+    slug: modelina
+    description: >-
+      Generates typed data models from AsyncAPI, OpenAPI, JSON Schema and other inputs — models
+      only, deliberately not a whole application framework.
+    agent:
+      interfaces: [cli, library]
+      install:
+        npm: "@asyncapi/modelina"
+      consumes: [asyncapi, openapi, json-schema]
+      emits: [source-code]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Get message payload types in a target language without adopting a full generator's opinions.
+        surface: [coding-agent]
+      - task: Keep model classes in sync with schemas across several languages at once.
+        surface: [ci-pipeline]
+
+  asyncapi/parser-js:
+    title: AsyncAPI Parser
+    slug: asyncapi-parser
+    description: >-
+      Parses and validates AsyncAPI documents into a stable intermediate model, resolving
+      references — the library every other AsyncAPI tool is built on.
+    agent:
+      interfaces: [library]
+      install:
+        npm: "@asyncapi/parser"
+      consumes: [asyncapi]
+      emits: [json]
+      deterministic: true
+      offline: false
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Reason about an event contract programmatically instead of parsing YAML by hand.
+        surface: [coding-agent]
+        note: >-
+          Use this rather than a raw YAML load — it resolves references and normalises across
+          specification versions, which is where hand-rolled parsing quietly goes wrong.
+
+  asyncapi/studio:
+    title: AsyncAPI Studio
+    slug: asyncapi-studio
+    description: >-
+      A visual editor for AsyncAPI documents with live validation and a rendered preview of the
+      event-driven architecture being described.
+    agent:
+      interfaces: [web-ui, container]
+      install:
+        npm: "@asyncapi/studio"
+      consumes: [asyncapi]
+      emits: [asyncapi]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Give a human a place to review and edit a contract an agent drafted.
+        surface: [human]
+
+  asyncapi/asyncapi-react:
+    title: AsyncAPI React Component
+    slug: asyncapi-react
+    description: >-
+      A React component that renders AsyncAPI documents as interactive documentation inside an
+      existing application.
+    agent:
+      interfaces: [library]
+      install:
+        npm: "@asyncapi/react-component"
+      consumes: [asyncapi]
+      emits: [html]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Embed event-driven API documentation in a developer portal that is already a React app.
+        surface: [coding-agent, human]
+
+  springwolf/springwolf-core:
+    title: Springwolf
+    slug: springwolf
+    description: >-
+      Generates an AsyncAPI document from a running Spring Boot application by inspecting its
+      listeners and publishers — code-first rather than design-first.
+    agent:
+      interfaces: [library, web-ui]
+      consumes: [java]
+      emits: [asyncapi]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Get an AsyncAPI document out of an existing Spring service that never had one.
+        surface: [coding-agent]
+        note: >-
+          The realistic path for most estates: the events already exist, the contract does not.
+          Deriving it from the code is how you get to a document at all.
+
+  # ============================================================ GraphQL
+
+  graphql/graphql-js:
+    title: GraphQL.js
+    slug: graphql-js
+    description: >-
+      The JavaScript reference implementation of GraphQL — the parser, type system, validator and
+      execution engine the specification is realised in.
+    agent:
+      interfaces: [library]
+      install:
+        npm: graphql
+      consumes: [graphql]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Parse and validate a GraphQL schema or query without standing up a server.
+        surface: [coding-agent]
+      - task: Check whether a query is valid against a schema before it is ever sent.
+        surface: [coding-agent, ci-pipeline]
+
+  graphql/graphiql:
+    title: GraphiQL
+    slug: graphiql
+    description: >-
+      The reference GraphQL IDE — an in-browser query editor with schema introspection,
+      autocomplete and documentation, plus the language server behind editor integrations.
+    agent:
+      interfaces: [web-ui, library, lsp]
+      install:
+        npm: graphiql
+      consumes: [graphql]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Explore an unfamiliar GraphQL API's schema before writing queries against it.
+        surface: [human, ide]
+      - task: Provide schema-aware autocomplete to a copilot editing GraphQL documents.
+        surface: [copilot, ide]
+
+  graphql/dataloader:
+    title: DataLoader
+    slug: dataloader
+    description: >-
+      Batches and caches backend requests within a single GraphQL execution — the standard answer
+      to the N+1 query problem GraphQL resolvers create.
+    agent:
+      interfaces: [library]
+      install:
+        npm: dataloader
+      consumes: [javascript]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Fix a GraphQL server making one database call per item in a list.
+        surface: [coding-agent]
+        note: >-
+          A specific, recognisable performance bug with a standard fix — good ground for an agent,
+          because the problem and the remedy are both well defined.
+
+  apollographql/apollo-server:
+    title: Apollo Server
+    slug: apollo-server
+    description: >-
+      A spec-compliant GraphQL server for Node.js, with a plugin system covering caching,
+      tracing and persisted queries.
+    agent:
+      interfaces: [library]
+      install:
+        npm: "@apollo/server"
+      consumes: [graphql]
+      emits: [http]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Stand up a production GraphQL endpoint from a schema and resolvers.
+        surface: [coding-agent]
+
+  ardatan/graphql-tools:
+    title: GraphQL Tools
+    slug: graphql-tools
+    description: >-
+      Builds, stitches and transforms GraphQL schemas — merges several schemas into one and
+      rewrites them without touching the underlying services.
+    agent:
+      interfaces: [library]
+      install:
+        npm: "@graphql-tools/schema"
+      consumes: [graphql]
+      emits: [graphql]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Compose several existing GraphQL services into one schema for consumers.
+        surface: [coding-agent]
+      - task: Present a filtered view of a schema to a different audience without forking it.
+        surface: [coding-agent]
+
+  graphql/graphql-http:
+    title: graphql-http
+    slug: graphql-http
+    description: >-
+      A zero-dependency, spec-compliant implementation of the GraphQL over HTTP specification,
+      plus an audit suite for checking a server against it.
+    agent:
+      interfaces: [library, cli]
+      install:
+        npm: graphql-http
+      consumes: [graphql]
+      emits: [http, json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Audit whether a GraphQL server actually conforms to GraphQL over HTTP.
+        surface: [ci-pipeline, coding-agent]
+        note: >-
+          One of the few real conformance suites in this whole reference. Most specifications
+          here have none.
+
+  # ============================================================ JSON Schema
+
+  ajv-validator/ajv:
+    title: Ajv
+    slug: ajv
+    description: >-
+      The fastest JSON Schema validator for JavaScript — compiles schemas to validation functions
+      and supports every modern dialect.
+    agent:
+      interfaces: [library, cli]
+      install:
+        npm: ajv
+      consumes: [json-schema, json]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Validate a payload against a schema before sending it or after receiving it.
+        surface: [coding-agent]
+      - task: Check that structured output from a model conforms to an expected schema.
+        surface: [coding-agent, ai-platform]
+        note: >-
+          Directly relevant to agent plumbing — this is what turns "the model returned something
+          JSON-shaped" into a checkable guarantee.
+
+  python-jsonschema/jsonschema:
+    title: jsonschema (Python)
+    slug: python-jsonschema
+    description: The reference JSON Schema validator for Python, covering every published dialect.
+    agent:
+      interfaces: [library, cli]
+      install:
+        pypi: jsonschema
+      invoke: "python -m jsonschema -i <instance.json> <schema.json>"
+      consumes: [json-schema, json]
+      emits: [text, json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Validate data against a schema from a Python pipeline or notebook.
+        surface: [coding-agent, ci-pipeline]
+
+  santhosh-tekuri/jsonschema:
+    title: jsonschema (Go)
+    slug: go-jsonschema
+    description: >-
+      A JSON Schema validator for Go with full dialect coverage and detailed, structured error
+      output.
+    agent:
+      interfaces: [library, cli]
+      install:
+        go: github.com/santhosh-tekuri/jsonschema/v6
+      consumes: [json-schema, json]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Validate against a schema inside a Go service or CLI.
+        surface: [coding-agent]
+
+  networknt/json-schema-validator:
+    title: json-schema-validator (Java)
+    slug: java-json-schema-validator
+    description: A JSON Schema validator for the JVM, tracking the current dialects.
+    agent:
+      interfaces: [library]
+      consumes: [json-schema, json]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Enforce schema validation inside an existing Java service.
+        surface: [coding-agent]
+
+  glideapps/quicktype:
+    title: quicktype
+    slug: quicktype
+    description: >-
+      Generates typed models in many languages from JSON Schema, sample JSON, or other inputs —
+      including inferring a schema from example data.
+    agent:
+      interfaces: [cli, library, web-ui]
+      install:
+        npm: quicktype
+      invoke: "npx quicktype --src <data.json> --lang <language> -o <Model.ts>"
+      consumes: [json-schema, json]
+      emits: [source-code]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Turn an undocumented API's sample responses into types and a schema.
+        surface: [coding-agent]
+        note: >-
+          The tool for the common agent situation of having real responses and no contract at
+          all. Inference is a starting point, not a specification — treat the output as a draft.
+
+  json-schema-org/JSON-Schema-Test-Suite:
+    title: JSON Schema Test Suite
+    slug: json-schema-test-suite
+    description: >-
+      The language-agnostic conformance suite every JSON Schema implementation is measured
+      against — the tests that decide whether a validator is actually correct.
+    agent:
+      interfaces: [library]
+      consumes: [json-schema]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Verify a validator's dialect claims rather than trusting its README.
+        surface: [coding-agent]
+      - task: Test a new or modified JSON Schema implementation against the same bar as everyone else.
+        surface: [ci-pipeline]
+
+  # ============================================================ Protocol Buffers & gRPC
+
+  protocolbuffers/protobuf:
+    title: Protocol Buffers
+    slug: protocol-buffers-compiler
+    description: >-
+      The Protocol Buffers compiler and runtime libraries — parses `.proto` definitions and
+      generates serialisation code across languages.
+    agent:
+      interfaces: [cli, library]
+      install:
+        brew: protobuf
+      invoke: "protoc --proto_path=<dir> --<lang>_out=<out-dir> <file.proto>"
+      consumes: [proto]
+      emits: [source-code]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Generate message types from a `.proto` contract.
+        surface: [coding-agent, ci-pipeline]
+
+  bufbuild/buf:
+    title: Buf
+    slug: buf
+    description: >-
+      A modern Protobuf toolchain — lints `.proto` files, detects breaking changes against a
+      previous version, manages dependencies through a schema registry, and generates code
+      without hand-written protoc invocations.
+    agent:
+      interfaces: [cli, container, ci-action]
+      install:
+        brew: bufbuild/buf/buf
+        npm: "@bufbuild/buf"
+      invoke: "buf lint && buf breaking --against <ref>"
+      consumes: [proto]
+      emits: [json, text, source-code]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Catch a breaking change to a Protobuf contract before it is merged.
+        surface: [ci-pipeline, coding-agent]
+        note: >-
+          Breaking-change detection is the standout capability here, and it is what most estates
+          are missing. Protobuf's compatibility rules are subtle enough that humans get them wrong.
+      - task: Lint `.proto` files against a consistent style without writing custom tooling.
+        surface: [ci-pipeline]
+      - task: Generate code from Protobuf without maintaining fragile protoc command lines.
+        surface: [coding-agent]
+
+  protocolbuffers/protobuf-go:
+    title: Protocol Buffers for Go
+    slug: protobuf-go
+    description: The Go implementation of Protocol Buffers, including the `protoc-gen-go` plugin.
+    agent:
+      interfaces: [library, cli]
+      install:
+        go: google.golang.org/protobuf/cmd/protoc-gen-go
+      consumes: [proto]
+      emits: [go]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Generate Go types from a Protobuf contract.
+        surface: [coding-agent, ci-pipeline]
+
+  bufbuild/protovalidate:
+    title: protovalidate
+    slug: protovalidate
+    description: >-
+      Declares and enforces validation rules inside `.proto` definitions themselves, evaluated at
+      runtime with CEL expressions.
+    agent:
+      interfaces: [library]
+      consumes: [proto]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Put validation rules in the contract rather than reimplementing them in every service.
+        surface: [coding-agent]
+
+  connectrpc/connect-go:
+    title: Connect for Go
+    slug: connect-go
+    description: >-
+      Builds RPC services in Go that speak gRPC, gRPC-Web and its own simpler HTTP protocol from
+      one implementation — callable with plain curl.
+    agent:
+      interfaces: [library]
+      install:
+        go: connectrpc.com/connect
+      consumes: [proto]
+      emits: [http]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Expose an RPC service that an agent can call over ordinary HTTP without a gRPC client.
+        surface: [coding-agent]
+        note: >-
+          Materially easier for agents than plain gRPC — a Connect endpoint answers a normal
+          HTTP POST with JSON, so no code generation is needed to make one call.
+
+  grpc/grpc:
+    title: gRPC
+    slug: grpc
+    description: >-
+      The core gRPC implementation covering C++, Python, Ruby, Objective-C, PHP and C# — HTTP/2
+      based RPC using Protobuf contracts.
+    agent:
+      interfaces: [library]
+      consumes: [proto]
+      emits: [http]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Implement a gRPC client or server in one of the core-supported languages.
+        surface: [coding-agent]
+
+  grpc/grpc-go:
+    title: gRPC for Go
+    slug: grpc-go
+    description: The Go implementation of gRPC, and the substrate under much of the CNCF landscape.
+    agent:
+      interfaces: [library]
+      install:
+        go: google.golang.org/grpc
+      consumes: [proto]
+      emits: [http]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Implement a gRPC service in Go.
+        surface: [coding-agent]
+
+  grpc/grpc-java:
+    title: gRPC for Java
+    slug: grpc-java
+    description: The Java implementation of gRPC, widely deployed in enterprise service estates.
+    agent:
+      interfaces: [library]
+      consumes: [proto]
+      emits: [http]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Implement a gRPC service on the JVM.
+        surface: [coding-agent]
+
+  grpc/grpc-web:
+    title: gRPC-Web
+    slug: grpc-web
+    description: >-
+      Lets browser clients call gRPC services through a proxy, since browsers cannot speak the
+      gRPC wire protocol directly.
+    agent:
+      interfaces: [library]
+      consumes: [proto]
+      emits: [http]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Reach a gRPC backend from a browser application.
+        surface: [coding-agent]
+
+  fullstorydev/grpcurl:
+    title: grpcurl
+    slug: grpcurl
+    description: >-
+      The curl of gRPC — calls gRPC services from the command line, discovering their methods by
+      server reflection so no `.proto` file or generated client is needed.
+    agent:
+      interfaces: [cli]
+      install:
+        brew: grpcurl
+        go: github.com/fullstorydev/grpcurl/cmd/grpcurl
+      invoke: "grpcurl -plaintext <host:port> list"
+      consumes: [proto, grpc]
+      emits: [json]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Discover what methods a gRPC service exposes when there is no documentation.
+        surface: [coding-agent]
+        note: >-
+          The single most useful gRPC tool for an agent. Server reflection means it can enumerate
+          an unknown service's whole interface and call it, with no build step at all.
+      - task: Call one gRPC method to check behaviour without generating a client.
+        surface: [coding-agent]
+
+  # ============================================================ CloudEvents
+  # Six SDKs implementing one envelope specification. The job is identical in each language:
+  # encode an event into a conformant CloudEvent and decode one back, with the binding for
+  # whichever transport carries it.
+
+  cloudevents/sdk-go:
+    title: CloudEvents Go SDK
+    slug: cloudevents-sdk-go
+    description: >-
+      Encodes and decodes CloudEvents in Go, with bindings for HTTP, Kafka, NATS, AMQP and
+      Pub/Sub.
+    agent:
+      interfaces: [library]
+      install: {go: "github.com/cloudevents/sdk-go/v2"}
+      consumes: [cloudevents]
+      emits: [cloudevents]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Emit events in a format any CloudEvents consumer can read, rather than a bespoke envelope.
+        surface: [coding-agent]
+      - task: Consume events from a system that already speaks CloudEvents without writing a parser.
+        surface: [coding-agent]
+
+  cloudevents/sdk-java:
+    title: CloudEvents Java SDK
+    slug: cloudevents-sdk-java
+    description: Encodes and decodes CloudEvents on the JVM, with bindings for the common messaging transports.
+    agent:
+      interfaces: [library]
+      consumes: [cloudevents]
+      emits: [cloudevents]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Adopt a standard event envelope inside an existing JVM estate.
+        surface: [coding-agent]
+
+  cloudevents/sdk-javascript:
+    title: CloudEvents JavaScript SDK
+    slug: cloudevents-sdk-javascript
+    description: Encodes and decodes CloudEvents in JavaScript and TypeScript.
+    agent:
+      interfaces: [library]
+      install: {npm: "cloudevents"}
+      consumes: [cloudevents]
+      emits: [cloudevents]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Receive CloudEvents in a Node service or serverless function.
+        surface: [coding-agent]
+
+  cloudevents/sdk-python:
+    title: CloudEvents Python SDK
+    slug: cloudevents-sdk-python
+    description: Encodes and decodes CloudEvents in Python, with HTTP and Kafka bindings.
+    agent:
+      interfaces: [library]
+      install: {pypi: "cloudevents"}
+      consumes: [cloudevents]
+      emits: [cloudevents]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Handle CloudEvents in a Python service, data pipeline or function.
+        surface: [coding-agent]
+
+  cloudevents/sdk-csharp:
+    title: CloudEvents .NET SDK
+    slug: cloudevents-sdk-csharp
+    description: Encodes and decodes CloudEvents in C# and .NET.
+    agent:
+      interfaces: [library]
+      consumes: [cloudevents]
+      emits: [cloudevents]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Handle CloudEvents inside a .NET service.
+        surface: [coding-agent]
+
+  cloudevents/sdk-rust:
+    title: CloudEvents Rust SDK
+    slug: cloudevents-sdk-rust
+    description: Encodes and decodes CloudEvents in Rust.
+    agent:
+      interfaces: [library]
+      consumes: [cloudevents]
+      emits: [cloudevents]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Handle CloudEvents in a Rust service or edge worker.
+        surface: [coding-agent]
+
+  # ============================================================ OpenTelemetry / OTLP
+
+  open-telemetry/opentelemetry-collector:
+    title: OpenTelemetry Collector
+    slug: opentelemetry-collector
+    description: >-
+      Receives, processes and exports telemetry in a vendor-agnostic pipeline — the component
+      that decouples what emits telemetry from what stores it.
+    agent:
+      interfaces: [container, cli]
+      invoke: "otelcol --config <config.yaml>"
+      consumes: [otlp, prometheus, jaeger, zipkin]
+      emits: [otlp]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Change observability backends without touching a line of application code.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          The architectural reason OTLP matters. Instrument once against the standard, and the
+          destination becomes a configuration decision rather than a migration.
+      - task: Redact or drop sensitive attributes in telemetry before it leaves the estate.
+        surface: [ci-pipeline]
+
+  open-telemetry/opentelemetry-collector-contrib:
+    title: OpenTelemetry Collector Contrib
+    slug: opentelemetry-collector-contrib
+    description: >-
+      The community distribution of the Collector, carrying the long tail of receivers,
+      processors and exporters for specific vendors and systems.
+    agent:
+      interfaces: [container, cli]
+      consumes: [otlp, prometheus, jaeger, zipkin]
+      emits: [otlp]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Find a ready-made receiver or exporter for a specific system instead of writing one.
+        surface: [coding-agent]
+
+  open-telemetry/opentelemetry-go:
+    title: OpenTelemetry Go
+    slug: opentelemetry-go
+    description: The Go API and SDK for producing traces, metrics and logs in OTLP.
+    agent:
+      interfaces: [library]
+      install: {go: "go.opentelemetry.io/otel"}
+      emits: [otlp]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Instrument a Go service so its telemetry works with any OTLP-compatible backend.
+        surface: [coding-agent]
+
+  open-telemetry/opentelemetry-js:
+    title: OpenTelemetry JavaScript
+    slug: opentelemetry-js
+    description: The JavaScript and TypeScript API and SDK for OTLP telemetry, in Node and the browser.
+    agent:
+      interfaces: [library]
+      install: {npm: "@opentelemetry/sdk-node"}
+      emits: [otlp]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Instrument a Node service or browser application.
+        surface: [coding-agent]
+
+  open-telemetry/opentelemetry-python:
+    title: OpenTelemetry Python
+    slug: opentelemetry-python
+    description: The Python API and SDK for OTLP telemetry.
+    agent:
+      interfaces: [library, cli]
+      install: {pypi: "opentelemetry-sdk"}
+      emits: [otlp]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Instrument a Python service or AI application pipeline.
+        surface: [coding-agent, ai-platform]
+        note: >-
+          Increasingly the substrate for LLM observability — OpenTelemetry's GenAI semantic
+          conventions are where model calls, tokens and costs are being standardised.
+
+  open-telemetry/opentelemetry-java-instrumentation:
+    title: OpenTelemetry Java Instrumentation
+    slug: opentelemetry-java-instrumentation
+    description: >-
+      Automatic instrumentation for the JVM — attaches as a Java agent and produces telemetry
+      from common frameworks with no code changes at all.
+    agent:
+      interfaces: [library]
+      invoke: "java -javaagent:<opentelemetry-javaagent.jar> -jar <app.jar>"
+      emits: [otlp]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Instrument a Java application nobody wants to modify.
+        surface: [coding-agent]
+        note: >-
+          Zero source changes — the highest-value option when the agent has deployment access but
+          not a mandate to edit a legacy codebase.
+
+  open-telemetry/opentelemetry-operator:
+    title: OpenTelemetry Operator
+    slug: opentelemetry-operator
+    description: >-
+      A Kubernetes operator that manages Collector deployments and injects auto-instrumentation
+      into workloads.
+    agent:
+      interfaces: [container]
+      consumes: [kubernetes]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Roll out instrumentation across a cluster declaratively rather than per service.
+        surface: [ci-pipeline]
+
+  # ============================================================ OpenMetrics / Prometheus
+
+  prometheus/prometheus:
+    title: Prometheus
+    slug: prometheus
+    description: >-
+      The monitoring system and time-series database that defined the exposition format
+      OpenMetrics standardised — scrapes metrics endpoints and stores them for querying.
+    agent:
+      interfaces: [container, cli, http-api]
+      install: {brew: "prometheus"}
+      consumes: [openmetrics, prometheus]
+      emits: [json, openmetrics]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Query operational metrics over an HTTP API to answer questions about a system's behaviour.
+        surface: [coding-agent, ai-platform]
+        note: >-
+          The PromQL HTTP API is a genuinely good agent surface — a precise query language with
+          JSON results, which beats scraping dashboards.
+      - task: Verify that a change actually improved a measured quantity.
+        surface: [coding-agent]
+
+  prometheus/client_golang:
+    title: Prometheus Go Client
+    slug: prometheus-client-golang
+    description: Instruments Go applications to expose metrics in the OpenMetrics exposition format.
+    agent:
+      interfaces: [library]
+      install: {go: "github.com/prometheus/client_golang"}
+      emits: [openmetrics]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Expose custom application metrics from a Go service.
+        surface: [coding-agent]
+
+  prometheus/client_python:
+    title: Prometheus Python Client
+    slug: prometheus-client-python
+    description: Instruments Python applications to expose metrics in the OpenMetrics exposition format.
+    agent:
+      interfaces: [library]
+      install: {pypi: "prometheus-client"}
+      emits: [openmetrics]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Expose custom metrics from a Python service or job.
+        surface: [coding-agent]
+
+  prometheus/client_java:
+    title: Prometheus Java Client
+    slug: prometheus-client-java
+    description: Instruments JVM applications to expose metrics in the OpenMetrics exposition format.
+    agent:
+      interfaces: [library]
+      emits: [openmetrics]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Expose custom metrics from a JVM service.
+        surface: [coding-agent]
+
+  prometheus/node_exporter:
+    title: Node Exporter
+    slug: node-exporter
+    description: Exposes hardware and operating-system metrics from a host in the OpenMetrics format.
+    agent:
+      interfaces: [container, cli]
+      emits: [openmetrics]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Get host-level metrics without writing any collection code.
+        surface: [ci-pipeline]
+
+  prometheus/OpenMetrics:
+    title: OpenMetrics
+    slug: openmetrics-spec
+    description: >-
+      The specification repository itself — the standardised exposition format for cloud-native
+      metrics, evolved out of the Prometheus format.
+    agent:
+      interfaces: [library]
+      consumes: [openmetrics]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Read what the format actually requires before implementing an exporter.
+        surface: [coding-agent]
+
+  # ============================================================ xDS
+
+  envoyproxy/envoy:
+    title: Envoy
+    slug: envoy
+    description: >-
+      The cloud-native L7 proxy whose configuration APIs became xDS — reconfigures itself
+      dynamically from a control plane with no restart.
+    agent:
+      interfaces: [container, cli, http-api]
+      consumes: [xds, yaml]
+      emits: [openmetrics, json]
+      deterministic: false
+      offline: true
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Put a programmable proxy in the request path for routing, retries or rate limiting.
+        surface: [coding-agent]
+      - task: Change routing at runtime through a control plane rather than by redeploying.
+        surface: [ci-pipeline]
+
+  envoyproxy/go-control-plane:
+    title: Envoy Go Control Plane
+    slug: envoy-go-control-plane
+    description: >-
+      The Go library for building an xDS control plane — serves configuration to Envoy instances
+      over the discovery APIs.
+    agent:
+      interfaces: [library]
+      install: {go: "github.com/envoyproxy/go-control-plane"}
+      emits: [xds]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Build a bespoke control plane when an off-the-shelf mesh is more than the problem needs.
+        surface: [coding-agent]
+
+  envoyproxy/java-control-plane:
+    title: Envoy Java Control Plane
+    slug: envoy-java-control-plane
+    description: The Java implementation of an xDS control plane for Envoy.
+    agent:
+      interfaces: [library]
+      emits: [xds]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Serve xDS configuration from an existing JVM platform service.
+        surface: [coding-agent]
+
+  envoyproxy/gateway:
+    title: Envoy Gateway
+    slug: envoy-gateway
+    description: >-
+      Manages Envoy as a Kubernetes Gateway API implementation, turning standard Gateway
+      resources into xDS configuration.
+    agent:
+      interfaces: [container]
+      consumes: [kubernetes, xds]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Run an API gateway configured through the standard Kubernetes Gateway API.
+        surface: [ci-pipeline, coding-agent]
+
+  istio/istio:
+    title: Istio
+    slug: istio
+    description: >-
+      The service mesh whose control plane is the largest production consumer of xDS —
+      programs Envoy sidecars and gateways across a cluster.
+    agent:
+      interfaces: [container, cli]
+      install: {brew: "istioctl"}
+      consumes: [kubernetes, xds]
+      emits: [json, openmetrics]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Apply mTLS, routing and policy across services without changing any of them.
+        surface: [ci-pipeline]
+      - task: Inspect what configuration a mesh has actually pushed to a proxy when behaviour is wrong.
+        surface: [coding-agent]
+        note: "`istioctl proxy-config` is the debugging surface — it dumps the effective xDS state."
+
+  # ============================================================ SPIFFE
+
+  spiffe/spire:
+    title: SPIRE
+    slug: spire
+    description: >-
+      The SPIFFE Runtime Environment — attests workloads and issues them short-lived cryptographic
+      identities, so services authenticate to each other without shared secrets.
+    agent:
+      interfaces: [cli, container, http-api]
+      invoke: "spire-server entry create -spiffeID <spiffe://trust-domain/workload> -parentID <id> -selector <selector>"
+      emits: [x509, jwt]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Replace long-lived service credentials with identities that expire in minutes.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          The direction of travel for agent-to-service authentication: an agent that holds no
+          static secret cannot leak one.
+      - task: Establish mutual TLS between services across clusters and clouds without a shared CA per environment.
+        surface: [ci-pipeline]
+
+  spiffe/go-spiffe:
+    title: go-spiffe
+    slug: go-spiffe
+    description: >-
+      The Go library for consuming SPIFFE identities — fetches SVIDs from the Workload API and
+      validates peer identities.
+    agent:
+      interfaces: [library]
+      install: {go: "github.com/spiffe/go-spiffe/v2"}
+      consumes: [x509, jwt]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Authenticate a Go service to its peers using a workload identity rather than an API key.
+        surface: [coding-agent]
+
+  spiffe/java-spiffe:
+    title: java-spiffe
+    slug: java-spiffe
+    description: The Java library for consuming SPIFFE identities and validating peers.
+    agent:
+      interfaces: [library]
+      consumes: [x509, jwt]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Adopt workload identity inside an existing JVM service.
+        surface: [coding-agent]
+
+  spiffe/spiffe-helper:
+    title: SPIFFE Helper
+    slug: spiffe-helper
+    description: >-
+      Fetches SVIDs from the Workload API and writes them to disk, restarting or signalling a
+      process on rotation — how software that cannot speak SPIFFE still gets a SPIFFE identity.
+    agent:
+      interfaces: [cli, container]
+      emits: [x509, jwt]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Give workload identity to a legacy application that only knows how to read a certificate file.
+        surface: [ci-pipeline, coding-agent]
+        note: >-
+          The pragmatic adoption path — no application change, just certificates appearing on
+          disk and being rotated underneath.
+
+  spiffe/spire-controller-manager:
+    title: SPIRE Controller Manager
+    slug: spire-controller-manager
+    description: >-
+      Reconciles workload registration in Kubernetes, so SPIFFE identities are declared as
+      cluster resources rather than registered by hand.
+    agent:
+      interfaces: [container]
+      consumes: [kubernetes]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Manage identity registration declaratively alongside the workloads themselves.
+        surface: [ci-pipeline]
+
+  spiffe/tornjak:
+    title: Tornjak
+    slug: tornjak
+    description: A management UI and API over SPIRE, for viewing and administering workload identities.
+    agent:
+      interfaces: [web-ui, http-api]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Let a human see and audit what identities exist across trust domains.
+        surface: [human]
+
+  # ============================================================ OpenFeature
+
+  open-feature/flagd:
+    title: flagd
+    slug: flagd
+    description: >-
+      A feature-flag daemon that evaluates flags from files, HTTP or Kubernetes resources and
+      serves them over the OpenFeature Remote Evaluation Protocol.
+    agent:
+      interfaces: [cli, container, http-api]
+      invoke: "flagd start --uri file:<flags.json>"
+      consumes: [json, yaml]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Run feature flags with no vendor and no account, from a file in the repository.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          Notable for agent work because it runs entirely offline — flags become testable
+          configuration rather than a hosted dependency.
+      - task: Gate a risky change behind a flag so it can be turned off without a redeploy.
+        surface: [coding-agent]
+
+  open-feature/js-sdk:
+    title: OpenFeature JavaScript SDK
+    slug: openfeature-js-sdk
+    description: >-
+      Evaluates feature flags in JavaScript and TypeScript against any provider, so flag code is
+      written once and the vendor stays swappable.
+    agent:
+      interfaces: [library]
+      install: {npm: "@openfeature/server-sdk"}
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Write flag evaluation that survives changing flag vendors.
+        surface: [coding-agent]
+
+  open-feature/go-sdk:
+    title: OpenFeature Go SDK
+    slug: openfeature-go-sdk
+    description: Evaluates feature flags in Go against any OpenFeature provider.
+    agent:
+      interfaces: [library]
+      install: {go: "github.com/open-feature/go-sdk"}
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Add vendor-neutral feature flagging to a Go service.
+        surface: [coding-agent]
+
+  open-feature/java-sdk:
+    title: OpenFeature Java SDK
+    slug: openfeature-java-sdk
+    description: Evaluates feature flags on the JVM against any OpenFeature provider.
+    agent:
+      interfaces: [library]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Add vendor-neutral feature flagging to a JVM service.
+        surface: [coding-agent]
+
+  open-feature/python-sdk:
+    title: OpenFeature Python SDK
+    slug: openfeature-python-sdk
+    description: Evaluates feature flags in Python against any OpenFeature provider.
+    agent:
+      interfaces: [library]
+      install: {pypi: "openfeature-sdk"}
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Gate behaviour in a Python service or model-serving pipeline behind a flag.
+        surface: [coding-agent, ai-platform]
+
+  open-feature/dotnet-sdk:
+    title: OpenFeature .NET SDK
+    slug: openfeature-dotnet-sdk
+    description: Evaluates feature flags in .NET against any OpenFeature provider.
+    agent:
+      interfaces: [library]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Add vendor-neutral feature flagging to a .NET service.
+        surface: [coding-agent]
+
+  open-feature/open-feature-operator:
+    title: OpenFeature Operator
+    slug: openfeature-operator
+    description: >-
+      A Kubernetes operator that injects flagd into workloads and manages flag configuration as
+      cluster resources.
+    agent:
+      interfaces: [container]
+      consumes: [kubernetes]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Deliver flag configuration to every workload in a cluster without embedding a client per service.
+        surface: [ci-pipeline]
+
+  # ============================================================ SPDX
+
+  anchore/syft:
+    title: Syft
+    slug: syft
+    description: >-
+      Generates a software bill of materials from container images and filesystems, emitting
+      SPDX or CycloneDX — the most widely used SBOM generator there is.
+    agent:
+      interfaces: [cli, container, library, ci-action]
+      install: {brew: "syft", go: "github.com/anchore/syft/cmd/syft"}
+      invoke: "syft <image-or-dir> -o spdx-json=<sbom.spdx.json>"
+      consumes: [oci-image, filesystem]
+      emits: [spdx, cyclonedx, json, table]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Answer "what is actually inside this image?" with a machine-readable artifact.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          Where a supply-chain conversation starts. Pipe the output into Grype and the same
+          artifact answers "and what is wrong with it?".
+      - task: Produce the SBOM a customer or regulator is asking for, in the format they named.
+        surface: [ci-pipeline]
+
+  anchore/grype:
+    title: Grype
+    slug: grype
+    description: >-
+      Scans container images, filesystems and SBOMs for known vulnerabilities, reading OSV and
+      other vulnerability sources.
+    agent:
+      interfaces: [cli, container, ci-action]
+      install: {brew: "grype", go: "github.com/anchore/grype/cmd/grype"}
+      invoke: "grype sbom:<sbom.spdx.json> -o json"
+      consumes: [oci-image, spdx, cyclonedx, filesystem]
+      emits: [json, sarif, table]
+      deterministic: false
+      offline: false
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Find known vulnerabilities in an artifact before it ships.
+        surface: [ci-pipeline, coding-agent]
+      - task: Re-scan an existing SBOM as new vulnerabilities are published, without rebuilding.
+        surface: [ci-pipeline]
+        note: >-
+          Results change over time for identical input — the vulnerability database moves. Never
+          cache a verdict and treat it as still true.
+
+  spdx/tools-python:
+    title: SPDX Python Tools
+    slug: spdx-tools-python
+    description: Parses, validates and creates SPDX documents in Python, covering SPDX 2 and 3.
+    agent:
+      interfaces: [cli, library]
+      install: {pypi: "spdx-tools"}
+      consumes: [spdx]
+      emits: [spdx, json]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Validate that an SBOM somebody supplied is actually well-formed SPDX.
+        surface: [coding-agent, ci-pipeline]
+      - task: Convert an SPDX document between its tag-value, JSON, YAML and RDF serialisations.
+        surface: [coding-agent]
+
+  spdx/tools-golang:
+    title: SPDX Go Tools
+    slug: spdx-tools-golang
+    description: Go packages for reading, writing and validating SPDX documents.
+    agent:
+      interfaces: [library]
+      install: {go: "github.com/spdx/tools-golang"}
+      consumes: [spdx]
+      emits: [spdx]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Handle SBOMs inside a Go supply-chain tool.
+        surface: [coding-agent]
+
+  spdx/tools-java:
+    title: SPDX Java Tools
+    slug: spdx-tools-java
+    description: Command-line tools for converting, comparing and validating SPDX documents on the JVM.
+    agent:
+      interfaces: [cli, library]
+      consumes: [spdx]
+      emits: [spdx, json]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Compare two SBOMs to see what changed between releases.
+        surface: [ci-pipeline]
+
+  spdx/Spdx-Java-Library:
+    title: SPDX Java Library
+    slug: spdx-java-library
+    description: The Java object model for SPDX, underneath the SPDX Java tooling.
+    agent:
+      interfaces: [library]
+      consumes: [spdx]
+      emits: [spdx]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Read or emit SPDX from a JVM build plugin or service.
+        surface: [coding-agent]
+
+  spdx/ntia-conformance-checker:
+    title: NTIA Conformance Checker
+    slug: ntia-conformance-checker
+    description: >-
+      Checks an SPDX SBOM against the NTIA minimum elements and CISA guidance — whether it
+      satisfies the baseline regulators actually ask for.
+    agent:
+      interfaces: [cli, library]
+      install: {pypi: "ntia-conformance-checker"}
+      consumes: [spdx]
+      emits: [json, text]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Prove an SBOM meets a named compliance baseline, not just that it parses.
+        surface: [ci-pipeline, coding-agent]
+        note: >-
+          A well-formed SBOM and a compliant one are different things. This is the check that
+          distinguishes them, and it is the one procurement will run.
+
+  # ============================================================ OCI
+
+  opencontainers/runc:
+    title: runc
+    slug: runc
+    description: >-
+      The reference OCI runtime — spawns and runs containers per the Runtime Specification, and
+      the thing Docker and containerd ultimately call.
+    agent:
+      interfaces: [cli]
+      consumes: [oci-runtime-bundle]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Understand what a container runtime is actually doing beneath a higher-level tool.
+        surface: [coding-agent]
+
+  podman-container-tools/skopeo:
+    title: Skopeo
+    slug: skopeo
+    description: >-
+      Inspects, copies, signs and deletes container images between registries and storage
+      backends — without a daemon and without pulling the image to run it.
+    agent:
+      interfaces: [cli, container]
+      install: {brew: "skopeo"}
+      invoke: "skopeo inspect docker://<registry>/<image>:<tag>"
+      consumes: [oci-image]
+      emits: [json, oci-image]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Read an image's manifest, labels and digests without a container runtime present.
+        surface: [coding-agent]
+        note: >-
+          Daemonless is the point for agents. In a sandbox with no Docker socket, this still works.
+      - task: Copy an image between registries during a migration or mirror.
+        surface: [ci-pipeline]
+
+  google/go-containerregistry:
+    title: crane / go-containerregistry
+    slug: crane
+    description: >-
+      A Go library and the `crane` CLI for working with container registries and images directly
+      over the Distribution API — list tags, read manifests, copy and mutate images.
+    agent:
+      interfaces: [cli, library]
+      install: {go: "github.com/google/go-containerregistry/cmd/crane"}
+      invoke: "crane manifest <registry>/<image>:<tag>"
+      consumes: [oci-image]
+      emits: [json, oci-image]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Enumerate the tags a registry holds, to find what versions actually exist.
+        surface: [coding-agent]
+      - task: Rewrite an image's config or append a layer without a full rebuild.
+        surface: [ci-pipeline]
+
+  oras-project/oras:
+    title: ORAS
+    slug: oras
+    description: >-
+      Pushes and pulls arbitrary artifacts through an OCI registry — Helm charts, SBOMs,
+      signatures, models — using the registry as general artifact storage rather than image storage.
+    agent:
+      interfaces: [cli, library]
+      install: {brew: "oras"}
+      invoke: "oras push <registry>/<repo>:<tag> <file>:<media-type>"
+      consumes: [filesystem]
+      emits: [oci-image]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Store a non-image artifact where the infrastructure already has auth, mirroring and retention.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          The reason the Distribution spec matters beyond containers — registries turn out to be
+          the artifact store organisations already run.
+      - task: Attach an SBOM or attestation to an image as a referring artifact.
+        surface: [ci-pipeline]
+
+  distribution/distribution:
+    title: Distribution
+    slug: oci-distribution
+    description: >-
+      The reference implementation of the OCI Distribution Specification — the registry server
+      most private registries are built from.
+    agent:
+      interfaces: [container, http-api]
+      emits: [oci-image]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Run a local registry to test a publishing pipeline without touching a real one.
+        surface: [ci-pipeline, coding-agent]
+
+  project-zot/zot:
+    title: zot
+    slug: zot
+    description: >-
+      A production OCI-native registry that stores only OCI images and artifacts, with built-in
+      vulnerability scanning and a search API.
+    agent:
+      interfaces: [container, http-api]
+      emits: [oci-image, json]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Run a registry that is strictly spec-conformant, including the referrers API.
+        surface: [ci-pipeline]
+
+  opencontainers/umoci:
+    title: umoci
+    slug: umoci
+    description: Creates and modifies OCI images directly, without a container runtime or daemon.
+    agent:
+      interfaces: [cli]
+      consumes: [oci-image]
+      emits: [oci-image]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Manipulate image layers in a build system that has no Docker available.
+        surface: [ci-pipeline]
+
+  # ============================================================ in-toto
+
+  in-toto/in-toto:
+    title: in-toto
+    slug: in-toto
+    description: >-
+      The reference implementation of the in-toto framework — records signed attestations about
+      each step of a build, so the finished artifact can be traced to how it was made.
+    agent:
+      interfaces: [cli, library]
+      install: {pypi: "in-toto"}
+      emits: [in-toto-attestation]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Prove a released artifact came from the pipeline it claims to, and not from somewhere else.
+        surface: [ci-pipeline]
+
+  in-toto/witness:
+    title: Witness
+    slug: witness
+    description: >-
+      Wraps any build command and produces a signed in-toto attestation about what it observed —
+      the materials, the products, and the environment.
+    agent:
+      interfaces: [cli, library, ci-action]
+      install: {go: "github.com/in-toto/witness"}
+      invoke: "witness run -s <step-name> -o <attestation.json> -- <build-command>"
+      emits: [in-toto-attestation, json]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Add provenance to an existing build without restructuring the pipeline.
+        surface: [ci-pipeline]
+        note: >-
+          Wrapping the command is what makes this adoptable — the build does not have to change,
+          it just gets observed.
+      - task: Enforce that a build ran the steps a policy requires, in order.
+        surface: [ci-pipeline]
+
+  in-toto/in-toto-golang:
+    title: in-toto for Go
+    slug: in-toto-golang
+    description: The Go implementation of in-toto, used by supply-chain tooling written in Go.
+    agent:
+      interfaces: [library]
+      install: {go: "github.com/in-toto/in-toto-golang"}
+      emits: [in-toto-attestation]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Generate or verify attestations from a Go supply-chain tool.
+        surface: [coding-agent]
+
+  in-toto/archivista:
+    title: Archivista
+    slug: archivista
+    description: >-
+      A storage and graph service for in-toto attestations — makes attestations queryable
+      instead of leaving them scattered across build logs.
+    agent:
+      interfaces: [container, http-api]
+      consumes: [in-toto-attestation]
+      emits: [json]
+      deterministic: false
+      offline: true
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Ask what is known about an artifact's origin, across every build that touched it.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          Attestations are only useful if you can find them later. This is the part most
+          supply-chain rollouts skip and then regret.
+
+  in-toto/attestation:
+    title: in-toto Attestation Framework
+    slug: in-toto-attestation
+    description: >-
+      The specification and schemas for the attestation format — the statement-and-predicate
+      envelope SLSA provenance and most supply-chain claims are carried in.
+    agent:
+      interfaces: [library]
+      consumes: [in-toto-attestation]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Read the schema before emitting attestations, so they are actually consumable by other tools.
+        surface: [coding-agent]
+
+  # ============================================================ OSV
+
+  google/osv-scanner:
+    title: OSV-Scanner
+    slug: osv-scanner
+    description: >-
+      Scans lockfiles, SBOMs, container images and directories against the OSV database, and
+      reports vulnerabilities in the OSV schema.
+    agent:
+      interfaces: [cli, ci-action, container]
+      install: {brew: "osv-scanner", go: "github.com/google/osv-scanner/cmd/osv-scanner"}
+      invoke: "osv-scanner scan --lockfile <package-lock.json> --format json"
+      consumes: [lockfile, spdx, cyclonedx, oci-image]
+      emits: [json, sarif, table]
+      deterministic: false
+      offline: false
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Find known vulnerabilities in a project's declared dependencies.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          Reads lockfiles directly, so an agent can scan a repository it has just cloned with no
+          build and no install step.
+      - task: Produce SARIF a code-hosting platform will render inline on a pull request.
+        surface: [ci-pipeline]
+
+  google/osv.dev:
+    title: OSV.dev
+    slug: osv-dev
+    description: >-
+      The vulnerability database and API behind the OSV schema — aggregates advisories across
+      ecosystems and serves them in one consistent format.
+    agent:
+      interfaces: [http-api, web-ui]
+      invoke: "curl -sX POST https://api.osv.dev/v1/query -d '{\"package\":{\"name\":\"<pkg>\",\"ecosystem\":\"<eco>\"}}'"
+      emits: [json]
+      deterministic: false
+      offline: false
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Ask directly whether one specific package version is affected by anything known.
+        surface: [coding-agent, ai-platform]
+        note: >-
+          A free, unauthenticated JSON API — one of the easiest external data sources for an
+          agent to consult mid-task.
+
+  google/osv-scalibr:
+    title: OSV-SCALIBR
+    slug: osv-scalibr
+    description: >-
+      An extensible library for extracting software inventory from filesystems and images, and
+      the extraction engine underneath OSV-Scanner.
+    agent:
+      interfaces: [library, cli]
+      install: {go: "github.com/google/osv-scalibr"}
+      consumes: [filesystem, oci-image]
+      emits: [json, spdx, cyclonedx]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Build custom inventory extraction into a tool rather than shelling out to a scanner.
+        surface: [coding-agent]
+
+  ossf/osv-schema:
+    title: OSV Schema
+    slug: osv-schema
+    description: >-
+      The JSON schema describing open-source vulnerabilities in a way that is precise about which
+      versions are affected, across every package ecosystem.
+    agent:
+      interfaces: [library]
+      consumes: [json-schema]
+      emits: [json]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Parse vulnerability data from any OSV-compatible source with one schema.
+        surface: [coding-agent]
+        note: >-
+          The reason this schema won: version ranges are expressed exactly, so "is my version
+          affected?" is a computation rather than a judgement call about a CVE description.
+
+  # ============================================================ SLSA
+
+  slsa-framework/slsa-github-generator:
+    title: SLSA GitHub Generator
+    slug: slsa-github-generator
+    description: >-
+      Generates SLSA provenance for artifacts built in GitHub Actions, using reusable workflows
+      that produce non-forgeable attestations.
+    agent:
+      interfaces: [ci-action]
+      emits: [in-toto-attestation]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Attach verifiable provenance to a release without building attestation infrastructure.
+        surface: [ci-pipeline]
+
+  slsa-framework/slsa-verifier:
+    title: SLSA Verifier
+    slug: slsa-verifier
+    description: >-
+      Verifies SLSA provenance against expectations — that an artifact came from the source
+      repository and builder it claims.
+    agent:
+      interfaces: [cli, library, ci-action]
+      install: {go: "github.com/slsa-framework/slsa-verifier/v2/cli/slsa-verifier"}
+      invoke: "slsa-verifier verify-artifact <artifact> --provenance-path <provenance> --source-uri <repo>"
+      consumes: [in-toto-attestation]
+      emits: [json, text]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Check the provenance of a dependency before installing it.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          The consumer side, and the one that actually reduces risk. Generating provenance nobody
+          verifies changes nothing.
+
+  slsa-framework/source-tool:
+    title: SLSA Source Tool
+    slug: slsa-source-tool
+    description: A proof-of-concept implementation of the SLSA Source Track, attesting to source-side controls.
+    agent:
+      interfaces: [cli]
+      emits: [in-toto-attestation]
+      deterministic: false
+      offline: false
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Experiment with attesting source-repository controls, not just build steps.
+        surface: [ci-pipeline]
+        note: A proof of concept — evaluate before depending on it.
+
+  # ============================================================ TUF
+
+  theupdateframework/python-tuf:
+    title: python-tuf
+    slug: python-tuf
+    description: >-
+      The Python reference implementation of The Update Framework — secures software update
+      systems against key compromise, rollback and freeze attacks.
+    agent:
+      interfaces: [library, cli]
+      install: {pypi: "tuf"}
+      consumes: [tuf-metadata]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Secure an update channel so a compromised signing key cannot push arbitrary software.
+        surface: [coding-agent]
+        note: >-
+          TUF's premise is that keys WILL be compromised, and the system should survive it. That
+          is a different design goal from ordinary code signing.
+
+  theupdateframework/go-tuf:
+    title: go-tuf
+    slug: go-tuf
+    description: The Go implementation of The Update Framework, used by Sigstore's trust root.
+    agent:
+      interfaces: [library, cli]
+      install: {go: "github.com/theupdateframework/go-tuf/v2"}
+      consumes: [tuf-metadata]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Add TUF-secured updates to a Go application or distribution system.
+        surface: [coding-agent]
+
+  theupdateframework/rust-tuf:
+    title: rust-tuf
+    slug: rust-tuf
+    description: The Rust implementation of The Update Framework.
+    agent:
+      interfaces: [library]
+      consumes: [tuf-metadata]
+      deterministic: true
+      offline: false
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Verify TUF metadata from a Rust client.
+        surface: [coding-agent]
+
+  theupdateframework/tuf-js:
+    title: tuf-js
+    slug: tuf-js
+    description: The JavaScript implementation of The Update Framework, used in the npm supply-chain stack.
+    agent:
+      interfaces: [library]
+      install: {npm: "tuf-js"}
+      consumes: [tuf-metadata]
+      deterministic: true
+      offline: false
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Verify TUF metadata from Node tooling.
+        surface: [coding-agent]
+
+  theupdateframework/tuf-on-ci:
+    title: TUF-on-CI
+    slug: tuf-on-ci
+    description: >-
+      Runs a TUF repository and its signing ceremonies inside CI, with hardware-token signing and
+      review gates.
+    agent:
+      interfaces: [ci-action, cli]
+      consumes: [tuf-metadata]
+      emits: [tuf-metadata]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Operate a TUF repository without building bespoke signing infrastructure.
+        surface: [ci-pipeline]
+
+  theupdateframework/tuf-conformance:
+    title: TUF Conformance Suite
+    slug: tuf-conformance
+    description: A conformance test suite for TUF clients, checking them against the specification.
+    agent:
+      interfaces: [cli, library]
+      emits: [json, text]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Check whether a TUF client implementation is actually correct before trusting it.
+        surface: [ci-pipeline, coding-agent]
+
+  # ============================================================ Notary Project
+
+  notaryproject/notation:
+    title: Notation
+    slug: notation
+    description: >-
+      Signs and verifies OCI artifacts against a trust policy, storing signatures in the registry
+      alongside what they sign.
+    agent:
+      interfaces: [cli, library]
+      install: {brew: "notation"}
+      invoke: "notation verify <registry>/<image>:<tag>"
+      consumes: [oci-image]
+      emits: [json, text]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Verify an image is signed by a trusted identity before deploying it.
+        surface: [ci-pipeline, coding-agent]
+      - task: Sign artifacts with keys from an existing enterprise PKI rather than a new trust root.
+        surface: [ci-pipeline]
+        note: >-
+          The practical difference from Sigstore — Notation fits organisations that already have
+          a CA and intend to keep using it.
+
+  notaryproject/notation-go:
+    title: notation-go
+    slug: notation-go
+    description: The Go libraries behind Notation, for signing and verifying OCI artifacts.
+    agent:
+      interfaces: [library]
+      install: {go: "github.com/notaryproject/notation-go"}
+      consumes: [oci-image]
+      deterministic: true
+      offline: false
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Embed signature verification in a Go admission controller or deployment tool.
+        surface: [coding-agent]
+
+  notaryproject/ratify:
+    title: Ratify
+    slug: ratify
+    description: >-
+      Verifies artifacts and their referenced metadata at admission time in Kubernetes, so
+      unsigned or unattested workloads never start.
+    agent:
+      interfaces: [container]
+      consumes: [oci-image, in-toto-attestation]
+      emits: [json]
+      deterministic: true
+      offline: false
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Block a deployment whose image is unsigned or fails policy, at the cluster boundary.
+        surface: [ci-pipeline]
+
+  # ============================================================ Sigstore
+
+  sigstore/cosign:
+    title: Cosign
+    slug: cosign
+    description: >-
+      Signs and verifies containers, blobs and SBOMs with keyless signing backed by OIDC identity
+      and a public transparency log — no long-lived signing key to manage or lose.
+    agent:
+      interfaces: [cli, library, ci-action]
+      install: {brew: "cosign", go: "github.com/sigstore/cosign/v2/cmd/cosign"}
+      invoke: "cosign verify <registry>/<image>:<tag> --certificate-identity <identity> --certificate-oidc-issuer <issuer>"
+      consumes: [oci-image, filesystem, spdx]
+      emits: [json, signature]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Verify an artifact before consuming it, and know which identity actually signed it.
+        surface: [coding-agent, ci-pipeline]
+        note: >-
+          `verify` requires naming the expected identity and issuer. A verification that does not
+          pin those checks only that SOMEBODY signed it — which is not a security property.
+      - task: Sign a release from CI with no key material stored anywhere.
+        surface: [ci-pipeline]
+      - task: Attach an SBOM or attestation to an image and sign it in one step.
+        surface: [ci-pipeline]
+
+  sigstore/rekor:
+    title: Rekor
+    slug: rekor
+    description: >-
+      The immutable, append-only transparency log that records signing events, so a signature can
+      be verified after the short-lived certificate that made it has expired.
+    agent:
+      interfaces: [cli, http-api, container]
+      emits: [json]
+      deterministic: true
+      offline: false
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Prove a signature existed at a point in time, independent of certificate lifetime.
+        surface: [ci-pipeline, coding-agent]
+      - task: Query the log for every entry associated with an artifact.
+        surface: [coding-agent]
+
+  sigstore/fulcio:
+    title: Fulcio
+    slug: fulcio
+    description: >-
+      The certificate authority that issues short-lived signing certificates bound to an OIDC
+      identity — what makes keyless signing possible.
+    agent:
+      interfaces: [http-api, container]
+      emits: [x509]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Run a private Sigstore instance with an organisation's own identity provider.
+        surface: [ci-pipeline]
+
+  sigstore/gitsign:
+    title: Gitsign
+    slug: gitsign
+    description: Signs Git commits and tags with Sigstore keyless signing, requiring no GPG key.
+    agent:
+      interfaces: [cli]
+      install: {brew: "gitsign", go: "github.com/sigstore/gitsign"}
+      emits: [signature]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Sign commits without the GPG key management that stops most teams from signing at all.
+        surface: [coding-agent, human]
+      - task: Establish which identity authored a commit, when an agent may be the one committing.
+        surface: [coding-agent]
+        note: >-
+          Increasingly relevant as agents commit code: signing answers "who or what produced this
+          change" in a way an author field cannot.
+
+  sigstore/policy-controller:
+    title: Sigstore Policy Controller
+    slug: sigstore-policy-controller
+    description: >-
+      A Kubernetes admission controller that enforces signature and attestation policy on images
+      before they are allowed to run.
+    agent:
+      interfaces: [container]
+      consumes: [oci-image, in-toto-attestation]
+      deterministic: true
+      offline: false
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Refuse to run any workload that is not signed by an approved identity.
+        surface: [ci-pipeline]
+
+  sigstore/sigstore-python:
+    title: sigstore-python
+    slug: sigstore-python
+    description: A Sigstore client for Python, used for signing and verifying Python package releases.
+    agent:
+      interfaces: [cli, library]
+      install: {pypi: "sigstore"}
+      invoke: "python -m sigstore verify identity <artifact> --cert-identity <id> --cert-oidc-issuer <issuer>"
+      emits: [signature, json]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Verify the Sigstore signatures PyPI publishes for a release.
+        surface: [coding-agent, ci-pipeline]
+
+  sigstore/sigstore-js:
+    title: sigstore-js
+    slug: sigstore-js
+    description: >-
+      The Sigstore client for JavaScript, underneath npm's provenance and attestation support.
+    agent:
+      interfaces: [library, cli]
+      install: {npm: "sigstore"}
+      emits: [signature, json]
+      deterministic: false
+      offline: false
+      mutates: false
+      credentials: true
+    useCases:
+      - task: Verify npm package provenance before adding a dependency.
+        surface: [coding-agent, ci-pipeline]

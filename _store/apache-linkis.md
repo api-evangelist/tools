@@ -2,7 +2,8 @@
 title: Apache Linkis
 slug: apache-linkis
 companyCount: 0
-description: Computation middleware connecting upper-layer applications with underlying data engines for unified task management.
+description: Computation middleware connecting upper-layer applications with underlying data engines for
+  unified task management.
 tags:
 - Middleware
 - Computation
@@ -13,4 +14,6 @@ website: https://linkis.apache.org
 radarRing: Initial
 alternativeNames:
 - Linkis
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

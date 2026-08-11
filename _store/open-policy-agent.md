@@ -1,8 +1,10 @@
 ---
 title: Open Policy Agent
 slug: open-policy-agent
-companyCount: 44
-description: Policy-based control for cloud native environments that enables unified, context-aware policy enforcement across the stack using a declarative policy language called Rego. It plays a critical role in protecting organizational assets and maintaining a strong security posture.
+companyCount: 64
+description: Policy-based control for cloud native environments that enables unified, context-aware policy
+  enforcement across the stack using a declarative policy language called Rego. It plays a critical role
+  in protecting organizational assets and maintaining a strong security posture.
 tags:
 - Policy As Code
 - Security
@@ -15,4 +17,6 @@ radarRing: Established
 alternativeNames:
 - OPA
 - opa
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

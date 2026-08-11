@@ -1,8 +1,9 @@
 ---
 title: Apache Spark
 slug: spark
-companyCount: 562
-description: Open-source unified analytics engine for large-scale data processing with built-in modules for streaming, SQL, machine learning and graph processing
+companyCount: 309
+description: Open-source unified analytics engine for large-scale data processing with built-in modules
+  for streaming, SQL, machine learning and graph processing
 tags:
 - Big Data
 - Data Processing
@@ -14,4 +15,6 @@ radarRing: Optimizing
 alternativeNames:
 - Spark
 - spark
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,8 +1,10 @@
 ---
 title: Pixie
 slug: pixie
-companyCount: 2
-description: Kubernetes observability platform that uses eBPF to automatically collect telemetry data including full-body application requests, resource and network metrics, and application profiles without manual instrumentation.
+companyCount: 3
+description: Kubernetes observability platform that uses eBPF to automatically collect telemetry data
+  including full-body application requests, resource and network metrics, and application profiles without
+  manual instrumentation.
 tags:
 - Observability
 - Kubernetes
@@ -12,4 +14,6 @@ website: https://px.dev/
 radarRing: Initial
 alternativeNames:
 - pixie
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

@@ -1,7 +1,7 @@
 ---
 title: Apache Ivy
 slug: apache-ivy
-companyCount: 8
+companyCount: 0
 description: Dependency manager tightly integrated with Apache Ant for managing transitive dependencies.
 tags:
 - Dependency Management
@@ -10,8 +10,10 @@ tags:
 - Build Tool
 - Transitive Dependencies
 website: https://ant.apache.org/ivy/
-radarRing: Developing
+radarRing: Initial
 alternativeNames:
 - Ivy
 - ivy
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 ---

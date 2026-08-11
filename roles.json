@@ -1,0 +1,153 @@
+{
+ "$id": "https://tools.apievangelist.com/roles.json",
+ "name": "API Evangelist tool role vocabulary",
+ "description": "What a tool DOES to a specification. An agent holding an artifact and a goal resolves to a role, and from the role to a shortlist of tools, without reading prose.",
+ "schema": "https://tools.apievangelist.com/tool.schema.json",
+ "roles": {
+  "authors": {
+   "verb": "authors",
+   "question": "Where does the artifact itself come from?",
+   "returns": "The specification document, or the editing surface that produces one.",
+   "agent_note": "An `authors` tool is usually the spec repository or a visual editor. An agent rarely invokes it; it reads it to learn what the current version actually says."
+  },
+  "parses": {
+   "verb": "parses",
+   "question": "Turn this document into a structure I can traverse.",
+   "returns": "An in-memory model, AST or resolved document with $refs followed.",
+   "agent_note": "The right first call when the agent needs to REASON about a contract rather than display it. Resolution of external $refs is where most agent pipelines break."
+  },
+  "validates": {
+   "verb": "validates",
+   "question": "Is this document correct, and does it meet our rules?",
+   "returns": "A pass/fail plus a list of findings with locations.",
+   "agent_note": "The highest-value role for an agent, because the output is machine-readable and falsifiable. Distinguish spec-validity (is this legal OpenAPI?) from style-governance (does it meet OUR rules?) — Spectral and vacuum do both, most validators only the first."
+  },
+  "tests": {
+   "verb": "tests",
+   "question": "Does the running implementation match the document?",
+   "returns": "Contract-test results — where the deployed API and its description disagree.",
+   "agent_note": "This is the role that catches the failure a document alone cannot: an accurate spec describing an API that no longer behaves that way."
+  },
+  "scans": {
+   "verb": "scans",
+   "question": "What known problems are present in this artifact?",
+   "returns": "Findings keyed to an identifier — a CVE, an OSV id, a rule.",
+   "agent_note": "Output is usually already in a standard schema, so it composes without parsing prose."
+  },
+  "generates": {
+   "verb": "generates",
+   "question": "Produce code or artifacts from this document.",
+   "returns": "SDKs, server stubs, types, documentation, or an SBOM.",
+   "agent_note": "Check `produces:` for what specifically comes out. Generation is the role most often run in CI, so an agent proposing it should expect to touch a pipeline, not just a file."
+  },
+  "transforms": {
+   "verb": "transforms",
+   "question": "Change this document without forking it.",
+   "returns": "A modified document, ideally by a declared, replayable change.",
+   "agent_note": "The role agents should prefer over hand-editing. An Overlay is a reviewable diff against a contract the agent does not own; a hand edit is an unreviewable fork."
+  },
+  "converts": {
+   "verb": "converts",
+   "question": "Move this between formats or versions.",
+   "returns": "The same description expressed in another specification or version."
+  },
+  "encodes": {
+   "verb": "encodes",
+   "question": "Read and write this format on the wire.",
+   "returns": "A serialized message, or a parsed one.",
+   "agent_note": "Almost always a language SDK. Pick by the runtime the agent is already in."
+  },
+  "serves": {
+   "verb": "serves",
+   "question": "Stand up an implementation of this specification.",
+   "returns": "A running server, control plane, or runtime."
+  },
+  "mocks": {
+   "verb": "mocks",
+   "question": "Give me a working endpoint before the real one exists.",
+   "returns": "A live server that answers per the description.",
+   "agent_note": "The safest way for an agent to exercise an integration end to end without credentials, cost, or side effects on a production system."
+  },
+  "proxies": {
+   "verb": "proxies",
+   "question": "Sit in the request path and enforce something.",
+   "returns": "A gateway or proxy configured from the specification."
+  },
+  "runs": {
+   "verb": "runs",
+   "question": "Execute the artifact.",
+   "returns": "A running container or workload."
+  },
+  "deploys": {
+   "verb": "deploys",
+   "question": "Install and manage this in a cluster.",
+   "returns": "An operator, controller or chart."
+  },
+  "scrapes": {
+   "verb": "scrapes",
+   "question": "Collect this data on an interval and store it.",
+   "returns": "A time series database with the collected series."
+  },
+  "instruments": {
+   "verb": "instruments",
+   "question": "Emit this data from my application.",
+   "returns": "A library or agent that produces conformant telemetry."
+  },
+  "signs": {
+   "verb": "signs",
+   "question": "Attach a verifiable signature to this artifact.",
+   "returns": "A signature, bundle, or signed envelope."
+  },
+  "verifies": {
+   "verb": "verifies",
+   "question": "Should I trust this artifact?",
+   "returns": "A trust decision plus the evidence behind it.",
+   "agent_note": "The role that matters most when an agent is about to CONSUME something it did not build. An agent installing an unverified artifact is the supply-chain attack."
+  },
+  "attests": {
+   "verb": "attests",
+   "question": "Record a claim about how this artifact was produced.",
+   "returns": "An attestation — a signed statement with a predicate."
+  },
+  "issues": {
+   "verb": "issues",
+   "question": "Mint an identity or credential for a workload.",
+   "returns": "A short-lived identity document (SVID, certificate)."
+  },
+  "evaluates": {
+   "verb": "evaluates",
+   "question": "Resolve this flag or policy for the current context.",
+   "returns": "A decision — a flag value or a policy result."
+  },
+  "stores": {
+   "verb": "stores",
+   "question": "Where does this artifact live so others can retrieve it?",
+   "returns": "A registry, log, or repository."
+  },
+  "transfers": {
+   "verb": "transfers",
+   "question": "Move this artifact between registries or to disk.",
+   "returns": "The artifact, moved or inspected, usually without a daemon.",
+   "agent_note": "Daemonless transfer tools are the ones that actually work inside an agent sandbox, where there is no container runtime to talk to."
+  },
+  "documents": {
+   "verb": "documents",
+   "question": "Render this document for a human.",
+   "returns": "Reference documentation, a portal, or an interactive console.",
+   "agent_note": "Lowest agent value per se — but an agent asked to \"improve the developer experience\" is usually being asked for this, and it is what a human reviewer will look at."
+  },
+  "manages": {
+   "verb": "manages",
+   "question": "Give an operator a surface to administer this.",
+   "returns": "A UI or management layer."
+  }
+ },
+ "produces": {
+  "sdk": "A client library in a target language.",
+  "client": "A typed caller for the described API.",
+  "server-stub": "Scaffolding that implements the described interface.",
+  "types": "Type definitions only — no transport, no runtime.",
+  "documentation": "Human-readable reference output.",
+  "sbom": "A software bill of materials."
+ }
+}
