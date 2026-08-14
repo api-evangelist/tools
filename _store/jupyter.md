@@ -2,9 +2,9 @@
 title: Jupyter
 slug: jupyter
 companyCount: 57
-description: Jupyter is a technology or concept used in computing and information technology to address
-  specific technical challenges. It provides capabilities that help practitioners build, manage, or improve
-  systems and processes in their domain.
+description: An interactive notebook environment that interleaves executable code, output, plots and prose
+  in one document. It is the standard working surface for data analysis, model prototyping and reproducible
+  research, most often with Python via IPython.
 tags:
 - Jupyter
 radarRing: Established

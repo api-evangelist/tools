@@ -41,6 +41,14 @@ def main():
     with open(CACHE) as f:
         cache = json.load(f)
 
+    # Resolve licensing exactly the way build_store.py does. The gate used to read only the cache
+    # record, so all nine repos whose license had ALREADY been read out of their LICENSE file and
+    # recorded in license-overrides.yml warned on every single run. Nine permanent false warnings
+    # is how a warning list stops being read.
+    overrides = load(os.path.join(HERE, "license-overrides.yml"))
+    lic_over = {k: v["license"] for k, v in (overrides.get("overrides") or {}).items()}
+    not_oss = overrides.get("not_open_source") or {}
+
     known_standards = {f[:-3] for f in os.listdir(STANDARDS_STORE) if f.endswith(".md")}
 
     errors, warnings, seen_repos = [], [], set()
@@ -69,9 +77,10 @@ def main():
                     errors.append(f"{slug}: `{repo}` is ARCHIVED — do not publish as live tooling")
                 if rec.get("is_fork"):
                     errors.append(f"{slug}: `{repo}` is a fork, not the canonical home")
-                if not rec.get("license"):
-                    warnings.append(f"{slug}: `{repo}` has NO detectable OSI license "
-                                    f"({rec.get('license_name') or 'none'}) — do not call it open source")
+                if not (rec.get("license") or lic_over.get(repo) or repo in not_oss):
+                    warnings.append(f"{slug}: `{repo}` has NO license GitHub or a LICENSE file "
+                                    f"can resolve ({rec.get('license_name') or 'none'}) — not open "
+                                    f"source, and not recorded in license-overrides.yml")
             for r in [t["role"]] + (t.get("also") or []):
                 if r not in roles:
                     errors.append(f"{slug}/{repo}: role `{r}` is not in roles.yml")

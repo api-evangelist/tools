@@ -2,9 +2,9 @@
 title: Perl
 slug: perl
 companyCount: 110
-description: Perl is a technology or concept used in computing and information technology to address specific
-  technical challenges. It provides capabilities that help practitioners build, manage, or improve systems
-  and processes in their domain.
+description: A dynamic scripting language built for text processing, with first-class regular expressions
+  and a very large module archive in CPAN. It remains widely used for systems administration, log and
+  report munging, bioinformatics and legacy web backends.
 tags:
 - Perl
 radarRing: Optimizing

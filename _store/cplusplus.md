@@ -2,9 +2,9 @@
 title: C++
 slug: cplusplus
 companyCount: 124
-description: C++ is a technology or concept used in computing and information technology to address specific
-  technical challenges. It provides capabilities that help practitioners build, manage, or improve systems
-  and processes in their domain.
+description: A statically typed, compiled systems programming language extending C with classes, templates,
+  RAII and a large standard library. It is the default choice where direct control over memory and predictable
+  performance matter — game engines, browsers, databases, trading systems and embedded work.
 tags:
 - C++
 radarRing: Optimizing

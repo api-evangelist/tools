@@ -2,9 +2,9 @@
 title: Debian
 slug: debian
 companyCount: 21
-description: Debian is a technology or concept used in computing and information technology to address
-  specific technical challenges. It provides capabilities that help practitioners build, manage, or improve
-  systems and processes in their domain.
+description: A community-run Linux distribution known for its stability, strict free-software policy and
+  the dpkg/APT packaging system. It is a common base for servers and container images, and the upstream
+  that Ubuntu and many other distributions derive from.
 tags:
 - Debian
 radarRing: Developing

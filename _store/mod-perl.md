@@ -2,9 +2,8 @@
 title: mod_perl
 slug: mod-perl
 companyCount: 0
-description: mod_perl is a technology or concept used in computing and information technology to address
-  specific technical challenges. It provides capabilities that help practitioners build, manage, or improve
-  systems and processes in their domain.
+description: An Apache HTTP Server module that embeds a Perl interpreter directly in the server process,
+  so Perl handlers run without per-request startup cost and can use the server's own request API.
 tags:
 - mod_perl
 radarRing: Initial

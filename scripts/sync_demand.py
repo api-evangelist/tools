@@ -108,7 +108,7 @@ def main():
                 return by_alt[k]
         return None
 
-    changed, same, unmatched = [], 0, []
+    changed, same, unmatched, resynced = [], 0, [], []
     seen_vocab = set()
     for f in sorted(os.listdir(STORE)):
         if not f.endswith(".md"):
@@ -153,12 +153,36 @@ def main():
 
         new_count = rec.get("companyCount") or 0
         new_ring = rec.get("radarRing")
-        if fm.get("companyCount") == new_count and fm.get("radarRing") == new_ring \
+
+        # For a demand-only entry the vocabulary also owns the descriptive fields, and nothing used
+        # to carry a later correction across — fix a description in the vocabulary and the store
+        # kept the old one forever. A spec-linked entry is left alone: build_store.py's curated
+        # profile is deliberately better than a vocabulary blurb.
+        desc_updates = {}
+        if not fm.get("specifications"):
+            for store_key, vocab_key in (("description", "description"), ("tags", "tags"),
+                                         ("website", "url"), ("founded", "founded"),
+                                         ("alternativeNames", "alternativeNames")):
+                want = rec.get(vocab_key)
+                if isinstance(want, str):
+                    want = want.strip()
+                if want in (None, "", []):
+                    continue
+                if fm.get(store_key) != want:
+                    desc_updates[store_key] = want
+
+        if not desc_updates and fm.get("companyCount") == new_count \
+                and fm.get("radarRing") == new_ring \
                 and fm.get("companyCountQuarter") == a.quarter:
             same += 1
             continue
 
-        changed.append((fm.get("title"), fm.get("companyCount"), new_count))
+        if desc_updates:
+            resynced.append((fm.get("title"), sorted(desc_updates)))
+            fm.update(desc_updates)
+        if not (fm.get("companyCount") == new_count and fm.get("radarRing") == new_ring
+                and fm.get("companyCountQuarter") == a.quarter):
+            changed.append((fm.get("title"), fm.get("companyCount"), new_count))
         fm["companyCount"] = new_count
         if new_ring:
             fm["radarRing"] = new_ring
@@ -205,8 +229,8 @@ def main():
             open(os.path.join(STORE, f"{slug}.md"), "w").write(f"---\n{y}---\n")
 
     changed.sort(key=lambda c: -(c[2] or 0))
-    print(f"{'DRY RUN — ' if a.dry else ''}{len(created)} created, {len(changed)} updated, "
-          f"{same} unchanged, {len(unmatched)} with no vocabulary entry")
+    print(f"{'DRY RUN — ' if a.dry else ''}{len(created)} created, {len(changed)} recounted, "
+          f"{len(resynced)} resynced, {same} unchanged, {len(unmatched)} with no vocabulary entry")
 
     listable = {r["name"] for r in vocab if r.get("show") is not False}
     covered = (seen_vocab | {n for n, _s, _c in created}) & listable
@@ -224,6 +248,10 @@ def main():
         print("\ncreated from the vocabulary (name, slug, companyCount):")
         for n, s, c in sorted(created, key=lambda c: -(c[2] or 0)):
             print(f"  {str(n)[:34]:<34} {s:<24} {c:>5}")
+    if resynced:
+        print(f"\ndescriptive fields pulled from the vocabulary ({len(resynced)}):")
+        for t, fields in sorted(resynced)[:20]:
+            print(f"  {str(t)[:34]:<34} {', '.join(fields)}")
     if changed:
         print("\nbiggest moves (old -> new):")
         for t, o, n in changed[:20]:
