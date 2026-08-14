@@ -1,13 +1,13 @@
 ---
 title: C#
 slug: c-sharp
-companyCount: 124
+companyCount: 11
 description: C# is a modern, object-oriented programming language developed by Microsoft as part of the
   .NET platform. It is used for building Windows applications, web services, games (via Unity), and enterprise
   software, offering strong typing, garbage collection, and rich framework support.
 tags:
 - C#
-radarRing: Optimizing
+radarRing: Developing
 alternativeNames:
 - CSharp
 - C Sharp

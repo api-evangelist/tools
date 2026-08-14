@@ -13,19 +13,27 @@ permalink: /tools.json
   "standards": "https://standards.apievangelist.com",
   "license": "https://creativecommons.org/licenses/by/4.0/",
 {%- comment -%}
-  `tools` carries ONLY entries that meet the contract this file describes: resolved against
-  the GitHub API, licensed, bound to a specification with a role. The store also holds
-  demand-only rows — a tool name and a companyCount from the job corpus, with no repository
-  and nothing read — which are counted here but not published as tools, because an agent
-  cannot resolve or invoke them and this file promised it could.
+  The store is the UNION of two catalogues, and every entry is published. `sources` on each
+  entry says which one it came from, because they carry different guarantees:
+
+    specification-catalog — the repository was resolved live against the GitHub API, the
+                            license was read from it, and it is bound to a specification
+                            with a role. Only these carry license/repository/agent blocks.
+    demand-corpus         — it is in the insights tool vocabulary, so it carries a
+                            companyCount and radarRing from the job corpus.
+
+  Most entries are one or the other. An entry in both is a tool we have read AND measured.
+  Filter on `sources` rather than assuming every entry has a license or a count.
 {%- endcomment -%}
-{%- assign items = site.store | where_exp: "t", "t.specifications" | sort: "title" -%}
-{%- assign demand_only = site.store | size | minus: items.size -%}
+{%- assign items = site.store | sort: "title" -%}
+{%- assign spec_tools = site.store | where_exp: "t", "t.specifications" -%}
+{%- assign demand_tools = site.store | where_exp: "t", "t.companyCountQuarter" -%}
   "count": {{ items | size }},
   "counts": {
-    "tools": {{ items | size }},
-    "demandOnlyRowsNotPublishedHere": {{ demand_only }},
-    "note": "Demand-only rows are names carrying an adoption count from the job corpus. They have no repository, no license and no specification binding, so they are excluded from `tools`. See /reference/."
+    "total": {{ items | size }},
+    "specificationCatalog": {{ spec_tools | size }},
+    "demandCorpus": {{ demand_tools | size }},
+    "note": "Entries carry `sources`. Only specification-catalog entries have a verified license, repository and specification bindings; only demand-corpus entries have a companyCount. See /reference/."
   },
   "tools": [
 {%- for t in items %}
@@ -33,6 +41,7 @@ permalink: /tools.json
       "slug": {{ t.slug | default: t.title | jsonify }},
       "title": {{ t.title | jsonify }},
       "url": "https://tools.apievangelist.com{{ t.url }}",
+      "sources": [{% if t.specifications %}"specification-catalog"{% endif %}{% if t.specifications and t.companyCountQuarter %}, {% endif %}{% if t.companyCountQuarter %}"demand-corpus"{% endif %}],
       "description": {{ t.description | strip_newlines | jsonify }}
       {%- if t.website %},
       "website": {{ t.website | jsonify }}{% endif %}

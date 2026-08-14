@@ -78,10 +78,20 @@ has been re-read — a repo archived *after* it was cached stays `archived: fals
 and `lastCommit` go stale the same way. `licenseVerified` on a store entry is the date the facts
 were actually read, carried on the cache record; it is not the date the build last ran.
 
-**`/tools.json` publishes only what was read.** The store also holds demand-only rows — a name and
-a `companyCount` from the job corpus, with no repository, license or specification binding. They
-are reported in `counts.demandOnlyRowsNotPublishedHere` and excluded from `tools`. A name with an
-adoption number is not a catalogued tool.
+**The store is the UNION of two catalogues**, and `/tools.json` publishes both with a `sources`
+array on every entry:
+
+- `specification-catalog` — read live from the GitHub API, licensed, bound to a specification with
+  a role. Owned by `spec-tools.yml` + `tool-profiles.yml` via `build_store.py`.
+- `demand-corpus` — in the insights tool vocabulary, so it carries a `companyCount` and
+  `radarRing`. Owned by `insights-work/_data/tools.yml` via `sync_demand.py`.
+
+Only entries in both can put licensing and adoption in the same sentence. Never assume a field is
+present — a demand-corpus entry has no license because nothing was read, and a specification-catalog
+entry with no count has not been measured, which is not a measured zero.
+
+`sync_demand.py` reports coverage against the vocabulary on every run and **creates** any store
+entry the vocabulary has and the store lacks, so the two cannot silently drift apart.
 
 ## Adoption counts
 

@@ -10,7 +10,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 69
-lastCommit: '2026-08-13'
+lastCommit: '2026-08-14'
 archived: false
 specifications:
 - slug: spdx

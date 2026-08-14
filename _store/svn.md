@@ -10,7 +10,7 @@ tags:
 - Apache
 website: https://subversion.apache.org/
 founded: 2000
-radarRing: Optimizing
+radarRing: Established
 alternativeNames:
 - Subversion
 - Apache Subversion

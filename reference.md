@@ -25,20 +25,26 @@ are reading are a rendering of that data rather than the source of it.
 | [`/tool.schema.json`](/tool.schema.json) | The JSON Schema every entry conforms to |
 | [`/llms.txt`](/llms.txt) | The short version of this page |
 
-### What `/tools.json` does and does not contain
+### Two catalogues in one file — read `sources` before you read anything else
 
-It contains the tools that were **read** — resolved live against the GitHub API, with a license
-taken from the repository and at least one specification binding with a role. Those are the only
-entries an agent can actually resolve to something invocable, and they are the only ones published.
+This site is the union of two catalogues, and `/tools.json` publishes both. Every entry carries a
+`sources` array saying which one it came from, because they carry different guarantees.
 
-The store behind this site also holds **demand-only rows**: a tool name and a `companyCount` from
-the API Evangelist job corpus, with no repository, no license and no specification binding. They
-exist because measuring what companies hire for is a different job from cataloguing what implements
-a specification, and the corpus names far more tools than this site has read. They are reported in
-`counts.demandOnlyRowsNotPublishedHere` and excluded from `tools`, because this file promises every
-entry carries licensing and bindings, and for those rows nothing was read.
+| `sources` value | What it means | What the entry carries |
+|---|---|---|
+| `specification-catalog` | The repository was resolved live against the GitHub API, its license was read from it, and it is bound to a specification with a role | `license`, `repository`, `stars`, `lastCommit`, `specifications`, `agent`, `useCases` |
+| `demand-corpus` | The tool is in the API Evangelist insights vocabulary, measured against the job corpus | `companyCount`, `companyCountQuarter`, `radarRing` |
 
-A name with an adoption number is not a catalogued tool. Keeping the two apart is the point.
+Most entries carry one. An entry carrying **both** is a tool that was read *and* measured, and it
+is the only kind where you can put licensing and adoption in the same sentence.
+
+**Do not assume a field is present.** A demand-corpus entry has no license and no repository —
+nothing was read, so nothing is claimed. A specification-catalog entry with no `companyCount` has
+not been measured yet, which is not the same as measuring zero. An entry with an empty `sources`
+array is in neither and is being reported rather than hidden.
+
+Measuring what companies hire for and cataloguing what implements a specification are different
+jobs. Keeping them labelled, in one file, is what lets you ask questions that need both.
 
 ## How to resolve
 
