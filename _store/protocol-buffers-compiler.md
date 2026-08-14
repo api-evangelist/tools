@@ -9,7 +9,7 @@ repository: https://github.com/protocolbuffers/protobuf
 license: BSD-3-Clause
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 71718
 lastCommit: '2026-08-11'
 archived: false

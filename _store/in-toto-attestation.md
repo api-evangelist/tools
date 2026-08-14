@@ -9,7 +9,7 @@ repository: https://github.com/in-toto/attestation
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 363
 lastCommit: '2026-08-04'
 archived: false

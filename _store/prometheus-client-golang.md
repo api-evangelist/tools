@@ -8,7 +8,7 @@ repository: https://github.com/prometheus/client_golang
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 6019
 lastCommit: '2026-08-10'
 archived: false

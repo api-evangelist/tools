@@ -9482,6 +9482,32 @@
   "url": "https://github.com/unchase/Unchase.OpenAPI.Connectedservice",
   "watchers": 2
  },
+ "usearazzo/arazzo-toolkit": {
+  "archived": false,
+  "created_at": "2026-07-31T11:42:21Z",
+  "description": "Arazzo Toolkit - parse, resolve, validate or run Arazzo Documents",
+  "disabled": false,
+  "forks": 0,
+  "homepage": "https://usearazzo.com",
+  "is_fork": false,
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "open_issues": 12,
+  "pushed_at": "2026-08-12T23:05:46Z",
+  "slug": "usearazzo/arazzo-toolkit",
+  "stars": 3,
+  "topics": [
+   "arazzo",
+   "arazzo-specification",
+   "parser",
+   "resolver",
+   "runner",
+   "validator"
+  ],
+  "url": "https://github.com/usearazzo/arazzo-toolkit",
+  "watchers": 0
+ },
  "vert-x3/vertx-web": {
   "archived": false,
   "created_at": "2014-11-14T08:15:20Z",

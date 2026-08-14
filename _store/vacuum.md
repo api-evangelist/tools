@@ -9,7 +9,7 @@ repository: https://github.com/daveshanley/vacuum
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 1113
 lastCommit: '2026-08-01'
 archived: false
@@ -17,7 +17,7 @@ specifications:
 - slug: openapi
   name: OpenAPI
   role: validates
-- slug: openapi-overlay
+- slug: openapi-overlays
   name: OpenAPI Overlay
   role: validates
 agent:

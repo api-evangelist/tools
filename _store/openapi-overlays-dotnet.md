@@ -8,12 +8,12 @@ repository: https://github.com/BinkyLabs/openapi-overlays-dotnet
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 6
 lastCommit: '2026-08-11'
 archived: false
 specifications:
-- slug: openapi-overlay
+- slug: openapi-overlays
   name: OpenAPI Overlay
   role: transforms
 agent:

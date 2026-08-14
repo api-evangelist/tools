@@ -8,7 +8,7 @@ repository: https://github.com/grpc/grpc-go
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 23037
 lastCommit: '2026-08-11'
 archived: false

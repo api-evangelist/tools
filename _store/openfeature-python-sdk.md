@@ -8,7 +8,7 @@ repository: https://github.com/open-feature/python-sdk
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 107
 lastCommit: '2026-07-14'
 archived: false

@@ -9,7 +9,7 @@ repository: https://github.com/asyncapi/studio
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 210
 lastCommit: '2026-08-08'
 archived: false

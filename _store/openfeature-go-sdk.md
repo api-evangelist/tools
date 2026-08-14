@@ -8,7 +8,7 @@ repository: https://github.com/open-feature/go-sdk
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 245
 lastCommit: '2026-08-06'
 archived: false

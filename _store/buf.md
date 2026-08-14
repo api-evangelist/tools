@@ -10,7 +10,7 @@ repository: https://github.com/bufbuild/buf
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 11334
 lastCommit: '2026-08-10'
 archived: false

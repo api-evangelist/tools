@@ -9,7 +9,7 @@ repository: https://github.com/openapi-ts/openapi-typescript
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 8297
 lastCommit: '2026-08-09'
 archived: false

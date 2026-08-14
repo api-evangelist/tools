@@ -8,7 +8,7 @@ repository: https://github.com/cloudevents/sdk-csharp
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 334
 lastCommit: '2026-07-21'
 archived: false

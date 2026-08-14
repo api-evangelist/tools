@@ -8,7 +8,7 @@ repository: https://github.com/in-toto/in-toto-golang
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 151
 lastCommit: '2026-07-10'
 archived: false

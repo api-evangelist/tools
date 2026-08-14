@@ -8,7 +8,7 @@ repository: https://github.com/cloudevents/sdk-java
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 443
 lastCommit: '2026-07-16'
 archived: false

@@ -9,7 +9,7 @@ repository: https://github.com/theupdateframework/tuf-on-ci
 license: MIT
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 51
 lastCommit: '2026-08-10'
 archived: false

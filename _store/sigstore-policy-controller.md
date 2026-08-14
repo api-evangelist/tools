@@ -9,7 +9,7 @@ repository: https://github.com/sigstore/policy-controller
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 178
 lastCommit: '2026-08-10'
 archived: false

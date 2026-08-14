@@ -9,7 +9,7 @@ repository: https://github.com/bump-sh/cli
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 70
 lastCommit: '2026-07-01'
 archived: false

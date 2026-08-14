@@ -8,7 +8,7 @@ repository: https://github.com/opencontainers/umoci
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 949
 lastCommit: '2026-03-27'
 archived: false

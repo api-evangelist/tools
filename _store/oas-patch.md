@@ -9,12 +9,12 @@ repository: https://github.com/mcroissant/oas_patcher
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 9
 lastCommit: '2026-03-17'
 archived: false
 specifications:
-- slug: openapi-overlay
+- slug: openapi-overlays
   name: OpenAPI Overlay
   role: transforms
 agent:

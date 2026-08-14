@@ -72,10 +72,13 @@ specifications:
     foundation: Linux Foundation
     specification_url: https://spec.openapis.org/arazzo/latest.html
     note: >-
-      THE FINDING: this is the entire dedicated Arazzo tooling ecosystem, and it is tiny.
-      The most capable Arazzo validator is Spectral, a general-purpose linter. Purpose-built
-      Arazzo tools are in the single and double digits of stars. A workflow specification
-      with no workflow runners is a specification agents cannot yet execute.
+      THE FINDING, and it is now moving: this is the entire dedicated Arazzo tooling
+      ecosystem, and it is tiny — the most capable Arazzo validator is still Spectral, a
+      general-purpose linter, and purpose-built Arazzo tools are in the single and double
+      digits of stars. What changed is that the execution tier finally exists. Runners now
+      run the document instead of only reading it, and the newest of them, arazzo-toolkit,
+      is the Jentic parser and runner carried forward under a dedicated org. Read the
+      maturity signals before depending on any of them: most of this tier is pre-1.0.
     tools:
       - repo: stoplightio/spectral
         role: validates
@@ -84,15 +87,19 @@ specifications:
         also: [validates, transforms]
       - repo: jentic/jentic-arazzo-tools
         role: parses
-        also: [documents]
+        also: [runs, validates, documents]
+      - repo: usearazzo/arazzo-toolkit
+        role: runs
+        also: [parses, validates]
       - repo: bump-sh/cli
         role: documents
       - repo: frankkilcommins/arazzo2openapi
         role: converts
       - repo: strefethen/arazzo-cli
         role: tests
+        also: [runs]
 
-  - spec: openapi-overlay
+  - spec: openapi-overlays
     name: OpenAPI Overlay
     governing_body: OpenAPI Initiative
     foundation: Linux Foundation

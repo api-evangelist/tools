@@ -305,22 +305,30 @@ tools:
     title: Jentic Arazzo Tools
     slug: jentic-arazzo-tools
     description: >-
-      A parser, resolver and renderer for Arazzo workflow documents — resolves the references an
-      Arazzo document makes into the OpenAPI descriptions it orchestrates.
+      A TypeScript monorepo of five packages for Arazzo — parser, resolver, validator, runner
+      and UI. It resolves the references an Arazzo document makes into the OpenAPI descriptions
+      it orchestrates, and it EXECUTES the resulting steps; the runner is easy to miss because
+      it lives in the packages directory rather than the README. Apache-2.0, and the upstream
+      the separately listed Arazzo Toolkit was founded on.
     agent:
       interfaces: [library, cli]
       consumes: [arazzo, openapi]
       emits: [json]
-      deterministic: true
+      deterministic: false
       offline: false
-      mutates: false
-      credentials: false
+      mutates: true
+      credentials: true
     useCases:
       - task: Resolve an Arazzo workflow into the concrete operations it calls, so an agent can execute the steps.
         surface: [coding-agent]
         note: >-
           Resolution is the hard part of consuming Arazzo — a workflow document is mostly
           pointers into other documents.
+      - task: Execute the resolved steps against the live APIs the workflow describes.
+        surface: [coding-agent]
+        note: >-
+          The `jentic-arazzo-runner` package makes real calls with real credentials. The
+          resolver and parser alone are read-only; the runner is not.
       - task: Render a workflow as documentation a human can review before it is automated.
         surface: [human]
 
@@ -366,6 +374,38 @@ tools:
     useCases:
       - task: Expose an orchestrated workflow to consumers that only understand OpenAPI.
         surface: [coding-agent]
+
+  usearazzo/arazzo-toolkit:
+    title: Arazzo Toolkit
+    slug: arazzo-toolkit
+    description: >-
+      A JavaScript/TypeScript monorepo that parses, resolves, validates and RUNS Arazzo
+      documents — separate parser, resolver, validator and runner packages behind one CLI.
+      The parser and runner originate in Jentic's Arazzo tools, Apache-2.0, and are carried
+      forward here under a dedicated org; the parser produces a SpecLynx ApiDOM model, so a
+      document can be traversed rather than string-matched. Supports Arazzo 1.0.0 and 1.0.1
+      with OpenAPI 2.0, 3.0 and 3.1 source descriptions.
+    agent:
+      interfaces: [cli, library]
+      consumes: [arazzo, openapi]
+      emits: [json]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Execute an Arazzo workflow against live APIs and get a per-step trace back.
+        surface: [coding-agent]
+        note: >-
+          A run makes real calls with real credentials and carries whatever side effects
+          those calls have — that is the claim validation cannot make. The toolkit is
+          PRE-1.0 by its own statement, with no npm release and no tag yet, so there are
+          deliberately no install coordinates here. The one to watch in this tier, not the
+          one to pin a pipeline to.
+      - task: Parse an Arazzo document into a traversable model before reasoning about it.
+        surface: [coding-agent]
+      - task: Validate an Arazzo document against the specification with located violations.
+        surface: [coding-agent, ci-pipeline]
 
   strefethen/arazzo-cli:
     title: Arazzo CLI

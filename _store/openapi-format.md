@@ -9,12 +9,12 @@ repository: https://github.com/thim81/openapi-format
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 175
 lastCommit: '2026-08-02'
 archived: false
 specifications:
-- slug: openapi-overlay
+- slug: openapi-overlays
   name: OpenAPI Overlay
   role: transforms
 agent:

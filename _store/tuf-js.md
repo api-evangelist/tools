@@ -8,7 +8,7 @@ repository: https://github.com/theupdateframework/tuf-js
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 83
 lastCommit: '2026-08-03'
 archived: false

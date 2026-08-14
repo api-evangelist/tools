@@ -102,7 +102,13 @@ roles:
   runs:
     verb: runs
     question: Execute the artifact.
-    returns: A running container or workload.
+    returns: >-
+      A running workload — a container started from an image, or the executed steps of a
+      workflow document with what each call actually returned.
+    agent_note: >-
+      The role that separates description from proof. A `validates` tool tells you the
+      document is well-formed; a `runs` tool makes the real calls, with real credentials
+      and real side effects. Check `mutates` and `credentials` before invoking one.
 
   deploys:
     verb: deploys

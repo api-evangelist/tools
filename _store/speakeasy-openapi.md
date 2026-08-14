@@ -9,7 +9,7 @@ repository: https://github.com/speakeasy-api/openapi
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-11'
+licenseVerified: '2026-08-14'
 stars: 275
 lastCommit: '2026-08-10'
 archived: false
@@ -20,7 +20,7 @@ specifications:
   also:
   - validates
   - transforms
-- slug: openapi-overlay
+- slug: openapi-overlays
   name: OpenAPI Overlay
   role: transforms
 agent:
