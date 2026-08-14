@@ -9,8 +9,8 @@ license: Apache-2.0
 licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 4356
-lastCommit: '2026-07-24'
+stars: 4358
+lastCommit: '2026-08-13'
 archived: false
 specifications:
 - slug: openmetrics

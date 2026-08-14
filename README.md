@@ -33,23 +33,35 @@ permissive).
 ## Pipeline
 
 Hand-authored inputs are `scripts/spec-tools.yml` (which tools implement which specification, in
-what role) and `scripts/tool-profiles.yml` (titles, descriptions, agent blocks, use cases).
-Everything else is generated.
+what role), `scripts/tool-profiles.yml` (titles, descriptions, agent blocks, use cases) and
+`scripts/roles.yml` (the vocabulary). Everything else is generated.
+
+**Run the whole thing with one command.** It refreshes, gates, and regenerates in order, and stops
+dead on the first failure:
 
 ```bash
-# 1. resolve every referenced repo against the GitHub API (cached)
-python3 scripts/gh_meta.py <repos.txt>
+python3 scripts/build.py            # refresh from GitHub, gate, regenerate everything
+python3 scripts/build.py --check    # verify only: no writes, nonzero if stale or invalid
+python3 scripts/build.py --offline  # regenerate from the cache as-is, no GitHub calls
+```
+
+That is steps 1–4 below. Run them individually only when debugging one of them:
+
+```bash
+# 1. RE-READ every referenced repo (list comes from spec-tools.yml — no repos.txt needed)
+python3 scripts/gh_meta.py --refresh --prune
+python3 scripts/gh_meta.py --stale 14             # or: only records older than N days
 python3 scripts/gh_orgs.py asyncapi sigstore …    # rank a spec's governing org, to pick from
 python3 scripts/resolve_licenses.py               # read LICENSE where GitHub says NOASSERTION
 
-# 2. THE GATE — unresolvable repo, archived project, unknown role or bad standard slug fails here
+# 2. render the published vocabulary from roles.yml
+python3 scripts/build_roles.py
+
+# 3. THE GATE — unresolvable, archived, forked, unknown vocabulary or drifted roles.json
 python3 scripts/validate_spec_tools.py
 
-# 3. write _store entries (preserves companyCount, radarRing, tags, alternativeNames)
-python3 scripts/build_store.py --dry
-python3 scripts/build_store.py
-
-# 4. the two-way link: standards/_data/spec_tools.yml + local _data/spec_index.yml
+# 4. write _store entries, then the two-way link into the standards site
+python3 scripts/build_store.py --dry && python3 scripts/build_store.py
 python3 scripts/link_standards.py
 
 # 5. build and validate the published data against its own schema
@@ -59,6 +71,17 @@ python3 -c "import json,jsonschema; s=json.load(open('tool.schema.json')); \
   bad=[t['slug'] for t in d['tools'] if list(V.iter_errors(t))]; \
   print(f'{len(d[\"tools\"])} entries, {len(bad)} invalid', bad[:5])"
 ```
+
+**Always refresh before publishing.** A cached record is a claim about a live repository and it
+decays. The rule that an archived repo does not ship can only be enforced against a record that
+has been re-read — a repo archived *after* it was cached stays `archived: false` forever. `stars`
+and `lastCommit` go stale the same way. `licenseVerified` on a store entry is the date the facts
+were actually read, carried on the cache record; it is not the date the build last ran.
+
+**`/tools.json` publishes only what was read.** The store also holds demand-only rows — a name and
+a `companyCount` from the job corpus, with no repository, license or specification binding. They
+are reported in `counts.demandOnlyRowsNotPublishedHere` and excluded from `tools`. A name with an
+adoption number is not a catalogued tool.
 
 ## Adoption counts
 

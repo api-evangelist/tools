@@ -79,6 +79,41 @@ def main():
                 if p not in produces_vocab:
                     errors.append(f"{slug}/{repo}: produces `{p}` is not in roles.yml")
 
+    # 6. The agent block is the load-bearing artifact for an agent, and its vocabularies went
+    #    unchecked for as long as they existed — so a one-off `surface: copilot` shipped and
+    #    nothing resolved it. consumes/emits/interfaces/surface are now gated like roles.
+    profiles = (load(os.path.join(HERE, "tool-profiles.yml")) or {}).get("tools") or {}
+    artifacts = set(roles_doc["artifacts"])
+    interfaces = set(roles_doc["interfaces"])
+    surfaces = set(roles_doc["surfaces"])
+    published = {t["repo"] for s in spec_tools["specifications"] for t in s["tools"]}
+
+    for repo, prof in sorted(profiles.items()):
+        if repo not in published:
+            warnings.append(f"tool-profiles.yml has `{repo}`, which spec-tools.yml does not "
+                            f"publish — orphan profile")
+        agent = prof.get("agent") or {}
+        for field, vocab in (("consumes", artifacts), ("emits", artifacts),
+                             ("interfaces", interfaces)):
+            for v in agent.get(field) or []:
+                if v not in vocab:
+                    errors.append(f"{repo}: agent.{field} `{v}` is not in roles.yml")
+        for uc in prof.get("useCases") or []:
+            for s in uc.get("surface") or []:
+                if s not in surfaces:
+                    errors.append(f"{repo}: useCase surface `{s}` is not in roles.yml")
+
+    # 7. roles.json is what agents actually read. If it has drifted from roles.yml, the
+    #    vocabulary being validated here is not the vocabulary being published.
+    published_vocab = os.path.join(REPO, "roles.json")
+    if os.path.exists(published_vocab):
+        with open(published_vocab) as f:
+            pub = json.load(f)
+        for section in ("roles", "produces", "artifacts", "interfaces", "surfaces"):
+            if set(pub.get(section) or {}) != set(roles_doc.get(section) or {}):
+                errors.append(f"roles.json `{section}` has drifted from roles.yml — "
+                              f"run build_roles.py")
+
     print(f"{n_specs} specifications, {n_tools} tool bindings, {len(seen_repos)} distinct repos")
     for w in warnings:
         print(f"  WARN  {w}")

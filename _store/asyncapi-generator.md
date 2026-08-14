@@ -10,7 +10,7 @@ license: Apache-2.0
 licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 1069
+stars: 1070
 lastCommit: '2026-08-08'
 archived: false
 specifications:

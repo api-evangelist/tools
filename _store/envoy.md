@@ -17,8 +17,8 @@ license: Apache-2.0
 licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 28758
-lastCommit: '2026-08-11'
+stars: 28777
+lastCommit: '2026-08-14'
 archived: false
 specifications:
 - slug: xds

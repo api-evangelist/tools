@@ -10,8 +10,8 @@ license: BSD-3-Clause
 licenseSource: license-file
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 71718
-lastCommit: '2026-08-11'
+stars: 71730
+lastCommit: '2026-08-14'
 archived: false
 specifications:
 - slug: protocol-buffers

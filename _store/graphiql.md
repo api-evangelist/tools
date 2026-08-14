@@ -10,7 +10,7 @@ license: MIT
 licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 16892
+stars: 16893
 lastCommit: '2026-08-11'
 archived: false
 specifications:
@@ -39,9 +39,9 @@ useCases:
   surface:
   - human
   - ide
-- task: Provide schema-aware autocomplete to a copilot editing GraphQL documents.
+- task: Provide schema-aware autocomplete to a coding agent editing GraphQL documents.
   surface:
-  - copilot
+  - coding-agent
   - ide
 tags:
 - GraphQL

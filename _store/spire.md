@@ -21,8 +21,8 @@ license: Apache-2.0
 licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 2483
-lastCommit: '2026-08-10'
+stars: 2486
+lastCommit: '2026-08-14'
 archived: false
 specifications:
 - slug: spiffe

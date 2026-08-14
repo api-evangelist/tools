@@ -10,7 +10,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 245
-lastCommit: '2026-08-06'
+lastCommit: '2026-08-13'
 archived: false
 specifications:
 - slug: openfeature

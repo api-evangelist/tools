@@ -9,8 +9,8 @@ license: Apache-2.0
 licenseSource: license-file
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 332
-lastCommit: '2026-08-10'
+stars: 334
+lastCommit: '2026-08-13'
 archived: false
 specifications:
 - slug: sigstore

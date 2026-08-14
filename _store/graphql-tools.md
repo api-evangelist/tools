@@ -10,8 +10,8 @@ license: MIT
 licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 5430
-lastCommit: '2026-08-10'
+stars: 5431
+lastCommit: '2026-08-14'
 archived: false
 specifications:
 - slug: graphql

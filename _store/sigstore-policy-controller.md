@@ -11,7 +11,7 @@ licenseSource: license-file
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 178
-lastCommit: '2026-08-10'
+lastCommit: '2026-08-11'
 archived: false
 specifications:
 - slug: sigstore

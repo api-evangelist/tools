@@ -65,6 +65,12 @@ specifications:
       - repo: microcks/microcks
         role: mocks
         also: [tests]
+      - repo: Redocly/redocly-cli
+        role: validates
+        also: [documents, transforms, tests]
+      - repo: specmatic/specmatic
+        role: tests
+        also: [mocks]
 
   - spec: arazzo
     name: Arazzo
@@ -91,6 +97,15 @@ specifications:
       - repo: usearazzo/arazzo-toolkit
         role: runs
         also: [parses, validates]
+      - repo: jentic/arazzo-engine
+        role: runs
+        also: [generates, documents]
+      - repo: Redocly/redocly-cli
+        role: tests
+        also: [runs, validates, documents]
+      - repo: specmatic/specmatic
+        role: tests
+        also: [runs, mocks]
       - repo: bump-sh/cli
         role: documents
       - repo: frankkilcommins/arazzo2openapi
@@ -98,6 +113,11 @@ specifications:
       - repo: strefethen/arazzo-cli
         role: tests
         also: [runs]
+      # DELIBERATELY NOT LISTED: AdrianMachado/arazzo-runner is a FORK of stepci/runner
+      # (itself untouched since 2025-04) and has not been committed to since 2024-07; the
+      # npm package `arazzo-runner` is published from a third repo, JaredCE/Arazzo-Runner,
+      # which is MIT and real but sits at 1 star and v0.0.x with no commits since 2026-01.
+      # Neither carries the ecosystem. A short list is a finding, not a gap to pad.
 
   - spec: openapi-overlays
     name: OpenAPI Overlay
@@ -147,12 +167,18 @@ specifications:
         role: authors
       - repo: asyncapi/asyncapi-react
         role: documents
+      - repo: specmatic/specmatic
+        role: tests
+        also: [mocks]
       - repo: springwolf/springwolf-core
         role: generates
         note: Code-first — derives the AsyncAPI document from a running Spring application.
       - repo: microcks/microcks
         role: mocks
 
+  # NOTE (2026-08-14): GraphQL had no `validates` tool at all until graphql-eslint and
+  # graphql-inspector were added — the largest single role gap in the catalog. Both moved
+  # to the graphql-hive org; the old dimaMachina/ and kamilkisiela/ paths still redirect.
   - spec: graphql
     name: GraphQL
     governing_body: GraphQL Foundation
@@ -171,6 +197,11 @@ specifications:
         role: serves
       - repo: ardatan/graphql-tools
         role: transforms
+      - repo: graphql-hive/graphql-eslint
+        role: validates
+      - repo: graphql-hive/graphql-inspector
+        role: validates
+        also: [tests]
       - repo: graphql/graphql-http
         role: serves
 
@@ -251,6 +282,9 @@ specifications:
     note: >-
       A graduated, finished specification. Its tooling is deliberately all SDKs — CloudEvents
       describes an envelope, so the work is encoding and decoding it in each language.
+      It has NO live validator: `cloudevents/conformance`, the official conformance CLI, was
+      ARCHIVED and last touched 2026-02. Checked 2026-08-14 and deliberately not listed. A
+      graduated specification whose conformance tool is archived is worth knowing about.
     tools:
       - repo: cloudevents/sdk-go
         role: encodes

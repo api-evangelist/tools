@@ -10,7 +10,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 12062
-lastCommit: '2026-08-07'
+lastCommit: '2026-08-14'
 archived: false
 specifications:
 - slug: grpc

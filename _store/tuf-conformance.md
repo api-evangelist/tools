@@ -10,7 +10,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 9
-lastCommit: '2026-08-03'
+lastCommit: '2026-08-12'
 archived: false
 specifications:
 - slug: tuf

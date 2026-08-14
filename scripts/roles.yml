@@ -189,3 +189,82 @@ produces:
   types: Type definitions only — no transport, no runtime.
   documentation: Human-readable reference output.
   sbom: A software bill of materials.
+
+# ------------------------------------------------------------------------------------------
+# The agent-block vocabularies. `role` says what a tool does to a specification; these three
+# say what you can hand it, what comes back, and where it runs. They were in use across every
+# entry but undeclared, which meant an agent could read `consumes: openapi` and had nothing to
+# resolve it against. validate_spec_tools.py now gates all three.
+# ------------------------------------------------------------------------------------------
+
+# What a tool accepts (`agent.consumes`) or returns (`agent.emits`). Specification artifacts
+# and wire formats both live here, because from an agent's side they are the same question:
+# do I already have the thing this tool wants?
+artifacts:
+  # specification documents
+  openapi: An OpenAPI description.
+  asyncapi: An AsyncAPI description.
+  arazzo: An Arazzo workflow document.
+  openapi-overlay: An OpenAPI Overlay document.
+  json-schema: A JSON Schema.
+  graphql: A GraphQL schema or query document.
+  proto: A Protocol Buffers definition.
+  grpc: A gRPC service definition or reflection surface.
+  postman: A Postman collection.
+  cloudevents: A CloudEvents envelope.
+  otlp: OpenTelemetry protocol data — traces, metrics or logs.
+  openmetrics: An OpenMetrics or Prometheus exposition.
+  prometheus: A Prometheus exposition or query surface.
+  jaeger: Jaeger-format trace data.
+  zipkin: Zipkin-format trace data.
+  xds: An xDS configuration surface.
+  spdx: An SPDX software bill of materials.
+  cyclonedx: A CycloneDX software bill of materials.
+  in-toto-attestation: An in-toto attestation.
+  tuf-metadata: TUF repository metadata.
+  oci-image: An OCI container image.
+  oci-runtime-bundle: An OCI runtime bundle.
+  # credentials and identity
+  x509: An X.509 certificate.
+  jwt: A JSON Web Token.
+  signature: A detached cryptographic signature.
+  # generic inputs and outputs
+  json: Arbitrary JSON.
+  yaml: Arbitrary YAML.
+  text: Unstructured text.
+  table: A formatted table for a terminal.
+  pretty: Human-formatted console output.
+  markdown: Markdown.
+  html: Rendered HTML.
+  http: Live HTTP requests or responses.
+  source-code: Generated source in some target language.
+  typescript: Generated TypeScript.
+  go: Generated Go.
+  java: Java source or bytecode.
+  javascript: JavaScript source.
+  filesystem: A directory tree read from disk.
+  lockfile: A dependency lockfile.
+  kubernetes: Kubernetes manifests or a live cluster API.
+  # findings formats
+  sarif: SARIF static-analysis findings.
+  junit: JUnit XML test results.
+  github-actions: GitHub Actions workflow annotations.
+
+# How a tool is invoked (`agent.interfaces`). This is the difference between a tool an agent
+# can shell out to and one it has to be compiled against.
+interfaces:
+  cli: A command-line binary an agent can shell out to.
+  library: An importable package, invoked in-process.
+  container: A published container image.
+  ci-action: A packaged CI step — a GitHub Action or equivalent.
+  http-api: A network service the agent calls over HTTP.
+  web-ui: A browser interface, for a human rather than an agent.
+  lsp: A language-server, driven by an editor.
+
+# Where a use case runs (`useCases[].surface`) — who is actually invoking the tool.
+surfaces:
+  coding-agent: An autonomous agent working in a repository.
+  ci-pipeline: An automated build or check, with no human in the loop.
+  ide: An editor integration, assisting a human as they type.
+  ai-platform: A hosted model or assistant platform consuming the tool as a capability.
+  human: A person at a terminal or browser, reading the output themselves.

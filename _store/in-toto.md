@@ -10,7 +10,7 @@ license: Apache-2.0
 licenseSource: license-file
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 1026
+stars: 1028
 lastCommit: '2026-08-05'
 archived: false
 specifications:

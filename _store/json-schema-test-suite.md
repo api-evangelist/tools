@@ -10,8 +10,8 @@ license: MIT
 licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 739
-lastCommit: '2026-08-07'
+stars: 741
+lastCommit: '2026-08-13'
 archived: false
 specifications:
 - slug: json-schema

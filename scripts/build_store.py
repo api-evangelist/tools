@@ -130,7 +130,10 @@ def main():
         out["license"] = lic
         out["licenseSource"] = lic_src
         out["openSource"] = bool(lic and lic in OSI)
-        out["licenseVerified"] = today
+        # The date the license was actually READ from the API, carried on the cache record —
+        # not the date this script last ran. Stamping today on every run restated 128 claims
+        # nobody had re-verified, and buried real changes in a 128-file diff.
+        out["licenseVerified"] = gh.get("fetched_at") or fm.get("licenseVerified") or today
 
         out["stars"] = gh.get("stars")
         out["lastCommit"] = (gh.get("pushed_at") or "")[:10] or None

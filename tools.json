@@ -12,9 +12,22 @@ permalink: /tools.json
   "schema": "https://tools.apievangelist.com/tool.schema.json",
   "standards": "https://standards.apievangelist.com",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "count": {{ site.store | size }},
+{%- comment -%}
+  `tools` carries ONLY entries that meet the contract this file describes: resolved against
+  the GitHub API, licensed, bound to a specification with a role. The store also holds
+  demand-only rows — a tool name and a companyCount from the job corpus, with no repository
+  and nothing read — which are counted here but not published as tools, because an agent
+  cannot resolve or invoke them and this file promised it could.
+{%- endcomment -%}
+{%- assign items = site.store | where_exp: "t", "t.specifications" | sort: "title" -%}
+{%- assign demand_only = site.store | size | minus: items.size -%}
+  "count": {{ items | size }},
+  "counts": {
+    "tools": {{ items | size }},
+    "demandOnlyRowsNotPublishedHere": {{ demand_only }},
+    "note": "Demand-only rows are names carrying an adoption count from the job corpus. They have no repository, no license and no specification binding, so they are excluded from `tools`. See /reference/."
+  },
   "tools": [
-{%- assign items = site.store | sort: "title" -%}
 {%- for t in items %}
     {
       "slug": {{ t.slug | default: t.title | jsonify }},

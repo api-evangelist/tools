@@ -11,7 +11,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 210
-lastCommit: '2026-08-08'
+lastCommit: '2026-08-12'
 archived: false
 specifications:
 - slug: asyncapi

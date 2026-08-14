@@ -11,7 +11,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 74
-lastCommit: '2026-07-30'
+lastCommit: '2026-08-14'
 archived: false
 specifications:
 - slug: spiffe

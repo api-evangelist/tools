@@ -21,9 +21,24 @@ are reading are a rendering of that data rather than the source of it.
 | Artifact | What it is |
 |---|---|
 | [`/tools.json`](/tools.json) | Every tool: license, specification bindings, invocation, use cases |
-| [`/roles.json`](/roles.json) | The controlled vocabulary — what a tool does *to* a specification |
+| [`/roles.json`](/roles.json) | The controlled vocabulary — roles, artifacts, interfaces, surfaces |
 | [`/tool.schema.json`](/tool.schema.json) | The JSON Schema every entry conforms to |
 | [`/llms.txt`](/llms.txt) | The short version of this page |
+
+### What `/tools.json` does and does not contain
+
+It contains the tools that were **read** — resolved live against the GitHub API, with a license
+taken from the repository and at least one specification binding with a role. Those are the only
+entries an agent can actually resolve to something invocable, and they are the only ones published.
+
+The store behind this site also holds **demand-only rows**: a tool name and a `companyCount` from
+the API Evangelist job corpus, with no repository, no license and no specification binding. They
+exist because measuring what companies hire for is a different job from cataloguing what implements
+a specification, and the corpus names far more tools than this site has read. They are reported in
+`counts.demandOnlyRowsNotPublishedHere` and excluded from `tools`, because this file promises every
+entry carries licensing and bindings, and for those rows nothing was read.
+
+A name with an adoption number is not a catalogued tool. Keeping the two apart is the point.
 
 ## How to resolve
 

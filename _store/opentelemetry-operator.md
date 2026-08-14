@@ -11,7 +11,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 1747
-lastCommit: '2026-08-11'
+lastCommit: '2026-08-14'
 archived: false
 specifications:
 - slug: opentelemetry

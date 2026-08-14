@@ -3,7 +3,7 @@ generated: '2026-08-14'
 specifications:
 - slug: openapi
   name: OpenAPI
-  count: 10
+  count: 12
   tools:
   - Swagger UI
   - OpenAPI Generator
@@ -14,30 +14,48 @@ specifications:
   - Prism
   - Spectral
   - Microcks
+  - Redocly CLI
   - vacuum
+  - Specmatic
+- slug: arazzo
+  name: Arazzo
+  count: 10
+  tools:
+  - Spectral
+  - Redocly CLI
+  - Specmatic
+  - Speakeasy OpenAPI
+  - Bump.sh CLI
+  - Arazzo Engine
+  - Jentic Arazzo Tools
+  - Arazzo CLI
+  - arazzo2openapi
+  - Arazzo Toolkit
 - slug: asyncapi
   name: AsyncAPI
-  count: 8
+  count: 9
   tools:
   - Microcks
   - AsyncAPI Generator
   - Modelina
+  - Specmatic
   - Springwolf
   - AsyncAPI CLI
   - AsyncAPI React Component
   - AsyncAPI Studio
   - AsyncAPI Parser
-- slug: arazzo
-  name: Arazzo
-  count: 7
+- slug: graphql
+  name: GraphQL
+  count: 8
   tools:
-  - Spectral
-  - Speakeasy OpenAPI
-  - Bump.sh CLI
-  - Jentic Arazzo Tools
-  - Arazzo CLI
-  - arazzo2openapi
-  - Arazzo Toolkit
+  - GraphQL.js
+  - GraphiQL
+  - Apollo Server
+  - DataLoader
+  - GraphQL Tools
+  - GraphQL Inspector
+  - GraphQL ESLint
+  - graphql-http
 - slug: oci
   name: OCI Image, Runtime and Distribution
   count: 7
@@ -114,16 +132,6 @@ specifications:
   - CloudEvents Python SDK
   - CloudEvents .NET SDK
   - CloudEvents Rust SDK
-- slug: graphql
-  name: GraphQL
-  count: 6
-  tools:
-  - GraphQL.js
-  - GraphiQL
-  - Apollo Server
-  - DataLoader
-  - GraphQL Tools
-  - graphql-http
 - slug: grpc
   name: gRPC
   count: 6

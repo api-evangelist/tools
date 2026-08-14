@@ -11,7 +11,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 13389
-lastCommit: '2026-07-21'
+lastCommit: '2026-08-11'
 archived: false
 specifications:
 - slug: graphql

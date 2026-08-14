@@ -10,7 +10,7 @@ license: MIT
 licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
-stars: 1113
+stars: 1115
 lastCommit: '2026-08-01'
 archived: false
 specifications:

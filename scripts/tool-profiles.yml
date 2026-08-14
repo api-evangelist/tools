@@ -375,6 +375,145 @@ tools:
       - task: Expose an orchestrated workflow to consumers that only understand OpenAPI.
         surface: [coding-agent]
 
+  graphql-hive/graphql-eslint:
+    title: GraphQL ESLint
+    slug: graphql-eslint
+    description: >-
+      An ESLint parser, plugin and rule set for GraphQL — lints both schema definitions and the
+      operation documents written against them, using the schema itself as the source of truth.
+      Rules cover naming, deprecation, field usage and a set of known GraphQL foot-guns, and it
+      runs wherever ESLint already runs.
+    agent:
+      interfaces: [library, cli, ci-action]
+      install:
+        npm: "@graphql-eslint/eslint-plugin"
+      consumes: [graphql, javascript]
+      emits: [json, sarif, text]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Check a GraphQL schema or query document against a team style guide before merge.
+        surface: [ci-pipeline, coding-agent]
+      - task: Catch an operation that references a field the schema no longer has.
+        surface: [coding-agent, ide]
+
+  graphql-hive/graphql-inspector:
+    title: GraphQL Inspector
+    slug: graphql-inspector
+    description: >-
+      Validates a GraphQL schema, compares two versions of one and reports what changed, and
+      flags which changes are breaking. It also validates stored operations against a schema,
+      which is how you find out that a deploy will break a client before it does.
+    agent:
+      interfaces: [cli, library, ci-action]
+      install:
+        npm: "@graphql-inspector/cli"
+      consumes: [graphql]
+      emits: [json, text, markdown]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Determine whether a schema change is breaking before it ships.
+        surface: [ci-pipeline, coding-agent]
+        note: >-
+          Breaking-change detection needs BOTH versions of the schema. An agent holding only the
+          new one can validate it, but cannot answer this question.
+      - task: Validate a set of client operations against the schema they will run against.
+        surface: [ci-pipeline]
+
+  Redocly/redocly-cli:
+    title: Redocly CLI
+    slug: redocly-cli
+    description: >-
+      The most production-ready way to EXECUTE an Arazzo document today, and the one most
+      teams already have installed. `redocly respect` sends real requests to a real server,
+      evaluates each step's successCriteria against the actual responses, and returns a
+      pass/fail plus a HAR file. The same CLI lints OpenAPI against configurable rulesets,
+      bundles and splits descriptions, and builds reference documentation.
+    agent:
+      interfaces: [cli, library, ci-action]
+      install:
+        npm: "@redocly/cli"
+      invoke: "npx @redocly/cli@latest respect <workflow.arazzo.yaml> --input <name>=<value>"
+      consumes: [arazzo, openapi]
+      emits: [json, text, html, http]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Prove in CI that a published Arazzo workflow still describes how the API behaves.
+        surface: [ci-pipeline, coding-agent]
+        note: >-
+          The framing is contract testing — the value is the verdict, not the side effects.
+          It still makes real calls, so point it at an environment where that is safe.
+      - task: Lint an OpenAPI description against a team ruleset before it merges.
+        surface: [ci-pipeline]
+      - task: Bundle a multi-file OpenAPI description into one document an agent can read whole.
+        surface: [coding-agent]
+
+  specmatic/specmatic:
+    title: Specmatic
+    slug: specmatic
+    description: >-
+      Executes contracts for both testing and mocking, and is the only Arazzo implementation
+      that will span REST and events in a single workflow — OpenAPI and AsyncAPI stitched
+      into one document. It turns a specification into an executable contract, so the same
+      artifact drives a test run and a stub server.
+    agent:
+      interfaces: [cli, container, library]
+      install:
+        docker: specmatic/specmatic
+        maven: io.specmatic:specmatic-core
+      consumes: [arazzo, openapi, asyncapi]
+      emits: [json, http, text]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Test a workflow that goes asynchronous halfway through, without pretending it does not.
+        surface: [ci-pipeline, coding-agent]
+        note: >-
+          Most business flows worth documenting cross from REST into events. This is the one
+          runner that does not force you to split them into two artifacts.
+      - task: Stand up a stub server from a contract so a consumer can build before the provider ships.
+        surface: [ci-pipeline, coding-agent]
+
+  jentic/arazzo-engine:
+    title: Arazzo Engine
+    slug: arazzo-engine
+    description: >-
+      A Python runner and generator for Arazzo, and the closest thing the specification has
+      to a reference runtime. The runner handles authentication across API key, OAuth2, basic
+      and bearer, resolves servers dynamically, evaluates runtime expressions, and carries
+      conditional logic and error handling; the generator drafts workflows from an OpenAPI
+      description. Built for agents calling a described workflow rather than for a test suite
+      asserting one still passes.
+    agent:
+      interfaces: [cli, library]
+      install:
+        pip: arazzo-runner
+      consumes: [arazzo, openapi]
+      emits: [json, http]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Let an agent execute a described workflow, including the authentication handshake.
+        surface: [coding-agent, ai-platform]
+        note: >-
+          Beta by its own labelling, and the repository has been quiet since June 2026.
+          Real calls, real credentials, real side effects.
+      - task: Draft a first Arazzo workflow from an existing OpenAPI description.
+        surface: [coding-agent]
+        note: A generated draft is a starting point — the operations are real, the sequence is a guess.
+
   usearazzo/arazzo-toolkit:
     title: Arazzo Toolkit
     slug: arazzo-toolkit
@@ -733,8 +872,8 @@ tools:
     useCases:
       - task: Explore an unfamiliar GraphQL API's schema before writing queries against it.
         surface: [human, ide]
-      - task: Provide schema-aware autocomplete to a copilot editing GraphQL documents.
-        surface: [copilot, ide]
+      - task: Provide schema-aware autocomplete to a coding agent editing GraphQL documents.
+        surface: [coding-agent, ide]
 
   graphql/dataloader:
     title: DataLoader

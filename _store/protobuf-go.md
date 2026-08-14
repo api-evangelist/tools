@@ -10,7 +10,7 @@ licenseSource: github-api
 openSource: true
 licenseVerified: '2026-08-14'
 stars: 3346
-lastCommit: '2026-08-10'
+lastCommit: '2026-08-13'
 archived: false
 specifications:
 - slug: protocol-buffers
