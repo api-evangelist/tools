@@ -16,10 +16,9 @@ alternativeNames:
 - Helm Charts
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 84
-precisionGrade: high
+precision: 74
+precisionGrade: medium
 precisionBasis:
-- 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
-  the corpus frequency table'
+- 'acronym-shape -20: shortest bare needle is 4 characters'
 - 'bare-channel -6: 70% of matching companies were reached only on the bare word (120 bare vs 52 phrase)'
 ---

@@ -13,10 +13,9 @@ alternativeNames:
 - scala
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 87
+precision: 82
 precisionGrade: high
 precisionBasis:
-- 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
-  the corpus frequency table'
+- 'acronym-shape -10: shortest bare needle is 5 characters'
 - 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

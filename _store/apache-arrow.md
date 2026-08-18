@@ -17,10 +17,9 @@ alternativeNames:
 - Arrow
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 44
-precisionGrade: low
+precision: 75
+precisionGrade: medium
 precisionBasis:
-- 'acronym-shape -10: shortest bare needle is 5 characters'
 - 'collision -25: a surviving needle is also claimed by standards:Apache Arrow'
-- 'bare-channel -21: 94% of matching companies were reached only on the bare word (46 bare vs 3 phrase)'
+- 'note: 1 needle(s) dropped by the stoplist — precision gained, recall lost'
 ---

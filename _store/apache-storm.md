@@ -16,10 +16,9 @@ alternativeNames:
 - storm
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 71
+precision: 66
 precisionGrade: medium
 precisionBasis:
-- 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
-  the corpus frequency table'
+- 'acronym-shape -10: shortest bare needle is 5 characters'
 - 'bare-channel -24: 99% of matching companies were reached only on the bare word (97 bare vs 1 phrase)'
 ---
