@@ -18,4 +18,8 @@ alternativeNames:
 - PuppetDB
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 76
+precisionGrade: medium
+precisionBasis:
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (86 bare vs 1 phrase)'
 ---

@@ -17,4 +17,8 @@ alternativeNames:
 - Blender 3D
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 76
+precisionGrade: medium
+precisionBasis:
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (51 bare vs 1 phrase)'
 ---

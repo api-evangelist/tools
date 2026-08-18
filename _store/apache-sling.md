@@ -16,4 +16,10 @@ alternativeNames:
 - Sling
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 89
+precisionGrade: high
+precisionBasis:
+- 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -6: 69% of matching companies were reached only on the bare word (9 bare vs 4 phrase)'
 ---

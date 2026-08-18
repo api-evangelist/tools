@@ -13,8 +13,12 @@ tags:
 website: https://cassandra.apache.org
 radarRing: Optimizing
 alternativeNames:
-- Cassandra
 - cassandra
+- Cassandra
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 79
+precisionGrade: medium
+precisionBasis:
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (83 bare vs 5 phrase)'
 ---

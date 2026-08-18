@@ -15,9 +15,15 @@ website: https://docs.microsoft.com/en-us/powershell/
 founded: 2006
 radarRing: Optimizing
 alternativeNames:
-- pwsh
 - PoSh
+- pwsh
 - Windows PowerShell
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 66
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (335 bare vs 7 phrase)'
 ---

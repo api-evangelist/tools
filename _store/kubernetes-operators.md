@@ -19,4 +19,8 @@ alternativeNames:
 - Operators
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 94
+precisionGrade: high
+precisionBasis:
+- 'prose-word -6: bare needle ''operators'' appears in 3% of sampled job postings'
 ---

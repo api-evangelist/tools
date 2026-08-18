@@ -4,9 +4,16 @@
 The store is the UNION of two things: every tool in the demand vocabulary, plus the ones added
 to support a specification. This script owns the first half.
 
-`companyCount` and `radarRing` are owned by insights-work, not by this repo: they come from the
-job corpus via extract-from-corpus.js -> backport-source.js -> rederive-radar-ring.js. This is the
-last step of that chain, and the only place the tools site should ever get a count from.
+`companyCount`, `radarRing` and the `precision*` fields are owned by insights-work, not by this
+repo: they come from the job corpus via extract-from-corpus.js -> backport-source.js ->
+score-precision.py -> rederive-radar-ring.js. This is the last step of that chain, and the only
+place the tools site should ever get a count from.
+
+PRECISION is a second, independent axis added 2026-08-18: how trustworthy the tool's NAME is as a
+corpus needle, regardless of how many companies said it. The two filter together and the cell that
+matters is where they disagree — a low precision on a high count is the shape of every false
+positive this pipeline has published. A tool graded `unmeasurable` ships companyCount: null rather
+than a number, because a count nobody can defend is worse than no count.
 
 Matching is by name and alternativeNames, normalised — the store slug and the vocabulary name do
 not always agree, and a mismatch here silently freezes a tool at its previous quarter's number.
@@ -153,6 +160,15 @@ def main():
 
         new_count = rec.get("companyCount") or 0
         new_ring = rec.get("radarRing")
+        new_prec = rec.get("precision")
+        new_grade = rec.get("precisionGrade")
+        new_basis = rec.get("precisionBasis") or []
+        if not isinstance(new_basis, list):
+            new_basis = [new_basis]
+        # An unmeasurable name must not ship a number — whatever the matcher produced for it is
+        # an artifact of an ordinary word, not evidence of hiring.
+        if new_grade == "unmeasurable":
+            new_count = None
 
         # For a demand-only entry the vocabulary also owns the descriptive fields, and nothing used
         # to carry a later correction across — fix a description in the vocabulary and the store
@@ -173,7 +189,9 @@ def main():
 
         if not desc_updates and fm.get("companyCount") == new_count \
                 and fm.get("radarRing") == new_ring \
-                and fm.get("companyCountQuarter") == a.quarter:
+                and fm.get("companyCountQuarter") == a.quarter \
+                and fm.get("precision") == new_prec \
+                and fm.get("precisionGrade") == new_grade:
             same += 1
             continue
 
@@ -188,6 +206,10 @@ def main():
             fm["radarRing"] = new_ring
         fm["companyCountQuarter"] = a.quarter
         fm["companyCountBasis"] = a.basis
+        if new_prec is not None:
+            fm["precision"] = new_prec
+            fm["precisionGrade"] = new_grade
+            fm["precisionBasis"] = new_basis
         if not a.dry:
             y = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, width=100,
                                default_flow_style=False)
@@ -255,7 +277,7 @@ def main():
     if changed:
         print("\nbiggest moves (old -> new):")
         for t, o, n in changed[:20]:
-            print(f"  {str(t)[:34]:<34} {str(o):>5} -> {n:>5}")
+            print(f"  {str(t)[:34]:<34} {str(o):>5} -> {'withheld' if n is None else n:>5}")
     if unmatched:
         spec_linked = [t for t, s in unmatched if s]
         orphans = [t for t, s in unmatched if not s]

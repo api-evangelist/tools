@@ -17,4 +17,8 @@ alternativeNames:
 - Cucumber BDD
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 83
+precisionGrade: high
+precisionBasis:
+- 'bare-channel -17: 88% of matching companies were reached only on the bare word (58 bare vs 8 phrase)'
 ---

@@ -13,8 +13,12 @@ tags:
 website: https://superset.apache.org
 radarRing: Developing
 alternativeNames:
-- Superset
 - superset
+- Superset
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 96
+precisionGrade: high
+precisionBasis:
+- 'bare-channel -4: 67% of matching companies were reached only on the bare word (10 bare vs 5 phrase)'
 ---

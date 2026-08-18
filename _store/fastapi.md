@@ -13,8 +13,12 @@ website: https://fastapi.tiangolo.com/
 founded: 2018
 radarRing: Optimizing
 alternativeNames:
-- fastapi
 - Fast API
+- fastapi
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 82
+precisionGrade: high
+precisionBasis:
+- 'bare-channel -18: 89% of matching companies were reached only on the bare word (117 bare vs 14 phrase)'
 ---

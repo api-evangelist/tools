@@ -18,4 +18,8 @@ alternativeNames:
 - Hibernate ORM
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 77
+precisionGrade: medium
+precisionBasis:
+- 'bare-channel -23: 96% of matching companies were reached only on the bare word (74 bare vs 3 phrase)'
 ---

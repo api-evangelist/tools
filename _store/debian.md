@@ -13,4 +13,8 @@ alternativeNames:
 - Debian Linux
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 81
+precisionGrade: high
+precisionBasis:
+- 'bare-channel -19: 91% of matching companies were reached only on the bare word (20 bare vs 2 phrase)'
 ---

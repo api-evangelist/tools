@@ -17,4 +17,9 @@ alternativeNames:
 - Log4net
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 70
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 5 characters'
+- 'collision -20: a surviving needle is also claimed by tools:Log4j'
 ---

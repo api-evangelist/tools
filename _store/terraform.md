@@ -17,4 +17,8 @@ alternativeNames:
 - Terraform CLI
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 90
+precisionGrade: high
+precisionBasis:
+- 'human verdict: As Git. Below the document-frequency floor, and the word has no ordinary English sense.'
 ---

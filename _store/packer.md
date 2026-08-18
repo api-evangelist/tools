@@ -14,8 +14,12 @@ website: https://www.packer.io/
 yearCreated: 2013
 radarRing: Established
 alternativeNames:
-- packer
 - HashiCorp Packer
+- packer
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 79
+precisionGrade: medium
+precisionBasis:
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (65 bare vs 4 phrase)'
 ---

@@ -13,9 +13,15 @@ tags:
 website: https://hadoop.apache.org
 radarRing: Optimizing
 alternativeNames:
-- Hadoop
 - hadoop
+- Hadoop
 - HDFS
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 69
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (129 bare vs 8 phrase)'
 ---

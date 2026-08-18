@@ -18,4 +18,10 @@ alternativeNames:
 - avro
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 34
+precisionGrade: very-low
+precisionBasis:
+- 'acronym-shape -20: shortest bare needle is 4 characters'
+- 'collision -25: a surviving needle is also claimed by standards:Avro'
+- 'bare-channel -21: 93% of matching companies were reached only on the bare word (26 bare vs 2 phrase)'
 ---

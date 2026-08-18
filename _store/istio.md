@@ -53,4 +53,10 @@ useCases:
   note: '`istioctl proxy-config` is the debugging surface — it dumps the effective xDS state.'
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 50
+precisionGrade: low
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 5 characters'
+- 'collision -25: a surviving needle is also claimed by solutions:Istio'
+- 'bare-only -15: no qualified phrase survives'
 ---

@@ -9,10 +9,15 @@ tags:
 - Jupyter
 radarRing: Established
 alternativeNames:
+- IPython Notebook
+- Jupyter Hub
 - Jupyter Notebook
 - JupyterLab
-- Jupyter Hub
-- IPython Notebook
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 65
+precisionGrade: medium
+precisionBasis:
+- 'collision -25: a surviving needle is also claimed by solutions:Jupyter Notebook'
+- 'bare-channel -10: 76% of matching companies were reached only on the bare word (45 bare vs 14 phrase)'
 ---

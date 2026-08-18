@@ -9,10 +9,17 @@ tags:
 - C++
 radarRing: Optimizing
 alternativeNames:
-- CPP
-- cpp
-- cplusplus
 - C Plus Plus
+- cplusplus
+- cpp
+- CPP
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 60
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (129 bare vs 0 phrase)'
+- 'note: 1 needle(s) dropped by the stoplist — precision gained, recall lost'
 ---

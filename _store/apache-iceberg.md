@@ -13,8 +13,12 @@ tags:
 website: https://iceberg.apache.org
 radarRing: Established
 alternativeNames:
-- Iceberg
 - iceberg
+- Iceberg
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 75
+precisionGrade: medium
+precisionBasis:
+- 'collision -25: a surviving needle is also claimed by standards:Apache Iceberg'
 ---

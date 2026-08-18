@@ -15,8 +15,14 @@ website: https://www.openpolicyagent.org/
 yearCreated: 2016
 radarRing: Established
 alternativeNames:
-- OPA
 - opa
+- OPA
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 26
+precisionGrade: very-low
+precisionBasis:
+- 'acronym-shape -30: shortest bare needle is 3 characters'
+- 'collision -25: a surviving needle is also claimed by standards:Open Policy Agent'
+- 'bare-channel -19: 91% of matching companies were reached only on the bare word (60 bare vs 6 phrase)'
 ---

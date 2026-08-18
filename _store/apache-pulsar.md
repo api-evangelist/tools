@@ -17,4 +17,8 @@ alternativeNames:
 - pulsar
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 82
+precisionGrade: high
+precisionBasis:
+- 'bare-channel -18: 88% of matching companies were reached only on the bare word (22 bare vs 3 phrase)'
 ---

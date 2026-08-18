@@ -9,9 +9,13 @@ tags:
 - Angular
 radarRing: Optimizing
 alternativeNames:
-- AngularJS
-- Angular 2+
 - angular
+- Angular 2+
+- AngularJS
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 78
+precisionGrade: medium
+precisionBasis:
+- 'bare-channel -22: 96% of matching companies were reached only on the bare word (255 bare vs 12 phrase)'
 ---

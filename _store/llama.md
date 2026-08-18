@@ -15,9 +15,15 @@ founded: 2023
 radarRing: Established
 alternativeNames:
 - LLaMA
-- Meta Llama
 - Llama 2
 - Llama 3
+- Meta Llama
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 76
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -19: 91% of matching companies were reached only on the bare word (51 bare vs 5 phrase)'
 ---

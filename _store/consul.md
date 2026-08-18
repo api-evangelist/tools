@@ -14,8 +14,12 @@ website: https://www.consul.io/
 founded: 2014
 radarRing: Developing
 alternativeNames:
-- HashiCorp Consul
 - consul
+- HashiCorp Consul
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 75
+precisionGrade: medium
+precisionBasis:
+- 'collision -25: a surviving needle is also claimed by solutions:HashiCorp Consul'
 ---

@@ -10,9 +10,15 @@ tags:
 radarRing: Optimizing
 alternativeNames:
 - Apache HTTP Server
-- httpd
 - Apache HTTPD
 - Apache2
+- httpd
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 47
+precisionGrade: low
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 5 characters'
+- 'collision -20: a surviving needle is also claimed by tools:Apache HTTP, tools:Apache HTTP Server'
+- 'bare-channel -23: 97% of matching companies were reached only on the bare word (233 bare vs 7 phrase)'
 ---

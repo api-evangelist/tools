@@ -15,8 +15,12 @@ website: https://github.com/microsoft/semantic-kernel
 yearCreated: 2023
 radarRing: Established
 alternativeNames:
-- semantic-kernel
 - MS Semantic Kernel
+- semantic-kernel
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

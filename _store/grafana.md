@@ -15,9 +15,13 @@ website: https://grafana.com/
 founded: 2014
 radarRing: Optimizing
 alternativeNames:
+- Grafana Dashboard
 - Grafana Labs
 - Grafana OSS
-- Grafana Dashboard
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 76
+precisionGrade: medium
+precisionBasis:
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (242 bare vs 2 phrase)'
 ---

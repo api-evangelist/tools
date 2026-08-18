@@ -10,10 +10,17 @@ tags:
 - R
 radarRing: Developing
 alternativeNames:
+- CRAN
 - R Language
 - R Project
 - R Stats
-- CRAN
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 78
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -12: 79% of matching companies were reached only on the bare word (11 bare vs 3 phrase)'
+- 'note: 1 needle(s) dropped by the stoplist — precision gained, recall lost'
 ---

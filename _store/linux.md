@@ -21,4 +21,10 @@ alternativeNames:
 - linux
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 60
+precisionGrade: medium
+precisionBasis:
+- 'prose-word -6: bare needle ''linux'' appears in 2% of sampled job postings'
+- 'acronym-shape -10: shortest bare needle is 5 characters'
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (419 bare vs 5 phrase)'
 ---

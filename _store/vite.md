@@ -13,9 +13,15 @@ website: https://vitejs.dev
 founded: 2020
 radarRing: Established
 alternativeNames:
-- ViteJS
 - vite
 - Vite.js
+- ViteJS
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 66
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (58 bare vs 1 phrase)'
 ---

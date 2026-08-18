@@ -14,8 +14,13 @@ website: https://developer.salesforce.com/docs/component-library/documentation/e
 founded: 2019
 radarRing: Optimizing
 alternativeNames:
-- LWC
 - lwc
+- LWC
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 85
+precisionGrade: high
+precisionBasis:
+- 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
 ---

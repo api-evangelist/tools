@@ -5,7 +5,7 @@ description: Executes contracts for both testing and mocking, and is the only Ar
   will span REST and events in a single workflow — OpenAPI and AsyncAPI stitched into one document. It
   turns a specification into an executable contract, so the same artifact drives a test run and a stub
   server.
-companyCount: 0
+companyCount: 1
 website: https://specmatic.io
 repository: https://github.com/specmatic/specmatic
 license: MIT
@@ -67,4 +67,10 @@ tags:
 - OpenAPI
 - Arazzo
 - AsyncAPI
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 92
+precisionGrade: high
+precisionBasis:
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

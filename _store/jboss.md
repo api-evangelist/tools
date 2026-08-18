@@ -15,8 +15,14 @@ founded: 1999
 radarRing: Established
 alternativeNames:
 - jboss
-- WildFly
 - JBoss EAP
+- WildFly
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 76
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -19: 91% of matching companies were reached only on the bare word (31 bare vs 3 phrase)'
 ---

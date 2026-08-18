@@ -18,8 +18,12 @@ founded: 2011
 radarRing: Optimizing
 alternativeNames:
 - Jenkins CI
-- Jenkins Pipeline
 - Jenkins CI/CD
+- Jenkins Pipeline
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 80
+precisionGrade: high
+precisionBasis:
+- 'bare-channel -20: 92% of matching companies were reached only on the bare word (274 bare vs 24 phrase)'
 ---

@@ -9,9 +9,15 @@ tags:
 - Python
 radarRing: Optimizing
 alternativeNames:
+- CPython
 - python
 - Python3
-- CPython
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 63
+precisionGrade: medium
+precisionBasis:
+- 'prose-word -22: bare needle ''python'' appears in 7% of sampled job postings, with no phrase to fall
+  back on'
+- 'bare-only -15: no qualified phrase survives'
 ---

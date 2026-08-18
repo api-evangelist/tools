@@ -83,6 +83,35 @@ nav: All Tools
     Evangelist demand corpus. This is a <strong>demand</strong> signal — evidence of hiring, not of
     deployment — and counts are only comparable within a single quarter.
   </p>
+  <p class="text-muted small mb-3">
+    <strong>Precision</strong> is a separate axis: how trustworthy the tool's <em>name</em> is as a search
+    term in a job-postings corpus, independent of how many companies said it. A name that is also an
+    ordinary word scores low however large its count. Filter on both — low precision with a high count is
+    where a number is least safe to quote.
+  </p>
+
+  <div class="row g-2 align-items-center mb-3">
+    <div class="col-12 col-md-4">
+      <input type="text" id="q" class="form-control form-control-sm" placeholder="Filter by name or tag..." onkeyup="filterTools()">
+    </div>
+    <div class="col-12 col-md-3">
+      <select id="precision" class="form-select form-select-sm" onchange="filterTools()">
+        <option value="">Any precision</option>
+        <option value="80">Precision 80+ (unambiguous names)</option>
+        <option value="60">Precision 60+ (reliable names)</option>
+        <option value="low">Below 60 (review these)</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-3">
+      <select id="mincount" class="form-select form-select-sm" onchange="filterTools()">
+        <option value="">Any company count</option>
+        <option value="1">Counted at 1+ companies</option>
+        <option value="30">Counted at 30+ companies</option>
+        <option value="100">Counted at 100+ companies</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-2 text-muted small" id="shown"></div>
+  </div>
 
   {% assign ranked = site.store | sort: "companyCount" | reverse %}
   <div class="table-responsive">
@@ -92,6 +121,7 @@ nav: All Tools
           <th class="text-muted" style="width:3rem;">#</th>
           <th>Tool</th>
           <th class="text-end" style="width:7rem;">Companies</th>
+          <th class="text-end" style="width:7rem;">Precision</th>
           <th class="d-none d-md-table-cell" style="width:8rem;">License</th>
           <th class="d-none d-lg-table-cell">Implements</th>
           <th class="d-none d-md-table-cell">Tags</th>
@@ -99,14 +129,25 @@ nav: All Tools
       </thead>
       <tbody>
       {% for item in ranked %}
-        <tr>
-          <td class="text-muted small">{{ forloop.index }}</td>
+        {%- comment -%}
+          data-precision is -1 when the name has never been scored, NOT 0 — unscored and
+          confirmed-unmeasurable are different facts and must not filter or sort together.
+        {%- endcomment -%}
+        <tr data-name="{{ item.title | downcase }}" data-tags="{{ item.tags | join: ',' | downcase }}" data-count="{{ item.companyCount | default: 0 }}" data-precision="{% if item.precision %}{{ item.precision }}{% elsif item.precision == 0 %}0{% else %}-1{% endif %}">
+          <td class="text-muted small idx">{{ forloop.index }}</td>
           <td class="fw-semibold">
             <a href="{{ item.url }}" class="text-decoration-none" style="color: #212529;">{{ item.title }}</a>
             {% if item.archived %}<span class="badge bg-danger text-white ms-1">archived</span>{% endif %}
             {% if item.agent %}<span class="badge bg-primary-subtle text-primary-emphasis ms-1" title="Has an agent invocation profile">agent</span>{% endif %}
           </td>
-          <td class="text-end text-muted small">{{ item.companyCount | default: 0 }}</td>
+          <td class="text-end text-muted small">{% if item.companyCount == nil %}&mdash;{% else %}{{ item.companyCount }}{% endif %}</td>
+          <td class="text-end small" title="{% for b in item.precisionBasis %}{{ b }}{% unless forloop.last %} &bull; {% endunless %}{% endfor %}">
+            {%- if item.precisionGrade == 'unmeasurable' -%}
+              <span class="text-danger">unmeasurable</span>
+            {%- elsif item.precision -%}
+              <span class="{% if item.precision >= 80 %}text-success{% elsif item.precision >= 60 %}text-warning{% else %}text-danger{% endif %}">{{ item.precision }}</span>
+            {%- else -%}<span class="text-muted">&mdash;</span>{%- endif -%}
+          </td>
           <td class="d-none d-md-table-cell text-muted small">
             {% if item.license %}{{ item.license }}{% unless item.openSource %} <span class="text-warning-emphasis">*</span>{% endunless %}{% endif %}
           </td>
@@ -125,3 +166,28 @@ nav: All Tools
     <span class="text-warning-emphasis">*</span> source-available, not an OSI-approved open source license.
   </p>
 </div>
+
+<script>
+function filterTools() {
+  var q = document.getElementById('q').value.toLowerCase();
+  var p = document.getElementById('precision').value;
+  var mc = parseInt(document.getElementById('mincount').value, 10);
+  var rows = document.querySelectorAll('tbody tr');
+  var shown = 0;
+  rows.forEach(function (r) {
+    if (!r.hasAttribute('data-precision')) return;
+    var prec = parseInt(r.getAttribute('data-precision'), 10);
+    var cnt = parseInt(r.getAttribute('data-count'), 10);
+    var okQ = !q || r.getAttribute('data-name').indexOf(q) !== -1 ||
+              (r.getAttribute('data-tags') || '').indexOf(q) !== -1;
+    // An unscored name (-1) never passes a precision filter: it has not been assessed, and
+    // letting it through "precision 80+" would assert something that was never measured.
+    var okP = !p || (p === 'low' ? (prec >= 0 && prec < 60) : (prec >= parseInt(p, 10)));
+    var okC = isNaN(mc) || cnt >= mc;
+    if (okQ && okP && okC) { r.style.display = ''; shown++; var i = r.querySelector('.idx'); if (i) i.textContent = shown; }
+    else { r.style.display = 'none'; }
+  });
+  document.getElementById('shown').textContent = shown + ' shown';
+}
+filterTools();
+</script>

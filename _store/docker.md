@@ -15,10 +15,14 @@ website: https://www.docker.com/
 founded: 2013
 radarRing: Optimizing
 alternativeNames:
-- Docker Engine
+- docker
 - Docker CE
 - Docker Desktop
-- docker
+- Docker Engine
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 85
+precisionGrade: high
+precisionBasis:
+- 'human verdict: As Git. Below the document-frequency floor; every sampled match was the container runtime.'
 ---

@@ -15,8 +15,14 @@ founded: 2012
 radarRing: Optimizing
 alternativeNames:
 - ansible
-- Red Hat Ansible
 - Ansible Automation
+- Red Hat Ansible
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 56
+precisionGrade: low
+precisionBasis:
+- 'collision -25: a surviving needle is also claimed by solutions:Ansible Automation Platform, solutions:Red
+  Hat Ansible Automation Platform'
+- 'bare-channel -19: 90% of matching companies were reached only on the bare word (248 bare vs 28 phrase)'
 ---

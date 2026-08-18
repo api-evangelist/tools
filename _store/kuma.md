@@ -15,4 +15,10 @@ alternativeNames:
 - kuma
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 40
+precisionGrade: low
+precisionBasis:
+- 'acronym-shape -20: shortest bare needle is 4 characters'
+- 'collision -25: a surviving needle is also claimed by solutions:Kuma'
+- 'bare-only -15: no qualified phrase survives'
 ---

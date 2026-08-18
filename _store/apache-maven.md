@@ -14,8 +14,14 @@ website: https://maven.apache.org
 radarRing: Optimizing
 alternativeNames:
 - Maven
-- mvn
 - maven
+- mvn
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 61
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (114 bare vs 2 phrase)'
 ---

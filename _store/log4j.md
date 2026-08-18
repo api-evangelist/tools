@@ -14,8 +14,14 @@ founded: 2001
 radarRing: Initial
 alternativeNames:
 - log4j
-- Log4j2
 - log4j2
+- Log4j2
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 55
+precisionGrade: low
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 5 characters'
+- 'collision -20: a surviving needle is also claimed by tools:Apache Logging Services'
+- 'bare-only -15: no qualified phrase survives'
 ---

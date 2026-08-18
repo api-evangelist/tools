@@ -13,8 +13,12 @@ website: https://www.wireshark.org/
 founded: 1998
 radarRing: Established
 alternativeNames:
-- wireshark
 - Ethereal
+- wireshark
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 92
+precisionGrade: high
+precisionBasis:
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

@@ -48,4 +48,10 @@ useCases:
   - ci-pipeline
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 41
+precisionGrade: low
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 5 characters'
+- 'collision -25: a surviving needle is also claimed by solutions:Envoy Proxy'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (44 bare vs 1 phrase)'
 ---

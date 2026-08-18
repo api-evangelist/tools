@@ -17,4 +17,8 @@ alternativeNames:
 - tomcat
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 99
+precisionGrade: high
+precisionBasis:
+- 'bare-channel -1: 62% of matching companies were reached only on the bare word (38 bare vs 23 phrase)'
 ---

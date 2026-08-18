@@ -16,4 +16,8 @@ alternativeNames:
 - Ignite
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 80
+precisionGrade: high
+precisionBasis:
+- 'bare-channel -20: 92% of matching companies were reached only on the bare word (74 bare vs 6 phrase)'
 ---

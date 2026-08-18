@@ -15,9 +15,14 @@ founded: 2018
 radarRing: Optimizing
 alternativeNames:
 - HF Transformers
+- huggingface
 - Transformers
 - 🤗 Transformers
-- huggingface
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 55
+precisionGrade: low
+precisionBasis:
+- 'collision -25: a surviving needle is also claimed by solutions:Hugging Face'
+- 'bare-channel -20: 92% of matching companies were reached only on the bare word (192 bare vs 16 phrase)'
 ---

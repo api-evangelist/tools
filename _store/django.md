@@ -19,4 +19,8 @@ alternativeNames:
 - Django Framework
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 78
+precisionGrade: medium
+precisionBasis:
+- 'bare-channel -22: 95% of matching companies were reached only on the bare word (82 bare vs 4 phrase)'
 ---

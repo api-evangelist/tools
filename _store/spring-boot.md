@@ -15,8 +15,12 @@ website: https://spring.io/projects/spring-boot
 founded: 2014
 radarRing: Optimizing
 alternativeNames:
-- SpringBoot
 - Spring-Boot
+- SpringBoot
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

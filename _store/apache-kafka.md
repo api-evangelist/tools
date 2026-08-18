@@ -13,8 +13,14 @@ tags:
 website: https://kafka.apache.org
 radarRing: Optimizing
 alternativeNames:
-- Kafka
 - kafka
+- Kafka
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 88
+precisionGrade: high
+precisionBasis:
+- 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -7: 71% of matching companies were reached only on the bare word (220 bare vs 91 phrase)'
 ---

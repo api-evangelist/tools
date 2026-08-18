@@ -18,4 +18,10 @@ alternativeNames:
 - NATS.io
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 72
+precisionGrade: medium
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -18: 89% of matching companies were reached only on the bare word (17 bare vs 2 phrase)'
 ---

@@ -14,8 +14,13 @@ website: https://www.kubeflow.org/docs/components/pipelines/
 founded: 2018
 radarRing: Initial
 alternativeNames:
-- KFP
 - kfp
+- KFP
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 45
+precisionGrade: low
+precisionBasis:
+- 'acronym-shape -30: shortest bare needle is 3 characters'
+- 'collision -25: a surviving needle is also claimed by solutions:Kubeflow Pipelines'
 ---

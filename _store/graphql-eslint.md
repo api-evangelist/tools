@@ -48,4 +48,10 @@ useCases:
   - ide
 tags:
 - GraphQL
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---
