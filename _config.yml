@@ -1,3 +1,6 @@
+include:
+  - .well-known
+
 title: API Evangelist Tools
 theme: null
 description: API tools ranked by adoption across companies in the API Evangelist network.

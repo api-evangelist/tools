@@ -1,0 +1,15 @@
+{
+  "linkset": [
+    {
+      "@context": "https://apievangelist.com/context.jsonld",
+      "anchor": "https://tools.apievangelist.com/",
+      "title": "api-evangelist/tools",
+      "service-doc": [
+        {
+          "href": "https://tools.apievangelist.com/",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}
