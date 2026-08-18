@@ -1,7 +1,7 @@
 ---
 title: Apache Maven
 slug: apache-maven
-companyCount: 113
+companyCount: 115
 description: Build automation and project management tool for Java projects using a project object model
   (POM).
 tags:
@@ -23,5 +23,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (114 bare vs 2 phrase)'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (116 bare vs 2 phrase)'
 ---

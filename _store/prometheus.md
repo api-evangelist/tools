@@ -1,7 +1,7 @@
 ---
 title: Prometheus
 slug: prometheus
-companyCount: 226
+companyCount: 228
 description: The monitoring system and time-series database that defined the exposition format OpenMetrics
   standardised — scrapes metrics endpoints and stores them for querying.
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Apache Airflow
 slug: airflow
-companyCount: 238
+companyCount: 239
 description: A platform to programmatically author, schedule, and monitor workflows using directed acyclic
   graphs (DAGs)
 tags:
@@ -22,5 +22,5 @@ precision: 72
 precisionGrade: medium
 precisionBasis:
 - 'collision -25: a surviving needle is also claimed by solutions:Apache Airflow'
-- 'bare-channel -3: 65% of matching companies were reached only on the bare word (158 bare vs 86 phrase)'
+- 'bare-channel -3: 64% of matching companies were reached only on the bare word (158 bare vs 87 phrase)'
 ---

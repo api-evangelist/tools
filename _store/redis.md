@@ -1,7 +1,7 @@
 ---
 title: Redis
 slug: redis
-companyCount: 170
+companyCount: 172
 description: An open-source, in-memory data structure store used as a database, cache, and message broker,
   known for its high performance and support for various data structures like strings, hashes, lists,
   sets, and sorted sets.
@@ -25,5 +25,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -22: 95% of matching companies were reached only on the bare word (173 bare vs 9 phrase)'
+- 'bare-channel -22: 95% of matching companies were reached only on the bare word (175 bare vs 9 phrase)'
 ---

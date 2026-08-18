@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Operators
 slug: kubernetes-operators
-companyCount: 27
+companyCount: 28
 description: A method of packaging, deploying, and managing Kubernetes applications that extends the Kubernetes
   API to create, configure, and manage instances of complex applications on behalf of a Kubernetes user.
 tags:

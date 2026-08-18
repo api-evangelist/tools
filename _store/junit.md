@@ -1,7 +1,7 @@
 ---
 title: JUnit
 slug: junit
-companyCount: 112
+companyCount: 114
 description: JUnit is a widely used testing framework for Java applications that enables developers to
   write and run repeatable automated tests. It supports test-driven development with annotations, assertions,
   and test lifecycle management for ensuring code quality.
@@ -23,5 +23,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -22: 95% of matching companies were reached only on the bare word (108 bare vs 6 phrase)'
+- 'bare-channel -22: 95% of matching companies were reached only on the bare word (110 bare vs 6 phrase)'
 ---

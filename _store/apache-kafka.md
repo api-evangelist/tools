@@ -1,7 +1,7 @@
 ---
 title: Apache Kafka
 slug: apache-kafka
-companyCount: 295
+companyCount: 297
 description: Distributed event streaming platform for high-throughput, fault-tolerant, real-time data
   pipelines and streaming applications.
 tags:
@@ -22,5 +22,5 @@ precisionGrade: high
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -7: 71% of matching companies were reached only on the bare word (220 bare vs 91 phrase)'
+- 'bare-channel -7: 71% of matching companies were reached only on the bare word (221 bare vs 92 phrase)'
 ---

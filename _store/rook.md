@@ -1,7 +1,7 @@
 ---
 title: Rook
 slug: rook
-companyCount: 7
+companyCount: 8
 description: Cloud-native storage orchestrator for Kubernetes, providing the platform, framework, and
   support for distributed storage systems to natively integrate with cloud-native environments
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Istio
 slug: istio
-companyCount: 67
+companyCount: 69
 description: The service mesh whose control plane is the largest production consumer of xDS — programs
   Envoy sidecars and gateways across a cluster.
 tags:

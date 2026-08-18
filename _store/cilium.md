@@ -1,7 +1,7 @@
 ---
 title: Cilium
 slug: cilium
-companyCount: 18
+companyCount: 19
 description: eBPF-based networking, observability, and security for cloud native environments
 tags:
 - Networking

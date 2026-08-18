@@ -1,7 +1,7 @@
 ---
 title: Apache Groovy
 slug: apache-groovy
-companyCount: 89
+companyCount: 90
 description: Powerful, optionally typed, dynamic language for the JVM with static-typing and static compilation
   capabilities.
 tags:
@@ -20,5 +20,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (94 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (95 bare vs 0 phrase)'
 ---

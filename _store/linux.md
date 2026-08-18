@@ -1,7 +1,7 @@
 ---
 title: Linux
 slug: linux
-companyCount: 402
+companyCount: 404
 description: Open-source Unix-like operating system kernel first released by Linus Torvalds in 1991, serving
   as the foundation for numerous distributions and powering everything from servers to embedded systems.
 tags:
@@ -26,5 +26,5 @@ precisionGrade: medium
 precisionBasis:
 - 'prose-word -6: bare needle ''linux'' appears in 2% of sampled job postings'
 - 'acronym-shape -10: shortest bare needle is 5 characters'
-- 'bare-channel -24: 99% of matching companies were reached only on the bare word (419 bare vs 5 phrase)'
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (421 bare vs 5 phrase)'
 ---

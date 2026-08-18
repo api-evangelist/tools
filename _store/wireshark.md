@@ -1,7 +1,7 @@
 ---
 title: Wireshark
 slug: wireshark
-companyCount: 72
+companyCount: 73
 description: A free and open-source packet analyzer used for network troubleshooting, analysis, software
   and communications protocol development, and education.
 tags:

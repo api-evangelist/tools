@@ -1,7 +1,7 @@
 ---
 title: Hibernate
 slug: hibernate
-companyCount: 76
+companyCount: 77
 description: Object-relational mapping framework for Java that simplifies database interactions by mapping
   Java objects to database tables
 tags:
@@ -21,5 +21,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 77
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -23: 96% of matching companies were reached only on the bare word (74 bare vs 3 phrase)'
+- 'bare-channel -23: 96% of matching companies were reached only on the bare word (75 bare vs 3 phrase)'
 ---

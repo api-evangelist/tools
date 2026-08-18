@@ -1,7 +1,7 @@
 ---
 title: Apache OpenJPA
 slug: apache-openjpa
-companyCount: 58
+companyCount: 59
 description: Implementation of the Java Persistence API specification for object-relational mapping in
   Java.
 tags:
@@ -22,5 +22,5 @@ precisionGrade: very-low
 precisionBasis:
 - 'acronym-shape -30: shortest bare needle is 3 characters'
 - 'collision -25: a surviving needle is also claimed by standards:JPA'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (58 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (59 bare vs 0 phrase)'
 ---

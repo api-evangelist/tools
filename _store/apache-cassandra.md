@@ -1,7 +1,7 @@
 ---
 title: Apache Cassandra
 slug: apache-cassandra
-companyCount: 87
+companyCount: 88
 description: Highly scalable, distributed NoSQL database designed for handling large amounts of data with
   no single point of failure.
 tags:
@@ -20,5 +20,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 79
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -21: 94% of matching companies were reached only on the bare word (83 bare vs 5 phrase)'
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (84 bare vs 5 phrase)'
 ---

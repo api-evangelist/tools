@@ -1,7 +1,7 @@
 ---
 title: Nginx
 slug: nginx
-companyCount: 41
+companyCount: 42
 description: High-performance HTTP server and reverse proxy known for its stability, rich feature set,
   simple configuration, and low resource consumption.
 tags:
@@ -24,5 +24,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (45 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (46 bare vs 0 phrase)'
 ---

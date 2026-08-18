@@ -1,7 +1,7 @@
 ---
 title: OpenTelemetry
 slug: opentelemetry
-companyCount: 142
+companyCount: 144
 description: Vendor-neutral open-source observability framework for cloud-native software, providing a
   collection of tools, APIs, and SDKs for instrumenting, generating, collecting, and exporting telemetry
   data including metrics, logs, and traces.

@@ -1,7 +1,7 @@
 ---
 title: Helm
 slug: helm
-companyCount: 166
+companyCount: 168
 description: Package manager for Kubernetes that helps you define, install, and upgrade complex Kubernetes
   applications using charts
 tags:
@@ -21,5 +21,5 @@ precisionGrade: high
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -6: 69% of matching companies were reached only on the bare word (118 bare vs 52 phrase)'
+- 'bare-channel -6: 70% of matching companies were reached only on the bare word (120 bare vs 52 phrase)'
 ---

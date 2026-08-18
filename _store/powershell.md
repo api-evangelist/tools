@@ -1,7 +1,7 @@
 ---
 title: PowerShell
 slug: powershell
-companyCount: 332
+companyCount: 333
 description: A cross-platform task automation and configuration management framework from Microsoft, consisting
   of a command-line shell and scripting language built on .NET.
 tags:
@@ -25,5 +25,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (335 bare vs 7 phrase)'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (336 bare vs 7 phrase)'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Apache Hadoop
 slug: apache-hadoop
-companyCount: 131
+companyCount: 132
 description: Framework for distributed storage and processing of large datasets across clusters using
   MapReduce and HDFS.
 tags:
@@ -23,5 +23,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -21: 94% of matching companies were reached only on the bare word (129 bare vs 8 phrase)'
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (130 bare vs 8 phrase)'
 ---

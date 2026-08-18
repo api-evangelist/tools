@@ -1,7 +1,7 @@
 ---
 title: Apache Flink
 slug: flink
-companyCount: 87
+companyCount: 88
 description: A framework and distributed processing engine for stateful computations over unbounded and
   bounded data streams.
 tags:
@@ -17,10 +17,10 @@ alternativeNames:
 - Flink
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 93
+precision: 94
 precisionGrade: high
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -2: 63% of matching companies were reached only on the bare word (57 bare vs 34 phrase)'
+- 'bare-channel -1: 62% of matching companies were reached only on the bare word (57 bare vs 35 phrase)'
 ---

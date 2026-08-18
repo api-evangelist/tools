@@ -1,7 +1,7 @@
 ---
 title: Redux
 slug: redux
-companyCount: 77
+companyCount: 78
 description: A predictable state container for JavaScript apps, commonly used with React for managing
   application state through a unidirectional data flow pattern.
 tags:
@@ -23,5 +23,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -17: 87% of matching companies were reached only on the bare word (69 bare vs 10 phrase)'
+- 'bare-channel -17: 88% of matching companies were reached only on the bare word (70 bare vs 10 phrase)'
 ---

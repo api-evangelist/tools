@@ -1,7 +1,7 @@
 ---
 title: Harbor
 slug: harbor
-companyCount: 85
+companyCount: 86
 description: Open source cloud native registry that stores, signs, and scans container images for vulnerabilities
 tags:
 - Container Registry
@@ -18,5 +18,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (93 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (94 bare vs 0 phrase)'
 ---

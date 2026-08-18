@@ -1,7 +1,7 @@
 ---
 title: Grafana
 slug: grafana
-companyCount: 239
+companyCount: 241
 description: Grafana is an open-source platform for data visualization, monitoring, and observability.
   It allows users to create interactive dashboards from diverse data sources including Prometheus, Elasticsearch,
   and cloud databases.
@@ -23,5 +23,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 76
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -24: 99% of matching companies were reached only on the bare word (242 bare vs 2 phrase)'
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (244 bare vs 2 phrase)'
 ---

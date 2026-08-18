@@ -1,7 +1,7 @@
 ---
 title: Hashicorp Vault
 slug: hashicorp-vault
-companyCount: 197
+companyCount: 198
 description: A tool for securely accessing secrets, managing encryption keys, and protecting sensitive
   data through a unified interface with support for dynamic secrets and encryption as a service.
 tags:
@@ -24,5 +24,5 @@ precisionGrade: low
 precisionBasis:
 - 'acronym-shape -30: shortest bare needle is 3 characters'
 - 'collision -25: a surviving needle is also claimed by solutions:Hvault'
-- 'bare-channel -10: 75% of matching companies were reached only on the bare word (152 bare vs 50 phrase)'
+- 'bare-channel -10: 75% of matching companies were reached only on the bare word (153 bare vs 50 phrase)'
 ---

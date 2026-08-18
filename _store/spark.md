@@ -1,7 +1,7 @@
 ---
 title: Apache Spark
 slug: spark
-companyCount: 309
+companyCount: 311
 description: Open-source unified analytics engine for large-scale data processing with built-in modules
   for streaming, SQL, machine learning and graph processing
 tags:
@@ -22,5 +22,5 @@ precisionGrade: high
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -5: 68% of matching companies were reached only on the bare word (219 bare vs 102 phrase)'
+- 'bare-channel -5: 68% of matching companies were reached only on the bare word (219 bare vs 104 phrase)'
 ---
