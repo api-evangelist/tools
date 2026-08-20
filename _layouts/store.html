@@ -3,6 +3,8 @@ layout: default
 nav: Tools
 ---
 <div class="content-area">
+  <div class="row">
+    <div class="col-12 col-xl-8">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb small">
       <li class="breadcrumb-item"><a href="{{ '/tools/' | relative_url }}" class="text-decoration-none">Tools</a></li>
@@ -28,4 +30,11 @@ nav: Tools
     <span class="material-symbols-outlined" style="font-size:16px; vertical-align:-3px;">arrow_back</span>
     All tools by adoption
   </a>
+    </div>
+    <div class="col-12 col-xl-4 mt-4 mt-xl-0">
+      <div class="sidebar">
+      {% include api-mcp.html %}
+      </div>
+    </div>
+  </div>
 </div>
