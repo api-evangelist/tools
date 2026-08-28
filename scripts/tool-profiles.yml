@@ -205,6 +205,29 @@ tools:
       - task: Validate and bundle a description as a build step.
         surface: [ci-pipeline]
 
+  sourcey/sourcey:
+    title: Sourcey
+    slug: sourcey
+    description: >-
+      Builds a self-hosted static documentation site from OpenAPI descriptions, alongside
+      Markdown guides and other code-reference sources.
+    agent:
+      interfaces: [cli, library, container, ci-action]
+      install:
+        npm: sourcey
+      invoke: "npx sourcey build <openapi.yaml> -o <output-dir>"
+      consumes: [openapi]
+      emits: [html]
+      deterministic: true
+      offline: true
+      mutates: true
+      credentials: false
+    useCases:
+      - task: Build a portable API reference site from an OpenAPI description without a hosted documentation service.
+        surface: [coding-agent, ci-pipeline]
+      - task: Publish API reference and Markdown guides as one static site that can be deployed anywhere.
+        surface: [ci-pipeline]
+
   openapi-ts/openapi-typescript:
     title: openapi-typescript
     slug: openapi-typescript
