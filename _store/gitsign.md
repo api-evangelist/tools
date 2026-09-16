@@ -8,9 +8,9 @@ repository: https://github.com/sigstore/gitsign
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 1116
-lastCommit: '2026-08-10'
+licenseVerified: '2026-09-16'
+stars: 1126
+lastCommit: '2026-09-14'
 archived: false
 specifications:
 - slug: sigstore

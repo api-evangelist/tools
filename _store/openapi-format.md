@@ -9,9 +9,9 @@ repository: https://github.com/thim81/openapi-format
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 176
-lastCommit: '2026-08-02'
+licenseVerified: '2026-09-16'
+stars: 177
+lastCommit: '2026-09-04'
 archived: false
 specifications:
 - slug: openapi-overlays

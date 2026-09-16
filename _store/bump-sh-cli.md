@@ -9,9 +9,9 @@ repository: https://github.com/bump-sh/cli
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 70
-lastCommit: '2026-07-01'
+licenseVerified: '2026-09-16'
+stars: 71
+lastCommit: '2026-09-15'
 archived: false
 specifications:
 - slug: arazzo

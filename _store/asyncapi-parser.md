@@ -9,9 +9,9 @@ repository: https://github.com/asyncapi/parser-js
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
+licenseVerified: '2026-09-16'
 stars: 144
-lastCommit: '2026-08-09'
+lastCommit: '2026-09-09'
 archived: false
 specifications:
 - slug: asyncapi

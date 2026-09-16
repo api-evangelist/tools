@@ -11,9 +11,9 @@ repository: https://github.com/specmatic/specmatic
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 394
-lastCommit: '2026-08-14'
+licenseVerified: '2026-09-16'
+stars: 396
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: openapi

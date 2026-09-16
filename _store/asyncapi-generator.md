@@ -9,9 +9,9 @@ repository: https://github.com/asyncapi/generator
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 1070
-lastCommit: '2026-08-08'
+licenseVerified: '2026-09-16'
+stars: 1075
+lastCommit: '2026-09-10'
 archived: false
 specifications:
 - slug: asyncapi

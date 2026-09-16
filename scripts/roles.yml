@@ -260,6 +260,7 @@ interfaces:
   http-api: A network service the agent calls over HTTP.
   web-ui: A browser interface, for a human rather than an agent.
   lsp: A language-server, driven by an editor.
+  editor-extension: An editor extension — a VS Code or JetBrains plugin, installed into and driven from the IDE itself.
 
 # Where a use case runs (`useCases[].surface`) — who is actually invoking the tool.
 surfaces:

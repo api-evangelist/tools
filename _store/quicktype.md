@@ -9,9 +9,9 @@ repository: https://github.com/glideapps/quicktype
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 13839
-lastCommit: '2026-08-10'
+licenseVerified: '2026-09-16'
+stars: 13870
+lastCommit: '2026-09-13'
 archived: false
 specifications:
 - slug: json-schema

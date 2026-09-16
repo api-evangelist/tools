@@ -9,9 +9,9 @@ repository: https://github.com/protocolbuffers/protobuf
 license: BSD-3-Clause
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 71730
-lastCommit: '2026-08-14'
+licenseVerified: '2026-09-16'
+stars: 72037
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: protocol-buffers

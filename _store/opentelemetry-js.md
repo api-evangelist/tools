@@ -8,9 +8,9 @@ repository: https://github.com/open-telemetry/opentelemetry-js
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 3438
-lastCommit: '2026-08-12'
+licenseVerified: '2026-09-16'
+stars: 3468
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: opentelemetry

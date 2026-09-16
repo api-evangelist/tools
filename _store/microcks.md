@@ -9,9 +9,9 @@ repository: https://github.com/microcks/microcks
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 2014
-lastCommit: '2026-08-13'
+licenseVerified: '2026-09-16'
+stars: 2044
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: openapi

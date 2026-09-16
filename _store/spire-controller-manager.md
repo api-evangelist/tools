@@ -9,9 +9,9 @@ repository: https://github.com/spiffe/spire-controller-manager
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 74
-lastCommit: '2026-08-14'
+licenseVerified: '2026-09-16'
+stars: 77
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: spiffe

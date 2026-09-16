@@ -8,8 +8,8 @@ repository: https://github.com/cloudevents/sdk-rust
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 209
+licenseVerified: '2026-09-16'
+stars: 212
 lastCommit: '2026-08-10'
 archived: false
 specifications:

@@ -9,9 +9,9 @@ repository: https://github.com/grpc/grpc-web
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 9251
-lastCommit: '2026-08-07'
+licenseVerified: '2026-09-16'
+stars: 9260
+lastCommit: '2026-09-04'
 archived: false
 specifications:
 - slug: grpc

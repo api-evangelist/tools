@@ -78,19 +78,45 @@ specifications:
     foundation: Linux Foundation
     specification_url: https://spec.openapis.org/arazzo/latest.html
     note: >-
-      THE FINDING, and it is now moving: this is the entire dedicated Arazzo tooling
-      ecosystem, and it is tiny — the most capable Arazzo validator is still Spectral, a
-      general-purpose linter, and purpose-built Arazzo tools are in the single and double
-      digits of stars. What changed is that the execution tier finally exists. Runners now
-      run the document instead of only reading it, and the newest of them, arazzo-toolkit,
-      is the Jentic parser and runner carried forward under a dedicated org. Read the
-      maturity signals before depending on any of them: most of this tier is pre-1.0.
+      THE FINDING HAS CHANGED. On 2026-08-11 this was ten tools and the note read "tiny";
+      the 2026-09-16 deep dive found twenty-seven purpose-built or Arazzo-aware repositories
+      that are real, licensed and active, across Go, Rust, Java, .NET, Python, Ruby, PHP and
+      TypeScript. The shape is now recognisable as an ecosystem: low-level libraries for the
+      hard parts (runtime expressions, criterion evaluation, an ApiDOM namespace); parsers in
+      five languages; a validation tier no longer carried by Spectral alone; an execution tier
+      with a Java runner, a Rust executor and a .NET library funded by the Interledger
+      Foundation for Kiota; and an authoring/visualisation tier (two visual builders, a VS Code
+      extension, an IntelliJ plugin). What has not changed: star counts are still single and
+      double digits outside libopenapi and the two general-purpose linters, and most of the
+      execution tier is pre-1.0. The Arazzo list is deliberately fuller than the 5-8 rule
+      because the deep dive IS the point here — read the maturity signals on each entry.
     tools:
+      # --- general-purpose libraries and linters that carry Arazzo
       - repo: stoplightio/spectral
         role: validates
+      - repo: pb33f/libopenapi
+        role: parses
+        also: [validates]
       - repo: speakeasy-api/openapi
         role: parses
         also: [validates, transforms]
+      - repo: speclynx/apidom
+        role: parses
+        also: [validates]
+      - repo: sv-tools/roas
+        role: validates
+        also: [parses, runs, converts]
+      - repo: BinkyLabs/openapi-arazzo-dotnet
+        role: parses
+        also: [validates]
+      # --- the low-level pieces every runner needs
+      - repo: swaggerexpert/arazzo-runtime-expression
+        role: parses
+        also: [validates, evaluates]
+      - repo: swaggerexpert/arazzo-criterion
+        role: evaluates
+        also: [parses, validates]
+      # --- purpose-built parse / validate / run
       - repo: jentic/jentic-arazzo-tools
         role: parses
         also: [runs, validates, documents]
@@ -100,24 +126,56 @@ specifications:
       - repo: jentic/arazzo-engine
         role: runs
         also: [generates, documents]
+      - repo: leidenheit/itarazzo-library
+        role: tests
+        also: [runs, parses, validates]
       - repo: Redocly/redocly-cli
         role: tests
         also: [runs, validates, documents]
       - repo: specmatic/specmatic
         role: tests
         also: [runs, mocks]
-      - repo: bump-sh/cli
-        role: documents
-      - repo: frankkilcommins/arazzo2openapi
-        role: converts
       - repo: strefethen/arazzo-cli
         role: tests
         also: [runs]
-      # DELIBERATELY NOT LISTED: AdrianMachado/arazzo-runner is a FORK of stepci/runner
-      # (itself untouched since 2025-04) and has not been committed to since 2024-07; the
-      # npm package `arazzo-runner` is published from a third repo, JaredCE/Arazzo-Runner,
-      # which is MIT and real but sits at 1 star and v0.0.x with no commits since 2026-01.
-      # Neither carries the ecosystem. A short list is a finding, not a gap to pad.
+      - repo: emmanuelperu/arazzo-maestro
+        role: validates
+        also: [documents, tests]
+      # --- author and visualise
+      - repo: wso2/arazzo-tools
+        role: authors
+        also: [validates, documents, runs]
+      - repo: imminent-technology/tapestry
+        role: authors
+      - repo: Pakisan/arazzo-idea-plugin
+        role: authors
+        also: [validates]
+      - repo: API-Flows/api-flows-studio
+        role: documents
+      - repo: lornajane/apitapviz
+        role: documents
+      - repo: bump-sh/cli
+        role: documents
+      - repo: b-lab-io/pyarazzo
+        role: documents
+      # --- generate and convert
+      - repo: frankkilcommins/arazzo2openapi
+        role: converts
+      - repo: bump-sh/arazzo-to-flower
+        role: converts
+      - repo: wso2/arazzo-mcp-generator
+        role: generates
+      - repo: JaredCE/Arazzo-Generator
+        role: generates
+      # DELIBERATELY NOT LISTED (2026-09-16 pass): AdrianMachado/arazzo-runner is a FORK of
+      # stepci/runner and untouched since 2024-07; JaredCE/Arazzo-Runner is MIT and real but
+      # v0.0.x at 1 star with no commits since 2026-01; pactflow/arazzo-rs is Apache-2.0 but
+      # 1 star and no commits since 2025-08; alirezaght/arazzo (Rust planner+executor) and
+      # mcp-com-ai/hapimcp have no detectable license; hskrasek/arazzo-parser (PHP) is
+      # AGPL-3.0 and 2 stars; Mohammed-Alama/php-arazzo, absolutejs/arazzo, Pakisan/jarazzo,
+      # OpenUdon/arazzo and IgnacioGoldchluk/cuerdo are 0-2 stars with no release. Companion
+      # repos (leidenheit/itarazzo-client, API-Flows/openapi-workflow-parser) ride on the
+      # entry for their parent. Re-check these next pass; several are one release from listing.
 
   - spec: openapi-overlays
     name: OpenAPI Overlay

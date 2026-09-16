@@ -9,9 +9,9 @@ repository: https://github.com/daveshanley/vacuum
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 1115
-lastCommit: '2026-08-01'
+licenseVerified: '2026-09-16'
+stars: 1122
+lastCommit: '2026-09-15'
 archived: false
 specifications:
 - slug: openapi

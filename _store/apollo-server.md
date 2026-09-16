@@ -9,9 +9,9 @@ repository: https://github.com/apollographql/apollo-server
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 13944
-lastCommit: '2026-08-14'
+licenseVerified: '2026-09-16'
+stars: 13952
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: graphql

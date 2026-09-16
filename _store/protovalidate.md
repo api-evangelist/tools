@@ -9,9 +9,9 @@ repository: https://github.com/bufbuild/protovalidate
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 1549
-lastCommit: '2026-07-27'
+licenseVerified: '2026-09-16'
+stars: 1565
+lastCommit: '2026-09-10'
 archived: false
 specifications:
 - slug: protocol-buffers

@@ -12,9 +12,9 @@ repository: https://github.com/usearazzo/arazzo-toolkit
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 3
-lastCommit: '2026-08-12'
+licenseVerified: '2026-09-16'
+stars: 9
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: arazzo

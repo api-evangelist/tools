@@ -9,9 +9,9 @@ repository: https://github.com/spdx/ntia-conformance-checker
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 90
-lastCommit: '2026-08-11'
+licenseVerified: '2026-09-16'
+stars: 91
+lastCommit: '2026-09-07'
 archived: false
 specifications:
 - slug: spdx

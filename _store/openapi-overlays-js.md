@@ -9,8 +9,8 @@ repository: https://github.com/lornajane/openapi-overlays-js
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 28
+licenseVerified: '2026-09-16'
+stars: 27
 lastCommit: '2025-05-20'
 archived: false
 specifications:

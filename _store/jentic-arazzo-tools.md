@@ -12,9 +12,9 @@ repository: https://github.com/jentic/jentic-arazzo-tools
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 20
-lastCommit: '2026-08-14'
+licenseVerified: '2026-09-16'
+stars: 21
+lastCommit: '2026-09-14'
 archived: false
 specifications:
 - slug: arazzo

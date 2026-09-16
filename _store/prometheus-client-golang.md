@@ -8,9 +8,9 @@ repository: https://github.com/prometheus/client_golang
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 6017
-lastCommit: '2026-08-12'
+licenseVerified: '2026-09-16'
+stars: 6028
+lastCommit: '2026-09-14'
 archived: false
 specifications:
 - slug: openmetrics

@@ -9,9 +9,9 @@ repository: https://github.com/in-toto/witness
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 545
-lastCommit: '2026-08-10'
+licenseVerified: '2026-09-16'
+stars: 546
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: in-toto

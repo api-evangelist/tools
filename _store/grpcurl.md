@@ -9,9 +9,9 @@ repository: https://github.com/fullstorydev/grpcurl
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 12780
-lastCommit: '2026-07-27'
+licenseVerified: '2026-09-16'
+stars: 12815
+lastCommit: '2026-09-02'
 archived: false
 specifications:
 - slug: grpc

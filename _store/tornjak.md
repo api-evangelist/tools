@@ -8,8 +8,8 @@ repository: https://github.com/spiffe/tornjak
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 99
+licenseVerified: '2026-09-16'
+stars: 102
 lastCommit: '2026-06-22'
 archived: false
 specifications:

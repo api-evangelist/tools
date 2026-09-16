@@ -8,9 +8,9 @@ repository: https://github.com/prometheus/client_python
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 4358
-lastCommit: '2026-08-13'
+licenseVerified: '2026-09-16'
+stars: 4373
+lastCommit: '2026-09-15'
 archived: false
 specifications:
 - slug: openmetrics

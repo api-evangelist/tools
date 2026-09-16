@@ -8,9 +8,9 @@ repository: https://github.com/python-jsonschema/jsonschema
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 4971
-lastCommit: '2026-08-10'
+licenseVerified: '2026-09-16'
+stars: 4981
+lastCommit: '2026-09-15'
 archived: false
 specifications:
 - slug: json-schema

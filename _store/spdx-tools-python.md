@@ -8,8 +8,8 @@ repository: https://github.com/spdx/tools-python
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 254
+licenseVerified: '2026-09-16'
+stars: 255
 lastCommit: '2026-03-13'
 archived: false
 specifications:

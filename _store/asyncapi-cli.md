@@ -9,9 +9,9 @@ repository: https://github.com/asyncapi/cli
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 272
-lastCommit: '2026-08-09'
+licenseVerified: '2026-09-16'
+stars: 273
+lastCommit: '2026-09-15'
 archived: false
 specifications:
 - slug: asyncapi

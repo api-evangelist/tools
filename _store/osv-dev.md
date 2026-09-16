@@ -9,9 +9,9 @@ repository: https://github.com/google/osv.dev
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 2884
-lastCommit: '2026-08-14'
+licenseVerified: '2026-09-16'
+stars: 2927
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: osv-schema

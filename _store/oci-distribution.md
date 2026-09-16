@@ -9,9 +9,9 @@ repository: https://github.com/distribution/distribution
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 10563
-lastCommit: '2026-08-10'
+licenseVerified: '2026-09-16'
+stars: 10611
+lastCommit: '2026-09-02'
 archived: false
 specifications:
 - slug: oci

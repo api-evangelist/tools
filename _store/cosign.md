@@ -9,9 +9,9 @@ repository: https://github.com/sigstore/cosign
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 6207
-lastCommit: '2026-08-14'
+licenseVerified: '2026-09-16'
+stars: 6306
+lastCommit: '2026-09-15'
 archived: false
 specifications:
 - slug: sigstore

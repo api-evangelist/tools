@@ -9,9 +9,9 @@ repository: https://github.com/in-toto/archivista
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
+licenseVerified: '2026-09-16'
 stars: 116
-lastCommit: '2026-08-08'
+lastCommit: '2026-09-12'
 archived: false
 specifications:
 - slug: in-toto

@@ -569,6 +569,383 @@ tools:
 
   # ============================================================ Overlay
 
+
+  # ---- Arazzo deep dive, 2026-09-16. Facts read from each repo's README and the registries
+  # named in `install`; nothing recalled. Stars and dates come from the cache, not from here.
+
+  pb33f/libopenapi:
+    title: libopenapi
+    slug: libopenapi
+    description: >-
+      A high-performance Go library for OpenAPI 2.0, 3.0, 3.1 and 3.2 that also reads Overlay
+      and Arazzo documents into a typed model. The largest codebase in this list by a wide
+      margin and the one most likely to already be a dependency of the Go tooling you run;
+      its Arazzo support rides on the same document model as its OpenAPI support, which is
+      what makes it the natural parser for a Go-based runner.
+    agent:
+      interfaces: [library]
+      install:
+        go: github.com/pb33f/libopenapi
+      consumes: [arazzo, openapi, openapi-overlay]
+      emits: [go]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Load an Arazzo document into a typed Go model alongside the OpenAPI it references.
+        surface: [coding-agent, ci-pipeline]
+        note: A parser, not a runner — it reads the document; executing the steps is your code.
+
+  speclynx/apidom:
+    title: ApiDOM
+    slug: apidom
+    description: >-
+      A semantic parser that turns API description documents — OpenAPI, AsyncAPI, JSON Schema
+      and Arazzo among them — into a single traversable document object model. Ships a
+      dedicated Arazzo 1.x namespace plus JSON and YAML parser adapters, and is the model the
+      Arazzo Toolkit and Jentic's parser build on: a document becomes a structure you walk,
+      not text you match.
+    agent:
+      interfaces: [library]
+      install:
+        npm: "@speclynx/apidom-ns-arazzo-1"
+      consumes: [arazzo, openapi, asyncapi, json-schema]
+      emits: [javascript]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Traverse or refactor an Arazzo document by its semantic structure rather than by regex.
+        surface: [coding-agent]
+        note: The Arazzo namespace is one of many packages; install the adapter for the serialisation you hold.
+
+  sv-tools/roas:
+    title: roas
+    slug: roas
+    description: >-
+      Rust crates for OpenAPI, AsyncAPI, Overlay and Arazzo — every version of each — with a
+      validation CLI. Documents are parsed into typed Rust, validated against the
+      specification, converted between versions, and, in Arazzo's case, executed by a
+      dedicated executor crate. One of two Rust implementations found and the only one with a
+      detectable license and current commits.
+    agent:
+      interfaces: [cli, library]
+      install:
+        cargo: roas
+      consumes: [arazzo, openapi, asyncapi, openapi-overlay]
+      emits: [json, text]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Validate an Arazzo document from a Rust toolchain, or embed the typed model in a Rust service.
+        surface: [ci-pipeline, coding-agent]
+        note: Validation is offline and deterministic; the executor crate makes real calls and is not.
+
+  BinkyLabs/openapi-arazzo-dotnet:
+    title: OpenAPI Arazzo for .NET
+    slug: openapi-arazzo-dotnet
+    description: >-
+      A .NET implementation of the Arazzo specification built to sit alongside
+      Microsoft.OpenApi — parse, build, serialise and validate Arazzo documents that reference
+      OpenAPI 3.0+ descriptions. Funded in part by the Interledger Foundation to bring Arazzo
+      workflow support to Kiota, which is the clearest signal in this list that a major SDK
+      generator intends to consume the format. Published to NuGet as a 1.0.0 preview.
+    agent:
+      interfaces: [library]
+      install:
+        nuget: BinkyLabs.OpenApi.Arazzo
+      consumes: [arazzo, openapi]
+      emits: [source-code]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Read and validate an Arazzo document from C#, or construct one programmatically.
+        surface: [coding-agent, ci-pipeline]
+        note: Preview releases only as of September 2026; the API surface may still move.
+
+  swaggerexpert/arazzo-runtime-expression:
+    title: Arazzo Runtime Expression
+    slug: arazzo-runtime-expression
+    description: >-
+      A parser, validator, extractor and interpolator for Arazzo Runtime Expressions — the
+      `$inputs.x`, `$steps.y.outputs.z`, `$response.body#/pointer` syntax every step, output
+      and criterion depends on. A small, exact library for the part of the specification that
+      runners most often get subtly wrong, from the maintainer of the ApiDOM Arazzo namespace.
+    agent:
+      interfaces: [library]
+      install:
+        npm: "@swaggerexpert/arazzo-runtime-expression"
+      consumes: [arazzo]
+      emits: [javascript]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Validate or evaluate the runtime expressions in an Arazzo document without writing a grammar.
+        surface: [coding-agent, ci-pipeline]
+        note: Covers the expression grammar across Arazzo 1.0 and 1.1; it does not resolve HTTP messages for you.
+
+  swaggerexpert/arazzo-criterion:
+    title: Arazzo Criterion
+    slug: arazzo-criterion
+    description: >-
+      A parser, validator and evaluator for the Arazzo Criterion Object — the success-criteria
+      conditions in `simple`, `regex`, `jsonpath` and `xpath` types that decide whether a step
+      succeeded. Isolates the one piece of Arazzo where two runners are most likely to
+      disagree, which is exactly what a conformance suite would test.
+    agent:
+      interfaces: [library]
+      install:
+        npm: "@swaggerexpert/arazzo-criterion"
+      consumes: [arazzo]
+      emits: [javascript]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Evaluate a step's success criteria against a captured response the same way across tools.
+        surface: [coding-agent, ci-pipeline]
+        note: The maintainer has written about the one condition type no tool can evaluate safely; read that before trusting regex criteria.
+
+  leidenheit/itarazzo-library:
+    title: Itarazzo
+    slug: itarazzo
+    description: >-
+      A Java library that executes Arazzo workflows inside an integration-test context — the
+      steps run as automated end-to-end tests with detailed logging, and a companion client
+      wraps it as a standalone executor. The only Java runner found. The repository has not
+      been committed to since November 2024, so it predates Arazzo 1.1; treat it as a working
+      1.0 runner rather than a current one.
+    agent:
+      interfaces: [library, cli]
+      consumes: [arazzo, openapi]
+      emits: [text]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Run an Arazzo 1.0 workflow as a JUnit-style integration test against a live API.
+        surface: [ci-pipeline]
+        note: No published Maven coordinates were found; build from source. Real calls, real side effects.
+
+  emmanuelperu/arazzo-maestro:
+    title: arazzo-maestro
+    slug: arazzo-maestro
+    description: >-
+      A single Go binary that lints and renders Arazzo workflows. Lint validates against the
+      official JSON Schema, applies semantic rules (unique IDs, resolvable `$steps`
+      references) and cross-checks steps against the referenced OpenAPI contracts; render
+      produces human-readable output for the rest of the team. Apache-2.0 by its LICENSE
+      file, which GitHub's detector does not report. Also published as a container image.
+    agent:
+      interfaces: [cli, container]
+      install:
+        go: github.com/emmanuelperu/arazzo-maestro
+      consumes: [arazzo, openapi]
+      emits: [text, html]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Fail a CI job when an Arazzo document references an operation its OpenAPI does not define.
+        surface: [ci-pipeline, coding-agent]
+        note: The cross-file check is the thing Spectral's schema rules do not do.
+
+  wso2/arazzo-tools:
+    title: WSO2 Arazzo Tools
+    slug: wso2-arazzo-tools
+    description: >-
+      WSO2's collection of developer tools for Arazzo — a VS Code extension with a workflow
+      designer and visualizer, validation, real-time execution and utilities. The first
+      mainstream API gateway vendor to publish open source Arazzo tooling under its own org,
+      alongside Arazzo support in its agent portal. Early: two stars and active commits.
+    agent:
+      interfaces: [editor-extension]
+      consumes: [arazzo, openapi]
+      emits: [html, json]
+      deterministic: false
+      offline: false
+      mutates: true
+      credentials: true
+    useCases:
+      - task: Author and visualise an Arazzo workflow in VS Code, then execute it from the editor.
+        surface: [ide, human]
+        note: Built from source per the README; not yet found on the VS Code Marketplace.
+
+  wso2/arazzo-mcp-generator:
+    title: Arazzo MCP Generator
+    slug: arazzo-mcp-generator
+    description: >-
+      A CLI that turns an Arazzo document and its referenced OpenAPI files into a fully
+      Dockerised Python MCP server — each workflow becomes a tool an agent can call. The most
+      direct bridge yet between the two specifications: Arazzo describes the sequence, MCP
+      exposes it. Validates the Arazzo input first, with Spectral when available.
+    agent:
+      interfaces: [cli]
+      consumes: [arazzo, openapi]
+      emits: [source-code, oci-image]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Expose an existing Arazzo workflow to agents as an MCP tool without hand-writing the server.
+        surface: [coding-agent]
+        note: Generation is offline; the generated server makes real calls when an agent invokes it.
+
+  imminent-technology/tapestry:
+    title: Tapestry
+    slug: tapestry
+    description: >-
+      A visual, drag-and-drop workflow builder for Arazzo — connect API operations into
+      sequences on a React Flow canvas and export or import Arazzo 1.0.1 documents. One of two
+      visual authoring tools found; a web application rather than a library.
+    agent:
+      interfaces: [web-ui]
+      consumes: [openapi]
+      emits: [arazzo]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Let someone who will not write YAML assemble an Arazzo workflow from an OpenAPI's operations.
+        surface: [human]
+        note: Exports 1.0.1; nothing 1.1-specific yet.
+
+  Pakisan/arazzo-idea-plugin:
+    title: Arazzo IntelliJ Plugin
+    slug: arazzo-idea-plugin
+    description: >-
+      A plugin for IntelliJ IDEA and other JetBrains IDEs that detects Arazzo YAML and JSON
+      files, validates them live against the official JSON Schema with inspections and quick
+      fixes, and offers completion and preview. The JetBrains counterpart to WSO2's VS Code
+      extension.
+    agent:
+      interfaces: [editor-extension]
+      consumes: [arazzo]
+      emits: [text]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Get schema validation and completion while hand-authoring Arazzo in a JetBrains IDE.
+        surface: [ide, human]
+        note: Last commit August 2025; check it against the 1.1 schema before relying on its inspections.
+
+  API-Flows/api-flows-studio:
+    title: API Flows Studio
+    slug: api-flows-studio
+    description: >-
+      A web application that loads an Arazzo workflow file and displays it — the workflow
+      viewer for people who need to see the sequence rather than read it. Backed by a
+      companion Java parser from the same org.
+    agent:
+      interfaces: [web-ui]
+      consumes: [arazzo]
+      emits: [html]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Show a non-developer what an Arazzo workflow does, step by step.
+        surface: [human]
+
+  lornajane/apitapviz:
+    title: apitapviz
+    slug: apitapviz
+    description: >-
+      A small Python command-line tool that renders an Arazzo file as Markdown or a Mermaid
+      diagram — a human-readable view of the workflow you can drop into documentation or a
+      pull request. A mirror of the maintainer's main repository; last touched March 2025.
+    agent:
+      interfaces: [cli]
+      consumes: [arazzo]
+      emits: [markdown]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Put a diagram of an Arazzo workflow into a README or PR description.
+        surface: [coding-agent, ci-pipeline]
+        note: Run from source with uv; no published package.
+
+  b-lab-io/pyarazzo:
+    title: pyarazzo
+    slug: pyarazzo
+    description: >-
+      A Python CLI that generates human-readable documentation from an Arazzo document —
+      `pyarazzo doc generate` turns a workflow file into an output folder of docs. Installable
+      from PyPI; early (0.0.x) but current.
+    agent:
+      interfaces: [cli]
+      install:
+        pip: pyarazzo
+      consumes: [arazzo]
+      emits: [html, markdown]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Publish documentation for an Arazzo workflow alongside the API docs it orchestrates.
+        surface: [ci-pipeline, coding-agent]
+
+  bump-sh/arazzo-to-flower:
+    title: Arazzo to Flower
+    slug: arazzo-to-flower
+    description: >-
+      A Ruby gem from Bump.sh that transforms Arazzo workflow files into Flower, Bump.sh's own
+      workflow format. Listed because it is the concrete artefact behind a vendor deciding to
+      build an alternative after hitting gaps in Arazzo — the case the specification's
+      maintainers cite when asking implementers to contribute back rather than fork the idea.
+    agent:
+      interfaces: [library, cli]
+      consumes: [arazzo]
+      emits: [yaml]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Move an Arazzo workflow into Bump.sh's Flower format.
+        surface: [coding-agent]
+        note: The gem is not on rubygems.org as of September 2026; install from the repository.
+
+  JaredCE/Arazzo-Generator:
+    title: Arazzo Generator
+    slug: arazzo-generator
+    description: >-
+      An npm CLI that drafts Arazzo workflows from an OpenAPI document — point it at the
+      description and it writes a starting workflow file. A generated draft is a guess at the
+      sequence, not a description of one; useful as scaffolding.
+    agent:
+      interfaces: [cli]
+      install:
+        npm: arazzo-generator
+      consumes: [openapi]
+      emits: [arazzo]
+      deterministic: true
+      offline: true
+      mutates: false
+      credentials: false
+    useCases:
+      - task: Scaffold a first Arazzo file from an OpenAPI so a human can edit the sequence.
+        surface: [coding-agent]
+        note: v0.0.x; the operations it emits are real, the order is inferred.
   thim81/openapi-format:
     title: openapi-format
     slug: openapi-format

@@ -8,9 +8,9 @@ repository: https://github.com/open-telemetry/opentelemetry-go
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 6513
-lastCommit: '2026-08-14'
+licenseVerified: '2026-09-16'
+stars: 6552
+lastCommit: '2026-09-16'
 archived: false
 specifications:
 - slug: opentelemetry

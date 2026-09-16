@@ -9,9 +9,9 @@ repository: https://github.com/spiffe/go-spiffe
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 206
-lastCommit: '2026-08-03'
+licenseVerified: '2026-09-16'
+stars: 211
+lastCommit: '2026-09-14'
 archived: false
 specifications:
 - slug: spiffe

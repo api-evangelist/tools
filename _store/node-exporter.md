@@ -8,9 +8,9 @@ repository: https://github.com/prometheus/node_exporter
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-08-14'
-stars: 13697
-lastCommit: '2026-08-08'
+licenseVerified: '2026-09-16'
+stars: 13783
+lastCommit: '2026-09-03'
 archived: false
 specifications:
 - slug: openmetrics
