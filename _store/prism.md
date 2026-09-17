@@ -9,8 +9,8 @@ repository: https://github.com/stoplightio/prism
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
-stars: 5031
+licenseVerified: '2026-09-17'
+stars: 5032
 lastCommit: '2026-09-03'
 archived: false
 specifications:

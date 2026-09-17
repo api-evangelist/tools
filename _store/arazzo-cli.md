@@ -9,7 +9,7 @@ repository: https://github.com/strefethen/arazzo-cli
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 7
 lastCommit: '2026-09-16'
 archived: false

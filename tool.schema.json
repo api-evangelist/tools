@@ -114,6 +114,20 @@
       }
     },
 
+    "posts": {
+      "type": "array",
+      "description": "API Evangelist blog posts that discuss this tool.",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "properties": {
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "date": { "type": "string", "format": "date" }
+        }
+      }
+    },
+
     "useCases": {
       "type": "array",
       "description": "Concrete jobs this tool does, written as the situation an agent finds itself in — not as marketing copy. Each should be recognisable as a task somebody actually asks for.",

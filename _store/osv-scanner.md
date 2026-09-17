@@ -9,9 +9,9 @@ repository: https://github.com/google/osv-scanner
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
-stars: 11040
-lastCommit: '2026-09-16'
+licenseVerified: '2026-09-17'
+stars: 11045
+lastCommit: '2026-09-17'
 archived: false
 specifications:
 - slug: osv-schema

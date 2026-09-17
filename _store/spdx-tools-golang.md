@@ -8,7 +8,7 @@ repository: https://github.com/spdx/tools-golang
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 170
 lastCommit: '2026-08-24'
 archived: false

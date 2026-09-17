@@ -9,8 +9,8 @@ repository: https://github.com/envoyproxy/gateway
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
-stars: 3035
+licenseVerified: '2026-09-17'
+stars: 3036
 lastCommit: '2026-09-16'
 archived: false
 specifications:

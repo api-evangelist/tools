@@ -8,9 +8,9 @@ repository: https://github.com/open-feature/dotnet-sdk
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 138
-lastCommit: '2026-09-16'
+lastCommit: '2026-09-17'
 archived: false
 specifications:
 - slug: openfeature

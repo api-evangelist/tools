@@ -11,7 +11,7 @@ repository: https://github.com/leidenheit/itarazzo-library
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 9
 lastCommit: '2024-11-17'
 archived: false

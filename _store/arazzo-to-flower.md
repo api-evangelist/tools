@@ -11,7 +11,7 @@ repository: https://github.com/bump-sh/arazzo-to-flower
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 0
 lastCommit: '2026-03-31'
 archived: false

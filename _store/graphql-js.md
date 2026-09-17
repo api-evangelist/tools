@@ -9,8 +9,8 @@ repository: https://github.com/graphql/graphql-js
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
-stars: 20341
+licenseVerified: '2026-09-17'
+stars: 20342
 lastCommit: '2026-09-09'
 archived: false
 specifications:

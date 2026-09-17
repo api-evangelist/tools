@@ -109,6 +109,12 @@ permalink: /tools.json
         }{% unless forloop.last %},{% endunless %}
         {%- endfor %}
       ]{% endif %}
+      {%- if t.posts %},
+      "posts": [
+        {%- for p in t.posts %}
+        { "title": {{ p.title | jsonify }}, "url": {{ p.url | jsonify }}{% if p.date %}, "date": {{ p.date | date: "%Y-%m-%d" | jsonify }}{% endif %} }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]{% endif %}
       {%- if t.tags %},
       "tags": {{ t.tags | jsonify }}{% endif %}
     }{% unless forloop.last %},{% endunless %}

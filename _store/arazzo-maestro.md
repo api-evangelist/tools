@@ -12,7 +12,7 @@ repository: https://github.com/emmanuelperu/arazzo-maestro
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 8
 lastCommit: '2026-09-07'
 archived: false

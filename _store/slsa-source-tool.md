@@ -8,9 +8,9 @@ repository: https://github.com/slsa-framework/source-tool
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 18
-lastCommit: '2026-09-07'
+lastCommit: '2026-09-17'
 archived: false
 specifications:
 - slug: slsa

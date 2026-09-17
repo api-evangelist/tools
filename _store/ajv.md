@@ -9,8 +9,8 @@ repository: https://github.com/ajv-validator/ajv
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
-stars: 14831
+licenseVerified: '2026-09-17'
+stars: 14832
 lastCommit: '2026-09-06'
 archived: false
 specifications:

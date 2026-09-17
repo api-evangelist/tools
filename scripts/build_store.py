@@ -144,6 +144,8 @@ def main():
             out["agent"] = prof["agent"]
         if prof.get("useCases"):
             out["useCases"] = prof["useCases"]
+        if prof.get("posts"):
+            out["posts"] = prof["posts"]
 
         tags = fm.get("tags") or prof.get("tags") or []
         for s in specs:

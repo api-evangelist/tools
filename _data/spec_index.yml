@@ -73,6 +73,17 @@ specifications:
   - GraphQL Inspector
   - GraphQL ESLint
   - graphql-http
+- slug: json-schema
+  name: JSON Schema
+  count: 7
+  tools:
+  - Ajv
+  - quicktype
+  - jsonschema (Python)
+  - jsonschema (Go)
+  - json-schema-validator (Java)
+  - JSON Schema Test Suite
+  - VS Code JSON Language Service
 - slug: oci
   name: OCI Image, Runtime and Distribution
   count: 7
@@ -159,16 +170,6 @@ specifications:
   - gRPC for Java
   - Buf
   - gRPC-Web
-- slug: json-schema
-  name: JSON Schema
-  count: 6
-  tools:
-  - Ajv
-  - quicktype
-  - jsonschema (Python)
-  - jsonschema (Go)
-  - json-schema-validator (Java)
-  - JSON Schema Test Suite
 - slug: openmetrics
   name: OpenMetrics
   count: 6

@@ -8,7 +8,7 @@ repository: https://github.com/IBM/oas-overlay-java
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 3
 lastCommit: '2026-09-16'
 archived: false

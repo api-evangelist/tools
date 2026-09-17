@@ -8,7 +8,7 @@ repository: https://github.com/spdx/tools-java
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 101
 lastCommit: '2026-09-15'
 archived: false

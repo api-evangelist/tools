@@ -9,7 +9,7 @@ repository: https://github.com/mcroissant/oas_patcher
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 9
 lastCommit: '2026-03-17'
 archived: false

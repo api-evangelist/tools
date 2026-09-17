@@ -8,9 +8,9 @@ repository: https://github.com/networknt/json-schema-validator
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 1080
-lastCommit: '2026-09-15'
+lastCommit: '2026-09-17'
 archived: false
 specifications:
 - slug: json-schema

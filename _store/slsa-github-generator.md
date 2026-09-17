@@ -9,8 +9,8 @@ repository: https://github.com/slsa-framework/slsa-github-generator
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
-stars: 599
+licenseVerified: '2026-09-17'
+stars: 600
 lastCommit: '2026-08-07'
 archived: false
 specifications:

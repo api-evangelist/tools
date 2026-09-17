@@ -9,7 +9,7 @@ repository: https://github.com/spiffe/spiffe-helper
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 78
 lastCommit: '2026-09-10'
 archived: false

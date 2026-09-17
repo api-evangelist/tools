@@ -11,7 +11,7 @@ repository: https://github.com/pb33f/libopenapi
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 874
 lastCommit: '2026-09-14'
 archived: false

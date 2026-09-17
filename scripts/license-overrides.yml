@@ -27,6 +27,13 @@ overrides:
     file: LICENSE
     evidence: Full BSD 3-clause text, including the "nor the names of its contributors" clause.
 
+  microsoft/vscode-json-languageservice:
+    license: MIT
+    file: LICENSE.md
+    evidence: >-
+      Full MIT text headed "The MIT License (MIT)", "Copyright (c) Microsoft". The npm package
+      manifest also declares MIT. Detector reports "Other" (read 2026-09-17).
+
   spdx/tools-golang:
     license: Apache-2.0
     file: LICENSE.code

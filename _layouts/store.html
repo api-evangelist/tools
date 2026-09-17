@@ -18,6 +18,20 @@ nav: Tools
 
   {{ content }}
 
+  {% if page.posts.size > 0 %}
+  <div class="mb-4">
+    <h2 class="fs-5 mb-3">Referenced on the API Evangelist blog</h2>
+    {% for post in page.posts %}
+    <div class="card mb-2">
+      <div class="card-body py-3">
+        <h3 class="fs-6 mb-1"><a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a></h3>
+        {% if post.date %}<p class="text-muted small mb-0">{{ post.date }}</p>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   <div class="alert alert-light border small">
     <strong>Reading this as an agent?</strong> Don't scrape the page — this entry is published as
     structured data at <a href="{{ '/tools.json' | relative_url }}"><code>/tools.json</code></a>,

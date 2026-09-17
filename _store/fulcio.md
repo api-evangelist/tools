@@ -9,7 +9,7 @@ repository: https://github.com/sigstore/fulcio
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 884
 lastCommit: '2026-09-14'
 archived: false

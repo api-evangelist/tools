@@ -9,8 +9,8 @@ repository: https://github.com/santhosh-tekuri/jsonschema
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
-stars: 1272
+licenseVerified: '2026-09-17'
+stars: 1273
 lastCommit: '2026-08-06'
 archived: false
 specifications:

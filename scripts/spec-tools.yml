@@ -281,6 +281,11 @@ specifications:
         role: validates
       - repo: networknt/json-schema-validator
         role: validates
+      - repo: microsoft/vscode-json-languageservice
+        role: validates
+        note: >-
+          The engine behind JSON validation, completion and hover in VS Code and Monaco. Added
+          2019-09 and 2020-12 ($dynamicRef) support in 6.0.0-next.2 (July 2026).
       - repo: glideapps/quicktype
         role: generates
         produces: [types]

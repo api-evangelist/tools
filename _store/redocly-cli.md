@@ -11,9 +11,9 @@ repository: https://github.com/Redocly/redocly-cli
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 1511
-lastCommit: '2026-09-16'
+lastCommit: '2026-09-17'
 archived: false
 specifications:
 - slug: openapi

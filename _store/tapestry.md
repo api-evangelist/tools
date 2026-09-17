@@ -10,7 +10,7 @@ repository: https://github.com/imminent-technology/tapestry
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 0
 lastCommit: '2026-04-20'
 archived: false

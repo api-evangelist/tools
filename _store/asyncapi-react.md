@@ -9,9 +9,9 @@ repository: https://github.com/asyncapi/asyncapi-react
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-16'
+licenseVerified: '2026-09-17'
 stars: 243
-lastCommit: '2026-09-16'
+lastCommit: '2026-09-17'
 archived: false
 specifications:
 - slug: asyncapi
