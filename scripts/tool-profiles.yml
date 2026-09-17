@@ -598,16 +598,18 @@ tools:
         note: A parser, not a runner — it reads the document; executing the steps is your code.
 
   speclynx/apidom:
-    title: ApiDOM
-    slug: apidom
+    title: SpecLynx
+    slug: speclynx
+    website: https://speclynx.com/
     description: >-
-      A semantic parser that turns API description documents — OpenAPI, AsyncAPI, JSON Schema
-      and Arazzo among them — into a single traversable document object model. Ships a
-      dedicated Arazzo 1.x namespace plus JSON and YAML parser adapters, and is the model the
-      Arazzo Toolkit and Jentic's parser build on: a document becomes a structure you walk,
-      not text you match.
+      An open source API tooling project, Apache-2.0 throughout, for authors and maintainers of
+      OpenAPI, AsyncAPI and Arazzo — a VS Code OpenAPI toolkit, a browser editor, a CLI and a
+      language service, all built on ApiDOM, its semantic parser. ApiDOM ships a dedicated
+      Arazzo 1.x namespace plus JSON and YAML parser adapters, so an Arazzo document becomes a
+      structure you walk rather than text you match; the Arazzo Toolkit and Jentic's parser are
+      built on it. Maintained by Vladimír Gorej and contributors, with no paid tier.
     agent:
-      interfaces: [library]
+      interfaces: [library, cli, editor-extension]
       install:
         npm: "@speclynx/apidom-ns-arazzo-1"
       consumes: [arazzo, openapi, asyncapi, json-schema]
@@ -619,7 +621,10 @@ tools:
     useCases:
       - task: Traverse or refactor an Arazzo document by its semantic structure rather than by regex.
         surface: [coding-agent]
-        note: The Arazzo namespace is one of many packages; install the adapter for the serialisation you hold.
+        note: Install the ApiDOM Arazzo namespace plus the parser adapter for the serialisation you hold.
+      - task: Edit and validate Arazzo alongside the OpenAPI it references, in VS Code or the browser.
+        surface: [ide, human]
+        note: The editor and VS Code toolkit run locally; specifications never leave the machine.
 
   sv-tools/roas:
     title: roas
