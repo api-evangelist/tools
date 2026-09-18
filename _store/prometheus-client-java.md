@@ -8,9 +8,9 @@ repository: https://github.com/prometheus/client_java
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
+licenseVerified: '2026-09-18'
 stars: 2289
-lastCommit: '2026-09-17'
+lastCommit: '2026-09-18'
 archived: false
 specifications:
 - slug: openmetrics

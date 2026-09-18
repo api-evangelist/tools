@@ -10,7 +10,7 @@ repository: https://github.com/microsoft/vscode-json-languageservice
 license: MIT
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-09-17'
+licenseVerified: '2026-09-18'
 stars: 326
 lastCommit: '2026-09-14'
 archived: false

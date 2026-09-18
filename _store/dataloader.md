@@ -9,8 +9,8 @@ repository: https://github.com/graphql/dataloader
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 13389
+licenseVerified: '2026-09-18'
+stars: 13390
 lastCommit: '2026-09-16'
 archived: false
 specifications:

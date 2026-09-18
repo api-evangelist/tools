@@ -9,8 +9,8 @@ repository: https://github.com/in-toto/in-toto
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 1039
+licenseVerified: '2026-09-18'
+stars: 1040
 lastCommit: '2026-08-27'
 archived: false
 specifications:

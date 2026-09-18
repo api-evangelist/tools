@@ -9,7 +9,7 @@ repository: https://github.com/thim81/openapi-format
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
+licenseVerified: '2026-09-18'
 stars: 177
 lastCommit: '2026-09-04'
 archived: false

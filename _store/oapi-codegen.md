@@ -9,8 +9,8 @@ repository: https://github.com/oapi-codegen/oapi-codegen
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 8576
+licenseVerified: '2026-09-18'
+stars: 8579
 lastCommit: '2026-09-17'
 archived: false
 specifications:

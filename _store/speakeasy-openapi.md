@@ -9,7 +9,7 @@ repository: https://github.com/speakeasy-api/openapi
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
+licenseVerified: '2026-09-18'
 stars: 276
 lastCommit: '2026-09-14'
 archived: false

@@ -8,8 +8,8 @@ repository: https://github.com/prometheus/client_python
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 4373
+licenseVerified: '2026-09-18'
+stars: 4375
 lastCommit: '2026-09-15'
 archived: false
 specifications:

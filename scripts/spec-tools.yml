@@ -71,6 +71,19 @@ specifications:
       - repo: specmatic/specmatic
         role: tests
         also: [mocks]
+      - repo: pb33f/doctor
+        role: validates
+        note: >-
+          The OpenAPI Doctor — the editor-and-governance surface built on libopenapi, and the
+          tool behind a run of API Evangelist posts on what a governance report should read like.
+      - repo: oasdiff/oasdiff
+        role: validates
+        note: >-
+          Diffs two OpenAPI documents and classifies what changed as breaking or not. The check
+          that belongs in CI beside the linter: a valid document can still break every consumer.
+      - repo: microsoft/kiota
+        role: generates
+        produces: [sdk, client]
 
   - spec: arazzo
     name: Arazzo
@@ -292,6 +305,15 @@ specifications:
       - repo: json-schema-org/JSON-Schema-Test-Suite
         role: tests
         note: The language-agnostic conformance suite every implementation is measured against.
+      - repo: sourcemeta/jsonschema
+        role: validates
+        also: [transforms]
+        note: >-
+          The Sourcemeta CLI — validate, lint, bundle and format JSON Schema from one binary.
+          AGPL-3.0, which is the reason it needs stating rather than assuming.
+      - repo: bcherny/json-schema-to-typescript
+        role: generates
+        produces: [types]
 
   - spec: protocol-buffers
     name: Protocol Buffers

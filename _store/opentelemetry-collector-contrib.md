@@ -9,9 +9,9 @@ repository: https://github.com/open-telemetry/opentelemetry-collector-contrib
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 4966
-lastCommit: '2026-09-17'
+licenseVerified: '2026-09-18'
+stars: 4938
+lastCommit: '2026-09-18'
 archived: false
 specifications:
 - slug: opentelemetry

@@ -9,9 +9,9 @@ repository: https://github.com/open-feature/js-sdk
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 281
-lastCommit: '2026-09-17'
+licenseVerified: '2026-09-18'
+stars: 282
+lastCommit: '2026-09-18'
 archived: false
 specifications:
 - slug: openfeature

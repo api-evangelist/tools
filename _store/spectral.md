@@ -9,8 +9,8 @@ repository: https://github.com/stoplightio/spectral
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 3206
+licenseVerified: '2026-09-18'
+stars: 3209
 lastCommit: '2026-09-17'
 archived: false
 specifications:

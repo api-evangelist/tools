@@ -16,9 +16,9 @@ repository: https://github.com/envoyproxy/envoy
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 28948
-lastCommit: '2026-09-17'
+licenseVerified: '2026-09-18'
+stars: 28956
+lastCommit: '2026-09-18'
 archived: false
 specifications:
 - slug: xds

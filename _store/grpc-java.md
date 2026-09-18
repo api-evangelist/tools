@@ -8,8 +8,8 @@ repository: https://github.com/grpc/grpc-java
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 12069
+licenseVerified: '2026-09-18'
+stars: 12071
 lastCommit: '2026-09-17'
 archived: false
 specifications:

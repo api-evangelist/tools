@@ -8,8 +8,8 @@ repository: https://github.com/protocolbuffers/protobuf-go
 license: BSD-3-Clause
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 3355
+licenseVerified: '2026-09-18'
+stars: 3354
 lastCommit: '2026-09-16'
 archived: false
 specifications:

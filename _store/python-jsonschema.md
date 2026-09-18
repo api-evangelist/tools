@@ -8,8 +8,8 @@ repository: https://github.com/python-jsonschema/jsonschema
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 4981
+licenseVerified: '2026-09-18'
+stars: 4983
 lastCommit: '2026-09-15'
 archived: false
 specifications:

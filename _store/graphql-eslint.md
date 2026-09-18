@@ -11,8 +11,8 @@ repository: https://github.com/graphql-hive/graphql-eslint
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 831
+licenseVerified: '2026-09-18'
+stars: 830
 lastCommit: '2026-09-09'
 archived: false
 specifications:

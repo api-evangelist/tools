@@ -9,8 +9,8 @@ repository: https://github.com/swagger-api/swagger-ui
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 29050
+licenseVerified: '2026-09-18'
+stars: 29013
 lastCommit: '2026-09-16'
 archived: false
 specifications:

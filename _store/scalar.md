@@ -9,9 +9,9 @@ repository: https://github.com/scalar/scalar
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 16136
-lastCommit: '2026-09-17'
+licenseVerified: '2026-09-18'
+stars: 16147
+lastCommit: '2026-09-18'
 archived: false
 specifications:
 - slug: openapi

@@ -9,8 +9,8 @@ repository: https://github.com/Redocly/redoc
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 25912
+licenseVerified: '2026-09-18'
+stars: 25916
 lastCommit: '2026-09-16'
 archived: false
 specifications:

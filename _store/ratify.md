@@ -19,9 +19,9 @@ repository: https://github.com/notaryproject/ratify
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
+licenseVerified: '2026-09-18'
 stars: 307
-lastCommit: '2026-09-17'
+lastCommit: '2026-09-18'
 archived: false
 specifications:
 - slug: notary-project

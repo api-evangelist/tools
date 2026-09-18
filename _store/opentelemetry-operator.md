@@ -9,9 +9,9 @@ repository: https://github.com/open-telemetry/opentelemetry-operator
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
-stars: 1757
-lastCommit: '2026-09-17'
+licenseVerified: '2026-09-18'
+stars: 1756
+lastCommit: '2026-09-18'
 archived: false
 specifications:
 - slug: opentelemetry

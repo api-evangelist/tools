@@ -9,9 +9,9 @@ repository: https://github.com/opencontainers/runc
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
+licenseVerified: '2026-09-18'
 stars: 13451
-lastCommit: '2026-09-17'
+lastCommit: '2026-09-18'
 archived: false
 specifications:
 - slug: oci

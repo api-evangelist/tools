@@ -11,7 +11,7 @@ repository: https://github.com/sv-tools/roas
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
+licenseVerified: '2026-09-18'
 stars: 6
 lastCommit: '2026-09-16'
 archived: false

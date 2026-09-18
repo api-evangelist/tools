@@ -12,9 +12,9 @@ repository: https://github.com/BinkyLabs/openapi-arazzo-dotnet
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-17'
+licenseVerified: '2026-09-18'
 stars: 4
-lastCommit: '2026-09-16'
+lastCommit: '2026-09-17'
 archived: false
 specifications:
 - slug: arazzo
