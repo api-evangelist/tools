@@ -49,6 +49,8 @@ specifications:
         role: documents
       - repo: scalar/scalar
         role: documents
+      - repo: sourcey/sourcey
+        role: documents
       - repo: stoplightio/spectral
         role: validates
         note: The de facto API style-guide linter; also the only mature Arazzo validator.
