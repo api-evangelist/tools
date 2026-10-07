@@ -8,8 +8,8 @@ repository: https://github.com/bcherny/json-schema-to-typescript
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 3347
+licenseVerified: '2026-10-06'
+stars: 3346
 lastCommit: '2026-09-07'
 archived: false
 specifications:
@@ -20,4 +20,10 @@ specifications:
   - types
 tags:
 - JSON Schema
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

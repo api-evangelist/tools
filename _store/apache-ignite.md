@@ -1,7 +1,7 @@
 ---
 title: Apache Ignite
 slug: apache-ignite
-companyCount: 76
+companyCount: 77
 description: Distributed database for high-performance computing with in-memory speed, supporting SQL,
   key-value, and compute grid APIs.
 tags:
@@ -19,5 +19,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 80
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -20: 92% of matching companies were reached only on the bare word (74 bare vs 6 phrase)'
+- 'bare-channel -20: 93% of matching companies were reached only on the bare word (75 bare vs 6 phrase)'
 ---

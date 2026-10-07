@@ -1,7 +1,7 @@
 ---
 title: Apache Helix
 slug: apache-helix
-companyCount: 26
+companyCount: 27
 description: Cluster management framework for partitioning, replicating, and task management in distributed
   systems.
 tags:
@@ -21,5 +21,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (28 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (29 bare vs 0 phrase)'
 ---

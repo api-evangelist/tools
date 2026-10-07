@@ -15,8 +15,8 @@ founded: 2026
 radarRing: Initial
 alternativeNames:
 - Ory Talos
-- talos
 - Talos
+- talos
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95

@@ -1,7 +1,7 @@
 ---
 title: JBoss
 slug: jboss
-companyCount: 32
+companyCount: 33
 description: An open-source Java-based application server used for building and deploying enterprise Java
   applications. Now known as WildFly in its community version, it provides a robust platform for developing
   and running Java EE applications.
@@ -19,10 +19,10 @@ alternativeNames:
 - WildFly
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 76
+precision: 75
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -19: 91% of matching companies were reached only on the bare word (31 bare vs 3 phrase)'
+- 'bare-channel -20: 91% of matching companies were reached only on the bare word (32 bare vs 3 phrase)'
 ---

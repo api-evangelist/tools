@@ -1,7 +1,7 @@
 ---
 title: Eclipse
 slug: eclipse
-companyCount: 66
+companyCount: 73
 description: An integrated development environment (IDE) used in computer programming, containing a base
   workspace and an extensible plug-in system for customizing the environment.
 tags:
@@ -19,5 +19,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 85
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -15: 84% of matching companies were reached only on the bare word (56 bare vs 11 phrase)'
+- 'bare-channel -15: 84% of matching companies were reached only on the bare word (62 bare vs 12 phrase)'
 ---

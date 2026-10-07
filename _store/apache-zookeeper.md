@@ -13,8 +13,8 @@ tags:
 website: https://zookeeper.apache.org
 radarRing: Developing
 alternativeNames:
-- zookeeper
 - ZooKeeper
+- zookeeper
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75

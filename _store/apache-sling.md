@@ -1,7 +1,7 @@
 ---
 title: Apache Sling
 slug: apache-sling
-companyCount: 13
+companyCount: 14
 description: Web framework for building content-centric applications using the JCR content repository
   as its data store.
 tags:
@@ -16,10 +16,10 @@ alternativeNames:
 - Sling
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 89
+precision: 88
 precisionGrade: high
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -6: 69% of matching companies were reached only on the bare word (9 bare vs 4 phrase)'
+- 'bare-channel -7: 71% of matching companies were reached only on the bare word (10 bare vs 4 phrase)'
 ---

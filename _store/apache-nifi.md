@@ -1,7 +1,7 @@
 ---
 title: Apache NiFi
 slug: apache-nifi
-companyCount: 26
+companyCount: 28
 description: Data integration tool for automating the flow of data between systems with a visual, drag-and-drop
   interface.
 tags:

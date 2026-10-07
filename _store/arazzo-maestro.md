@@ -12,9 +12,9 @@ repository: https://github.com/emmanuelperu/arazzo-maestro
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 8
-lastCommit: '2026-09-07'
+lastCommit: '2026-09-28'
 archived: false
 specifications:
 - slug: arazzo
@@ -47,4 +47,10 @@ useCases:
   note: The cross-file check is the thing Spectral's schema rules do not do.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

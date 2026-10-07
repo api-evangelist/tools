@@ -9,9 +9,9 @@ repository: https://github.com/envoyproxy/go-control-plane
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 1731
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 1734
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: xds

@@ -1,7 +1,7 @@
 ---
 title: Apache Roller
 slug: apache-roller
-companyCount: 47
+companyCount: 49
 description: Full-featured, multi-user, multi-blog server suitable for large and small blog communities.
 tags:
 - Blogging
@@ -18,5 +18,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (47 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (49 bare vs 0 phrase)'
 ---

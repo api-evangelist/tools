@@ -3,15 +3,15 @@ title: OpenTelemetry Collector
 slug: opentelemetry-collector
 description: Receives, processes and exports telemetry in a vendor-agnostic pipeline — the component that
   decouples what emits telemetry from what stores it.
-companyCount: 4
+companyCount: 5
 website: https://opentelemetry.io
 repository: https://github.com/open-telemetry/opentelemetry-collector
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 7573
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 7637
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: opentelemetry

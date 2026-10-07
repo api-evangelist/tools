@@ -1,7 +1,7 @@
 ---
 title: Jenkins
 slug: jenkins-pipeline
-companyCount: 293
+companyCount: 319
 description: A suite of plugins that supports implementing and integrating continuous delivery pipelines
   into Jenkins. It provides an extensible set of tools for modeling simple-to-complex delivery pipelines
   as code via the Pipeline DSL.
@@ -22,8 +22,8 @@ alternativeNames:
 - Jenkins Pipeline
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 80
+precision: 81
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -20: 92% of matching companies were reached only on the bare word (276 bare vs 24 phrase)'
+- 'bare-channel -19: 91% of matching companies were reached only on the bare word (298 bare vs 29 phrase)'
 ---

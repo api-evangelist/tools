@@ -1,7 +1,7 @@
 ---
 title: Apache Olingo
 slug: apache-olingo
-companyCount: 51
+companyCount: 53
 description: Java library implementing the OData protocol for building and consuming RESTful APIs.
 tags:
 - OData
@@ -21,5 +21,5 @@ precisionGrade: low
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 5 characters'
 - 'collision -25: a surviving needle is also claimed by standards:OData'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (52 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (54 bare vs 0 phrase)'
 ---

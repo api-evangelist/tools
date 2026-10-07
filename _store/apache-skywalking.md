@@ -12,8 +12,8 @@ tags:
 website: https://skywalking.apache.org
 radarRing: Initial
 alternativeNames:
-- SkyWalking
 - skywalking
+- SkyWalking
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100

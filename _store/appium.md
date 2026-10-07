@@ -1,7 +1,7 @@
 ---
 title: Appium
 slug: appium
-companyCount: 51
+companyCount: 53
 description: Open-source test automation framework for mobile applications supporting iOS, Android, and
   Windows apps with native, hybrid, and mobile web testing capabilities.
 tags:

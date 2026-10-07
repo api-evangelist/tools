@@ -13,8 +13,8 @@ tags:
 website: https://apisix.apache.org
 radarRing: Initial
 alternativeNames:
-- APISIX
 - apisix
+- APISIX
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75

@@ -1,7 +1,7 @@
 ---
 title: cURL
 slug: curl
-companyCount: 34
+companyCount: 36
 description: A command-line tool and library for transferring data with URLs, supporting various protocols
   including HTTP, HTTPS, FTP, and more.
 tags:

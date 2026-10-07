@@ -1,7 +1,7 @@
 ---
 title: Spring Security
 slug: spring-security
-companyCount: 36
+companyCount: 37
 description: A powerful and highly customizable authentication and access-control framework for Java applications,
   providing comprehensive security services for Spring-based enterprise applications.
 tags:

@@ -8,9 +8,9 @@ repository: https://github.com/spiffe/java-spiffe
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 46
-lastCommit: '2026-09-08'
+licenseVerified: '2026-10-06'
+stars: 47
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: spiffe

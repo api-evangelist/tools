@@ -1,7 +1,7 @@
 ---
 title: Kafka Connect
 slug: kafka-connect
-companyCount: 8
+companyCount: 9
 description: A framework for connecting Apache Kafka with external systems such as databases, key-value
   stores, search indexes, and file systems using source and sink connectors.
 tags:

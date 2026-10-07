@@ -1,7 +1,7 @@
 ---
 title: Apache Kafka
 slug: apache-kafka
-companyCount: 297
+companyCount: 334
 description: Distributed event streaming platform for high-throughput, fault-tolerant, real-time data
   pipelines and streaming applications.
 tags:
@@ -13,13 +13,15 @@ tags:
 website: https://kafka.apache.org
 radarRing: Optimizing
 alternativeNames:
-- kafka
 - Kafka
+- kafka
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 83
-precisionGrade: high
+precision: 75
+precisionGrade: medium
 precisionBasis:
-- 'acronym-shape -10: shortest bare needle is 5 characters'
-- 'bare-channel -7: 71% of matching companies were reached only on the bare word (221 bare vs 92 phrase)'
+- 'human verdict: "snowflake databricks KAFKA", "KAFKA or real time streaming technologies". sampled on
+  the job corpus 2026-09-25, 300 corpora seed 17 (_reports/q3-2026-close/story-needle-samples.txt); every
+  quote is the thing named. Quotes cluster in the first corpora the sampler reads, so graded medium, not
+  high.'
 ---

@@ -11,9 +11,9 @@ repository: https://github.com/swaggerexpert/arazzo-criterion
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 2
-lastCommit: '2026-09-15'
+lastCommit: '2026-09-28'
 archived: false
 specifications:
 - slug: arazzo
@@ -44,4 +44,10 @@ useCases:
     before trusting regex criteria.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

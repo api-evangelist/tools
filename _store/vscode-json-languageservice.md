@@ -10,8 +10,8 @@ repository: https://github.com/microsoft/vscode-json-languageservice
 license: MIT
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 326
+licenseVerified: '2026-10-06'
+stars: 329
 lastCommit: '2026-09-14'
 archived: false
 specifications:
@@ -52,4 +52,10 @@ posts:
   date: 2026-09-17
 tags:
 - JSON Schema
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

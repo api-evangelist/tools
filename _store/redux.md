@@ -1,7 +1,7 @@
 ---
 title: Redux
 slug: redux
-companyCount: 78
+companyCount: 89
 description: A predictable state container for JavaScript apps, commonly used with React for managing
   application state through a unidirectional data flow pattern.
 tags:
@@ -18,10 +18,10 @@ alternativeNames:
 - RTK
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 68
+precision: 67
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -17: 88% of matching companies were reached only on the bare word (70 bare vs 10 phrase)'
+- 'bare-channel -18: 89% of matching companies were reached only on the bare word (81 bare vs 10 phrase)'
 ---

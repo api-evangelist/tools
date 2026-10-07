@@ -11,9 +11,9 @@ repository: https://github.com/sv-tools/roas
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 6
-lastCommit: '2026-09-16'
+lastCommit: '2026-10-01'
 archived: false
 specifications:
 - slug: arazzo
@@ -49,4 +49,12 @@ useCases:
   note: Validation is offline and deterministic; the executor crate makes real calls and is not.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 82
+precisionGrade: high
+precisionBasis:
+- 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

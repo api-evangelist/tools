@@ -1,7 +1,7 @@
 ---
 title: Helm
 slug: helm
-companyCount: 168
+companyCount: 187
 description: Package manager for Kubernetes that helps you define, install, and upgrade complex Kubernetes
   applications using charts
 tags:
@@ -20,5 +20,5 @@ precision: 74
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -20: shortest bare needle is 4 characters'
-- 'bare-channel -6: 70% of matching companies were reached only on the bare word (120 bare vs 52 phrase)'
+- 'bare-channel -6: 69% of matching companies were reached only on the bare word (134 bare vs 59 phrase)'
 ---

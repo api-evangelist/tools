@@ -1,7 +1,7 @@
 ---
 title: Apache ECharts
 slug: apache-echarts
-companyCount: 4
+companyCount: 7
 description: Powerful, interactive charting and data visualization library for browser-based applications.
 tags:
 - Data Visualization
@@ -12,8 +12,8 @@ tags:
 website: https://echarts.apache.org
 radarRing: Initial
 alternativeNames:
-- echarts
 - ECharts
+- echarts
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100

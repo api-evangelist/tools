@@ -1,7 +1,7 @@
 ---
 title: gRPC
 slug: grpc
-companyCount: 122
+companyCount: 139
 description: The core gRPC implementation covering C++, Python, Ruby, Objective-C, PHP and C# — HTTP/2
   based RPC using Protobuf contracts.
 tags:
@@ -21,9 +21,9 @@ repository: https://github.com/grpc/grpc
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 45325
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 45362
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: grpc
@@ -51,5 +51,5 @@ precisionGrade: very-low
 precisionBasis:
 - 'acronym-shape -20: shortest bare needle is 4 characters'
 - 'collision -25: a surviving needle is also claimed by standards:gRPC'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (127 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (145 bare vs 0 phrase)'
 ---

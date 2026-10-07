@@ -8,9 +8,9 @@ repository: https://github.com/sigstore/sigstore-python
 license: Apache-2.0
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 334
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 335
+lastCommit: '2026-10-05'
 archived: false
 specifications:
 - slug: sigstore

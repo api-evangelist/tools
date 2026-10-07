@@ -9,9 +9,9 @@ repository: https://github.com/json-schema-org/JSON-Schema-Test-Suite
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 750
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 752
+lastCommit: '2026-09-28'
 archived: false
 specifications:
 - slug: json-schema

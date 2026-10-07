@@ -1,7 +1,7 @@
 ---
 title: Argo
 slug: argo
-companyCount: 157
+companyCount: 176
 description: Open source tool for Kubernetes-native workflows, events, CI/CD, and progressive delivery
 tags:
 - Kubernetes

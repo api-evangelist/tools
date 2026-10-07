@@ -15,9 +15,9 @@ repository: https://github.com/speclynx/apidom
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 7
-lastCommit: '2026-09-17'
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: arazzo
@@ -55,4 +55,10 @@ useCases:
   note: The editor and VS Code toolkit run locally; specifications never leave the machine.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 92
+precisionGrade: high
+precisionBasis:
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

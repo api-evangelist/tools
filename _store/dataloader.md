@@ -3,14 +3,14 @@ title: DataLoader
 slug: dataloader
 description: Batches and caches backend requests within a single GraphQL execution — the standard answer
   to the N+1 query problem GraphQL resolvers create.
-companyCount: 4
+companyCount: 6
 website: https://github.com/graphql/dataloader
 repository: https://github.com/graphql/dataloader
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 13390
+licenseVerified: '2026-10-06'
+stars: 13385
 lastCommit: '2026-09-16'
 archived: false
 specifications:

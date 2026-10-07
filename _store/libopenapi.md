@@ -11,9 +11,9 @@ repository: https://github.com/pb33f/libopenapi
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 875
-lastCommit: '2026-09-18'
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: arazzo
@@ -44,4 +44,10 @@ useCases:
   note: A parser, not a runner — it reads the document; executing the steps is your code.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 92
+precisionGrade: high
+precisionBasis:
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

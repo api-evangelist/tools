@@ -1,7 +1,7 @@
 ---
 title: Vineyard
 slug: vineyard
-companyCount: null
+companyCount: 0
 description: An in-memory metadata service for sharing, discovering, and accessing distributed objects
   in Python, developed for big data analytics workflows.
 tags:
@@ -17,8 +17,11 @@ alternativeNames:
 - vineyard
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 0
-precisionGrade: unmeasurable
+precision: 77
+precisionGrade: medium
 precisionBasis:
-- 'blocklisted: the name is an ordinary word, so a job corpus cannot measure it at all'
+- 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
+- 'note: 1 needle(s) dropped by the stoplist — precision gained, recall lost'
 ---

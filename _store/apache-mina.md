@@ -1,7 +1,7 @@
 ---
 title: Apache MINA
 slug: apache-mina
-companyCount: 30
+companyCount: 31
 description: Network application framework for building high-performance, scalable network applications
   in Java.
 tags:
@@ -21,5 +21,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (30 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (31 bare vs 0 phrase)'
 ---

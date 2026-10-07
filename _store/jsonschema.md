@@ -9,9 +9,9 @@ repository: https://github.com/sourcemeta/jsonschema
 license: AGPL-3.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 305
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 307
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: json-schema
@@ -23,4 +23,10 @@ specifications:
     which is the reason it needs stating rather than assuming.
 tags:
 - JSON Schema
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 92
+precisionGrade: high
+precisionBasis:
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

@@ -4,14 +4,14 @@ slug: sourcey
 description: Builds a static HTML documentation site from OpenAPI 2.0 through 3.2 descriptions, alongside
   MCP server, Doxygen, godoc and Markdown sources, for deployment on any static host.
 companyCount: 0
-website: https://sourcey.com
+website: https://sourcey.com/docs
 repository: https://github.com/sourcey/sourcey
 license: AGPL-3.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-28'
-stars: 1371
-lastCommit: '2026-09-27'
+licenseVerified: '2026-10-06'
+stars: 1372
+lastCommit: '2026-09-30'
 archived: false
 specifications:
 - slug: openapi

@@ -1,7 +1,7 @@
 ---
 title: Backstage
 slug: backstage
-companyCount: 44
+companyCount: 47
 description: An open platform for building developer portals, created by Spotify. Backstage unifies all
   your infrastructure tooling, services, and documentation to create a streamlined development environment.
 tags:
@@ -21,5 +21,5 @@ precision: 51
 precisionGrade: low
 precisionBasis:
 - 'collision -25: a surviving needle is also claimed by solutions:Backstage'
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (44 bare vs 1 phrase)'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (47 bare vs 1 phrase)'
 ---

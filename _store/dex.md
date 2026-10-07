@@ -1,7 +1,7 @@
 ---
 title: Dex
 slug: dex
-companyCount: 30
+companyCount: 31
 description: A federated OpenID Connect provider that connects to other identity providers through connectors,
   enabling authentication for applications without handling passwords directly.
 tags:
@@ -25,5 +25,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (32 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (33 bare vs 0 phrase)'
 ---

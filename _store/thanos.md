@@ -1,7 +1,7 @@
 ---
 title: Thanos
 slug: thanos
-companyCount: 10
+companyCount: 11
 description: Open-source, highly available Prometheus setup with long-term storage capabilities that provides
   a global query view across multiple Prometheus servers.
 tags:

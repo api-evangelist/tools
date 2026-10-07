@@ -1,7 +1,7 @@
 ---
 title: Contour
 slug: contour
-companyCount: 14
+companyCount: 16
 description: A Kubernetes ingress controller using Envoy proxy that provides dynamic configuration updates
   and advanced routing capabilities for managing external access to services in a cluster.
 tags:
@@ -20,5 +20,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (14 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (16 bare vs 0 phrase)'
 ---

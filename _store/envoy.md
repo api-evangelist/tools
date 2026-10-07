@@ -1,7 +1,7 @@
 ---
 title: Envoy
 slug: envoy
-companyCount: 43
+companyCount: 47
 description: The cloud-native L7 proxy whose configuration APIs became xDS — reconfigures itself dynamically
   from a control plane with no restart.
 tags:
@@ -16,9 +16,9 @@ repository: https://github.com/envoyproxy/envoy
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 28956
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 29041
+lastCommit: '2026-10-07'
 archived: false
 specifications:
 - slug: xds
@@ -53,5 +53,5 @@ precisionGrade: low
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 5 characters'
 - 'collision -25: a surviving needle is also claimed by solutions:Envoy Proxy'
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (44 bare vs 1 phrase)'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (48 bare vs 1 phrase)'
 ---

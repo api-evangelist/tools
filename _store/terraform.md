@@ -1,7 +1,7 @@
 ---
 title: Terraform
 slug: terraform
-companyCount: 405
+companyCount: 466
 description: Infrastructure as Code tool for building, changing, and versioning infrastructure safely
   and efficiently across multiple cloud providers
 tags:

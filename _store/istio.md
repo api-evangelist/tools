@@ -1,7 +1,7 @@
 ---
 title: Istio
 slug: istio
-companyCount: 69
+companyCount: 77
 description: The service mesh whose control plane is the largest production consumer of xDS — programs
   Envoy sidecars and gateways across a cluster.
 tags:
@@ -18,9 +18,9 @@ repository: https://github.com/istio/istio
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 38398
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 38427
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: xds

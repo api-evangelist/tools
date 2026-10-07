@@ -1,7 +1,7 @@
 ---
 title: Apache Synapse
 slug: apache-synapse
-companyCount: 77
+companyCount: 80
 description: Lightweight, high-performance enterprise service bus and mediation engine for web services.
 tags:
 - ESB
@@ -19,5 +19,5 @@ precision: 50
 precisionGrade: low
 precisionBasis:
 - 'collision -25: a surviving needle is also claimed by solutions:Azure Synapse Analytics'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (79 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (82 bare vs 0 phrase)'
 ---

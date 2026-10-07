@@ -1,7 +1,7 @@
 ---
 title: Apache Tcl
 slug: apache-tcl
-companyCount: 57
+companyCount: 61
 description: Integration of the Tcl programming language with the Apache HTTP Server via mod_tcl.
 tags:
 - Tcl
@@ -21,5 +21,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (59 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (63 bare vs 0 phrase)'
 ---

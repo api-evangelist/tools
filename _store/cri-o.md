@@ -1,7 +1,7 @@
 ---
 title: CRI-O
 slug: cri-o
-companyCount: 6
+companyCount: 8
 description: Lightweight container runtime for Kubernetes that implements the Kubernetes Container Runtime
   Interface (CRI) to enable using OCI compatible runtimes
 tags:

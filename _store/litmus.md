@@ -1,7 +1,7 @@
 ---
 title: Litmus
 slug: litmus
-companyCount: 13
+companyCount: 15
 description: Email testing and analytics platform that allows developers and marketers to preview, test,
   and analyze email campaigns across multiple email clients and devices before sending.
 tags:

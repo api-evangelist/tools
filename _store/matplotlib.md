@@ -1,7 +1,7 @@
 ---
 title: Matplotlib
 slug: matplotlib
-companyCount: 62
+companyCount: 66
 description: A comprehensive library for creating static, animated, and interactive visualizations in
   Python
 tags:

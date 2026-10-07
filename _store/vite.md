@@ -1,7 +1,7 @@
 ---
 title: Vite
 slug: vite
-companyCount: 55
+companyCount: 63
 description: Vite is a next-generation frontend build tool that provides lightning-fast hot module replacement
   and optimized production builds. It leverages native ES modules for rapid development server startup
   and supports frameworks like Vue, React, and Svelte.
@@ -23,5 +23,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (58 bare vs 1 phrase)'
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (66 bare vs 1 phrase)'
 ---

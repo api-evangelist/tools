@@ -9,9 +9,9 @@ repository: https://github.com/theupdateframework/tuf-on-ci
 license: MIT
 licenseSource: license-file
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 51
-lastCommit: '2026-09-15'
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: tuf

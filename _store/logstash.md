@@ -1,7 +1,7 @@
 ---
 title: Logstash
 slug: logstash
-companyCount: 25
+companyCount: 29
 description: Open source server-side data processing pipeline that ingests data from multiple sources,
   transforms it, and sends it to a specified destination
 tags:

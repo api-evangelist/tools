@@ -1,7 +1,7 @@
 ---
 title: PuTTY
 slug: putty
-companyCount: 25
+companyCount: 28
 description: A free and open-source terminal emulator, serial console and network file transfer application
   that supports various network protocols including SSH, Telnet, and rlogin.
 tags:
@@ -13,8 +13,8 @@ website: https://www.putty.org/
 founded: 1999
 radarRing: Developing
 alternativeNames:
-- PuTTy
 - putty
+- PuTTy
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 87

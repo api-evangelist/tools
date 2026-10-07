@@ -1,7 +1,7 @@
 ---
 title: Apache Superset
 slug: apache-superset
-companyCount: 15
+companyCount: 16
 description: Modern data exploration and visualization platform designed for fast, intuitive business
   intelligence.
 tags:
@@ -17,8 +17,8 @@ alternativeNames:
 - Superset
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 96
+precision: 98
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -4: 67% of matching companies were reached only on the bare word (10 bare vs 5 phrase)'
+- 'bare-channel -2: 62% of matching companies were reached only on the bare word (10 bare vs 6 phrase)'
 ---

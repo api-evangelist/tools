@@ -9,9 +9,9 @@ repository: https://github.com/asyncapi/modelina
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 448
-lastCommit: '2026-09-13'
+licenseVerified: '2026-10-06'
+stars: 449
+lastCommit: '2026-10-02'
 archived: false
 specifications:
 - slug: asyncapi

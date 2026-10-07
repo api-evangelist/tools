@@ -8,9 +8,9 @@ repository: https://github.com/protocolbuffers/protobuf-go
 license: BSD-3-Clause
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 3354
-lastCommit: '2026-09-16'
+licenseVerified: '2026-10-06'
+stars: 3357
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: protocol-buffers

@@ -1,7 +1,7 @@
 ---
 title: Apache Logging Services
 slug: apache-logging-services
-companyCount: 5
+companyCount: 6
 description: Cross-language logging services including Log4j, providing flexible and performant logging
   frameworks.
 tags:

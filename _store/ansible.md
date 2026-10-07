@@ -1,7 +1,7 @@
 ---
 title: Ansible
 slug: ansible
-companyCount: 268
+companyCount: 290
 description: Open-source automation tool for configuration management, application deployment, and task
   automation using simple YAML playbooks
 tags:
@@ -19,10 +19,10 @@ alternativeNames:
 - Red Hat Ansible
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 56
+precision: 57
 precisionGrade: low
 precisionBasis:
 - 'collision -25: a surviving needle is also claimed by solutions:Ansible Automation Platform, solutions:Red
   Hat Ansible Automation Platform'
-- 'bare-channel -19: 90% of matching companies were reached only on the bare word (249 bare vs 28 phrase)'
+- 'bare-channel -18: 89% of matching companies were reached only on the bare word (271 bare vs 32 phrase)'
 ---

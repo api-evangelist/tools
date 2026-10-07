@@ -12,8 +12,8 @@ tags:
 website: https://ant.apache.org/ivy/
 radarRing: Initial
 alternativeNames:
-- Ivy
 - ivy
+- Ivy
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100

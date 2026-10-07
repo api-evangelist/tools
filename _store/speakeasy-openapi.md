@@ -9,9 +9,9 @@ repository: https://github.com/speakeasy-api/openapi
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 276
-lastCommit: '2026-09-14'
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: arazzo

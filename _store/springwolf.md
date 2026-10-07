@@ -9,9 +9,9 @@ repository: https://github.com/springwolf/springwolf-core
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 351
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 352
+lastCommit: '2026-10-05'
 archived: false
 specifications:
 - slug: asyncapi

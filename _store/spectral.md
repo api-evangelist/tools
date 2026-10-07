@@ -3,15 +3,15 @@ title: Spectral
 slug: spectral
 description: The API style-guide linter — validates OpenAPI, AsyncAPI and Arazzo documents against rulesets
   you write yourself, and emits machine-readable findings with source locations.
-companyCount: 31
+companyCount: 35
 website: https://stoplight.io/spectral
 repository: https://github.com/stoplightio/spectral
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 3209
-lastCommit: '2026-09-17'
+licenseVerified: '2026-10-06'
+stars: 3229
+lastCommit: '2026-10-02'
 archived: false
 specifications:
 - slug: openapi

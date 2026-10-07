@@ -8,9 +8,9 @@ repository: https://github.com/open-telemetry/opentelemetry-python
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 2637
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 2656
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: opentelemetry

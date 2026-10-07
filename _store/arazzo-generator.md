@@ -10,7 +10,7 @@ repository: https://github.com/JaredCE/Arazzo-Generator
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 0
 lastCommit: '2026-03-10'
 archived: false
@@ -38,4 +38,10 @@ useCases:
   note: v0.0.x; the operations it emits are real, the order is inferred.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

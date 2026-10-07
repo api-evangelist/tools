@@ -9,9 +9,9 @@ repository: https://github.com/graphql/graphiql
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 16909
-lastCommit: '2026-09-17'
+licenseVerified: '2026-10-06'
+stars: 16910
+lastCommit: '2026-10-05'
 archived: false
 specifications:
 - slug: graphql

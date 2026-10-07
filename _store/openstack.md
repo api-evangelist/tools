@@ -1,7 +1,7 @@
 ---
 title: OpenStack
 slug: openstack
-companyCount: 30
+companyCount: 36
 description: Open source cloud computing platform for building and managing public and private clouds,
   providing infrastructure as a service (IaaS) through a set of interrelated services.
 tags:

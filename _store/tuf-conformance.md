@@ -8,9 +8,9 @@ repository: https://github.com/theupdateframework/tuf-conformance
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 9
-lastCommit: '2026-09-14'
+lastCommit: '2026-10-05'
 archived: false
 specifications:
 - slug: tuf

@@ -9,9 +9,9 @@ repository: https://github.com/ossf/osv-schema
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 271
-lastCommit: '2026-09-15'
+licenseVerified: '2026-10-06'
+stars: 272
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: osv-schema

@@ -1,7 +1,7 @@
 ---
 title: SpecFlow
 slug: specflow
-companyCount: 11
+companyCount: 13
 description: BDD framework for .NET that uses Gherkin syntax to define application behavior in plain text.
   It enables collaboration between developers, testers, and business stakeholders by turning specifications
   into automated tests.
@@ -22,5 +22,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (12 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (14 bare vs 0 phrase)'
 ---

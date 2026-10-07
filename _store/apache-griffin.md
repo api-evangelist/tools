@@ -1,7 +1,7 @@
 ---
 title: Apache Griffin
 slug: apache-griffin
-companyCount: 18
+companyCount: 19
 description: Data quality solution for big data, providing a unified process for measuring data quality
   across platforms.
 tags:
@@ -19,5 +19,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (19 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (20 bare vs 0 phrase)'
 ---

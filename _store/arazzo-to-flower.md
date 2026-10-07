@@ -11,7 +11,7 @@ repository: https://github.com/bump-sh/arazzo-to-flower
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 0
 lastCommit: '2026-03-31'
 archived: false
@@ -38,4 +38,10 @@ useCases:
   note: The gem is not on rubygems.org as of September 2026; install from the repository.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Vue.js
 slug: vuejs
-companyCount: 193
+companyCount: 210
 description: A progressive JavaScript framework for building user interfaces with a focus on declarability
   and component composition.
 tags:
@@ -15,8 +15,8 @@ website: https://vuejs.org/
 founded: 2014
 radarRing: Optimizing
 alternativeNames:
-- Vue
 - vue
+- Vue
 - Vue 3
 - VueJS
 companyCountQuarter: q3-2026

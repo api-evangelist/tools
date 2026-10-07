@@ -1,7 +1,7 @@
 ---
 title: Scala
 slug: scala
-companyCount: 148
+companyCount: 165
 description: Scala is a programming language that combines object-oriented and functional programming
   paradigms, running on the Java Virtual Machine. It is known for its expressive type system, concise
   syntax, and strong support for concurrent and distributed computing, particularly through frameworks

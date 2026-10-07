@@ -12,7 +12,7 @@ repository: https://github.com/jentic/arazzo-engine
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 64
 lastCommit: '2026-06-12'
 archived: false

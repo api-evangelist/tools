@@ -1,7 +1,7 @@
 ---
 title: Python
 slug: python
-companyCount: 665
+companyCount: 741
 description: Python is a high-level, interpreted programming language known for its clear syntax, readability,
   and versatility. It is widely used in web development, data science, machine learning, automation, and
   scripting, supported by a vast ecosystem of libraries and frameworks.
@@ -17,7 +17,7 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 63
 precisionGrade: medium
 precisionBasis:
-- 'prose-word -22: bare needle ''python'' appears in 7% of sampled job postings, with no phrase to fall
+- 'prose-word -22: bare needle ''python'' appears in 9% of sampled job postings, with no phrase to fall
   back on'
 - 'bare-only -15: no qualified phrase survives'
 ---

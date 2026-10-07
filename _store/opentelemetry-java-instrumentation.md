@@ -9,9 +9,9 @@ repository: https://github.com/open-telemetry/opentelemetry-java-instrumentation
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 2626
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 2638
+lastCommit: '2026-10-07'
 archived: false
 specifications:
 - slug: opentelemetry

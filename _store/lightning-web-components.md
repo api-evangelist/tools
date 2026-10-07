@@ -1,7 +1,7 @@
 ---
 title: Lightning Web Components
 slug: lightning-web-components
-companyCount: 79
+companyCount: 84
 description: A modern JavaScript framework from Salesforce for building fast, enterprise-grade web components
   on the Salesforce platform using web standards.
 tags:

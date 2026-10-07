@@ -13,8 +13,8 @@ tags:
 website: https://flume.apache.org
 radarRing: Initial
 alternativeNames:
-- flume
 - Flume
+- flume
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95

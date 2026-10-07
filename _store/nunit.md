@@ -1,7 +1,7 @@
 ---
 title: NUnit
 slug: nunit
-companyCount: 32
+companyCount: 34
 description: A unit-testing framework for all .NET languages with a focus on extensibility and parallel
   test execution
 tags:

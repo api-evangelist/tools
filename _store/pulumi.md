@@ -1,7 +1,7 @@
 ---
 title: Pulumi
 slug: pulumi
-companyCount: 66
+companyCount: 73
 description: Infrastructure as Code platform that enables developers to define and manage cloud infrastructure
   using familiar programming languages like TypeScript, Python, Go, and C# instead of domain-specific
   languages.

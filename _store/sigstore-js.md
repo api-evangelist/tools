@@ -8,9 +8,9 @@ repository: https://github.com/sigstore/sigstore-js
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 183
-lastCommit: '2026-09-09'
+licenseVerified: '2026-10-06'
+stars: 184
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: sigstore

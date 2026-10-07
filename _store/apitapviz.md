@@ -10,7 +10,7 @@ repository: https://github.com/lornajane/apitapviz
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 5
 lastCommit: '2025-03-12'
 archived: false
@@ -37,4 +37,10 @@ useCases:
   note: Run from source with uv; no published package.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 92
+precisionGrade: high
+precisionBasis:
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

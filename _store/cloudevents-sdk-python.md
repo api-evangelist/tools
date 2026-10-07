@@ -8,9 +8,9 @@ repository: https://github.com/cloudevents/sdk-python
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 342
-lastCommit: '2026-09-14'
+licenseVerified: '2026-10-06'
+stars: 343
+lastCommit: '2026-10-05'
 archived: false
 specifications:
 - slug: cloudevents

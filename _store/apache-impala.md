@@ -1,7 +1,7 @@
 ---
 title: Apache Impala
 slug: apache-impala
-companyCount: 10
+companyCount: 11
 description: Massively parallel processing SQL query engine for data stored in Hadoop-compatible file
   systems.
 tags:
@@ -17,8 +17,8 @@ alternativeNames:
 - Impala
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 75
-precisionGrade: medium
+precision: 80
+precisionGrade: high
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (12 bare vs 0 phrase)'
+- 'bare-channel -20: 92% of matching companies were reached only on the bare word (12 bare vs 1 phrase)'
 ---

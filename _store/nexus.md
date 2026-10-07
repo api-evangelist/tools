@@ -1,7 +1,7 @@
 ---
 title: Nexus
 slug: nexus
-companyCount: 117
+companyCount: 122
 description: A repository manager that supports multiple artifact formats including Maven, npm, Docker,
   and more, enabling centralized storage and distribution of software components.
 tags:
@@ -23,5 +23,5 @@ precisionGrade: very-low
 precisionBasis:
 - 'acronym-shape -20: shortest bare needle is 4 characters'
 - 'collision -25: a surviving needle is also claimed by solutions:Cisco Nexus, solutions:Sonatype Nexus'
-- 'bare-channel -21: 94% of matching companies were reached only on the bare word (113 bare vs 7 phrase)'
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (117 bare vs 8 phrase)'
 ---

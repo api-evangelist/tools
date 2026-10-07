@@ -1,7 +1,7 @@
 ---
 title: Copa
 slug: copa
-companyCount: 11
+companyCount: 14
 description: A causal reasoning evaluation dataset that tests models' ability to make plausible inferences
   about causes and effects by selecting the more plausible alternative for a given premise.
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Llama
 slug: llama
-companyCount: 54
+companyCount: 60
 description: A family of large language models developed by Meta AI, designed for natural language processing
   tasks with various model sizes optimized for different use cases.
 tags:
@@ -20,10 +20,10 @@ alternativeNames:
 - Meta Llama
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 76
+precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
-  the corpus frequency table'
-- 'bare-channel -19: 91% of matching companies were reached only on the bare word (51 bare vs 5 phrase)'
+- 'human verdict: "llms gpt gemini LLAMA retrieval augmented generation". sampled on the job corpus 2026-09-25,
+  300 corpora seed 17 (_reports/q3-2026-close/story-needle-samples.txt); every quote is the thing named.
+  Quotes cluster in the first corpora the sampler reads, so graded medium, not high.'
 ---

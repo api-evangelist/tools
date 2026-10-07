@@ -1,7 +1,7 @@
 ---
 title: Kotlin
 slug: kotlin
-companyCount: 130
+companyCount: 144
 description: Kotlin is a modern, statically typed programming language developed by JetBrains that runs
   on the Java Virtual Machine and compiles to JavaScript or native code. It is Google's preferred language
   for Android development and is widely adopted for its concise syntax, null safety, and full interoperability

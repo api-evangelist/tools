@@ -1,7 +1,7 @@
 ---
 title: Stacker
 slug: stacker
-companyCount: 32
+companyCount: 34
 description: A no-code platform for building custom business applications and workflows with data from
   multiple sources, featuring drag-and-drop interface builders and automated processes.
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Apache Solr
 slug: apache-solr
-companyCount: 32
+companyCount: 38
 description: Enterprise search platform built on Lucene with distributed indexing, replication, and faceted
   search.
 tags:
@@ -22,5 +22,5 @@ precisionGrade: high
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -6: 70% of matching companies were reached only on the bare word (23 bare vs 10 phrase)'
+- 'bare-channel -6: 69% of matching companies were reached only on the bare word (27 bare vs 12 phrase)'
 ---

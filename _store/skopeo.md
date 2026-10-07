@@ -9,9 +9,9 @@ repository: https://github.com/podman-container-tools/skopeo
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 11237
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 11290
+lastCommit: '2026-10-07'
 archived: false
 specifications:
 - slug: oci

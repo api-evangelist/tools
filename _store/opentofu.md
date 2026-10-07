@@ -1,7 +1,7 @@
 ---
 title: OpenTofu
 slug: opentofu
-companyCount: 20
+companyCount: 26
 description: Open-source infrastructure as code tool forked from Terraform, providing a community-driven
   alternative for provisioning and managing cloud infrastructure using declarative configuration files.
 tags:

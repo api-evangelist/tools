@@ -2,14 +2,12 @@
 title: Apache Tapestry
 slug: apache-tapestry
 companyCount: 10
-description: Component-oriented Java web application framework emphasizing simplicity and developer productivity.
+description: A visual, drag-and-drop workflow builder for Arazzo — connect API operations into sequences
+  on a React Flow canvas and export or import Arazzo 1.0.1 documents. One of two visual authoring tools
+  found; a web application rather than a library.
 tags:
-- Web Framework
-- Java
-- Component Oriented
-- Productivity
-- Convention Over Configuration
-website: https://tapestry.apache.org
+- Arazzo
+website: https://github.com/imminent-technology/tapestry
 radarRing: Developing
 alternativeNames:
 - Tapestry

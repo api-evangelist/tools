@@ -3,15 +3,15 @@ title: Swagger UI
 slug: swagger-ui
 description: The original interactive OpenAPI console — renders a description as browsable documentation
   with a live "try it" client against the real API.
-companyCount: 0
+companyCount: 1
 website: https://swagger.io
 repository: https://github.com/swagger-api/swagger-ui
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 29013
-lastCommit: '2026-09-16'
+licenseVerified: '2026-10-06'
+stars: 29030
+lastCommit: '2026-10-05'
 archived: false
 specifications:
 - slug: openapi

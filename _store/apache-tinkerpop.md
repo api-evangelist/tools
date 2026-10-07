@@ -1,7 +1,7 @@
 ---
 title: Apache TinkerPop
 slug: apache-tinkerpop
-companyCount: 13
+companyCount: 14
 description: Graph computing framework providing a standard API for graph databases and graph analytic
   systems.
 tags:
@@ -21,5 +21,5 @@ precision: 50
 precisionGrade: low
 precisionBasis:
 - 'collision -25: a surviving needle is also claimed by standards:Gremlin'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (13 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (14 bare vs 0 phrase)'
 ---

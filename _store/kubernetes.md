@@ -1,7 +1,7 @@
 ---
 title: Kubernetes
 slug: kubernetes
-companyCount: 457
+companyCount: 522
 description: Open-source container orchestration platform for automating deployment, scaling, and management
   of containerized applications
 tags:
@@ -13,18 +13,16 @@ website: https://kubernetes.io
 founded: 2014
 radarRing: Optimizing
 alternativeNames:
-- k8s
 - K8s
-- kube
+- k8s
 - Kube
+- kube
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 60
+precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'prose-word -10: bare needle ''kubernetes'' appears in 3% of sampled job postings, with no phrase to
-  fall back on'
-- 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
-  the corpus frequency table'
-- 'bare-only -15: no qualified phrase survives'
+- 'human verdict: "orchestration platforms such as KUBERNETES" — 114/300. sampled on the job corpus 2026-09-25,
+  300 corpora seed 17 (_reports/q3-2026-close/story-needle-samples.txt); every quote is the thing named.
+  Quotes cluster in the first corpora the sampler reads, so graded medium, not high.'
 ---

@@ -9,9 +9,9 @@ repository: https://github.com/anchore/syft
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 9578
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 9648
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: spdx

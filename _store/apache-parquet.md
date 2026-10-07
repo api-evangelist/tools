@@ -1,7 +1,7 @@
 ---
 title: Apache Parquet
 slug: apache-parquet
-companyCount: 42
+companyCount: 49
 description: Columnar storage file format optimized for efficient data storage and retrieval in big data
   workloads.
 tags:
@@ -13,13 +13,13 @@ tags:
 website: https://parquet.apache.org
 radarRing: Established
 alternativeNames:
-- parquet
 - Parquet
+- parquet
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 56
 precisionGrade: low
 precisionBasis:
 - 'collision -25: a surviving needle is also claimed by standards:Parquet'
-- 'bare-channel -19: 91% of matching companies were reached only on the bare word (39 bare vs 4 phrase)'
+- 'bare-channel -19: 90% of matching companies were reached only on the bare word (45 bare vs 5 phrase)'
 ---

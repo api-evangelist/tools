@@ -1,7 +1,7 @@
 ---
 title: Apache Turbine
 slug: apache-turbine
-companyCount: 83
+companyCount: 86
 description: Servlet-based web application framework for rapid development of secure Java web applications.
 tags:
 - Web Framework
@@ -18,5 +18,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (86 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (89 bare vs 0 phrase)'
 ---

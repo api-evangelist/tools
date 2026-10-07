@@ -1,7 +1,7 @@
 ---
 title: Apache Dubbo
 slug: apache-dubbo
-companyCount: 2
+companyCount: 4
 description: High-performance Java RPC framework for building scalable microservices with service discovery
   and governance.
 tags:

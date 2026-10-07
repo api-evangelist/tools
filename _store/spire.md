@@ -1,7 +1,7 @@
 ---
 title: SPIRE
 slug: spire
-companyCount: 14
+companyCount: 16
 description: The SPIFFE Runtime Environment — attests workloads and issues them short-lived cryptographic
   identities, so services authenticate to each other without shared secrets.
 tags:
@@ -20,9 +20,9 @@ repository: https://github.com/spiffe/spire
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 2542
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 2572
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: spiffe
@@ -60,5 +60,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (14 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (16 bare vs 0 phrase)'
 ---

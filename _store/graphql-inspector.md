@@ -10,9 +10,9 @@ repository: https://github.com/graphql-hive/graphql-inspector
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 1767
-lastCommit: '2026-09-09'
+licenseVerified: '2026-10-06'
+stars: 1768
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: graphql

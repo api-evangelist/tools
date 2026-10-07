@@ -1,7 +1,7 @@
 ---
 title: Apache Druid
 slug: apache-druid
-companyCount: 14
+companyCount: 15
 description: High-performance real-time analytics database for fast slice-and-dice analytics on large
   datasets.
 tags:
@@ -22,5 +22,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -21: 93% of matching companies were reached only on the bare word (13 bare vs 1 phrase)'
+- 'bare-channel -21: 93% of matching companies were reached only on the bare word (14 bare vs 1 phrase)'
 ---

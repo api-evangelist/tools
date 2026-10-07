@@ -1,7 +1,7 @@
 ---
 title: Log4j
 slug: log4j
-companyCount: 5
+companyCount: 6
 description: A Java-based logging utility framework that provides flexible logging capabilities for applications,
   allowing developers to control log output destinations, formats, and levels.
 tags:
@@ -14,8 +14,8 @@ founded: 2001
 radarRing: Initial
 alternativeNames:
 - log4j
-- log4j2
 - Log4j2
+- log4j2
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 55

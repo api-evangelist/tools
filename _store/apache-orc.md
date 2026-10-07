@@ -1,7 +1,7 @@
 ---
 title: Apache ORC
 slug: apache-orc
-companyCount: 27
+companyCount: 28
 description: Columnar file format for Hadoop workloads providing high compression and fast read performance.
 tags:
 - Columnar Storage
@@ -21,5 +21,5 @@ precisionGrade: very-low
 precisionBasis:
 - 'acronym-shape -30: shortest bare needle is 3 characters'
 - 'collision -25: a surviving needle is also claimed by standards:Apache ORC'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (27 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (28 bare vs 0 phrase)'
 ---

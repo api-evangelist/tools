@@ -1,7 +1,7 @@
 ---
 title: Apache Storm
 slug: apache-storm
-companyCount: 94
+companyCount: 97
 description: Distributed real-time computation system for processing unbounded streams of data reliably.
 tags:
 - Streaming
@@ -20,5 +20,5 @@ precision: 66
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 5 characters'
-- 'bare-channel -24: 99% of matching companies were reached only on the bare word (97 bare vs 1 phrase)'
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (100 bare vs 1 phrase)'
 ---

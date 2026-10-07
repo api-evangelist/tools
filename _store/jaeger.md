@@ -1,7 +1,7 @@
 ---
 title: Jaeger
 slug: jaeger
-companyCount: 30
+companyCount: 32
 description: Open source, end-to-end distributed tracing system for monitoring and troubleshooting microservices-based
   architectures
 tags:
@@ -19,5 +19,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (30 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (32 bare vs 0 phrase)'
 ---

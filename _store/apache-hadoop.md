@@ -1,7 +1,7 @@
 ---
 title: Apache Hadoop
 slug: apache-hadoop
-companyCount: 132
+companyCount: 143
 description: Framework for distributed storage and processing of large datasets across clusters using
   MapReduce and HDFS.
 tags:
@@ -13,8 +13,8 @@ tags:
 website: https://hadoop.apache.org
 radarRing: Optimizing
 alternativeNames:
-- hadoop
 - Hadoop
+- hadoop
 - HDFS
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
@@ -23,5 +23,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -21: 94% of matching companies were reached only on the bare word (130 bare vs 8 phrase)'
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (140 bare vs 9 phrase)'
 ---

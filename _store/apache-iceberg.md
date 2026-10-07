@@ -1,7 +1,7 @@
 ---
 title: Apache Iceberg
 slug: apache-iceberg
-companyCount: 68
+companyCount: 78
 description: Open table format for large analytic datasets, providing reliable, performant operations
   on petabyte-scale tables.
 tags:
@@ -13,8 +13,8 @@ tags:
 website: https://iceberg.apache.org
 radarRing: Established
 alternativeNames:
-- iceberg
 - Iceberg
+- iceberg
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75

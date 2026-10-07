@@ -1,7 +1,7 @@
 ---
 title: Cortex
 slug: cortex
-companyCount: 86
+companyCount: 93
 description: An open-source platform for deploying, managing, and scaling machine learning models in production
   as APIs.
 tags:

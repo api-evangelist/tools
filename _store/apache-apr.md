@@ -1,7 +1,7 @@
 ---
 title: Apache APR
 slug: apache-apr
-companyCount: 125
+companyCount: 130
 description: Portable runtime library providing a predictable and consistent interface to platform-specific
   implementations.
 tags:
@@ -22,5 +22,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (132 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (137 bare vs 0 phrase)'
 ---

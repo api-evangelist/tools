@@ -11,7 +11,7 @@ repository: https://github.com/wso2/arazzo-mcp-generator
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 2
 lastCommit: '2026-08-19'
 archived: false
@@ -39,4 +39,10 @@ useCases:
   note: Generation is offline; the generated server makes real calls when an agent invokes it.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

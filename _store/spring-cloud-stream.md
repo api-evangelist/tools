@@ -1,7 +1,7 @@
 ---
 title: Spring Cloud Stream
 slug: spring-cloud-stream
-companyCount: 32
+companyCount: 37
 description: A framework for building highly scalable event-driven microservices connected with shared
   messaging systems
 tags:
@@ -18,10 +18,10 @@ alternativeNames:
 - spring-cloud-stream
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 67
+precision: 66
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -18: 88% of matching companies were reached only on the bare word (30 bare vs 4 phrase)'
+- 'bare-channel -19: 90% of matching companies were reached only on the bare word (35 bare vs 4 phrase)'
 ---

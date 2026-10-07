@@ -9,8 +9,8 @@ repository: https://github.com/prometheus/OpenMetrics
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 2538
+licenseVerified: '2026-10-06'
+stars: 2541
 lastCommit: '2026-07-19'
 archived: false
 specifications:

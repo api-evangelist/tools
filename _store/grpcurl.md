@@ -3,14 +3,14 @@ title: grpcurl
 slug: grpcurl
 description: The curl of gRPC — calls gRPC services from the command line, discovering their methods by
   server reflection so no `.proto` file or generated client is needed.
-companyCount: 0
+companyCount: 1
 website: https://www.fullstory.com/resources/content/fullstory-engineering-blog/
 repository: https://github.com/fullstorydev/grpcurl
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 12818
+licenseVerified: '2026-10-06'
+stars: 12839
 lastCommit: '2026-09-02'
 archived: false
 specifications:

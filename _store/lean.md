@@ -1,7 +1,7 @@
 ---
 title: Lean
 slug: lean
-companyCount: null
+companyCount: 0
 description: Lean is an open-source theorem prover and programming language based on dependent type theory,
   designed for formal verification of mathematics and software. It is used across a range of industries
   and technical contexts to improve efficiency and outcomes.
@@ -19,8 +19,10 @@ alternativeNames:
 - Lean4
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 0
-precisionGrade: unmeasurable
+precision: 95
+precisionGrade: high
 precisionBasis:
-- 'blocklisted: the name is an ordinary word, so a job corpus cannot measure it at all'
+- 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'note: 1 needle(s) dropped by the stoplist — precision gained, recall lost'
 ---

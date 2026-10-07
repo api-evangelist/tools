@@ -13,8 +13,8 @@ tags:
 website: https://ambari.apache.org
 radarRing: Initial
 alternativeNames:
-- ambari
 - Ambari
+- ambari
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100

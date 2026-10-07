@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Services
 slug: kubernetes-services
-companyCount: 17
+companyCount: 19
 description: An abstract way to expose an application running on a set of Pods as a network service in
   Kubernetes, providing stable networking endpoints and load balancing across pod replicas.
 tags:

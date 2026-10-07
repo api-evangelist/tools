@@ -1,7 +1,7 @@
 ---
 title: Apache Pulsar
 slug: apache-pulsar
-companyCount: 25
+companyCount: 27
 description: Cloud-native distributed messaging and streaming platform with multi-tenancy and geo-replication
   support.
 tags:
@@ -20,5 +20,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 82
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -18: 88% of matching companies were reached only on the bare word (22 bare vs 3 phrase)'
+- 'bare-channel -18: 89% of matching companies were reached only on the bare word (24 bare vs 3 phrase)'
 ---

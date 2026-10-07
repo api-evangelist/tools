@@ -9,9 +9,9 @@ repository: https://github.com/connectrpc/connect-go
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 4079
-lastCommit: '2026-09-14'
+licenseVerified: '2026-10-06'
+stars: 4104
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: protocol-buffers

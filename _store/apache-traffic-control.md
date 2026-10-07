@@ -1,7 +1,7 @@
 ---
 title: Apache Traffic Control
 slug: apache-traffic-control
-companyCount: 60
+companyCount: 62
 description: CDN control and management platform for building, monitoring, and configuring large-scale
   content delivery networks.
 tags:

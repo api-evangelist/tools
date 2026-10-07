@@ -1,7 +1,7 @@
 ---
 title: NATS
 slug: nats
-companyCount: 17
+companyCount: 19
 description: A high-performance, cloud-native messaging system for microservices, IoT, and edge computing.
   Provides pub-sub, request-reply, and queue-based messaging patterns with at-most-once and at-least-once
   delivery guarantees.
@@ -18,10 +18,10 @@ alternativeNames:
 - NATS.io
 companyCountQuarter: q3-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 72
+precision: 71
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -18: 89% of matching companies were reached only on the bare word (17 bare vs 2 phrase)'
+- 'bare-channel -19: 91% of matching companies were reached only on the bare word (20 bare vs 2 phrase)'
 ---

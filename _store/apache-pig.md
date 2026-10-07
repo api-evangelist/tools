@@ -1,7 +1,7 @@
 ---
 title: Apache Pig
 slug: apache-pig
-companyCount: 14
+companyCount: 15
 description: High-level platform for creating MapReduce programs using the Pig Latin scripting language
   on Hadoop.
 tags:
@@ -22,5 +22,5 @@ precisionGrade: very-low
 precisionBasis:
 - 'acronym-shape -30: shortest bare needle is 3 characters'
 - 'collision -25: a surviving needle is also claimed by standards:Pig Latin'
-- 'bare-channel -21: 93% of matching companies were reached only on the bare word (14 bare vs 1 phrase)'
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (15 bare vs 1 phrase)'
 ---

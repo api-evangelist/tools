@@ -8,9 +8,9 @@ repository: https://github.com/BinkyLabs/openapi-overlays-dotnet
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 7
-lastCommit: '2026-09-17'
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: openapi-overlays

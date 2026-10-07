@@ -19,9 +19,9 @@ repository: https://github.com/oras-project/oras
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 2433
-lastCommit: '2026-09-18'
+licenseVerified: '2026-10-06'
+stars: 2461
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: oci

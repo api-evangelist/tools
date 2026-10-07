@@ -1,7 +1,7 @@
 ---
 title: Crossplane
 slug: crossplane
-companyCount: 18
+companyCount: 21
 description: Open source Kubernetes add-on that transforms your cluster into a universal control plane,
   enabling you to manage cloud infrastructure, services, and applications using Kubernetes-style declarative
   configuration

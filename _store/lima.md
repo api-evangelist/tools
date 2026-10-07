@@ -1,7 +1,7 @@
 ---
 title: Lima
 slug: lima
-companyCount: 80
+companyCount: 81
 description: Linux virtual machines on macOS with automatic file sharing, port forwarding, and containerd
   integration for running containers
 tags:
@@ -21,5 +21,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -23: 98% of matching companies were reached only on the bare word (80 bare vs 2 phrase)'
+- 'bare-channel -23: 98% of matching companies were reached only on the bare word (81 bare vs 2 phrase)'
 ---

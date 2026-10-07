@@ -11,7 +11,7 @@ repository: https://github.com/leidenheit/itarazzo-library
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 9
 lastCommit: '2024-11-17'
 archived: false
@@ -43,4 +43,10 @@ useCases:
   note: No published Maven coordinates were found; build from source. Real calls, real side effects.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 92
+precisionGrade: high
+precisionBasis:
+- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
 ---

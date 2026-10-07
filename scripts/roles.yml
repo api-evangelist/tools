@@ -206,6 +206,7 @@ artifacts:
   asyncapi: An AsyncAPI description.
   arazzo: An Arazzo workflow document.
   openapi-overlay: An OpenAPI Overlay document.
+  agent-card: An Agent2Agent (A2A) Agent Card — the discovery document at /.well-known/agent-card.json describing an agent's identity, skills, endpoint and auth.
   json-schema: A JSON Schema.
   graphql: A GraphQL schema or query document.
   proto: A Protocol Buffers definition.

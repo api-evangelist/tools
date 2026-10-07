@@ -1,7 +1,7 @@
 ---
 title: Apache JMeter
 slug: jmeter
-companyCount: 77
+companyCount: 83
 description: Open-source Java application designed to load test functional behavior and measure performance
   of web applications and services
 tags:
@@ -20,5 +20,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 82
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -18: 89% of matching companies were reached only on the bare word (70 bare vs 9 phrase)'
+- 'bare-channel -18: 88% of matching companies were reached only on the bare word (75 bare vs 10 phrase)'
 ---

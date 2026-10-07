@@ -10,7 +10,7 @@ repository: https://github.com/Pakisan/arazzo-idea-plugin
 license: Apache-2.0
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
+licenseVerified: '2026-10-06'
 stars: 4
 lastCommit: '2025-08-04'
 archived: false
@@ -39,4 +39,10 @@ useCases:
   note: Last commit August 2025; check it against the 1.1 schema before relying on its inspections.
 tags:
 - Arazzo
+companyCountQuarter: q3-2026
+companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
+precision: 100
+precisionGrade: high
+precisionBasis:
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

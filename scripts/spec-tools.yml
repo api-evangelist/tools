@@ -654,3 +654,27 @@ specifications:
         role: signs
       - repo: sigstore/sigstore-js
         role: signs
+
+  # ---------------------------------------------------------------- Agents
+
+  - spec: agent2agent
+    name: Agent2Agent (A2A)
+    governing_body: A2A Project (Agentic AI Foundation)
+    foundation: Linux Foundation
+    specification_url: https://a2a-protocol.org/latest/specification/
+    note: >-
+      Added 2026-10-06 with a single entry: the official CLI the A2A project shipped on
+      2026-10-01, built on the Go SDK and speaking protocol v1.0. The SDKs (Python, Go, Java,
+      JS, .NET, Rust) are libraries for building agents rather than tools that operate on the
+      specification, and the community CLIs the announcement says had drifted apart are not
+      listed here. A one-entry list is a finding, not a gap: the standard command surface for
+      reaching an A2A agent from a shell, a pipeline or a coding assistant is new, and this is
+      it. Grow this block as the tooling does.
+    tools:
+      - repo: a2aproject/a2a-cli
+        role: runs
+        also: [serves, parses]
+        note: >-
+          `a2a card get` fetches an agent card, `a2a send` messages an agent and streams the
+          task, and `a2a server --exec` turns any stdin/stdout program into an A2A server for
+          testing. JSON output and predictable exit codes are the point.

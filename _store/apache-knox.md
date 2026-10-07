@@ -1,7 +1,7 @@
 ---
 title: Apache Knox
 slug: apache-knox
-companyCount: 14
+companyCount: 16
 description: REST API and application gateway for providing secure access to Hadoop cluster services.
 tags:
 - Security
@@ -20,5 +20,5 @@ precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (15 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (17 bare vs 0 phrase)'
 ---

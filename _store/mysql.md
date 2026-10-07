@@ -1,7 +1,7 @@
 ---
 title: MySQL
 slug: mysql
-companyCount: 231
+companyCount: 254
 description: An open-source relational database management system that uses SQL (Structured Query Language)
   for data management and queries.
 tags:
@@ -21,5 +21,5 @@ precision: 65
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 5 characters'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (240 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (268 bare vs 0 phrase)'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Apache Arrow
 slug: apache-arrow
-companyCount: 3
+companyCount: 5
 description: Cross-language development platform for in-memory columnar data, enabling fast data interchange
   and analytics.
 tags:

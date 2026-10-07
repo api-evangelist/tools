@@ -1,7 +1,7 @@
 ---
 title: Apache Ranger
 slug: apache-ranger
-companyCount: 24
+companyCount: 29
 description: Centralized security framework for managing fine-grained access control across the Hadoop
   ecosystem.
 tags:
@@ -19,5 +19,5 @@ companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qu
 precision: 77
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -23: 96% of matching companies were reached only on the bare word (25 bare vs 1 phrase)'
+- 'bare-channel -23: 97% of matching companies were reached only on the bare word (30 bare vs 1 phrase)'
 ---

@@ -9,9 +9,9 @@ repository: https://github.com/ardatan/graphql-tools
 license: MIT
 licenseSource: github-api
 openSource: true
-licenseVerified: '2026-09-18'
-stars: 5431
-lastCommit: '2026-09-17'
+licenseVerified: '2026-10-06'
+stars: 5429
+lastCommit: '2026-10-06'
 archived: false
 specifications:
 - slug: graphql

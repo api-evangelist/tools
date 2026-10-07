@@ -1,7 +1,7 @@
 ---
 title: jQuery
 slug: jquery
-companyCount: 66
+companyCount: 71
 description: A fast, small, and feature-rich JavaScript library that simplifies HTML document traversal,
   event handling, animation, and Ajax interactions for rapid web development.
 tags:
