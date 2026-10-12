@@ -71,5 +71,5 @@ tags:
 - Model Context Protocol (MCP)
 posts:
 - title: fx Is A Coding Agent That Tells You Which Parts Of MCP It Does Not Do
-  url: https://apievangelist.com/2026/10/20/fx-is-a-coding-agent-that-tells-you-which-parts-of-mcp-it-does-not-do/
+  url: https://apievangelist.com/2026/10/13/fx-is-a-coding-agent-that-tells-you-which-parts-of-mcp-it-does-not-do/
 ---
