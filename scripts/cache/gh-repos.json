@@ -10222,6 +10222,26 @@
   "url": "https://github.com/usearazzo/arazzo-toolkit",
   "watchers": 0
  },
+ "vercel-labs/fx": {
+  "archived": false,
+  "created_at": "2026-08-11T08:57:04Z",
+  "description": "Unix like coding agent",
+  "disabled": false,
+  "fetched_at": "2026-10-13",
+  "forks": 376,
+  "homepage": "https://fx.sh",
+  "is_fork": false,
+  "language": "Zig",
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "open_issues": 281,
+  "pushed_at": "2026-10-12T22:45:32Z",
+  "slug": "vercel-labs/fx",
+  "stars": 3381,
+  "topics": [],
+  "url": "https://github.com/vercel-labs/fx",
+  "watchers": 5
+ },
  "vert-x3/vertx-web": {
   "archived": false,
   "created_at": "2014-11-14T08:15:20Z",

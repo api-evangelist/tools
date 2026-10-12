@@ -678,3 +678,23 @@ specifications:
           `a2a card get` fetches an agent card, `a2a send` messages an agent and streams the
           task, and `a2a server --exec` turns any stdin/stdout program into an A2A server for
           testing. JSON output and predictable exit codes are the point.
+
+  - spec: model-context-protocol
+    name: Model Context Protocol (MCP)
+    governing_body: Agentic AI Foundation
+    foundation: Linux Foundation
+    specification_url: https://modelcontextprotocol.io/specification
+    note: >-
+      Added 2026-10-13 with a single entry, deliberately. The servers and SDKs are libraries
+      for building MCP surfaces rather than tools that operate on them, and the client list is
+      long and mostly closed. This block is for open source clients an agent can shell out to
+      that publish their protocol coverage — what they implement and what they say they do
+      not. fx is the first to state it on one page. Grow this block as others do.
+    tools:
+      - repo: vercel-labs/fx
+        role: runs
+        note: >-
+          A native coding-agent CLI that is an MCP client over stdio, Streamable HTTP and legacy
+          HTTP+SSE — tools, resources, prompts, completion, subscriptions and elicitation — and
+          says plainly that it does not implement MCP Tasks, MCP Apps, Skills over MCP or the
+          enterprise auth extensions, and does not expose itself as an MCP server.
