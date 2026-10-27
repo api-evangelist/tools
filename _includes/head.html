@@ -56,6 +56,7 @@
     <meta name="twitter:image" content="{{ page.image | default: site.logo }}">
 
     <!-- JSON-LD Structured Data -->
+    {% include breadcrumb-ld.html %}
     {% if page.layout == 'post' %}
     <script type="application/ld+json">
     {
@@ -69,7 +70,7 @@
       "author": {
         "@type": "Person",
         "name": "{{ site.author.name }}",
-        "url": "{{ site.url }}/about/kin-lane"
+        "url": "https://apievangelist.com/about/kin-lane/"
       },
       "publisher": {
         "@type": "Organization",
