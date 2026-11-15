@@ -1,7 +1,7 @@
 ---
 title: eBPF
 slug: ebpf
-companyCount: 55
+companyCount: 60
 description: eBPF (extended Berkeley Packet Filter) is a technology that allows programs to run in a sandboxed
   virtual machine within the Linux kernel without changing kernel source code or loading kernel modules.
   It enables high-performance networking, security monitoring, and observability capabilities at the operating
@@ -13,12 +13,12 @@ alternativeNames:
 - Berkeley Packet Filter
 - BPF
 - Extended BPF
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 60
+precision: 61
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (57 bare vs 0 phrase)'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (61 bare vs 1 phrase)'
 ---

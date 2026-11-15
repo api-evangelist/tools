@@ -14,12 +14,12 @@ website: https://sling.apache.org
 radarRing: Developing
 alternativeNames:
 - Sling
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 88
-precisionGrade: high
+precision: 79
+precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -7: 71% of matching companies were reached only on the bare word (10 bare vs 4 phrase)'
+- 'bare-channel -16: 86% of matching companies were reached only on the bare word (12 bare vs 2 phrase)'
 ---

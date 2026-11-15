@@ -1,7 +1,7 @@
 ---
 title: Pandas
 slug: pandas
-companyCount: 182
+companyCount: 193
 description: A fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
   built on top of the Python programming language.
 tags:
@@ -14,7 +14,7 @@ founded: 2008
 radarRing: Optimizing
 alternativeNames:
 - pandas
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

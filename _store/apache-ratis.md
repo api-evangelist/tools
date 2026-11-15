@@ -1,7 +1,7 @@
 ---
 title: Apache Ratis
 slug: apache-ratis
-companyCount: 1
+companyCount: 0
 description: Java implementation of the Raft consensus protocol for building reliable distributed systems.
 tags:
 - Consensus
@@ -13,7 +13,7 @@ website: https://ratis.apache.org
 radarRing: Initial
 alternativeNames:
 - Ratis
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high

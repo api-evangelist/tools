@@ -1,7 +1,7 @@
 ---
 title: Apache Accumulo
 slug: apache-accumulo
-companyCount: 3
+companyCount: 4
 description: Sorted, distributed key/value store based on Google's Bigtable design, built on top of Hadoop
   and ZooKeeper.
 tags:
@@ -15,7 +15,7 @@ radarRing: Initial
 alternativeNames:
 - Accumulo
 - accumulo
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

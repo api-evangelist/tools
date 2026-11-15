@@ -1,7 +1,7 @@
 ---
 title: Packer
 slug: packer
-companyCount: 73
+companyCount: 85
 description: Packer is an open-source tool by HashiCorp for creating identical machine images for multiple
   platforms from a single source configuration. It automates the creation of pre-configured virtual machine
   and container images, ensuring consistency across development, staging, and production environments.
@@ -16,10 +16,10 @@ radarRing: Established
 alternativeNames:
 - HashiCorp Packer
 - packer
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 78
+precision: 77
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -22: 95% of matching companies were reached only on the bare word (71 bare vs 4 phrase)'
+- 'bare-channel -23: 97% of matching companies were reached only on the bare word (84 bare vs 3 phrase)'
 ---

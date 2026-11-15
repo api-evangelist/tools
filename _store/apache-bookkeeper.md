@@ -1,7 +1,7 @@
 ---
 title: Apache BookKeeper
 slug: apache-bookkeeper
-companyCount: 9
+companyCount: 10
 description: Scalable, fault-tolerant, low-latency storage service for real-time write-ahead logging and
   distributed systems.
 tags:
@@ -14,10 +14,10 @@ website: https://bookkeeper.apache.org
 radarRing: Developing
 alternativeNames:
 - BookKeeper
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 81
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -19: 90% of matching companies were reached only on the bare word (9 bare vs 1 phrase)'
+- 'bare-channel -19: 91% of matching companies were reached only on the bare word (10 bare vs 1 phrase)'
 ---

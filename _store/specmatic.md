@@ -67,7 +67,7 @@ tags:
 - OpenAPI
 - Arazzo
 - AsyncAPI
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

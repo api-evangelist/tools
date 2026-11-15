@@ -1,7 +1,7 @@
 ---
 title: MySQL
 slug: mysql
-companyCount: 254
+companyCount: 250
 description: An open-source relational database management system that uses SQL (Structured Query Language)
   for data management and queries.
 tags:
@@ -15,11 +15,11 @@ radarRing: Optimizing
 alternativeNames:
 - MariaDB alternative
 - mysql
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 65
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 5 characters'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (268 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (261 bare vs 0 phrase)'
 ---

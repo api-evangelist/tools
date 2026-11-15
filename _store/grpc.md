@@ -1,7 +1,7 @@
 ---
 title: gRPC
 slug: grpc
-companyCount: 139
+companyCount: 148
 description: The core gRPC implementation covering C++, Python, Ruby, Objective-C, PHP and C# — HTTP/2
   based RPC using Protobuf contracts.
 tags:
@@ -44,12 +44,12 @@ useCases:
 - task: Implement a gRPC client or server in one of the core-supported languages.
   surface:
   - coding-agent
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 30
 precisionGrade: very-low
 precisionBasis:
 - 'acronym-shape -20: shortest bare needle is 4 characters'
 - 'collision -25: a surviving needle is also claimed by standards:gRPC'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (145 bare vs 0 phrase)'
+- 'bare-channel -25: 99% of matching companies were reached only on the bare word (153 bare vs 1 phrase)'
 ---

@@ -1,7 +1,7 @@
 ---
 title: FastAPI
 slug: fastapi
-companyCount: 145
+companyCount: 162
 description: Modern, fast (high-performance) web framework for building APIs with Python based on standard
   Python type hints
 tags:
@@ -15,10 +15,10 @@ radarRing: Optimizing
 alternativeNames:
 - Fast API
 - fastapi
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 81
+precision: 80
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -19: 91% of matching companies were reached only on the bare word (136 bare vs 14 phrase)'
+- 'bare-channel -20: 92% of matching companies were reached only on the bare word (154 bare vs 14 phrase)'
 ---

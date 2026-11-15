@@ -1,7 +1,7 @@
 ---
 title: Apache Geode
 slug: apache-geode
-companyCount: 4
+companyCount: 3
 description: In-memory data management platform providing real-time, consistent access to data-intensive
   applications.
 tags:
@@ -15,7 +15,7 @@ radarRing: Initial
 alternativeNames:
 - GemFire
 - Geode
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high

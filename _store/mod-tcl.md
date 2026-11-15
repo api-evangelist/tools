@@ -7,7 +7,7 @@ description: An Apache HTTP Server module that embeds a Tcl interpreter in the s
 tags:
 - mod_tcl
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

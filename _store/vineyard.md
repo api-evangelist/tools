@@ -15,7 +15,7 @@ radarRing: Initial
 alternativeNames:
 - v6d
 - vineyard
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 77
 precisionGrade: medium

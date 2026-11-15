@@ -1,7 +1,7 @@
 ---
 title: Apache Petri
 slug: apache-petri
-companyCount: 1
+companyCount: 0
 description: Entry path for new projects and communities wishing to join the Apache Software Foundation.
 tags:
 - Incubation
@@ -13,7 +13,7 @@ website: https://petri.apache.org
 radarRing: Initial
 alternativeNames:
 - Petri
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high

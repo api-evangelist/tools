@@ -1,7 +1,7 @@
 ---
 title: Ansible Playbooks
 slug: ansible-playbooks
-companyCount: 31
+companyCount: 30
 description: Declarative automation framework for configuration management, application deployment, and
   orchestration using YAML-based playbooks
 tags:
@@ -15,7 +15,7 @@ radarRing: Established
 alternativeNames:
 - Ansible Playbook
 - ansible-playbooks
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

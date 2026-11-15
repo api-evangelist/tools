@@ -1,7 +1,7 @@
 ---
 title: Apache Kyuubi
 slug: apache-kyuubi
-companyCount: 0
+companyCount: 1
 description: Distributed multi-tenant thrift/JDBC/ODBC server for large-scale data management and analytics
   engines.
 tags:
@@ -14,7 +14,7 @@ website: https://kyuubi.apache.org
 radarRing: Initial
 alternativeNames:
 - Kyuubi
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

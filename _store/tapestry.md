@@ -4,7 +4,7 @@ slug: tapestry
 description: A visual, drag-and-drop workflow builder for Arazzo — connect API operations into sequences
   on a React Flow canvas and export or import Arazzo 1.0.1 documents. One of two visual authoring tools
   found; a web application rather than a library.
-companyCount: 10
+companyCount: 12
 website: https://github.com/imminent-technology/tapestry
 repository: https://github.com/imminent-technology/tapestry
 license: MIT
@@ -37,10 +37,10 @@ useCases:
 tags:
 - Arazzo
 radarRing: Developing
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (10 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (12 bare vs 0 phrase)'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Swift
 slug: swift
-companyCount: 218
+companyCount: 225
 description: Swift is a powerful, intuitive programming language developed by Apple for building applications
   across iOS, macOS, watchOS, and tvOS. It combines modern language features like type safety, optionals,
   and closures with high performance, making it the primary language for Apple platform development.
@@ -18,11 +18,11 @@ alternativeNames:
 - Apple Swift
 - swift
 - Swift Language
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 65
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 5 characters'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (228 bare vs 1 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (238 bare vs 1 phrase)'
 ---

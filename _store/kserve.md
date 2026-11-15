@@ -1,7 +1,7 @@
 ---
 title: KServe
 slug: kserve
-companyCount: 12
+companyCount: 20
 description: A standard model inference platform on Kubernetes, built for highly scalable use cases. Provides
   performant, standardized inference protocol across ML frameworks including TensorFlow, PyTorch, scikit-learn,
   XGBoost, and more.
@@ -16,7 +16,7 @@ radarRing: Developing
 alternativeNames:
 - KFServing
 - kserve
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

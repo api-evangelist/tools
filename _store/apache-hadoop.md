@@ -1,7 +1,7 @@
 ---
 title: Apache Hadoop
 slug: apache-hadoop
-companyCount: 143
+companyCount: 142
 description: Framework for distributed storage and processing of large datasets across clusters using
   MapReduce and HDFS.
 tags:
@@ -16,7 +16,7 @@ alternativeNames:
 - Hadoop
 - hadoop
 - HDFS
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 69
 precisionGrade: medium

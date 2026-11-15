@@ -1,7 +1,7 @@
 ---
 title: Nginx
 slug: nginx
-companyCount: 49
+companyCount: 40
 description: High-performance HTTP server and reverse proxy known for its stability, rich feature set,
   simple configuration, and low resource consumption.
 tags:
@@ -17,12 +17,12 @@ alternativeNames:
 - Engine-X
 - NGINX
 - nginx
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 70
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (53 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (43 bare vs 0 phrase)'
 ---

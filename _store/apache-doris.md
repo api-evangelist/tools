@@ -1,7 +1,7 @@
 ---
 title: Apache Doris
 slug: apache-doris
-companyCount: 3
+companyCount: 1
 description: High-performance real-time analytical database based on MPP architecture for large-scale
   data analysis.
 tags:
@@ -14,7 +14,7 @@ website: https://doris.apache.org
 radarRing: Initial
 alternativeNames:
 - Doris
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high

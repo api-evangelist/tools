@@ -1,7 +1,7 @@
 ---
 title: Jest
 slug: jest
-companyCount: 144
+companyCount: 153
 description: A delightful JavaScript testing framework with a focus on simplicity, featuring zero configuration,
   snapshot testing, and built-in code coverage.
 tags:
@@ -15,7 +15,7 @@ radarRing: Optimizing
 alternativeNames:
 - jest
 - JestJS
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 82
 precisionGrade: high

@@ -1,7 +1,7 @@
 ---
 title: Kubernetes
 slug: kubernetes
-companyCount: 522
+companyCount: 525
 description: Open-source container orchestration platform for automating deployment, scaling, and management
   of containerized applications
 tags:
@@ -17,7 +17,7 @@ alternativeNames:
 - k8s
 - Kube
 - kube
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75
 precisionGrade: medium

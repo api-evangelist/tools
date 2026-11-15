@@ -1,7 +1,7 @@
 ---
 title: Logstash
 slug: logstash
-companyCount: 29
+companyCount: 28
 description: Open source server-side data processing pipeline that ingests data from multiple sources,
   transforms it, and sends it to a specified destination
 tags:
@@ -14,7 +14,7 @@ founded: 2009
 radarRing: Developing
 alternativeNames:
 - logstash
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

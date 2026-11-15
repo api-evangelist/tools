@@ -1,7 +1,7 @@
 ---
 title: Ansible Roles
 slug: ansible-roles
-companyCount: 2
+companyCount: 6
 description: Reusable units of automation in Ansible that package tasks, variables, files, templates,
   and handlers into a standardized directory structure for organizing and sharing infrastructure as code.
 tags:
@@ -14,7 +14,7 @@ founded: 2012
 radarRing: Initial
 alternativeNames:
 - ansible-roles
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

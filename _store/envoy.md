@@ -1,7 +1,7 @@
 ---
 title: Envoy
 slug: envoy
-companyCount: 47
+companyCount: 51
 description: The cloud-native L7 proxy whose configuration APIs became xDS — reconfigures itself dynamically
   from a control plane with no restart.
 tags:
@@ -46,12 +46,12 @@ useCases:
 - task: Change routing at runtime through a control plane rather than by redeploying.
   surface:
   - ci-pipeline
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 41
+precision: 42
 precisionGrade: low
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 5 characters'
 - 'collision -25: a surviving needle is also claimed by solutions:Envoy Proxy'
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (48 bare vs 1 phrase)'
+- 'bare-channel -23: 96% of matching companies were reached only on the bare word (51 bare vs 2 phrase)'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Git
 slug: git
-companyCount: 464
+companyCount: 507
 description: Distributed version control system for tracking changes in source code during software development
 tags:
 - Version Control
@@ -14,7 +14,7 @@ alternativeNames:
 - git
 - Git SCM
 - Git VCS
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 85
 precisionGrade: high

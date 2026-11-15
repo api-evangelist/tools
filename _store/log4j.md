@@ -1,7 +1,7 @@
 ---
 title: Log4j
 slug: log4j
-companyCount: 6
+companyCount: 8
 description: A Java-based logging utility framework that provides flexible logging capabilities for applications,
   allowing developers to control log output destinations, formats, and levels.
 tags:
@@ -16,7 +16,7 @@ alternativeNames:
 - log4j
 - Log4j2
 - log4j2
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 55
 precisionGrade: low

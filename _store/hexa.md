@@ -1,7 +1,7 @@
 ---
 title: Hexa
 slug: hexa
-companyCount: 0
+companyCount: 1
 description: A collaborative data workspace platform that enables teams to explore, analyze, and share
   data insights together
 tags:
@@ -12,7 +12,7 @@ website: https://hexa.app
 radarRing: Initial
 alternativeNames:
 - hexa
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 82
 precisionGrade: high

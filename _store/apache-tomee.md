@@ -1,7 +1,7 @@
 ---
 title: Apache TomEE
 slug: apache-tomee
-companyCount: 0
+companyCount: 2
 description: All-Apache Jakarta EE application server built on Tomcat with full enterprise Java support.
 tags:
 - Application Server
@@ -14,7 +14,7 @@ radarRing: Initial
 alternativeNames:
 - Tomcat EE
 - TomEE
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high

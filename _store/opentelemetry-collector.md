@@ -3,7 +3,7 @@ title: OpenTelemetry Collector
 slug: opentelemetry-collector
 description: Receives, processes and exports telemetry in a vendor-agnostic pipeline — the component that
   decouples what emits telemetry from what stores it.
-companyCount: 5
+companyCount: 9
 website: https://opentelemetry.io
 repository: https://github.com/open-telemetry/opentelemetry-collector
 license: Apache-2.0
@@ -48,7 +48,7 @@ useCases:
 tags:
 - OpenTelemetry / OTLP
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

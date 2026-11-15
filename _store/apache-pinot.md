@@ -1,7 +1,7 @@
 ---
 title: Apache Pinot
 slug: apache-pinot
-companyCount: 7
+companyCount: 9
 description: Real-time distributed OLAP datastore designed for low-latency analytics on large-scale datasets.
 tags:
 - OLAP
@@ -14,7 +14,7 @@ radarRing: Developing
 alternativeNames:
 - pinot
 - Pinot
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high

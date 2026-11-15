@@ -1,7 +1,7 @@
 ---
 title: Containerd
 slug: containerd
-companyCount: 17
+companyCount: 16
 description: An industry-standard container runtime with an emphasis on simplicity, robustness and portability
 tags:
 - Container Runtime
@@ -13,7 +13,7 @@ founded: 2015
 radarRing: Developing
 alternativeNames:
 - containerd
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

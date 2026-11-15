@@ -1,7 +1,7 @@
 ---
 title: Semantic Kernel
 slug: semantic-kernel
-companyCount: 78
+companyCount: 87
 description: An open-source SDK that lets you easily build agents that can call your existing code, enabling
   AI orchestration with LLMs like GPT-4, plugins, and memory capabilities. It forms a core part of modern
   AI/ML pipelines and intelligent automation systems.
@@ -17,7 +17,7 @@ radarRing: Established
 alternativeNames:
 - MS Semantic Kernel
 - semantic-kernel
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

@@ -1,7 +1,7 @@
 ---
 title: Apache BVal
 slug: apache-bval
-companyCount: 1
+companyCount: 0
 description: Implementation of the Java Bean Validation specification for validating Java object data.
 tags:
 - Java
@@ -13,7 +13,7 @@ website: https://bval.apache.org
 radarRing: Initial
 alternativeNames:
 - BVal
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 55
 precisionGrade: low

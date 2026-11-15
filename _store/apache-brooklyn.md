@@ -14,7 +14,7 @@ website: https://brooklyn.apache.org
 radarRing: Initial
 alternativeNames:
 - Brooklyn
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

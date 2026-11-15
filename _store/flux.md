@@ -1,7 +1,7 @@
 ---
 title: Flux
 slug: flux
-companyCount: 200
+companyCount: 196
 description: An open-source text-to-image AI model developed by Black Forest Labs that generates high-quality
   images from text prompts with improved prompt following and visual quality.
 tags:
@@ -16,12 +16,12 @@ alternativeNames:
 - flux
 - Flux CD
 - FluxCD
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 67
+precision: 66
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -23: 97% of matching companies were reached only on the bare word (197 bare vs 7 phrase)'
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (197 bare vs 2 phrase)'
 ---

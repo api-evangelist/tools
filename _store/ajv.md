@@ -3,7 +3,7 @@ title: Ajv
 slug: ajv
 description: The fastest JSON Schema validator for JavaScript — compiles schemas to validation functions
   and supports every modern dialect.
-companyCount: 0
+companyCount: 1
 website: https://ajv.js.org
 repository: https://github.com/ajv-validator/ajv
 license: MIT
@@ -45,7 +45,7 @@ useCases:
 tags:
 - JSON Schema
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 77
 precisionGrade: medium

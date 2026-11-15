@@ -1,7 +1,7 @@
 ---
 title: Ory Talos
 slug: ory-talos
-companyCount: 0
+companyCount: 4
 description: Open source API key management server for issuing, verifying, revoking, and managing API
   keys for users, services, machine-to-machine communication, and AI agents.
 tags:
@@ -17,7 +17,7 @@ alternativeNames:
 - Ory Talos
 - Talos
 - talos
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high

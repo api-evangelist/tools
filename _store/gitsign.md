@@ -2,7 +2,7 @@
 title: Gitsign
 slug: gitsign
 description: Signs Git commits and tags with Sigstore keyless signing, requiring no GPG key.
-companyCount: 0
+companyCount: 1
 website: https://github.com/sigstore/gitsign
 repository: https://github.com/sigstore/gitsign
 license: Apache-2.0
@@ -41,7 +41,7 @@ useCases:
 tags:
 - Sigstore
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

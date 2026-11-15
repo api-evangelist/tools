@@ -13,10 +13,10 @@ radarRing: Developing
 alternativeNames:
 - fluentd
 - td-agent
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 75
-precisionGrade: medium
+precision: 100
+precisionGrade: high
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (10 bare vs 0 phrase)'
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

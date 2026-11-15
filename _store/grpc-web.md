@@ -3,7 +3,7 @@ title: gRPC-Web
 slug: grpc-web
 description: Lets browser clients call gRPC services through a proxy, since browsers cannot speak the
   gRPC wire protocol directly.
-companyCount: 0
+companyCount: 2
 website: https://grpc.io
 repository: https://github.com/grpc/grpc-web
 license: Apache-2.0
@@ -35,7 +35,7 @@ useCases:
 tags:
 - gRPC
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

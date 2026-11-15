@@ -1,7 +1,7 @@
 ---
 title: Apache APR
 slug: apache-apr
-companyCount: 130
+companyCount: 132
 description: Portable runtime library providing a predictable and consistent interface to platform-specific
   implementations.
 tags:
@@ -15,12 +15,12 @@ radarRing: Optimizing
 alternativeNames:
 - Apache Portable Runtime
 - APR
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 60
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (137 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (138 bare vs 0 phrase)'
 ---

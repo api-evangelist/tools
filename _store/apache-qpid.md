@@ -1,7 +1,7 @@
 ---
 title: Apache Qpid
 slug: apache-qpid
-companyCount: 1
+companyCount: 0
 description: Cross-platform messaging system implementing the AMQP protocol for enterprise messaging.
 tags:
 - Messaging
@@ -13,7 +13,7 @@ website: https://qpid.apache.org
 radarRing: Initial
 alternativeNames:
 - Qpid
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 90
 precisionGrade: high

@@ -1,7 +1,7 @@
 ---
 title: Linux
 slug: linux
-companyCount: 440
+companyCount: 449
 description: Open-source Unix-like operating system kernel first released by Linus Torvalds in 1991, serving
   as the foundation for numerous distributions and powering everything from servers to embedded systems.
 tags:
@@ -19,12 +19,12 @@ radarRing: Optimizing
 alternativeNames:
 - GNU/Linux
 - linux
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 60
 precisionGrade: medium
 precisionBasis:
 - 'prose-word -6: bare needle ''linux'' appears in 3% of sampled job postings'
 - 'acronym-shape -10: shortest bare needle is 5 characters'
-- 'bare-channel -24: 99% of matching companies were reached only on the bare word (460 bare vs 7 phrase)'
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (471 bare vs 7 phrase)'
 ---

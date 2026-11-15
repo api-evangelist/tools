@@ -1,7 +1,7 @@
 ---
 title: Apache Mesos
 slug: apache-mesos
-companyCount: 12
+companyCount: 8
 description: Cluster manager providing efficient resource isolation and sharing across distributed applications
   or frameworks.
 tags:
@@ -15,12 +15,11 @@ radarRing: Developing
 alternativeNames:
 - mesos
 - Mesos
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 84
+precision: 95
 precisionGrade: high
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -11: 77% of matching companies were reached only on the bare word (10 bare vs 3 phrase)'
 ---

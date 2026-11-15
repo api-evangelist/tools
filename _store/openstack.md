@@ -1,7 +1,7 @@
 ---
 title: OpenStack
 slug: openstack
-companyCount: 36
+companyCount: 34
 description: Open source cloud computing platform for building and managing public and private clouds,
   providing infrastructure as a service (IaaS) through a set of interrelated services.
 tags:
@@ -14,7 +14,7 @@ founded: 2010
 radarRing: Established
 alternativeNames:
 - openstack
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

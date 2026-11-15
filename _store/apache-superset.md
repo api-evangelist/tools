@@ -1,7 +1,7 @@
 ---
 title: Apache Superset
 slug: apache-superset
-companyCount: 16
+companyCount: 17
 description: Modern data exploration and visualization platform designed for fast, intuitive business
   intelligence.
 tags:
@@ -15,10 +15,10 @@ radarRing: Developing
 alternativeNames:
 - superset
 - Superset
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 98
+precision: 100
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -2: 62% of matching companies were reached only on the bare word (10 bare vs 6 phrase)'
+- 'no penalty: an unambiguous, sufficiently long name'
 ---

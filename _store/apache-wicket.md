@@ -1,7 +1,7 @@
 ---
 title: Apache Wicket
 slug: apache-wicket
-companyCount: 2
+companyCount: 1
 description: Component-based web application framework for Java focusing on separation of markup and logic.
 tags:
 - Web Framework
@@ -13,7 +13,7 @@ website: https://wicket.apache.org
 radarRing: Initial
 alternativeNames:
 - Wicket
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

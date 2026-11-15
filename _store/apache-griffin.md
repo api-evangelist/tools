@@ -1,7 +1,7 @@
 ---
 title: Apache Griffin
 slug: apache-griffin
-companyCount: 19
+companyCount: 25
 description: Data quality solution for big data, providing a unified process for measuring data quality
   across platforms.
 tags:
@@ -14,10 +14,10 @@ website: https://griffin.apache.org
 radarRing: Developing
 alternativeNames:
 - Griffin
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (20 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (26 bare vs 0 phrase)'
 ---

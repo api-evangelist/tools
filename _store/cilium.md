@@ -1,7 +1,7 @@
 ---
 title: Cilium
 slug: cilium
-companyCount: 23
+companyCount: 26
 description: eBPF-based networking, observability, and security for cloud native environments
 tags:
 - Networking
@@ -13,7 +13,7 @@ website: https://cilium.io/
 radarRing: Developing
 alternativeNames:
 - cilium
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 60
 precisionGrade: medium

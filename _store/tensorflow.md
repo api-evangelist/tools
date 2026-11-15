@@ -1,7 +1,7 @@
 ---
 title: TensorFlow
 slug: tensorflow
-companyCount: 240
+companyCount: 238
 description: An open-source machine learning framework developed by Google for building and training neural
   networks and deep learning models.
 tags:
@@ -15,7 +15,7 @@ founded: 2015
 radarRing: Optimizing
 alternativeNames:
 - tensorflow
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

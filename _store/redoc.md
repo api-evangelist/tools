@@ -3,7 +3,7 @@ title: Redoc
 slug: redoc
 description: Renders an OpenAPI description as a single-page reference documentation site, with no server-side
   component.
-companyCount: 0
+companyCount: 1
 website: https://redocly.github.io/redoc/
 repository: https://github.com/Redocly/redoc
 license: MIT
@@ -44,7 +44,7 @@ useCases:
 tags:
 - OpenAPI
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 87
 precisionGrade: high

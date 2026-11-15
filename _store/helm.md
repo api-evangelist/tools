@@ -1,7 +1,7 @@
 ---
 title: Helm
 slug: helm
-companyCount: 187
+companyCount: 196
 description: Package manager for Kubernetes that helps you define, install, and upgrade complex Kubernetes
   applications using charts
 tags:
@@ -14,11 +14,11 @@ radarRing: Optimizing
 alternativeNames:
 - helm
 - Helm Charts
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 74
+precision: 75
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -20: shortest bare needle is 4 characters'
-- 'bare-channel -6: 69% of matching companies were reached only on the bare word (134 bare vs 59 phrase)'
+- 'bare-channel -5: 68% of matching companies were reached only on the bare word (138 bare vs 65 phrase)'
 ---

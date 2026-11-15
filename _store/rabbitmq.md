@@ -1,7 +1,7 @@
 ---
 title: RabbitMQ
 slug: rabbitmq
-companyCount: 129
+companyCount: 135
 description: Open-source message broker software that implements the Advanced Message Queuing Protocol
   (AMQP) for reliable message delivery and routing between distributed systems.
 tags:
@@ -17,7 +17,7 @@ alternativeNames:
 - Rabbit
 - rabbitmq
 - RMQ
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 77
 precisionGrade: medium

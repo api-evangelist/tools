@@ -1,7 +1,7 @@
 ---
 title: Kubeflow Pipelines
 slug: kubeflow-pipelines
-companyCount: 2
+companyCount: 8
 description: A platform for building and deploying portable, scalable machine learning workflows based
   on Docker containers
 tags:
@@ -16,7 +16,7 @@ radarRing: Initial
 alternativeNames:
 - kfp
 - KFP
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 45
 precisionGrade: low

@@ -1,7 +1,7 @@
 ---
 title: Llama
 slug: llama
-companyCount: 60
+companyCount: 63
 description: A family of large language models developed by Meta AI, designed for natural language processing
   tasks with various model sizes optimized for different use cases.
 tags:
@@ -18,7 +18,7 @@ alternativeNames:
 - Llama 2
 - Llama 3
 - Meta Llama
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75
 precisionGrade: medium

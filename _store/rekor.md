@@ -3,7 +3,7 @@ title: Rekor
 slug: rekor
 description: The immutable, append-only transparency log that records signing events, so a signature can
   be verified after the short-lived certificate that made it has expired.
-companyCount: 0
+companyCount: 1
 website: https://sigstore.dev
 repository: https://github.com/sigstore/rekor
 license: Apache-2.0
@@ -39,7 +39,7 @@ useCases:
 tags:
 - Sigstore
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 87
 precisionGrade: high

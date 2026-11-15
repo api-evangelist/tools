@@ -1,7 +1,7 @@
 ---
 title: Apache APISIX
 slug: apache-apisix
-companyCount: 3
+companyCount: 1
 description: Dynamic, real-time, high-performance cloud-native API gateway with rich traffic management
   features.
 tags:
@@ -15,7 +15,7 @@ radarRing: Initial
 alternativeNames:
 - apisix
 - APISIX
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75
 precisionGrade: medium

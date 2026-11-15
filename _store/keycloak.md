@@ -1,7 +1,7 @@
 ---
 title: Keycloak
 slug: keycloak
-companyCount: 30
+companyCount: 27
 description: Open source identity and access management solution for modern applications and services
 tags:
 - Authentication
@@ -15,7 +15,7 @@ website: https://www.keycloak.org/
 radarRing: Established
 alternativeNames:
 - keycloak
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

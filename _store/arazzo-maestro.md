@@ -47,7 +47,7 @@ useCases:
   note: The cross-file check is the thing Spectral's schema rules do not do.
 tags:
 - Arazzo
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

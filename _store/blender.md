@@ -1,7 +1,7 @@
 ---
 title: Blender
 slug: blender
-companyCount: 56
+companyCount: 59
 description: Free and open-source 3D creation suite supporting modeling, animation, rendering, compositing,
   motion tracking, and video editing
 tags:
@@ -15,10 +15,10 @@ radarRing: Established
 alternativeNames:
 - blender
 - Blender 3D
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 76
+precision: 75
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (56 bare vs 1 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (60 bare vs 0 phrase)'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Porter
 slug: porter
-companyCount: 59
+companyCount: null
 description: A package manager for Kubernetes that uses Cloud Native Application Bundles (CNAB) to package
   and deploy applications along with their dependencies and configuration.
 tags:
@@ -14,10 +14,10 @@ website: https://porter.sh/
 radarRing: Established
 alternativeNames:
 - porter
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 92
-precisionGrade: high
+precision: 0
+precisionGrade: unmeasurable
 precisionBasis:
-- 'bare-only -8: no qualified phrase survives, though the bare needle is otherwise unremarkable'
+- every needle is stoplisted — nothing left to match on
 ---

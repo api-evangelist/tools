@@ -1,7 +1,7 @@
 ---
 title: PyTorch
 slug: pytorch
-companyCount: 302
+companyCount: 307
 description: An open source machine learning framework that accelerates the path from research prototyping
   to production deployment with dynamic computational graphs and intuitive Python-first development.
 tags:
@@ -18,7 +18,7 @@ alternativeNames:
 - pytorch
 - torch
 - Torch
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 87
 precisionGrade: high

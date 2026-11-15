@@ -3,7 +3,7 @@ title: Envoy Gateway
 slug: envoy-gateway
 description: Manages Envoy as a Kubernetes Gateway API implementation, turning standard Gateway resources
   into xDS configuration.
-companyCount: 2
+companyCount: 0
 website: https://gateway.envoyproxy.io
 repository: https://github.com/envoyproxy/gateway
 license: Apache-2.0
@@ -35,7 +35,7 @@ useCases:
 tags:
 - xDS
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

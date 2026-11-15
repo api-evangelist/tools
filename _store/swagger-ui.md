@@ -3,7 +3,7 @@ title: Swagger UI
 slug: swagger-ui
 description: The original interactive OpenAPI console — renders a description as browsable documentation
   with a live "try it" client against the real API.
-companyCount: 1
+companyCount: 3
 website: https://swagger.io
 repository: https://github.com/swagger-api/swagger-ui
 license: Apache-2.0
@@ -43,7 +43,7 @@ useCases:
 tags:
 - OpenAPI
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75
 precisionGrade: medium

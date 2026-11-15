@@ -3,7 +3,7 @@ title: OSV-Scanner
 slug: osv-scanner
 description: Scans lockfiles, SBOMs, container images and directories against the OSV database, and reports
   vulnerabilities in the OSV schema.
-companyCount: 0
+companyCount: 1
 website: https://google.github.io/osv-scanner/
 repository: https://github.com/google/osv-scanner
 license: Apache-2.0
@@ -52,7 +52,7 @@ useCases:
 tags:
 - OSV Schema
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

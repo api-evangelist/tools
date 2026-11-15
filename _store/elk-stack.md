@@ -1,7 +1,7 @@
 ---
 title: Elk Stack
 slug: elk-stack
-companyCount: 194
+companyCount: 195
 description: A collection of three open-source products - Elasticsearch, Logstash, and Kibana - used for
   searching, analyzing, and visualizing log data in real time.
 tags:
@@ -17,12 +17,12 @@ alternativeNames:
 - Elasticsearch Logstash Kibana
 - ELK
 - ELK Stack
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 47
+precision: 44
 precisionGrade: low
 precisionBasis:
 - 'acronym-shape -30: shortest bare needle is 3 characters'
 - 'collision -20: a surviving needle is also claimed by tools:Elastic Stack'
-- 'bare-channel -3: 64% of matching companies were reached only on the bare word (129 bare vs 71 phrase)'
+- 'bare-channel -6: 69% of matching companies were reached only on the bare word (139 bare vs 63 phrase)'
 ---

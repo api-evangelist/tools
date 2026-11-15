@@ -3,7 +3,7 @@ title: DataLoader
 slug: dataloader
 description: Batches and caches backend requests within a single GraphQL execution — the standard answer
   to the N+1 query problem GraphQL resolvers create.
-companyCount: 6
+companyCount: 3
 website: https://github.com/graphql/dataloader
 repository: https://github.com/graphql/dataloader
 license: MIT
@@ -37,7 +37,7 @@ useCases:
 tags:
 - GraphQL
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

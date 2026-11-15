@@ -3,7 +3,7 @@ title: Grype
 slug: grype
 description: Scans container images, filesystems and SBOMs for known vulnerabilities, reading OSV and
   other vulnerability sources.
-companyCount: 3
+companyCount: 8
 website: https://github.com/anchore/grype
 repository: https://github.com/anchore/grype
 license: Apache-2.0
@@ -56,7 +56,7 @@ tags:
 - SPDX
 - OSV Schema
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 87
 precisionGrade: high

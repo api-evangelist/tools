@@ -1,7 +1,7 @@
 ---
 title: Ubuntu
 slug: ubuntu
-companyCount: 77
+companyCount: 78
 description: A popular open-source Linux distribution based on Debian, known for its ease of use and regular
   release cycle.
 tags:
@@ -14,7 +14,7 @@ founded: 2004
 radarRing: Established
 alternativeNames:
 - ubuntu
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

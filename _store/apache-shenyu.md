@@ -1,7 +1,7 @@
 ---
 title: Apache ShenYu
 slug: apache-shenyu
-companyCount: 38
+companyCount: 33
 description: High-performance API gateway for microservices supporting multiple protocols and plugin extensions.
 tags:
 - API Gateway
@@ -14,11 +14,12 @@ radarRing: Established
 alternativeNames:
 - ShenYu
 - Soul
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 55
-precisionGrade: low
+precision: 65
+precisionGrade: medium
 precisionBasis:
-- 'acronym-shape -20: shortest bare needle is 4 characters'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (41 bare vs 0 phrase)'
+- 'acronym-shape -10: shortest bare needle is 4 characters, halved — it neither collides nor appears in
+  the corpus frequency table'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (37 bare vs 0 phrase)'
 ---

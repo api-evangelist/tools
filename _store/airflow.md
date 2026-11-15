@@ -16,11 +16,11 @@ radarRing: Optimizing
 alternativeNames:
 - airflow
 - Airflow
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 71
+precision: 72
 precisionGrade: medium
 precisionBasis:
 - 'collision -25: a surviving needle is also claimed by solutions:Apache Airflow'
-- 'bare-channel -4: 66% of matching companies were reached only on the bare word (182 bare vs 92 phrase)'
+- 'bare-channel -3: 65% of matching companies were reached only on the bare word (176 bare vs 95 phrase)'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Apache Maven
 slug: apache-maven
-companyCount: 124
+companyCount: 114
 description: Build automation and project management tool for Java projects using a project object model
   (POM).
 tags:
@@ -16,12 +16,12 @@ alternativeNames:
 - Maven
 - maven
 - mvn
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 61
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -15: shortest bare needle is 3 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (125 bare vs 2 phrase)'
+- 'bare-channel -24: 98% of matching companies were reached only on the bare word (115 bare vs 2 phrase)'
 ---

@@ -1,7 +1,7 @@
 ---
 title: KCL
 slug: kcl
-companyCount: 2
+companyCount: 1
 description: KCL (Kusion Configuration Language) is a constraint-based record and functional programming
   language designed for configuration and policy scenarios. It provides features like type safety, automation,
   and validation for cloud-native configurations.
@@ -15,7 +15,7 @@ radarRing: Initial
 alternativeNames:
 - kcl
 - Kusion Configuration Language
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 85
 precisionGrade: high

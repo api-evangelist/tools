@@ -3,7 +3,7 @@ title: Apollo Server
 slug: apollo-server
 description: A spec-compliant GraphQL server for Node.js, with a plugin system covering caching, tracing
   and persisted queries.
-companyCount: 3
+companyCount: 1
 website: https://www.apollographql.com/docs/apollo-server/
 repository: https://github.com/apollographql/apollo-server
 license: MIT
@@ -37,7 +37,7 @@ useCases:
 tags:
 - GraphQL
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

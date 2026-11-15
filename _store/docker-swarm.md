@@ -1,7 +1,7 @@
 ---
 title: Docker Swarm
 slug: docker-swarm
-companyCount: 31
+companyCount: 23
 description: Native clustering and orchestration solution for Docker containers that turns a pool of Docker
   hosts into a single virtual host.
 tags:
@@ -15,7 +15,7 @@ radarRing: Established
 alternativeNames:
 - docker-swarm
 - Swarm
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high

@@ -1,7 +1,7 @@
 ---
 title: Apache Commons
 slug: apache-commons
-companyCount: 1
+companyCount: 2
 description: Collection of reusable Java components providing solutions to common programming problems.
 tags:
 - Java
@@ -13,7 +13,7 @@ website: https://commons.apache.org
 radarRing: Initial
 alternativeNames:
 - Commons
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

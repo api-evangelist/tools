@@ -1,7 +1,7 @@
 ---
 title: Apache Bloodhound
 slug: apache-bloodhound
-companyCount: 7
+companyCount: 10
 description: Project management and bug tracking system derived from Apache Trac with enhanced multi-project
   support.
 tags:
@@ -14,10 +14,10 @@ website: https://bloodhound.apache.org
 radarRing: Developing
 alternativeNames:
 - Bloodhound
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 100
-precisionGrade: high
+precision: 75
+precisionGrade: medium
 precisionBasis:
-- 'no penalty: an unambiguous, sufficiently long name'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (10 bare vs 0 phrase)'
 ---

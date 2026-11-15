@@ -1,7 +1,7 @@
 ---
 title: Playwright
 slug: playwright
-companyCount: 160
+companyCount: 179
 description: A framework for web testing and automation that enables reliable end-to-end testing for modern
   web apps across all browsers.
 tags:
@@ -15,10 +15,10 @@ radarRing: Optimizing
 alternativeNames:
 - playwright
 - Playwright Test
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 76
+precision: 77
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -24: 98% of matching companies were reached only on the bare word (167 bare vs 3 phrase)'
+- 'bare-channel -23: 97% of matching companies were reached only on the bare word (182 bare vs 5 phrase)'
 ---

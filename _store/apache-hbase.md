@@ -1,7 +1,7 @@
 ---
 title: Apache HBase
 slug: apache-hbase
-companyCount: 27
+companyCount: 30
 description: Distributed, scalable, big data store modeled after Google's Bigtable, running on top of
   HDFS.
 tags:
@@ -15,12 +15,12 @@ radarRing: Established
 alternativeNames:
 - HBase
 - hbase
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 74
+precision: 76
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -21: 93% of matching companies were reached only on the bare word (28 bare vs 2 phrase)'
+- 'bare-channel -19: 91% of matching companies were reached only on the bare word (30 bare vs 3 phrase)'
 ---

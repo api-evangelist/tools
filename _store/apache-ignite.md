@@ -14,10 +14,10 @@ website: https://ignite.apache.org
 radarRing: Established
 alternativeNames:
 - Ignite
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 80
-precisionGrade: high
+precision: 79
+precisionGrade: medium
 precisionBasis:
-- 'bare-channel -20: 93% of matching companies were reached only on the bare word (75 bare vs 6 phrase)'
+- 'bare-channel -21: 94% of matching companies were reached only on the bare word (76 bare vs 5 phrase)'
 ---

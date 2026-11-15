@@ -41,7 +41,7 @@ useCases:
 - task: Run a registry that is strictly spec-conformant, including the referrers API.
   surface:
   - ci-pipeline
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 77
 precisionGrade: medium

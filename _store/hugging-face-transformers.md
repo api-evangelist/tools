@@ -1,7 +1,7 @@
 ---
 title: Hugging Face Transformers
 slug: hugging-face-transformers
-companyCount: 220
+companyCount: 244
 description: Open-source library providing thousands of pre-trained models for natural language processing,
   computer vision, and audio tasks with simple APIs for PyTorch, TensorFlow, and JAX.
 tags:
@@ -18,11 +18,11 @@ alternativeNames:
 - huggingface
 - Transformers
 - 🤗 Transformers
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 55
+precision: 59
 precisionGrade: low
 precisionBasis:
 - 'collision -25: a surviving needle is also claimed by solutions:Hugging Face'
-- 'bare-channel -20: 92% of matching companies were reached only on the bare word (208 bare vs 17 phrase)'
+- 'bare-channel -16: 86% of matching companies were reached only on the bare word (213 bare vs 34 phrase)'
 ---

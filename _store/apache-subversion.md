@@ -1,7 +1,7 @@
 ---
 title: Apache Subversion
 slug: apache-subversion
-companyCount: 82
+companyCount: 80
 description: Centralized version control system for tracking changes in files and directories over time.
 tags:
 - Version Control
@@ -15,12 +15,12 @@ alternativeNames:
 - Subversion
 - svn
 - SVN
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 26
+precision: 25
 precisionGrade: very-low
 precisionBasis:
 - 'acronym-shape -30: shortest bare needle is 3 characters'
 - 'collision -20: a surviving needle is also claimed by tools:SVN'
-- 'bare-channel -24: 99% of matching companies were reached only on the bare word (83 bare vs 1 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (81 bare vs 0 phrase)'
 ---

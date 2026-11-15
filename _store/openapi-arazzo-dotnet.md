@@ -44,7 +44,7 @@ useCases:
   note: Preview releases only as of September 2026; the API surface may still move.
 tags:
 - Arazzo
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

@@ -1,7 +1,7 @@
 ---
 title: Ratify
 slug: ratify
-companyCount: 7
+companyCount: 6
 description: Verifies artifacts and their referenced metadata at admission time in Kubernetes, so unsigned
   or unattested workloads never start.
 tags:
@@ -43,7 +43,7 @@ useCases:
 - task: Block a deployment whose image is unsigned or fails policy, at the cluster boundary.
   surface:
   - ci-pipeline
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

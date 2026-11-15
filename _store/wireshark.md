@@ -1,7 +1,7 @@
 ---
 title: Wireshark
 slug: wireshark
-companyCount: 80
+companyCount: 103
 description: A free and open-source packet analyzer used for network troubleshooting, analysis, software
   and communications protocol development, and education.
 tags:
@@ -15,7 +15,7 @@ radarRing: Established
 alternativeNames:
 - Ethereal
 - wireshark
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

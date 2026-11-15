@@ -49,7 +49,7 @@ useCases:
   note: Validation is offline and deterministic; the executor crate makes real calls and is not.
 tags:
 - Arazzo
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 82
 precisionGrade: high

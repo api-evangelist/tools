@@ -3,7 +3,7 @@ title: Skopeo
 slug: skopeo
 description: Inspects, copies, signs and deletes container images between registries and storage backends
   — without a daemon and without pulling the image to run it.
-companyCount: 1
+companyCount: 0
 website: https://github.com/podman-container-tools/skopeo
 repository: https://github.com/podman-container-tools/skopeo
 license: Apache-2.0
@@ -44,7 +44,7 @@ useCases:
 tags:
 - OCI Image, Runtime and Distribution
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

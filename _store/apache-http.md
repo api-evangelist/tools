@@ -1,7 +1,7 @@
 ---
 title: Apache HTTP
 slug: apache-http
-companyCount: 9
+companyCount: 10
 description: Apache HTTP is a specialized technology or methodology in the apache domain that addresses
   specific technical or business requirements. It provides targeted capabilities that help practitioners
   and organizations solve problems and improve outcomes in their area of focus.
@@ -12,7 +12,7 @@ alternativeNames:
 - Apache HTTP Server
 - Apache HTTPD
 - httpd
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 70
 precisionGrade: medium

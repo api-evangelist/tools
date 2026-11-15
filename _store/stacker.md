@@ -1,7 +1,7 @@
 ---
 title: Stacker
 slug: stacker
-companyCount: 34
+companyCount: 29
 description: A no-code platform for building custom business applications and workflows with data from
   multiple sources, featuring drag-and-drop interface builders and automated processes.
 tags:
@@ -14,7 +14,7 @@ website: https://www.stackerhq.com/
 radarRing: Established
 alternativeNames:
 - stacker
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

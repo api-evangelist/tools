@@ -1,7 +1,7 @@
 ---
 title: Spring Framework
 slug: spring-framework
-companyCount: 377
+companyCount: 419
 description: Comprehensive framework for building enterprise Java applications with dependency injection,
   aspect-oriented programming, and extensive infrastructure support
 tags:
@@ -17,10 +17,10 @@ alternativeNames:
 - Spring
 - Spring Java
 - spring-framework
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 87
+precision: 84
 precisionGrade: high
 precisionBasis:
-- 'bare-channel -13: 81% of matching companies were reached only on the bare word (324 bare vs 76 phrase)'
+- 'bare-channel -16: 86% of matching companies were reached only on the bare word (378 bare vs 64 phrase)'
 ---

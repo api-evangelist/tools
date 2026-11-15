@@ -13,7 +13,7 @@ website: https://libcloud.apache.org
 radarRing: Initial
 alternativeNames:
 - Libcloud
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

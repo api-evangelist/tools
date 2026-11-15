@@ -3,7 +3,7 @@ title: Protocol Buffers
 slug: protocol-buffers-compiler
 description: The Protocol Buffers compiler and runtime libraries — parses `.proto` definitions and generates
   serialisation code across languages.
-companyCount: 28
+companyCount: 24
 website: http://protobuf.dev
 repository: https://github.com/protocolbuffers/protobuf
 license: BSD-3-Clause
@@ -42,7 +42,7 @@ useCases:
 tags:
 - Protocol Buffers
 radarRing: Developing
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 75
 precisionGrade: medium

@@ -1,7 +1,7 @@
 ---
 title: Puppet
 slug: puppet
-companyCount: 94
+companyCount: 101
 description: Configuration management tool that automates the provisioning, configuration, and management
   of infrastructure using declarative language and model-driven approach.
 tags:
@@ -16,10 +16,10 @@ alternativeNames:
 - puppet
 - Puppet Enterprise
 - PuppetDB
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 76
 precisionGrade: medium
 precisionBasis:
-- 'bare-channel -24: 99% of matching companies were reached only on the bare word (95 bare vs 1 phrase)'
+- 'bare-channel -24: 99% of matching companies were reached only on the bare word (101 bare vs 1 phrase)'
 ---

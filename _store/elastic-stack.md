@@ -1,7 +1,7 @@
 ---
 title: Elastic Stack
 slug: elastic-stack
-companyCount: 197
+companyCount: 203
 description: A collection of open-source products (Elasticsearch, Logstash, Kibana, and Beats) for searching,
   analyzing, and visualizing data in real time from any source.
 tags:
@@ -17,12 +17,12 @@ alternativeNames:
 - ELK
 - ELK Stack
 - elk-stack
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 49
+precision: 48
 precisionGrade: low
 precisionBasis:
 - 'acronym-shape -30: shortest bare needle is 3 characters'
 - 'collision -20: a surviving needle is also claimed by tools:Elk Stack'
-- 'bare-channel -1: 62% of matching companies were reached only on the bare word (126 bare vs 77 phrase)'
+- 'bare-channel -2: 63% of matching companies were reached only on the bare word (133 bare vs 77 phrase)'
 ---

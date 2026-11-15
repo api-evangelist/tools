@@ -1,7 +1,7 @@
 ---
 title: Apache Axis
 slug: apache-axis
-companyCount: 0
+companyCount: 1
 description: SOAP-based web services framework for creating and deploying interoperable web service applications.
 tags:
 - Web Services
@@ -13,7 +13,7 @@ website: https://axis.apache.org
 radarRing: Initial
 alternativeNames:
 - Axis
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

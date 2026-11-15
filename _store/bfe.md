@@ -1,7 +1,7 @@
 ---
 title: BFE
 slug: bfe
-companyCount: 1
+companyCount: 4
 description: BFE (Beyond Front End) is an open-source layer 7 load balancer developed by Baidu. It provides
   advanced traffic routing, forwarding, and load balancing capabilities with support for HTTP, HTTPS,
   SPDY, HTTP/2, WebSocket, and TLS protocols.
@@ -15,7 +15,7 @@ radarRing: Initial
 alternativeNames:
 - Baidu Front End
 - bfe
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 85
 precisionGrade: high

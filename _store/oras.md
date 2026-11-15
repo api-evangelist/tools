@@ -1,7 +1,7 @@
 ---
 title: ORAS
 slug: oras
-companyCount: 0
+companyCount: 1
 description: Pushes and pulls arbitrary artifacts through an OCI registry — Helm charts, SBOMs, signatures,
   models — using the registry as general artifact storage rather than image storage.
 tags:
@@ -53,7 +53,7 @@ useCases:
 - task: Attach an SBOM or attestation to an image as a referring artifact.
   surface:
   - ci-pipeline
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 90
 precisionGrade: high

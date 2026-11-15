@@ -1,7 +1,7 @@
 ---
 title: SPIRE
 slug: spire
-companyCount: 16
+companyCount: 18
 description: The SPIFFE Runtime Environment — attests workloads and issues them short-lived cryptographic
   identities, so services authenticate to each other without shared secrets.
 tags:
@@ -53,12 +53,12 @@ useCases:
 - task: Establish mutual TLS between services across clusters and clouds without a shared CA per environment.
   surface:
   - ci-pipeline
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 70
 precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (16 bare vs 0 phrase)'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (18 bare vs 0 phrase)'
 ---

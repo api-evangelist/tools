@@ -1,7 +1,7 @@
 ---
 title: Istio
 slug: istio
-companyCount: 77
+companyCount: 74
 description: The service mesh whose control plane is the largest production consumer of xDS — programs
   Envoy sidecars and gateways across a cluster.
 tags:
@@ -51,7 +51,7 @@ useCases:
   surface:
   - coding-agent
   note: '`istioctl proxy-config` is the debugging surface — it dumps the effective xDS state.'
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 50
 precisionGrade: low

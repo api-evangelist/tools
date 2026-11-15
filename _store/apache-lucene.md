@@ -1,7 +1,7 @@
 ---
 title: Apache Lucene
 slug: apache-lucene
-companyCount: 18
+companyCount: 19
 description: High-performance, full-featured text search engine library written in Java, powering many
   search platforms.
 tags:
@@ -15,10 +15,10 @@ radarRing: Developing
 alternativeNames:
 - lucene
 - Lucene
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 75
-precisionGrade: medium
+precision: 82
+precisionGrade: high
 precisionBasis:
-- 'bare-channel -25: 100% of matching companies were reached only on the bare word (18 bare vs 0 phrase)'
+- 'bare-channel -18: 89% of matching companies were reached only on the bare word (17 bare vs 2 phrase)'
 ---

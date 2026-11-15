@@ -38,7 +38,7 @@ useCases:
   note: v0.0.x; the operations it emits are real, the order is inferred.
 tags:
 - Arazzo
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 100
 precisionGrade: high

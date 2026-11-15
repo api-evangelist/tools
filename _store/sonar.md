@@ -1,7 +1,7 @@
 ---
 title: Sonar
 slug: sonar
-companyCount: 38
+companyCount: 40
 description: A code quality and security analysis platform that continuously inspects code for bugs, vulnerabilities,
   and code smells across multiple programming languages.
 tags:
@@ -16,7 +16,7 @@ radarRing: Established
 alternativeNames:
 - sonar
 - SonarSource
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 55
 precisionGrade: low

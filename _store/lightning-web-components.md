@@ -1,7 +1,7 @@
 ---
 title: Lightning Web Components
 slug: lightning-web-components
-companyCount: 84
+companyCount: 87
 description: A modern JavaScript framework from Salesforce for building fast, enterprise-grade web components
   on the Salesforce platform using web standards.
 tags:
@@ -16,7 +16,7 @@ radarRing: Optimizing
 alternativeNames:
 - lwc
 - LWC
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 85
 precisionGrade: high

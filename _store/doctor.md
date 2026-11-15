@@ -20,7 +20,7 @@ specifications:
     a run of API Evangelist posts on what a governance report should read like.
 tags:
 - OpenAPI
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

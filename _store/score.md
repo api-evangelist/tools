@@ -11,10 +11,10 @@ website: https://github.com/openai/evals
 radarRing: Initial
 alternativeNames:
 - score
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 0
 precisionGrade: unmeasurable
 precisionBasis:
-- 'blocklisted: the name is an ordinary word, so a job corpus cannot measure it at all'
+- every needle is stoplisted — nothing left to match on
 ---

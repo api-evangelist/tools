@@ -3,7 +3,7 @@ title: runc
 slug: runc
 description: The reference OCI runtime — spawns and runs containers per the Runtime Specification, and
   the thing Docker and containerd ultimately call.
-companyCount: 1
+companyCount: 4
 website: https://www.opencontainers.org/
 repository: https://github.com/opencontainers/runc
 license: Apache-2.0
@@ -33,7 +33,7 @@ useCases:
 tags:
 - OCI Image, Runtime and Distribution
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 82
 precisionGrade: high

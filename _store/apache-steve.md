@@ -14,11 +14,12 @@ website: https://steve.apache.org
 radarRing: Initial
 alternativeNames:
 - Steve
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
-precision: 95
-precisionGrade: high
+precision: 70
+precisionGrade: medium
 precisionBasis:
 - 'acronym-shape -5: shortest bare needle is 5 characters, halved — it neither collides nor appears in
   the corpus frequency table'
+- 'bare-channel -25: 100% of matching companies were reached only on the bare word (11 bare vs 0 phrase)'
 ---

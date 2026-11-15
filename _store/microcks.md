@@ -3,7 +3,7 @@ title: Microcks
 slug: microcks
 description: A mocking and contract-testing platform that imports OpenAPI, AsyncAPI, gRPC and Postman
   artifacts and serves mocks plus conformance tests from them.
-companyCount: 0
+companyCount: 1
 website: https://microcks.io
 repository: https://github.com/microcks/microcks
 license: Apache-2.0
@@ -54,7 +54,7 @@ tags:
 - OpenAPI
 - AsyncAPI
 radarRing: Initial
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 92
 precisionGrade: high

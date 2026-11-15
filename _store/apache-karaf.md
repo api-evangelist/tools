@@ -1,7 +1,7 @@
 ---
 title: Apache Karaf
 slug: apache-karaf
-companyCount: 2
+companyCount: 1
 description: Lightweight, powerful, enterprise-ready OSGi-based application runtime supporting multiple
   frameworks.
 tags:
@@ -14,7 +14,7 @@ website: https://karaf.apache.org
 radarRing: Initial
 alternativeNames:
 - Karaf
-companyCountQuarter: q3-2026
+companyCountQuarter: q4-2026
 companyCountBasis: uncapped full-corpus read, hardened word-boundary matcher, qualified corpora only
 precision: 95
 precisionGrade: high
